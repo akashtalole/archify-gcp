@@ -23,7 +23,7 @@
     },
     {
       "id": "agent",
-      "icon": "vertexai",
+      "icon": "category-agents",
       "label": "Vertex AI agent",
       "sublabel": "Agent Engine"
     },

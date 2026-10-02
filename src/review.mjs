@@ -15,7 +15,7 @@ const DATA = [...STATEFUL, "cloud-storage", "persistent-disk", "filestore", "hyp
 const EDGE = ["cloud-load-balancing", "cloud-cdn", "apigee-api-platform", "cloud-api-gateway", "cloud-endpoints", "cloud-run"];
 const OBS = ["cloud-monitoring", "cloud-logging", "cloud-ops", "trace", "error-reporting", "profiler", "stackdriver"];
 const COMPUTE = ["compute-engine", "kubernetes-engine", "cloud-run", "cloud-functions", "app-engine", "batch", "vmware-engine", "anthos"];
-const MODEL = ["vertexai", "ai-platform", "ai-platform-unified", "automl", "ai-hypercomputer", "dialogflow", "dialogflow-cx", "agent-assist"];
+const MODEL = ["vertexai", "category-agents", "ai-platform", "ai-platform-unified", "automl", "ai-hypercomputer", "dialogflow", "dialogflow-cx", "agent-assist"];
 const USERS = ["users", "user", "mobile", "browser", "internet"];
 
 export function reviewSpec(spec, model) {

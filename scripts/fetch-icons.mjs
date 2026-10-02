@@ -3,6 +3,7 @@
 // The icons are NOT committed: Google distributes them under its own terms (https://cloud.google.com/icons).
 //   - google-cloud-legacy-icons.zip : ~216 product icons, one folder per product (<name>/<name>.svg, 24px)
 //   - core-products-icons.zip       : the current-brand icons for core products (512px colour SVGs)
+//   - category-icons.zip            : 26 product category icons (Compute, Agents, Observability…), added as `category-*` ids
 // A core-product icon replaces the legacy icon of the same product; products only in the core set are added.
 import fs from "node:fs";
 import path from "node:path";
@@ -13,6 +14,7 @@ import { buildCatalog, CORE_TO_LEGACY } from "../src/catalog-build.mjs";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const BASE = "https://services.google.com/fh/files/misc/";
 const LEGACY_URL = process.env.ARCHIFY_GCP_ICON_URL || BASE + "google-cloud-legacy-icons.zip";
+const CATEGORY_URL = process.env.ARCHIFY_GCP_CATEGORY_ICON_URL || BASE + "category-icons.zip";
 const CORE_URL = process.env.ARCHIFY_GCP_CORE_ICON_URL || BASE + "core-products-icons.zip";
 const RELEASE = "Google Cloud icons (legacy product set + core products set)";
 const args = process.argv.slice(2);
@@ -26,7 +28,7 @@ const load = async (url, local) => {
   return Buffer.from(await res.arrayBuffer());
 };
 const zips = args.filter((a) => a.endsWith(".zip") && fs.existsSync(a));
-const legacyZip = zips.find((a) => /legacy/i.test(a)), coreZip = zips.find((a) => /core/i.test(a));
+const legacyZip = zips.find((a) => /legacy/i.test(a)), coreZip = zips.find((a) => /core/i.test(a)), categoryZip = zips.find((a) => /categor/i.test(a));
 
 fs.rmSync(out, { recursive: true, force: true });
 let n = 0;
@@ -55,6 +57,23 @@ if (!args.includes("--no-core")) {
     }
     console.error(`Extracted ${c} core product icons (replacing legacy icons of the same product)`);
   } catch (e) { console.error(`warning: core product icons not added (${e.message})`); }
+}
+
+// Product category icons (Compute, Data Analytics, Agents, Observability…): Category Icons/<Name>/SVG/<File>.svg
+if (!args.includes("--no-categories")) {
+  try {
+    let c = 0;
+    for (const e of readZip(await load(CATEGORY_URL, categoryZip))) {
+      const m = /^Category Icons\/([^/]+)\/SVG\/[^/]+\.svg$/.exec(e.name);
+      if (e.isDir || !m) continue;
+      const slug = m[1].toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "");
+      const dest = path.join(out, "categories", `category_${slug}.svg`);
+      fs.mkdirSync(path.dirname(dest), { recursive: true });
+      fs.writeFileSync(dest, e.data());
+      c++;
+    }
+    console.error(`Extracted ${c} product category icons`);
+  } catch (e) { console.error(`warning: category icons not added (${e.message})`); }
 }
 
 // General icons (users, mobile, internet, on-premises…) are original drawings kept in data/general-icons/.

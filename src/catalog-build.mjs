@@ -17,6 +17,7 @@ const ACRONYMS = { sql: "SQL", gke: "GKE", vpc: "VPC", dns: "DNS", cdn: "CDN", i
 const NAME_OVERRIDES = { google_kubernetes_engine: "Google Kubernetes Engine", identity_and_access_management: "Identity and Access Management", "identity-aware_proxy": "Identity-Aware Proxy",
   "cloud_optimization_ai_-_fleet_routing_api": "Cloud Optimization AI - Fleet Routing API", "text-to-speech": "Text-to-Speech", "speech-to-text": "Speech-to-Text", "real-world_insights": "Real-World Insights",
   "gke_on-prem": "GKE On-Prem", cloud_ops: "Cloud Operations", key_management_service: "Cloud Key Management Service", cloud_load_balancing: "Cloud Load Balancing", secret_manager: "Secret Manager" };
+const CATEGORY_NAMES = { category_devops: "DevOps", category_ai_machine_learning: "AI and Machine Learning", category_hybrid_multicloud: "Hybrid and Multicloud", category_maps_geospatial: "Maps and Geospatial", category_web_mobile: "Web and Mobile", category_security_identity: "Security and Identity", category_web3: "Web3", category_agents: "Agents", category_business_intelligence: "Business Intelligence", category_collaboration: "Collaboration", category_compute: "Compute", category_containers: "Containers", category_data_analytics: "Data Analytics", category_databases: "Databases", category_developer_tools: "Developer Tools", category_integration_services: "Integration Services", category_management_tools: "Management Tools", category_marketplace: "Marketplace", category_media_services: "Media Services", category_migration: "Migration", category_mixed_reality: "Mixed Reality", category_networking: "Networking", category_observability: "Observability", category_operations: "Operations", category_serverless_computing: "Serverless Computing", category_storage: "Storage" };
 const humanName = (key) => NAME_OVERRIDES[key] || key.split(/[_]+/).map((w) => ACRONYMS[w] || (w.length ? w[0].toUpperCase() + w.slice(1) : w)).join(" ");
 const slug = (key) => key.toLowerCase().replace(/^google_/, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
@@ -50,7 +51,8 @@ export function buildCatalog(iconsDir, release = "Google Cloud icons") {
   for (const f of walk(iconsDir).filter((f) => f.endsWith(".svg")).sort()) {
     const key = path.basename(f, ".svg");
     if (rel(f).startsWith("general/")) { general.push({ key, id: key, name: key.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "), file: rel(f) }); continue; }
-    const entry = { key, id: slug(key), name: humanName(key), category: categoryOf(key), file: rel(f) };
+    const isCat = rel(f).startsWith("categories/");
+    const entry = isCat ? { key, id: key.replace(/_/g, "-"), name: `${CATEGORY_NAMES[key] || key.replace(/^category_/, "").replace(/_/g, " ")} (category)`, category: "categories", file: rel(f) } : { key, id: slug(key), name: humanName(key), category: categoryOf(key), file: rel(f) };
     byKey.set(key, entry);
     services.push(entry);
   }

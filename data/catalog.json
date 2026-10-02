@@ -3,6 +3,7 @@
  "categories": {
   "ai-ml": "#4285F4",
   "analytics": "#4285F4",
+  "categories": "#4285F4",
   "compute": "#4285F4",
   "containers": "#4285F4",
   "databases": "#4285F4",
@@ -402,6 +403,188 @@
    "name": "Stream Suite",
    "category": "analytics",
    "file": "products/stream_suite.svg"
+  },
+  {
+   "key": "category_agents",
+   "id": "category-agents",
+   "name": "Agents (category)",
+   "category": "categories",
+   "file": "categories/category_agents.svg"
+  },
+  {
+   "key": "category_ai_machine_learning",
+   "id": "category-ai-machine-learning",
+   "name": "AI and Machine Learning (category)",
+   "category": "categories",
+   "file": "categories/category_ai_machine_learning.svg"
+  },
+  {
+   "key": "category_business_intelligence",
+   "id": "category-business-intelligence",
+   "name": "Business Intelligence (category)",
+   "category": "categories",
+   "file": "categories/category_business_intelligence.svg"
+  },
+  {
+   "key": "category_collaboration",
+   "id": "category-collaboration",
+   "name": "Collaboration (category)",
+   "category": "categories",
+   "file": "categories/category_collaboration.svg"
+  },
+  {
+   "key": "category_compute",
+   "id": "category-compute",
+   "name": "Compute (category)",
+   "category": "categories",
+   "file": "categories/category_compute.svg"
+  },
+  {
+   "key": "category_containers",
+   "id": "category-containers",
+   "name": "Containers (category)",
+   "category": "categories",
+   "file": "categories/category_containers.svg"
+  },
+  {
+   "key": "category_data_analytics",
+   "id": "category-data-analytics",
+   "name": "Data Analytics (category)",
+   "category": "categories",
+   "file": "categories/category_data_analytics.svg"
+  },
+  {
+   "key": "category_databases",
+   "id": "category-databases",
+   "name": "Databases (category)",
+   "category": "categories",
+   "file": "categories/category_databases.svg"
+  },
+  {
+   "key": "category_developer_tools",
+   "id": "category-developer-tools",
+   "name": "Developer Tools (category)",
+   "category": "categories",
+   "file": "categories/category_developer_tools.svg"
+  },
+  {
+   "key": "category_devops",
+   "id": "category-devops",
+   "name": "DevOps (category)",
+   "category": "categories",
+   "file": "categories/category_devops.svg"
+  },
+  {
+   "key": "category_hybrid_multicloud",
+   "id": "category-hybrid-multicloud",
+   "name": "Hybrid and Multicloud (category)",
+   "category": "categories",
+   "file": "categories/category_hybrid_multicloud.svg"
+  },
+  {
+   "key": "category_integration_services",
+   "id": "category-integration-services",
+   "name": "Integration Services (category)",
+   "category": "categories",
+   "file": "categories/category_integration_services.svg"
+  },
+  {
+   "key": "category_management_tools",
+   "id": "category-management-tools",
+   "name": "Management Tools (category)",
+   "category": "categories",
+   "file": "categories/category_management_tools.svg"
+  },
+  {
+   "key": "category_maps_geospatial",
+   "id": "category-maps-geospatial",
+   "name": "Maps and Geospatial (category)",
+   "category": "categories",
+   "file": "categories/category_maps_geospatial.svg"
+  },
+  {
+   "key": "category_marketplace",
+   "id": "category-marketplace",
+   "name": "Marketplace (category)",
+   "category": "categories",
+   "file": "categories/category_marketplace.svg"
+  },
+  {
+   "key": "category_media_services",
+   "id": "category-media-services",
+   "name": "Media Services (category)",
+   "category": "categories",
+   "file": "categories/category_media_services.svg"
+  },
+  {
+   "key": "category_migration",
+   "id": "category-migration",
+   "name": "Migration (category)",
+   "category": "categories",
+   "file": "categories/category_migration.svg"
+  },
+  {
+   "key": "category_mixed_reality",
+   "id": "category-mixed-reality",
+   "name": "Mixed Reality (category)",
+   "category": "categories",
+   "file": "categories/category_mixed_reality.svg"
+  },
+  {
+   "key": "category_networking",
+   "id": "category-networking",
+   "name": "Networking (category)",
+   "category": "categories",
+   "file": "categories/category_networking.svg"
+  },
+  {
+   "key": "category_observability",
+   "id": "category-observability",
+   "name": "Observability (category)",
+   "category": "categories",
+   "file": "categories/category_observability.svg"
+  },
+  {
+   "key": "category_operations",
+   "id": "category-operations",
+   "name": "Operations (category)",
+   "category": "categories",
+   "file": "categories/category_operations.svg"
+  },
+  {
+   "key": "category_security_identity",
+   "id": "category-security-identity",
+   "name": "Security and Identity (category)",
+   "category": "categories",
+   "file": "categories/category_security_identity.svg"
+  },
+  {
+   "key": "category_serverless_computing",
+   "id": "category-serverless-computing",
+   "name": "Serverless Computing (category)",
+   "category": "categories",
+   "file": "categories/category_serverless_computing.svg"
+  },
+  {
+   "key": "category_storage",
+   "id": "category-storage",
+   "name": "Storage (category)",
+   "category": "categories",
+   "file": "categories/category_storage.svg"
+  },
+  {
+   "key": "category_web_mobile",
+   "id": "category-web-mobile",
+   "name": "Web and Mobile (category)",
+   "category": "categories",
+   "file": "categories/category_web_mobile.svg"
+  },
+  {
+   "key": "category_web3",
+   "id": "category-web3",
+   "name": "Web3 (category)",
+   "category": "categories",
+   "file": "categories/category_web3.svg"
   },
   {
    "key": "bare_metal_solutions",

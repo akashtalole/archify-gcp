@@ -7,7 +7,7 @@ engine here are original. It is also the Google Cloud sibling of [archify-aws](h
 
 ## Google Cloud icons
 Not redistributed in this repository. `npm run icons:fetch` downloads the official icon packages from Google (<https://cloud.google.com/icons>:
-`google-cloud-legacy-icons.zip` and `core-products-icons.zip`) into `assets/gcp-icons/` (git-ignored). The icons are © Google LLC and subject to Google's icon terms:
+`google-cloud-legacy-icons.zip`, `core-products-icons.zip` and `category-icons.zip`) into `assets/gcp-icons/` (git-ignored). The icons are © Google LLC and subject to Google's icon terms:
 use them to depict Google Cloud architecture, do not alter them, and do not imply Google endorsement. Rendered diagrams embed the icons they use — check the current
 Google terms before publishing diagrams widely.
 
