@@ -1,0 +1,104 @@
+{
+  "ok": true,
+  "tool": "archify-gcp",
+  "version": "0.1.0",
+  "iconRelease": "Google Cloud icons (legacy product set + core products set)",
+  "input": {
+    "path": "examples/multi-agent-adk-cloud-run/agent-delivery.dataflow.json",
+    "sha256": "d67c8880004b52fbd1bb76d50b7fa20832250686804b65200abcd79bd1e65e3b"
+  },
+  "stages": [
+    {
+      "name": "validate",
+      "status": "pass",
+      "detail": {
+        "type": "dataflow",
+        "nodes": 11,
+        "groups": 5,
+        "edges": 10
+      }
+    },
+    {
+      "name": "analyze",
+      "status": "pass",
+      "detail": {
+        "cost": false,
+        "review": true
+      }
+    },
+    {
+      "name": "render",
+      "status": "pass",
+      "detail": {}
+    },
+    {
+      "name": "check",
+      "status": "pass",
+      "detail": {
+        "warnings": 3,
+        "standalone": true
+      }
+    },
+    {
+      "name": "browser-check",
+      "status": "pass",
+      "detail": {
+        "viewport": "1440x900",
+        "minFontPx": 10.5,
+        "overflowX": 0,
+        "consoleErrors": 0,
+        "viewerNodes": 11,
+        "viewerEdges": 10
+      }
+    },
+    {
+      "name": "export-png",
+      "status": "pass",
+      "detail": {}
+    }
+  ],
+  "outputs": {
+    "html": {
+      "path": "examples/multi-agent-adk-cloud-run/out/agent-delivery.dataflow.html",
+      "sha256": "c5f59d46d99e854b689f7b54bcc97a6dcab138368ee15faa8ef12d90ad9ef5d8",
+      "bytes": 188899
+    },
+    "svg": {
+      "path": "examples/multi-agent-adk-cloud-run/out/agent-delivery.dataflow.svg",
+      "sha256": "9e64b5b22d2b518e61dabccd1425a9e338a28e8085b70e0d21bca6687398a9b1"
+    },
+    "drawio": {
+      "path": "examples/multi-agent-adk-cloud-run/out/agent-delivery.dataflow.drawio",
+      "sha256": "f32f8d751f6433b13af53c5f799d87124f6301bc3f4b568d4a6464f040330ce0"
+    },
+    "png": {
+      "path": "examples/multi-agent-adk-cloud-run/out/agent-delivery.dataflow.png",
+      "sha256": "85a77a403bed025c432f1ce48103f075c0a57f9753a3da50542047be7ba9df71"
+    }
+  },
+  "summary": {
+    "type": "dataflow",
+    "nodes": 11,
+    "groups": 5,
+    "edges": 10,
+    "size": {
+      "width": 1374,
+      "height": 660
+    }
+  },
+  "review": {
+    "advisory": true,
+    "mode": "full",
+    "lens": "general",
+    "findings": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 0,
+      "Low": 0
+    },
+    "evidenced": 9,
+    "bps": 174,
+    "ids": []
+  },
+  "visualReview": "not-performed"
+}

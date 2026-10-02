@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="az theme-light" viewBox="0 0 1790 1569" width="1790" height="1569" role="img" aria-label="One order question across ADK agents: coordinator, A2A specialists and MCP Toolbox">
+<title>One order question across ADK agents: coordinator, A2A specialists and MCP Toolbox</title>
+<style>.az{--bg:#ffffff;--fg:#000000;--muted:#545b64;--line:#232F3E;--halo:#ffffff;--badge:#000000;--badgeFg:#ffffff}
+.az.theme-dark{--bg:#161E2D;--fg:#ffffff;--muted:#aab4c3;--line:#d5dbdb;--halo:#161E2D;--badge:#ffffff;--badgeFg:#000000}
+.az .bg{fill:var(--bg)}
+.az text{font-family:Arial,Helvetica,sans-serif;fill:var(--fg)}
+.az .title{font-size:22px;font-weight:700}
+.az .subtitle{font-size:13px;fill:var(--muted)}
+.az .glabel,.az .nlabel,.az .elabel{font-size:12px}
+.az .nsub{font-size:10.5px;fill:var(--muted)}
+.az .elabel{paint-order:stroke;stroke:var(--halo);stroke-width:4px;stroke-linejoin:round}
+.az .eline{stroke:var(--line)}
+.az .arw{fill:none;stroke:var(--line);stroke-width:1.6}
+.az .badge circle{fill:var(--badge)}.az .badge circle.hit{fill:transparent}.az .badge{cursor:help}.az .badge:hover circle:not(.hit){stroke:#ff9900;stroke-width:3}
+.az .badge text{fill:var(--badgeFg);font-weight:700;font-size:12px}
+.az .only-dark{display:none}.az.theme-dark .only-dark{display:inline}.az.theme-dark .only-light{display:none}
+.az.theme-dark .grect[data-fill-dark="none"]{fill:none}
+.az .dim{opacity:.18}.az .hl .eline{stroke-width:3}
+.az .edge,.az .node{transition:opacity .12s}
+.az .life{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 4;opacity:.7}
+.az .asyncdot{fill:var(--line)}
+.az .note rect{fill:none;stroke:var(--muted);stroke-width:1.25}.az .note text{font-size:11.5px}
+.az .frag rect{stroke:var(--muted);stroke-width:1.25}.az .fragtab{fill:var(--bg);stroke:var(--muted);stroke-width:1.25}
+.az .fraglabel{font-size:11px;font-weight:700}.az .fragelse{stroke:var(--muted);stroke-dasharray:6 4}</style>
+<defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="arw" d="M1.5 1.5 L8.5 5 L1.5 8.5"/></marker><symbol id="gen-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.4" fill="#4285F4"/><path d="M2.5 19.5c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6z" fill="#4285F4"/><circle cx="17" cy="9" r="2.8" fill="#8AB4F8"/><path d="M16 13.8c3 .1 5.5 2 5.5 5.7H17c0-2-.4-3.8-1-5.7z" fill="#8AB4F8"/></symbol><symbol id="svc-cloud_run" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-cloud_run__st0 {
+        fill: none;
+      }
+
+      .svc-cloud_run__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-cloud_run__st2 {
+        fill: #34a853;
+      }
+
+      .svc-cloud_run__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-cloud_run__st4 {
+        fill: #ea4335;
+      }
+    </style>
+  </defs>
+  <g id="svc-cloud_run__bounding_box">
+    <rect class="svc-cloud_run__st0" width="512" height="512"/>
+  </g>
+  <g id="svc-cloud_run__art">
+    <path class="svc-cloud_run__st3" d="M144.4,272c-6.4,0-12.4-3.8-14.9-10.1L55.4,75.9c-3.3-8.2.7-17.5,8.9-20.8,8.2-3.3,17.5.7,20.8,8.9l74.2,186c3.3,8.2-.7,17.5-8.9,20.8-1.9.8-3.9,1.1-5.9,1.1h-.1Z"/>
+    <g id="svc-cloud_run__b">
+      <path class="svc-cloud_run__st4" d="M256,272c-6.4,0-12.4-3.8-14.9-10.1l-74.1-186c-2.6-6.6-.6-14.1,5-18.5s13.4-4.5,19.2-.4l260.1,186c7.2,5.1,8.9,15.1,3.7,22.3s-15.1,8.9-22.3,3.7L216.9,114.7l54,135.3c3.3,8.2-.7,17.5-8.9,20.8-1.9.8-4,1.1-5.9,1.1h-.1Z"/>
+    </g>
+    <path class="svc-cloud_run__st2" d="M127.2,256l-72,180c-3.3,8.2.7,17.5,8.9,20.8,3.1,1.2,4,1.1,5.9,1.1,6.3,0,12.4-3.8,14.9-10.1l74.4-186c.8-2,1.1-4,1.1-5.9h-33.2Z"/>
+    <path class="svc-cloud_run__st1" d="M414.5,256l-197.7,141.2,54.1-135.3c.8-2,1.1-4,1.1-5.9h-33.2l-72,180c-2.6,6.6-.6,14.1,5,18.5,2.9,2.3,6.4,3.4,9.9,3.4s6.5-1,9.3-3l260.4-186c4.4-3.1,6.7-8,6.7-13h-43.6Z"/>
+  </g></symbol><symbol id="svc-category_agents" viewBox="0 0 512 512"><g id="svc-category_agents__bounding_box">
+    <rect width="512" height="512" fill="none"/>
+  </g>
+  <g id="svc-category_agents__art">
+    <path d="M256.083,438.958h-.025c-6.531-.01-12.403-3.982-14.831-10.046-.21-.521-21.989-53.918-63.233-94.966-41.269-41.072-94.336-62.688-94.867-62.902-6.066-2.438-10.046-8.326-10.039-14.865.007-6.537,3.983-12.415,10.053-14.842.964-.39,53.504-21.883,94.854-63.036,41.476-41.278,63-94.697,63.213-95.231,2.422-6.092,8.316-10.098,14.871-10.098h.017c6.562.007,12.456,4.012,14.867,10.113.206.521,21.716,53.924,63.206,95.216,41.538,41.341,94.333,62.827,94.861,63.039,6.064,2.436,10.045,8.316,10.045,14.852s-3.969,12.416-10.033,14.851c-.52.209-53.737,21.965-94.874,62.904-41.11,40.916-63.029,94.463-63.245,94.999-2.444,6.048-8.317,10.013-14.838,10.013h-.002ZM125.551,256.183c21.069,11.566,49.712,29.899,75.016,55.082,25.399,25.278,43.886,54.093,55.524,75.267,11.659-21.198,30.162-50.046,55.502-75.267,25.252-25.131,53.939-43.484,75.035-55.069-21.021-11.563-49.611-29.911-75.035-55.213-25.47-25.349-43.907-54.14-55.514-75.348-11.608,21.21-30.048,50.005-55.512,75.348-25.409,25.288-53.996,43.635-75.017,55.2h0Z" fill="#4285f4"/>
+    <path d="M394.5,181c-4.095,0-8.189-1.562-11.313-4.687l-47.5-47.5c-6.249-6.248-6.249-16.379,0-22.627l47.5-47.5c6.248-6.249,16.379-6.249,22.627,0l47.5,47.5c6.249,6.248,6.249,16.379,0,22.627l-47.5,47.5c-3.124,3.124-7.219,4.687-11.313,4.687h-.001ZM369.627,117.5l24.873,24.873,24.873-24.873-24.873-24.873-24.873,24.873Z" fill="#9aa0a6"/>
+    <path d="M117.5,181c-4.095,0-8.189-1.562-11.313-4.687l-47.5-47.5c-6.249-6.248-6.249-16.379,0-22.627l47.5-47.5c6.248-6.249,16.379-6.249,22.627,0l47.5,47.5c6.249,6.248,6.249,16.379,0,22.627l-47.5,47.5c-3.124,3.124-7.219,4.687-11.313,4.687h0ZM92.627,117.5l24.873,24.873,24.873-24.873-24.873-24.873-24.873,24.873Z" fill="#4285f4"/>
+    <path d="M394.5,458c-4.095,0-8.189-1.562-11.313-4.687l-47.5-47.5c-6.249-6.248-6.249-16.379,0-22.627l47.5-47.5c6.248-6.248,16.379-6.248,22.627,0l47.5,47.5c6.249,6.248,6.249,16.379,0,22.627l-47.5,47.5c-3.124,3.124-7.219,4.687-11.313,4.687h-.001ZM369.627,394.5l24.873,24.873,24.873-24.873-24.873-24.873-24.873,24.873Z" fill="#4285f4"/>
+    <path d="M117.5,458c-4.095,0-8.189-1.562-11.313-4.687l-47.5-47.5c-6.249-6.248-6.249-16.379,0-22.627l47.5-47.5c6.248-6.248,16.379-6.248,22.627,0l47.5,47.5c6.249,6.248,6.249,16.379,0,22.627l-47.5,47.5c-3.124,3.124-7.219,4.687-11.313,4.687h0ZM92.627,394.5l24.873,24.873,24.873-24.873-24.873-24.873-24.873,24.873Z" fill="#9aa0a6"/>
+    <path d="M334.166,333.946c41.137-40.94,94.354-62.695,94.874-62.904,6.064-2.435,10.032-8.315,10.033-14.851,0-6.535-3.98-12.416-10.045-14.851-.528-.212-53.323-21.698-94.861-63.039-.072-.071-.15-.131-.223-.2l-22.604,22.604c.087.091.163.189.253.278,25.424,25.302,54.015,43.649,75.035,55.213-21.096,11.585-49.783,29.939-75.035,55.069-25.34,25.221-43.843,54.068-55.502,75.267-11.622-21.144-30.074-49.907-55.418-75.16l-22.628,22.628c41.21,41.041,62.971,94.392,63.181,94.913,2.428,6.064,8.3,10.035,14.831,10.046h.025c6.521,0,12.393-3.966,14.838-10.013.216-.536,22.135-54.083,63.245-94.999h.001Z" fill="#9aa0a6"/>
+  </g></symbol><symbol id="svc-data_loss_prevention_api" viewBox="0 0 24 24"><defs><style>.svc-data_loss_prevention_api__cls-1{fill:#4285f4;}.svc-data_loss_prevention_api__cls-2{fill:#669df6;}.svc-data_loss_prevention_api__cls-3{fill:#aecbfa;}</style></defs><g data-name="Product Icons"><path class="svc-data_loss_prevention_api__cls-1" d="M14.86,5.44A5.48,5.48,0,0,0,7.8,6.5a5.31,5.31,0,0,0-1.34,3.6,5.49,5.49,0,0,0,2.41,4.53l-.17.28-.56.16c-.89,1.56-1.22,2-2.06,3.48l1.48.85c.85-1.5,1.17-1.94,2.05-3.48l-.16-.61.14-.26a5.49,5.49,0,0,0,5.27-9.61Zm-1.92,8.3A3.79,3.79,0,1,1,15.6,9.09h0A3.8,3.8,0,0,1,12.94,13.74Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M2.05,8.78l.13-1.07H3.36v.35H2.52l0,.45a.68.68,0,0,1,.79.11.78.78,0,0,1,.17.53.77.77,0,0,1-.09.36.53.53,0,0,1-.24.25.65.65,0,0,1-.38.09.73.73,0,0,1-.36-.08.66.66,0,0,1-.26-.21A.63.63,0,0,1,2,9.24h.42a.27.27,0,0,0,.09.2.25.25,0,0,0,.2.07.23.23,0,0,0,.22-.1A.43.43,0,0,0,3,9.12a.37.37,0,0,0-.09-.27.33.33,0,0,0-.25-.1.41.41,0,0,0-.24.08l0,0Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M5.45,9.82H5V8.21l-.51.15V8l.88-.31h0Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M3,12.66H2.59V11.05l-.5.15v-.34L3,10.55H3Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M5.86,11.79a1.13,1.13,0,0,1-.18.67.74.74,0,0,1-1,0l0,0a1,1,0,0,1-.19-.65v-.39a1.06,1.06,0,0,1,.18-.67.73.73,0,0,1,1,0l0,0a1.08,1.08,0,0,1,.19.65Zm-.42-.43A.83.83,0,0,0,5.37,11a.25.25,0,0,0-.23-.12.24.24,0,0,0-.22.11.75.75,0,0,0-.07.36v.51a.85.85,0,0,0,.07.39.23.23,0,0,0,.23.12.23.23,0,0,0,.22-.12.77.77,0,0,0,.07-.37Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M19.13,9.74h-.41V8.12l-.51.16V7.94l.88-.32h0Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M20.62,8.7l.13-1.07h1.18V8h-.84L21,8.43a.65.65,0,0,1,.31-.08.63.63,0,0,1,.48.19.74.74,0,0,1,.17.52.81.81,0,0,1-.09.37.6.6,0,0,1-.25.25.79.79,0,0,1-.38.09.85.85,0,0,1-.35-.08.62.62,0,0,1-.26-.22.58.58,0,0,1-.1-.32H21a.35.35,0,0,0,.1.21.29.29,0,0,0,.2.07.26.26,0,0,0,.22-.1A.44.44,0,0,0,21.58,9a.41.41,0,0,0-.09-.28.34.34,0,0,0-.25-.09.34.34,0,0,0-.24.07l0,0Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M19.54,11.79a1.13,1.13,0,0,1-.18.67.74.74,0,0,1-1,0l0,0a1,1,0,0,1-.19-.65v-.39a1.06,1.06,0,0,1,.18-.67.73.73,0,0,1,1,0l0,0a1.08,1.08,0,0,1,.19.65Zm-.42-.43a.83.83,0,0,0-.07-.38.25.25,0,0,0-.23-.12.24.24,0,0,0-.22.11.75.75,0,0,0-.07.36v.51a.85.85,0,0,0,.07.39.23.23,0,0,0,.23.12.23.23,0,0,0,.22-.12.9.9,0,0,0,.07-.37Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M20.62,11.62l.13-1.07h1.18v.35h-.84l-.05.45a.65.65,0,0,1,.31-.08.63.63,0,0,1,.48.19A.78.78,0,0,1,22,12a.77.77,0,0,1-.09.36.51.51,0,0,1-.25.25.69.69,0,0,1-.38.09.72.72,0,0,1-.35-.08.59.59,0,0,1-.26-.21.63.63,0,0,1-.1-.32H21a.32.32,0,0,0,.1.2.25.25,0,0,0,.2.07.23.23,0,0,0,.22-.1.43.43,0,0,0,.08-.29.37.37,0,0,0-.09-.27.31.31,0,0,0-.25-.1.35.35,0,0,0-.24.08l0,0Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M9.73,12.11c0-.32,0-.63,0-.94a.86.86,0,0,1,.35-.62,2.43,2.43,0,0,1,.83-.43,2.87,2.87,0,0,1,2.42.28,1.05,1.05,0,0,1,.27.2.9.9,0,0,1,.3.75c0,.25,0,.5,0,.76Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M11.81,9.5a1.08,1.08,0,1,1,1.08-1.07h0A1.09,1.09,0,0,1,11.81,9.5Z"/></g></symbol><symbol id="svc-vertexai" viewBox="0 0 512 512"><g id="svc-vertexai__bounding_box">
+    <rect width="512" height="512" fill="none"/>
+  </g>
+  <g id="svc-vertexai__art">
+    <path d="M128,244.99c-8.84,0-16-7.16-16-16v-95.97c0-8.84,7.16-16,16-16s16,7.16,16,16v95.97c0,8.84-7.16,16-16,16Z" fill="#ea4335"/>
+    <path d="M256,458c-2.98,0-5.97-.83-8.59-2.5l-186-122c-7.46-4.74-9.65-14.63-4.91-22.09,4.75-7.46,14.64-9.65,22.09-4.91l177.41,116.53,177.41-116.53c7.45-4.74,17.34-2.55,22.09,4.91,4.74,7.46,2.55,17.34-4.91,22.09l-186,122c-2.62,1.67-5.61,2.5-8.59,2.5Z" fill="#fbbc04"/>
+    <path d="M256,388.03c-8.84,0-16-7.16-16-16v-73.06c0-8.84,7.16-16,16-16s16,7.16,16,16v73.06c0,8.84-7.16,16-16,16Z" fill="#34a853"/>
+    <circle cx="128" cy="70" r="16" fill="#ea4335"/>
+    <circle cx="128" cy="292" r="16" fill="#ea4335"/>
+    <path d="M384.23,308.01c-8.82,0-15.98-7.14-16-15.97l-.23-94.01c-.02-8.84,7.13-16.02,15.97-16.03h.04c8.82,0,15.98,7.14,16,15.97l.23,94.01c.02,8.84-7.13,16.02-15.97,16.03h-.04Z" fill="#4285f4"/>
+    <circle cx="384" cy="70" r="16" fill="#4285f4"/>
+    <circle cx="384" cy="134" r="16" fill="#4285f4"/>
+    <path d="M320,220.36c-8.84,0-16-7.16-16-16v-103.02c0-8.84,7.16-16,16-16s16,7.16,16,16v103.02c0,8.84-7.16,16-16,16Z" fill="#fbbc04"/>
+    <circle cx="256" cy="171" r="16" fill="#34a853"/>
+    <circle cx="256" cy="235" r="16" fill="#34a853"/>
+    <circle cx="320" cy="265" r="16" fill="#fbbc04"/>
+    <circle cx="320" cy="329" r="16" fill="#fbbc04"/>
+    <path d="M192,217.36c-8.84,0-16-7.16-16-16v-100.02c0-8.84,7.16-16,16-16s16,7.16,16,16v100.02c0,8.84-7.16,16-16,16Z" fill="#fbbc04"/>
+    <circle cx="192" cy="265" r="16" fill="#fbbc04"/>
+    <circle cx="192" cy="329" r="16" fill="#fbbc04"/>
+  </g></symbol><symbol id="svc-alloydb" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-alloydb__st0 {
+        fill: none;
+      }
+
+      .svc-alloydb__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-alloydb__st2 {
+        fill: #34a853;
+      }
+
+      .svc-alloydb__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-alloydb__st4 {
+        fill: #ea4335;
+      }
+
+      .svc-alloydb__st5 {
+        fill: #4384f4;
+      }
+    </style>
+  </defs>
+  <rect id="svc-alloydb__bounding_box" class="svc-alloydb__st0" width="512" height="512"/>
+  <g id="svc-alloydb__art">
+    <path class="svc-alloydb__st3" d="M256,272c-2.5,0-5-.6-7.3-1.8L62.4,174.1c-5.4-2.8-8.7-8.4-8.7-14.4s3.6-11.6,9-14.2L249,55.3c4.4-2.1,9.5-2.1,13.9,0l186.2,90.1c5.5,2.6,9,8.1,9,14.2s-3.3,11.6-8.7,14.4l-186.2,96.2c-2.3,1.2-4.8,1.8-7.3,1.8h0ZM105.5,160.3l150.5,77.7,150.5-77.7-150.5-72.8-150.5,72.8Z"/>
+    <path class="svc-alloydb__st1" d="M458.2,256.6h0v-96.6c0-8.8-7.1-16-16-16s-16,7.1-16,16v86.9l-170,87.8-170-87.8-8.7-4.5c-7.8-4.1-17.5-1-21.5,6.9-1.2,2.3-1.8,4.9-1.8,7.3,0,5.8,3.2,11.4,8.7,14.2l23.3,12,162.7,84c.5.3,1.1.5,1.6.7,1.9.7,3.8,1.1,5.7,1.1h0c2.5,0,5-.6,7.3-1.8l27.5-14.2,135.2-69.8v159.2c0,8.8,7.1,16,16,16s16-7.1,16-16v-185.3h0q0-.1,0-.1Z"/>
+    <path class="svc-alloydb__st2" d="M256.2,334.7l-170-87.8-.4-86.9c0-8.8-7.2-16-16-16s-16,7.1-16,16v96.6h0v185.5c0,8.8,7.2,16,16,16s16-7.1,16-16l.4-159.2,162.7,84c.5.3,1.1.5,1.6.7,1.9.7,3.8,1.1,5.7,1.1h0c2.5,0,5-.6,7.3-1.8l27.5-14.2-34.8-18h0Z"/>
+    <polygon class="svc-alloydb__st5" points="256 194.5 192 161.8 256 131.5 320 161.8 256 194.5"/>
+    <path class="svc-alloydb__st4" d="M256,272c-5.8,0-11.4-3.2-14.2-8.7-4.1-7.9-1-17.5,6.9-21.6l157.8-81.5-187.2-90.6c4.7-2.3,20.7-10,29.1-14.1,5.2-2.6,9.7-2.6,14.6-.3l186.2,90.1c5.5,2.6,9,8.1,9,14.2s-3.3,11.6-8.7,14.4l-186.2,96.2c-2.4,1.2-4.9,1.8-7.3,1.8h0Z"/>
+    <path class="svc-alloydb__st0" d="M105.5,160.3l150.5,77.7,150.5-77.7-150.5-72.8-150.5,72.8Z"/>
+    <path class="svc-alloydb__st3" d="M263.3,270.2c-2.3,1.2-4.8,1.8-7.3,1.8s-5-.6-7.3-1.8L62.4,174.1c-5.4-2.8-8.7-8.4-8.7-14.4s3.6-11.6,9-14.2l13.2-6.4,29.5,21.3,185.3,95.7"/>
+  </g></symbol></defs>
+<rect class="bg" width="1790" height="1569"/>
+<text class="title" x="40" y="46">One order question across ADK agents: coordinator, A2A specialists and MCP Toolbox</text>
+<text class="subtitle" x="40" y="70">The coordinator plans with Gemini, calls the remote inventory and shipping agents over A2A in parallel, and the specialists read the database only through MCP Toolbox</text>
+<g class="group"><rect x="238" y="116" width="1504" height="1413" fill="none" stroke="#3C4043" stroke-width="1.25"/>
+<text class="glabel" x="248" y="136">Google Cloud</text>
+</g>
+<line class="life" x1="135" y1="276" x2="135" y2="1519"/>
+<line class="life" x1="325" y1="276" x2="325" y2="1519"/>
+<line class="life" x1="515" y1="276" x2="515" y2="1519"/>
+<line class="life" x1="705" y1="276" x2="705" y2="1519"/>
+<line class="life" x1="895" y1="276" x2="895" y2="1519"/>
+<line class="life" x1="1085" y1="276" x2="1085" y2="1519"/>
+<line class="life" x1="1275" y1="276" x2="1275" y2="1519"/>
+<line class="life" x1="1465" y1="276" x2="1465" y2="1519"/>
+<line class="life" x1="1655" y1="276" x2="1655" y2="1519"/>
+<g class="frag"><rect x="423" y="817" width="1324" height="396" fill="none"/><path class="fragtab" d="M423 817 h196 v18 l-8 8 h-188 z"/><text class="fraglabel" x="429" y="831">par [specialists in parallel]</text>
+</g>
+<g class="edge" data-from="user" data-to="ui" data-step="1" data-label="Where is order 4711, and can we ship it today?" data-tip="The operator asks in the chat UI; Identity-Aware Proxy has already authenticated them.">
+<path class="eline" fill="none" stroke-width="2" d="M135 353 H325" marker-end="url(#arw)"/>
+<text class="elabel" x="230" y="317" text-anchor="middle">Where is order</text>
+<text class="elabel" x="230" y="331" text-anchor="middle">4711, and can we</text>
+<text class="elabel" x="230" y="345" text-anchor="middle">ship it today?</text>
+<g class="badge"><title>1. The operator asks in the chat UI; Identity-Aware Proxy has already authenticated them.</title><circle cx="135" cy="353" r="11"/><circle class="hit" cx="135" cy="353" r="16"/><text x="135" y="357.5" text-anchor="middle">1</text></g>
+</g>
+<g class="edge" data-from="ui" data-to="root" data-step="2" data-label="run (session id)" data-tip="The UI calls the coordinator's ADK API server with an ID token for its Cloud Run service; the session service keeps the conversation state.">
+<path class="eline" fill="none" stroke-width="2" d="M325 421 H515" marker-end="url(#arw)"/>
+<text class="elabel" x="420" y="413" text-anchor="middle">run (session id)</text>
+<g class="badge"><title>2. The UI calls the coordinator's ADK API server with an ID token for its Cloud Run service; the session service keeps the conversation state.</title><circle cx="325" cy="421" r="11"/><circle class="hit" cx="325" cy="421" r="16"/><text x="325" y="425.5" text-anchor="middle">2</text></g>
+</g>
+<g class="edge" data-from="root" data-to="armor" data-step="3" data-label="screen prompt" data-tip="Coordinator agent → Model Armor (screen prompt)">
+<path class="eline" fill="none" stroke-width="2" d="M515 475 H705" marker-end="url(#arw)"/>
+<text class="elabel" x="610" y="467" text-anchor="middle">screen prompt</text>
+<g class="badge"><title>3. Coordinator agent → Model Armor (screen prompt)</title><circle cx="515" cy="475" r="11"/><circle class="hit" cx="515" cy="475" r="16"/><text x="515" y="479.5" text-anchor="middle">3</text></g>
+</g>
+<g class="edge" data-from="armor" data-to="root" data-step="4" data-label="allowed">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M705 529 H515" marker-end="url(#arw)"/>
+<text class="elabel" x="610" y="521" text-anchor="middle">allowed</text>
+</g>
+<g class="edge" data-from="root" data-to="gem" data-step="4" data-label="plan: which agents?" data-tip="The LlmAgent asks Gemini which sub-agents or tools answer the question.">
+<path class="eline" fill="none" stroke-width="2" d="M515 583 H895" marker-end="url(#arw)"/>
+<text class="elabel" x="705" y="575" text-anchor="middle">plan: which agents?</text>
+<g class="badge"><title>4. The LlmAgent asks Gemini which sub-agents or tools answer the question.</title><circle cx="515" cy="583" r="11"/><circle class="hit" cx="515" cy="583" r="16"/><text x="515" y="587.5" text-anchor="middle">4</text></g>
+</g>
+<g class="edge" data-from="gem" data-to="root" data-step="5" data-label="call inventory + shipping">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M895 637 H515" marker-end="url(#arw)"/>
+<text class="elabel" x="705" y="629" text-anchor="middle">call inventory + shipping</text>
+</g>
+<g class="edge" data-from="root" data-to="root" data-step="5" data-label="planner sub-agent (local)" data-tip="Local sub-agents run in the coordinator's process; no network hop.">
+<path class="eline" fill="none" stroke-width="2" d="M515 686 h40 v24 h-40" marker-end="url(#arw)"/>
+<text class="elabel" x="565" y="695">planner sub-agent</text>
+<text class="elabel" x="565" y="709">(local)</text>
+<g class="badge"><title>5. Local sub-agents run in the coordinator's process; no network hop.</title><circle cx="537" cy="686" r="11"/><circle class="hit" cx="537" cy="686" r="16"/><text x="537" y="690.5" text-anchor="middle">5</text></g>
+</g>
+<g class="note"><rect x="475" y="738" width="840" height="71"/><text x="895" y="756" text-anchor="middle">Remote agents are discovered</text><text x="895" y="771" text-anchor="middle">through their A2A agent card and</text><text x="895" y="786" text-anchor="middle">called with a Google ID token.</text></g>
+<g class="edge" data-from="root" data-to="inv" data-step="6" data-label="A2A: stock for 4711" data-tip="The coordinator calls the inventory agent through RemoteA2aAgent.">
+<path class="eline" fill="none" stroke-width="2" d="M515 864 H1085" marker-end="url(#arw)"/>
+<text class="elabel" x="800" y="856" text-anchor="middle">A2A: stock for 4711</text>
+<g class="badge"><title>6. The coordinator calls the inventory agent through RemoteA2aAgent.</title><circle cx="515" cy="864" r="11"/><circle class="hit" cx="515" cy="864" r="16"/><text x="515" y="868.5" text-anchor="middle">6</text></g>
+</g>
+<g class="edge" data-from="root" data-to="ship" data-step="7" data-label="A2A: carrier cutoff" data-tip="Shipping is called in parallel with inventory.">
+<path class="eline" fill="none" stroke-width="2" d="M515 918 H1275" marker-end="url(#arw)"/>
+<text class="elabel" x="895" y="910" text-anchor="middle">A2A: carrier cutoff</text>
+<g class="badge"><title>7. Shipping is called in parallel with inventory.</title><circle cx="515" cy="918" r="11"/><circle class="hit" cx="515" cy="918" r="16"/><text x="515" y="922.5" text-anchor="middle">7</text></g>
+</g>
+<g class="edge" data-from="inv" data-to="tb" data-step="8" data-label="MCP: stock_by_order" data-tip="Inventory agent → MCP Toolbox (MCP: stock_by_order)">
+<path class="eline" fill="none" stroke-width="2" d="M1085 972 H1465" marker-end="url(#arw)"/>
+<text class="elabel" x="1275" y="964" text-anchor="middle">MCP: stock_by_order</text>
+<g class="badge"><title>8. Inventory agent → MCP Toolbox (MCP: stock_by_order)</title><circle cx="1085" cy="972" r="11"/><circle class="hit" cx="1085" cy="972" r="16"/><text x="1085" y="976.5" text-anchor="middle">8</text></g>
+</g>
+<g class="edge" data-from="tb" data-to="db" data-step="9" data-label="SQL" data-tip="MCP Toolbox → AlloyDB (SQL)">
+<path class="eline" fill="none" stroke-width="2" d="M1465 1026 H1655" marker-end="url(#arw)"/>
+<text class="elabel" x="1560" y="1018" text-anchor="middle">SQL</text>
+<g class="badge"><title>9. MCP Toolbox → AlloyDB (SQL)</title><circle cx="1465" cy="1026" r="11"/><circle class="hit" cx="1465" cy="1026" r="16"/><text x="1465" y="1030.5" text-anchor="middle">9</text></g>
+</g>
+<g class="edge" data-from="db" data-to="tb" data-step="10" data-label="rows">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M1655 1080 H1465" marker-end="url(#arw)"/>
+<text class="elabel" x="1560" y="1072" text-anchor="middle">rows</text>
+</g>
+<g class="edge" data-from="tb" data-to="inv" data-step="10" data-label="tool result">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M1465 1134 H1085" marker-end="url(#arw)"/>
+<text class="elabel" x="1275" y="1126" text-anchor="middle">tool result</text>
+</g>
+<g class="edge" data-from="inv" data-to="root" data-step="10" data-label="in stock, 2 units">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M1085 1188 H515" marker-end="url(#arw)"/>
+<text class="elabel" x="800" y="1180" text-anchor="middle">in stock, 2 units</text>
+</g>
+<g class="edge" data-from="ship" data-to="root" data-step="10" data-label="cutoff 17:00">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M1275 1242 H515" marker-end="url(#arw)"/>
+<text class="elabel" x="895" y="1234" text-anchor="middle">cutoff 17:00</text>
+</g>
+<g class="edge" data-from="root" data-to="gem" data-step="10" data-label="summarize answer" data-tip="Coordinator agent → Gemini (summarize answer)">
+<path class="eline" fill="none" stroke-width="2" d="M515 1296 H895" marker-end="url(#arw)"/>
+<text class="elabel" x="705" y="1288" text-anchor="middle">summarize answer</text>
+<g class="badge"><title>10. Coordinator agent → Gemini (summarize answer)</title><circle cx="515" cy="1296" r="11"/><circle class="hit" cx="515" cy="1296" r="16"/><text x="515" y="1300.5" text-anchor="middle">10</text></g>
+</g>
+<g class="edge" data-from="gem" data-to="root" data-step="11" data-label="final text">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M895 1350 H515" marker-end="url(#arw)"/>
+<text class="elabel" x="705" y="1342" text-anchor="middle">final text</text>
+</g>
+<g class="edge" data-from="root" data-to="ui" data-step="11" data-label="answer + sources">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M515 1404 H325" marker-end="url(#arw)"/>
+<text class="elabel" x="420" y="1396" text-anchor="middle">answer + sources</text>
+</g>
+<g class="edge" data-from="ui" data-to="user" data-step="11" data-label="Order 4711 can ship today">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M325 1465 H135" marker-end="url(#arw)"/>
+<text class="elabel" x="230" y="1443" text-anchor="middle">Order 4711 can</text>
+<text class="elabel" x="230" y="1457" text-anchor="middle">ship today</text>
+</g>
+<g class="node" data-id="user" data-label="Operator" data-service="Users" data-category="General"><title>Operator (Users)</title><use href="#gen-users" x="103" y="164" width="64" height="64"/>
+<text class="nlabel" x="135" y="245" text-anchor="middle">Operator</text>
+</g>
+<g class="node" data-id="ui" data-label="Chat UI" data-service="Cloud Run" data-category="serverless"><title>Chat UI (Cloud Run)</title><use href="#svc-cloud_run" x="293" y="164" width="64" height="64"/>
+<text class="nlabel" x="325" y="245" text-anchor="middle">Chat UI</text>
+<text class="nsub" x="325" y="259" text-anchor="middle">Cloud Run</text>
+</g>
+<g class="node" data-id="root" data-label="Coordinator agent" data-service="Agents (category)" data-category="categories"><title>Coordinator agent (Agents (category))</title><use href="#svc-category_agents" x="483" y="164" width="64" height="64"/>
+<text class="nlabel" x="515" y="245" text-anchor="middle">Coordinator agent</text>
+<text class="nsub" x="515" y="259" text-anchor="middle">ADK root_agent</text>
+</g>
+<g class="node" data-id="armor" data-label="Model Armor" data-service="Data Loss Prevention API" data-category="security"><title>Model Armor (Data Loss Prevention API)</title><use href="#svc-data_loss_prevention_api" x="673" y="164" width="64" height="64"/>
+<text class="nlabel" x="705" y="245" text-anchor="middle">Model Armor</text>
+</g>
+<g class="node" data-id="gem" data-label="Gemini" data-service="Vertex AI" data-category="ai-ml"><title>Gemini (Vertex AI)</title><use href="#svc-vertexai" x="863" y="164" width="64" height="64"/>
+<text class="nlabel" x="895" y="245" text-anchor="middle">Gemini</text>
+<text class="nsub" x="895" y="259" text-anchor="middle">Vertex AI</text>
+</g>
+<g class="node" data-id="inv" data-label="Inventory agent" data-service="Agents (category)" data-category="categories"><title>Inventory agent (Agents (category))</title><use href="#svc-category_agents" x="1053" y="164" width="64" height="64"/>
+<text class="nlabel" x="1085" y="245" text-anchor="middle">Inventory agent</text>
+<text class="nsub" x="1085" y="259" text-anchor="middle">A2A server</text>
+</g>
+<g class="node" data-id="ship" data-label="Shipping agent" data-service="Agents (category)" data-category="categories"><title>Shipping agent (Agents (category))</title><use href="#svc-category_agents" x="1243" y="164" width="64" height="64"/>
+<text class="nlabel" x="1275" y="245" text-anchor="middle">Shipping agent</text>
+<text class="nsub" x="1275" y="259" text-anchor="middle">A2A server</text>
+</g>
+<g class="node" data-id="tb" data-label="MCP Toolbox" data-service="Cloud Run" data-category="serverless"><title>MCP Toolbox (Cloud Run)</title><use href="#svc-cloud_run" x="1433" y="164" width="64" height="64"/>
+<text class="nlabel" x="1465" y="245" text-anchor="middle">MCP Toolbox</text>
+<text class="nsub" x="1465" y="259" text-anchor="middle">Cloud Run</text>
+</g>
+<g class="node" data-id="db" data-label="AlloyDB" data-service="AlloyDB" data-category="databases"><title>AlloyDB (AlloyDB)</title><use href="#svc-alloydb" x="1623" y="164" width="64" height="64"/>
+<text class="nlabel" x="1655" y="245" text-anchor="middle">AlloyDB</text>
+</g>
+</svg>

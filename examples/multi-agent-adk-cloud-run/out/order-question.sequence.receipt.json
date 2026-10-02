@@ -1,0 +1,108 @@
+{
+  "ok": true,
+  "tool": "archify-gcp",
+  "version": "0.1.0",
+  "iconRelease": "Google Cloud icons (legacy product set + core products set)",
+  "input": {
+    "path": "examples/multi-agent-adk-cloud-run/order-question.sequence.json",
+    "sha256": "3b20ef4a6a6fcdea888550ace7e3a546306757200ed0779760149ce32d428a63"
+  },
+  "stages": [
+    {
+      "name": "validate",
+      "status": "pass",
+      "detail": {
+        "type": "sequence",
+        "nodes": 9,
+        "groups": 1,
+        "edges": 19
+      }
+    },
+    {
+      "name": "analyze",
+      "status": "pass",
+      "detail": {
+        "cost": false,
+        "review": true
+      }
+    },
+    {
+      "name": "render",
+      "status": "pass",
+      "detail": {}
+    },
+    {
+      "name": "check",
+      "status": "pass",
+      "detail": {
+        "warnings": 0,
+        "standalone": true
+      }
+    },
+    {
+      "name": "browser-check",
+      "status": "pass",
+      "detail": {
+        "viewport": "1440x900",
+        "minFontPx": 10.5,
+        "overflowX": 0,
+        "consoleErrors": 0,
+        "viewerNodes": 9,
+        "viewerEdges": 19
+      }
+    },
+    {
+      "name": "export-png",
+      "status": "pass",
+      "detail": {}
+    }
+  ],
+  "outputs": {
+    "html": {
+      "path": "examples/multi-agent-adk-cloud-run/out/order-question.sequence.html",
+      "sha256": "a7252532232cd2875f573d7676baa60bb61fe88a3fc7fe8e0db93c2d06c43649",
+      "bytes": 226822
+    },
+    "svg": {
+      "path": "examples/multi-agent-adk-cloud-run/out/order-question.sequence.svg",
+      "sha256": "425a997329789969392acfad7d38819c747576c57706debe595d11215e0ece92"
+    },
+    "drawio": {
+      "path": "examples/multi-agent-adk-cloud-run/out/order-question.sequence.drawio",
+      "sha256": "9e03512766cca7dd77dc3937ba82c9cc459de7af9dc20fc0145231c93af8d70a"
+    },
+    "png": {
+      "path": "examples/multi-agent-adk-cloud-run/out/order-question.sequence.png",
+      "sha256": "b3b0bb41893d181719de5b0d857aaa2473d5ff1ea0d5977c83396f52c573f34d"
+    }
+  },
+  "summary": {
+    "type": "sequence",
+    "nodes": 9,
+    "groups": 1,
+    "edges": 19,
+    "size": {
+      "width": 1790,
+      "height": 1569
+    }
+  },
+  "review": {
+    "advisory": true,
+    "mode": "full",
+    "lens": "generative-ai",
+    "findings": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 3,
+      "Low": 0
+    },
+    "evidenced": 11,
+    "bps": 174,
+    "ids": [
+      "F-001",
+      "F-002",
+      "F-003"
+    ]
+  },
+  "visualReview": "not-performed"
+}

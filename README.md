@@ -12,6 +12,8 @@ A companion to [tt-a1i/archify](https://github.com/tt-a1i/archify) and the Googl
 Enterprise product catalog search: [architecture](examples/out/product-catalog-search.png) · [page](examples/out/product-catalog-search.html) · [draw.io](examples/out/product-catalog-search.drawio)
 Serverless API: [architecture](examples/out/serverless-api.png) · Agent tool call: [sequence](examples/out/agent-tool-call.sequence.png) · Clinical notes: [dataflow](examples/out/clinical-notes.dataflow.png)
 
+Multi-agent ADK on Cloud Run: [architecture](examples/multi-agent-adk-cloud-run/out/architecture.png) · [sequence](examples/multi-agent-adk-cloud-run/out/order-question.sequence.png) · [dataflow](examples/multi-agent-adk-cloud-run/out/agent-delivery.dataflow.png) ([details](examples/multi-agent-adk-cloud-run/README.md))
+
 ## Quick start
 ```bash
 git clone https://github.com/akashtalole/archify-gcp && cd archify-gcp
