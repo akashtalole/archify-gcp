@@ -14,6 +14,8 @@ Serverless API: [architecture](examples/out/serverless-api.png) · Agent tool ca
 
 Multi-agent ADK on Cloud Run: [architecture](examples/multi-agent-adk-cloud-run/out/architecture.png) · [sequence](examples/multi-agent-adk-cloud-run/out/order-question.sequence.png) · [dataflow](examples/multi-agent-adk-cloud-run/out/agent-delivery.dataflow.png) ([details](examples/multi-agent-adk-cloud-run/README.md))
 
+Multi-cloud AI platform (AWS + Azure + Google Cloud icons): [architecture](examples/multi-cloud-ai-platform/out/architecture.png) ([details](examples/multi-cloud-ai-platform/README.md))
+
 ## Quick start
 ```bash
 git clone https://github.com/akashtalole/archify-gcp && cd archify-gcp

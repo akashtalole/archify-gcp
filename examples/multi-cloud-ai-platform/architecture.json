@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "title": "Cloud-agnostic enterprise AI platform across AWS, Azure and Google Cloud",
+    "subtitle": "One AI gateway and portable Kubernetes agent runtime route requests to the best model on any cloud; knowledge, guardrails, identity and observability are shared across all three",
+    "output": "examples/multi-cloud-ai-platform/out/architecture.html",
+    "lens": [
+      "framework",
+      "generative-ai"
+    ]
+  },
+  "root": {
+    "layout": "column",
+    "gap": 70,
+    "children": [
+      {
+        "id": "main",
+        "kind": "stack",
+        "layout": "row",
+        "gap": 80,
+        "children": [
+          {
+            "id": "clients",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 70,
+            "children": [
+              {
+                "id": "users",
+                "icon": "users",
+                "label": "Employees and apps",
+                "sublabel": "chat, API, copilots"
+              },
+              {
+                "id": "entra",
+                "icon": "gen:azure-entra-id",
+                "label": "Microsoft Entra ID",
+                "sublabel": "single sign-on, OIDC"
+              }
+            ]
+          },
+          {
+            "id": "edge",
+            "kind": "generic",
+            "label": "AI gateway and safety (Google Cloud)",
+            "layout": "column",
+            "gap": 50,
+            "color": "#4285F4",
+            "children": [
+              {
+                "id": "apigee",
+                "icon": "apigee-api-platform",
+                "label": "Apigee AI gateway",
+                "sublabel": "quotas, routing policy"
+              },
+              {
+                "id": "armor",
+                "icon": "data-loss-prevention-api",
+                "label": "Model Armor",
+                "sublabel": "prompt and response screening"
+              },
+              {
+                "id": "safety",
+                "icon": "gen:azure-content-safety",
+                "label": "Azure AI Content Safety",
+                "sublabel": "groundedness, jailbreak"
+              }
+            ]
+          },
+          {
+            "id": "runtime",
+            "kind": "generic-dashed",
+            "label": "Portable agent runtime (same Helm charts, GitOps)",
+            "layout": "column",
+            "gap": 50,
+            "children": [
+              {
+                "id": "gke",
+                "icon": "kubernetes-engine",
+                "label": "Agent orchestrator",
+                "sublabel": "GKE, primary"
+              },
+              {
+                "id": "aks",
+                "icon": "gen:azure-aks",
+                "label": "Agent workers",
+                "sublabel": "AKS, Microsoft 365 data"
+              },
+              {
+                "id": "eks",
+                "icon": "gen:aws-eks",
+                "label": "Agent workers",
+                "sublabel": "EKS, regulated workloads"
+              }
+            ]
+          },
+          {
+            "id": "models",
+            "kind": "generic",
+            "label": "Model plane (routed by cost, latency, residency)",
+            "layout": "column",
+            "gap": 50,
+            "children": [
+              {
+                "id": "gemini",
+                "icon": "vertexai",
+                "label": "Gemini",
+                "sublabel": "Vertex AI"
+              },
+              {
+                "id": "aoai",
+                "icon": "gen:azure-openai",
+                "label": "GPT models",
+                "sublabel": "Azure OpenAI"
+              },
+              {
+                "id": "bedrock",
+                "icon": "gen:aws-bedrock",
+                "label": "Claude and Nova",
+                "sublabel": "Amazon Bedrock"
+              }
+            ]
+          },
+          {
+            "id": "know",
+            "kind": "generic",
+            "label": "Shared knowledge and data",
+            "layout": "column",
+            "gap": 50,
+            "children": [
+              {
+                "id": "s3",
+                "icon": "gen:aws-s3",
+                "label": "Data lake",
+                "sublabel": "Amazon S3"
+              },
+              {
+                "id": "lf",
+                "icon": "gen:aws-lake-formation",
+                "label": "Data governance",
+                "sublabel": "Lake Formation"
+              },
+              {
+                "id": "search",
+                "icon": "gen:azure-ai-search",
+                "label": "Vector index",
+                "sublabel": "Azure AI Search"
+              },
+              {
+                "id": "bq",
+                "icon": "bigquery",
+                "label": "Analytics and embeddings",
+                "sublabel": "BigQuery"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "base",
+        "kind": "stack",
+        "layout": "row",
+        "gap": 80,
+        "children": [
+          {
+            "id": "net",
+            "kind": "generic",
+            "label": "Private connectivity",
+            "layout": "row",
+            "gap": 60,
+            "children": [
+              {
+                "id": "ic",
+                "icon": "cloud-interconnect",
+                "label": "Cloud Interconnect",
+                "sublabel": "Google Cloud"
+              },
+              {
+                "id": "dc",
+                "icon": "gen:aws-direct-connect",
+                "label": "Direct Connect",
+                "sublabel": "AWS"
+              },
+              {
+                "id": "er",
+                "icon": "gen:azure-expressroute",
+                "label": "ExpressRoute",
+                "sublabel": "Azure"
+              }
+            ]
+          },
+          {
+            "id": "ops",
+            "kind": "generic",
+            "label": "Security and observability",
+            "layout": "row",
+            "gap": 60,
+            "children": [
+              {
+                "id": "kv",
+                "icon": "gen:azure-key-vault",
+                "label": "Key Vault",
+                "sublabel": "secrets, keys"
+              },
+              {
+                "id": "log",
+                "icon": "cloud-logging",
+                "label": "Cloud Logging",
+                "sublabel": "OpenTelemetry sink"
+              },
+              {
+                "id": "cw",
+                "icon": "gen:aws-cloudwatch",
+                "label": "CloudWatch",
+                "sublabel": "AWS runtime metrics"
+              },
+              {
+                "id": "mon",
+                "icon": "gen:azure-monitor",
+                "label": "Azure Monitor",
+                "sublabel": "Azure runtime metrics"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "users",
+      "to": "apigee",
+      "step": 1,
+      "label": "chat / API"
+    },
+    {
+      "from": "entra",
+      "to": "apigee",
+      "style": "dashed",
+      "label": "OIDC"
+    },
+    {
+      "from": "apigee",
+      "to": "armor",
+      "step": 2
+    },
+    {
+      "from": "armor",
+      "to": "gke",
+      "step": 3,
+      "label": "safe prompt"
+    },
+    {
+      "from": "gke",
+      "to": "gemini",
+      "step": 4,
+      "label": "route"
+    },
+    {
+      "from": "aks",
+      "to": "aoai",
+      "step": 4
+    },
+    {
+      "from": "eks",
+      "to": "bedrock",
+      "step": 4
+    },
+    {
+      "from": "gke",
+      "to": "search",
+      "step": 5,
+      "label": "retrieve"
+    },
+    {
+      "from": "s3",
+      "to": "search",
+      "step": 6,
+      "label": "index"
+    },
+    {
+      "from": "s3",
+      "to": "bq",
+      "style": "dashed",
+      "label": "BigLake"
+    },
+    {
+      "from": "gke",
+      "to": "aks",
+      "style": "dashed"
+    },
+    {
+      "from": "gke",
+      "to": "eks",
+      "style": "dashed"
+    },
+    {
+      "from": "safety",
+      "to": "armor",
+      "style": "dashed",
+      "label": "ensemble"
+    },
+    {
+      "from": "ic",
+      "to": "dc",
+      "style": "dashed",
+      "label": "private backbone"
+    },
+    {
+      "from": "dc",
+      "to": "er",
+      "style": "dashed"
+    }
+  ]
+}

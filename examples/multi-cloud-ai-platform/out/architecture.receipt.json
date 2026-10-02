@@ -1,0 +1,107 @@
+{
+  "ok": true,
+  "tool": "archify-gcp",
+  "version": "0.1.0",
+  "iconRelease": "Google Cloud icons (legacy product set + core products set)",
+  "input": {
+    "path": "examples/multi-cloud-ai-platform/architecture.json",
+    "sha256": "f31a045d4f3a673adfa1f74f06bc19a30440176f5fb522792f7d7a49cb82e082"
+  },
+  "stages": [
+    {
+      "name": "validate",
+      "status": "pass",
+      "detail": {
+        "type": "architecture",
+        "nodes": 22,
+        "groups": 6,
+        "edges": 15
+      }
+    },
+    {
+      "name": "analyze",
+      "status": "pass",
+      "detail": {
+        "cost": false,
+        "review": true
+      }
+    },
+    {
+      "name": "render",
+      "status": "pass",
+      "detail": {}
+    },
+    {
+      "name": "check",
+      "status": "pass",
+      "detail": {
+        "warnings": 2,
+        "standalone": true
+      }
+    },
+    {
+      "name": "browser-check",
+      "status": "pass",
+      "detail": {
+        "viewport": "1440x900",
+        "minFontPx": 10.5,
+        "overflowX": 0,
+        "consoleErrors": 0,
+        "viewerNodes": 22,
+        "viewerEdges": 15
+      }
+    },
+    {
+      "name": "export-png",
+      "status": "pass",
+      "detail": {}
+    }
+  ],
+  "outputs": {
+    "html": {
+      "path": "examples/multi-cloud-ai-platform/out/architecture.html",
+      "sha256": "fa9efe22d1e45ce11ab8dd9131af110602b72a4fdd7a1b1593fc91fe3a365cc7",
+      "bytes": 324368
+    },
+    "svg": {
+      "path": "examples/multi-cloud-ai-platform/out/architecture.svg",
+      "sha256": "38293007c1f64c10d8e5cb0a977469b9ce2927df84f079436aabca5e1dcd3567"
+    },
+    "drawio": {
+      "path": "examples/multi-cloud-ai-platform/out/architecture.drawio",
+      "sha256": "e979ac63f40195b2e6997737ba5b8958939ec456ffd41b37f380dc8f147379f9"
+    },
+    "png": {
+      "path": "examples/multi-cloud-ai-platform/out/architecture.png",
+      "sha256": "088d1ad2ae88ccb36b1c62a6e16aae56bc0160beb66e7f420f2930dd4b8cc0c1"
+    }
+  },
+  "summary": {
+    "type": "architecture",
+    "nodes": 22,
+    "groups": 6,
+    "edges": 15,
+    "size": {
+      "width": 1801,
+      "height": 1080
+    }
+  },
+  "review": {
+    "advisory": true,
+    "mode": "full",
+    "lens": "generative-ai",
+    "findings": {
+      "Critical": 0,
+      "High": 1,
+      "Medium": 1,
+      "Low": 0
+    },
+    "evidenced": 14,
+    "bps": 174,
+    "ids": [
+      "F-001",
+      "F-002"
+    ]
+  },
+  "visualReview": "not-performed"
+}

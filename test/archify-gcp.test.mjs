@@ -258,7 +258,7 @@ test("finalize stops at the first failing gate and lists every error", async (t)
   assert.ok(r.stages[0].detail.errors.some((e) => /bigquerry/.test(e)) && r.stages[0].detail.errors.some((e) => /zz/.test(e)));
 });
 
-for (const f of ["three-tier.json", "serverless-api.json", "genai-rag.json", "product-catalog-search.json", "agent-tool-call.sequence.json", "clinical-notes.dataflow.json", "multi-agent-adk-cloud-run/architecture.json", "multi-agent-adk-cloud-run/order-question.sequence.json", "multi-agent-adk-cloud-run/agent-delivery.dataflow.json"]) {
+for (const f of ["three-tier.json", "serverless-api.json", "genai-rag.json", "product-catalog-search.json", "agent-tool-call.sequence.json", "clinical-notes.dataflow.json", "multi-agent-adk-cloud-run/architecture.json", "multi-agent-adk-cloud-run/order-question.sequence.json", "multi-agent-adk-cloud-run/agent-delivery.dataflow.json", "multi-cloud-ai-platform/architecture.json"]) {
   test(`example ${f} passes finalize`, async (t) => {
     if (!iconsAvailable()) return t.skip("icons not fetched");
     const { finalize } = await import("../src/finalize.mjs");
