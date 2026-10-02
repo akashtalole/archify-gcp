@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="az theme-light" viewBox="0 0 520 856" width="520" height="856" role="img" aria-label="Google Cloud">
+<title>Google Cloud</title>
+<style>.az{--bg:#ffffff;--fg:#000000;--muted:#545b64;--line:#232F3E;--halo:#ffffff;--badge:#000000;--badgeFg:#ffffff}
+.az.theme-dark{--bg:#161E2D;--fg:#ffffff;--muted:#aab4c3;--line:#d5dbdb;--halo:#161E2D;--badge:#ffffff;--badgeFg:#000000}
+.az .bg{fill:var(--bg)}
+.az text{font-family:Arial,Helvetica,sans-serif;fill:var(--fg)}
+.az .title{font-size:22px;font-weight:700}
+.az .subtitle{font-size:13px;fill:var(--muted)}
+.az .glabel,.az .nlabel,.az .elabel{font-size:12px}
+.az .nsub{font-size:10.5px;fill:var(--muted)}
+.az .elabel{paint-order:stroke;stroke:var(--halo);stroke-width:4px;stroke-linejoin:round}
+.az .eline{stroke:var(--line)}
+.az .arw{fill:none;stroke:var(--line);stroke-width:1.6}
+.az .badge circle{fill:var(--badge)}.az .badge circle.hit{fill:transparent}.az .badge{cursor:help}.az .badge:hover circle:not(.hit){stroke:#ff9900;stroke-width:3}
+.az .badge text{fill:var(--badgeFg);font-weight:700;font-size:12px}
+.az .only-dark{display:none}.az.theme-dark .only-dark{display:inline}.az.theme-dark .only-light{display:none}
+.az.theme-dark .grect[data-fill-dark="none"]{fill:none}
+.az .dim{opacity:.18}.az .hl .eline{stroke-width:3}
+.az .edge,.az .node{transition:opacity .12s}</style>
+<defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="arw" d="M1.5 1.5 L8.5 5 L1.5 8.5"/></marker><symbol id="grp-Project" viewBox="0 0 24 24"><g >
+	<rect y="0" fill="none" width="24" height="24"/>
+	<polygon fill-rule="evenodd" fill="#85A4E6" points="0.8,5.9 3.7,0.8 9.5,0.8 12.4,5.9 9.5,10.9 3.7,10.9 	"/>
+	<polygon fill-rule="evenodd" fill="#5C85DE" points="11.4,7.7 8.5,2.6 9.5,0.7 12.4,5.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000019646383529055310330000009913415011964925323_" fill-rule="evenodd" fill="#3367D6" points="
+		2.7,9.3 8.5,9.3 10.5,5.9 11.4,7.7 9.5,10.9 3.7,11 	"/>
+	<polygon fill-rule="evenodd" fill="#85A4E6" points="11.2,11.9 14.2,6.8 20,6.8 22.9,11.9 20,16.9 14.2,16.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000133527958483064390410000012377415375428947900_" fill-rule="evenodd" fill="#5C85DE" points="
+		21.9,13.7 19,8.6 20,6.7 22.9,11.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000176019471624316745960000001248137580190207128_" fill-rule="evenodd" fill="#3367D6" points="
+		13.2,15.3 19,15.3 21,11.9 21.9,13.7 20,16.9 14.2,17 	"/>
+	<polygon fill-rule="evenodd" fill="#85A4E6" points="0.8,17.9 3.7,12.8 9.5,12.8 12.4,17.9 9.5,22.9 3.7,22.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000096041779745201399360000017167964797373102485_" fill-rule="evenodd" fill="#5C85DE" points="
+		11.4,19.7 8.5,14.6 9.5,12.7 12.4,17.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000049204188488742950820000010444321201512143025_" fill-rule="evenodd" fill="#3367D6" points="
+		2.7,21.3 8.5,21.3 10.5,17.9 11.4,19.7 9.5,22.9 3.7,23 	"/>
+</g></symbol><symbol id="svc-apigee_api_platform" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-apigee_api_platform__st0 {
+        fill: none;
+      }
+
+      .svc-apigee_api_platform__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-apigee_api_platform__st2 {
+        fill: #34a853;
+      }
+
+      .svc-apigee_api_platform__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-apigee_api_platform__st4 {
+        fill: #ea4335;
+      }
+    </style>
+  </defs>
+  <rect id="svc-apigee_api_platform__bounding_box" class="svc-apigee_api_platform__st0" width="512" height="512"/>
+  <g id="svc-apigee_api_platform__art">
+    <path class="svc-apigee_api_platform__st3" d="M349,458c-29.1,0-56.5-11.3-77.1-31.9L85.9,240.1c-20.6-20.6-31.9-48-31.9-77.1s11.3-56.5,31.9-77.1c20.6-20.6,48-31.9,77.1-31.9s56.5,11.3,77.1,31.9l186,186c20.6,20.6,31.9,48,31.9,77.1s-11.3,56.5-31.9,77.1c-20.6,20.6-48,31.9-77.1,31.9h0ZM163,86c-19.7,0-39.4,7.5-54.4,22.5-30,30-30,78.9,0,108.9l186,186c30,30,78.9,30,108.9,0,30-30,30-78.9,0-108.9L217.4,108.6c-15-15-34.7-22.5-54.4-22.5h0Z"/>
+    <path class="svc-apigee_api_platform__st1" d="M163,458c-29.1,0-56.5-11.3-77.1-31.9-20.6-20.6-31.9-48-31.9-77.1s11.3-56.5,31.9-77.1l186-186c20.6-20.6,48-31.9,77.1-31.9s56.5,11.3,77.1,31.9c20.6,20.6,31.9,48,31.9,77.1s-11.3,56.5-31.9,77.1l-186,186c-20.6,20.6-48,31.9-77.1,31.9h0ZM349,86c-19.7,0-39.4,7.5-54.5,22.5l-186,186c-30,30-30,78.9,0,108.9,30,30,78.9,30,108.9,0l186-186c30-30,30-78.9,0-108.9-15-15-34.7-22.5-54.5-22.5h0Z"/>
+    <path class="svc-apigee_api_platform__st4" d="M310.5,201.6l-93-93c-30-30-78.9-30-108.9,0l-22.6-22.6c42.5-42.5,111.6-42.5,154.1,0l93,93-22.6,22.6h0Z"/>
+    <path class="svc-apigee_api_platform__st4" d="M201.6,201.6l-22.6-22.6,93-93c42.5-42.5,111.6-42.5,154.1,0l-22.6,22.6c-30-30-78.9-30-108.9,0l-93,93h0Z"/>
+    <path class="svc-apigee_api_platform__st2" d="M163,458c-27.9,0-55.8-10.6-77.1-31.9l22.6-22.6c30,30,78.9,30,108.9,0l93-93,22.6,22.6-93,93c-21.2,21.2-49.2,31.9-77.1,31.9h0Z"/>
+    <path class="svc-apigee_api_platform__st2" d="M349,458c-27.9,0-55.8-10.6-77.1-31.9l-93-93,22.6-22.6,93,93c30,30,78.9,30,108.9,0l22.6,22.6c-21.2,21.2-49.2,31.9-77.1,31.9h0Z"/>
+    <path class="svc-apigee_api_platform__st1" d="M426.1,426.1l-22.6-22.6c30-30,30-78.9,0-108.9l-93-93,22.6-22.6,93,93c42.5,42.5,42.5,111.6,0,154.1h0Z"/>
+    <path class="svc-apigee_api_platform__st1" d="M256,365c-29.1,0-56.5-11.3-77.1-31.9h0c-42.5-42.5-42.5-111.6,0-154.1s48-31.9,77.1-31.9,56.5,11.3,77.1,31.9c20.6,20.6,31.9,48,31.9,77.1s-11.3,56.5-31.9,77.1c-20.6,20.6-48,31.9-77.1,31.9h0ZM256,179c-20.6,0-39.9,8-54.4,22.6-30,30-30,78.9,0,108.9h0c14.5,14.5,33.9,22.5,54.4,22.5s39.9-8,54.5-22.5,22.5-33.9,22.5-54.4-8-39.9-22.5-54.4-33.9-22.6-54.5-22.6h0Z"/>
+    <path class="svc-apigee_api_platform__st4" d="M310.5,201.6c-14.5-14.5-33.9-22.6-54.5-22.6s-39.9,8-54.4,22.6l-22.6-22.6c20.6-20.6,48-31.9,77.1-31.9s56.5,11.3,77.1,31.9l-22.6,22.6h0Z"/>
+    <path class="svc-apigee_api_platform__st2" d="M256,365c-29.1,0-56.5-11.3-77.1-31.9l22.6-22.6c14.5,14.5,33.9,22.5,54.5,22.5s39.9-8,54.5-22.5l22.6,22.6c-20.6,20.6-48,31.9-77.1,31.9h0Z"/>
+    <path class="svc-apigee_api_platform__st3" d="M85.9,426.1c-42.5-42.5-42.5-111.6,0-154.1l93-93,22.6,22.6-93,93c-30,30-30,78.9,0,108.9l-22.6,22.6h0Z"/>
+    <path class="svc-apigee_api_platform__st3" d="M178.9,333.1c-42.5-42.5-42.5-111.6,0-154.1l22.6,22.6c-30,30-30,78.9,0,108.9l-22.6,22.6Z"/>
+    <path class="svc-apigee_api_platform__st3" d="M178.9,333.1l-93-93c-42.5-42.5-42.5-111.6,0-154.1l22.6,22.6c-30,30-30,78.9,0,108.9l93,93-22.6,22.6h0Z"/>
+  </g></symbol><symbol id="svc-data_loss_prevention_api" viewBox="0 0 24 24"><defs><style>.svc-data_loss_prevention_api__cls-1{fill:#4285f4;}.svc-data_loss_prevention_api__cls-2{fill:#669df6;}.svc-data_loss_prevention_api__cls-3{fill:#aecbfa;}</style></defs><g data-name="Product Icons"><path class="svc-data_loss_prevention_api__cls-1" d="M14.86,5.44A5.48,5.48,0,0,0,7.8,6.5a5.31,5.31,0,0,0-1.34,3.6,5.49,5.49,0,0,0,2.41,4.53l-.17.28-.56.16c-.89,1.56-1.22,2-2.06,3.48l1.48.85c.85-1.5,1.17-1.94,2.05-3.48l-.16-.61.14-.26a5.49,5.49,0,0,0,5.27-9.61Zm-1.92,8.3A3.79,3.79,0,1,1,15.6,9.09h0A3.8,3.8,0,0,1,12.94,13.74Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M2.05,8.78l.13-1.07H3.36v.35H2.52l0,.45a.68.68,0,0,1,.79.11.78.78,0,0,1,.17.53.77.77,0,0,1-.09.36.53.53,0,0,1-.24.25.65.65,0,0,1-.38.09.73.73,0,0,1-.36-.08.66.66,0,0,1-.26-.21A.63.63,0,0,1,2,9.24h.42a.27.27,0,0,0,.09.2.25.25,0,0,0,.2.07.23.23,0,0,0,.22-.1A.43.43,0,0,0,3,9.12a.37.37,0,0,0-.09-.27.33.33,0,0,0-.25-.1.41.41,0,0,0-.24.08l0,0Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M5.45,9.82H5V8.21l-.51.15V8l.88-.31h0Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M3,12.66H2.59V11.05l-.5.15v-.34L3,10.55H3Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M5.86,11.79a1.13,1.13,0,0,1-.18.67.74.74,0,0,1-1,0l0,0a1,1,0,0,1-.19-.65v-.39a1.06,1.06,0,0,1,.18-.67.73.73,0,0,1,1,0l0,0a1.08,1.08,0,0,1,.19.65Zm-.42-.43A.83.83,0,0,0,5.37,11a.25.25,0,0,0-.23-.12.24.24,0,0,0-.22.11.75.75,0,0,0-.07.36v.51a.85.85,0,0,0,.07.39.23.23,0,0,0,.23.12.23.23,0,0,0,.22-.12.77.77,0,0,0,.07-.37Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M19.13,9.74h-.41V8.12l-.51.16V7.94l.88-.32h0Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M20.62,8.7l.13-1.07h1.18V8h-.84L21,8.43a.65.65,0,0,1,.31-.08.63.63,0,0,1,.48.19.74.74,0,0,1,.17.52.81.81,0,0,1-.09.37.6.6,0,0,1-.25.25.79.79,0,0,1-.38.09.85.85,0,0,1-.35-.08.62.62,0,0,1-.26-.22.58.58,0,0,1-.1-.32H21a.35.35,0,0,0,.1.21.29.29,0,0,0,.2.07.26.26,0,0,0,.22-.1A.44.44,0,0,0,21.58,9a.41.41,0,0,0-.09-.28.34.34,0,0,0-.25-.09.34.34,0,0,0-.24.07l0,0Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M19.54,11.79a1.13,1.13,0,0,1-.18.67.74.74,0,0,1-1,0l0,0a1,1,0,0,1-.19-.65v-.39a1.06,1.06,0,0,1,.18-.67.73.73,0,0,1,1,0l0,0a1.08,1.08,0,0,1,.19.65Zm-.42-.43a.83.83,0,0,0-.07-.38.25.25,0,0,0-.23-.12.24.24,0,0,0-.22.11.75.75,0,0,0-.07.36v.51a.85.85,0,0,0,.07.39.23.23,0,0,0,.23.12.23.23,0,0,0,.22-.12.9.9,0,0,0,.07-.37Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M20.62,11.62l.13-1.07h1.18v.35h-.84l-.05.45a.65.65,0,0,1,.31-.08.63.63,0,0,1,.48.19A.78.78,0,0,1,22,12a.77.77,0,0,1-.09.36.51.51,0,0,1-.25.25.69.69,0,0,1-.38.09.72.72,0,0,1-.35-.08.59.59,0,0,1-.26-.21.63.63,0,0,1-.1-.32H21a.32.32,0,0,0,.1.2.25.25,0,0,0,.2.07.23.23,0,0,0,.22-.1.43.43,0,0,0,.08-.29.37.37,0,0,0-.09-.27.31.31,0,0,0-.25-.1.35.35,0,0,0-.24.08l0,0Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M9.73,12.11c0-.32,0-.63,0-.94a.86.86,0,0,1,.35-.62,2.43,2.43,0,0,1,.83-.43,2.87,2.87,0,0,1,2.42.28,1.05,1.05,0,0,1,.27.2.9.9,0,0,1,.3.75c0,.25,0,.5,0,.76Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M11.81,9.5a1.08,1.08,0,1,1,1.08-1.07h0A1.09,1.09,0,0,1,11.81,9.5Z"/></g></symbol><symbol id="svc-google_kubernetes_engine" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-google_kubernetes_engine__st0 {
+        fill: none;
+      }
+
+      .svc-google_kubernetes_engine__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-google_kubernetes_engine__st2 {
+        fill: #34a853;
+      }
+
+      .svc-google_kubernetes_engine__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-google_kubernetes_engine__st4 {
+        fill: #ea4335;
+      }
+    </style>
+  </defs>
+  <g id="svc-google_kubernetes_engine__bounding_box">
+    <rect class="svc-google_kubernetes_engine__st0" width="512" height="512"/>
+  </g>
+  <g id="svc-google_kubernetes_engine__art">
+    <path class="svc-google_kubernetes_engine__st2" d="M256,459c-2.7,0-5.4-.7-7.8-2l-166.2-93.5c-5-2.8-8.2-8.2-8.2-14v-187c0-5.8,3.1-11.1,8.2-13.9L248.2,55c4.9-2.7,10.8-2.7,15.7,0l166.2,93.5c5,2.8,8.2,8.2,8.2,13.9v187c0,5.8-3.1,11.1-8.2,14l-166.2,93.5c-2.4,1.4-5.1,2-7.8,2h0ZM105.8,340.1l150.2,84.5,150.2-84.5v-168.3l-150.2-84.5-150.2,84.5v168.3ZM422.2,349.5h0Z"/>
+    <path class="svc-google_kubernetes_engine__st4" d="M89.8,178.5c-5.6,0-11-2.9-14-8.2-4.3-7.7-1.6-17.5,6.1-21.8L248.2,55c7.7-4.3,17.5-1.6,21.8,6.1,4.3,7.7,1.6,17.5-6.1,21.8l-166.2,93.5c-2.5,1.4-5.2,2.1-7.8,2.1h0Z"/>
+    <path class="svc-google_kubernetes_engine__st4" d="M422.2,178.5c-2.7,0-5.4-.7-7.8-2.1l-166.2-93.5c-7.7-4.3-10.4-14.1-6.1-21.8,4.3-7.7,14.1-10.4,21.8-6.1l166.2,93.5c7.7,4.3,10.4,14.1,6.1,21.8-2.9,5.2-8.4,8.2-14,8.2h0Z"/>
+    <path class="svc-google_kubernetes_engine__st4" d="M256,178.5c-8.8,0-16-7.2-16-16v-93.5c0-8.8,7.2-16,16-16s16,7.2,16,16v93.5c0,8.8-7.2,16-16,16Z"/>
+    <path class="svc-google_kubernetes_engine__st3" d="M81.7,363.3c-4.9-2.9-7.9-8.1-7.9-13.8v-187c0-6,3.3-11.2,8.2-13.9,2.3-1.3,23.8-13.4,23.8-13.4v187l59.3-33.3c7.7-4.3,17.5-1.6,21.8,6.1,4.3,7.7,1.6,17.5-6.1,21.8l-90.9,51.2s-5.6-3.1-8.1-4.5h0Z"/>
+    <path class="svc-google_kubernetes_engine__st1" d="M422.2,367.9l-90.9-51.2c-7.7-4.3-10.4-14.1-6.1-21.8s14.1-10.4,21.8-6.1l59.3,33.3v-187s21.5,12.1,23.9,13.4c.8.5,1.6,1,2.3,1.6,3.6,2.9,5.8,7.4,5.8,12.4v187c0,5.7-3,10.9-7.9,13.8-2.5,1.5-8.1,4.5-8.1,4.5h0Z"/>
+    <path class="svc-google_kubernetes_engine__st4" d="M339.1,225.2c-2.7,0-5.4-.7-7.8-2.1l-75.3-42.3-75.3,42.3c-7.7,4.3-17.5,1.6-21.8-6.1-4.3-7.7-1.6-17.5,6.1-21.8l83.1-46.8c4.9-2.7,10.8-2.7,15.7,0l83.1,46.8c7.7,4.3,10.4,14.1,6.1,21.8-2.9,5.2-8.4,8.2-14,8.2h0Z"/>
+    <path class="svc-google_kubernetes_engine__st1" d="M256,365.5c-5.6,0-11-2.9-14-8.2-4.3-7.7-1.6-17.5,6.1-21.8l75-42.2v-84.1c0-8.8,7.2-16,16-16s16,7.2,16,16v93.5c0,5.8-3.1,11.1-8.2,14l-83.1,46.8c-2.5,1.4-5.2,2.1-7.8,2.1h0Z"/>
+    <path class="svc-google_kubernetes_engine__st3" d="M256,365.5c-2.7,0-5.4-.7-7.8-2l-83.1-46.8c-5-2.8-8.2-8.2-8.2-14v-93.5c0-8.8,7.2-16,16-16s16,7.2,16,16v84.1l51.1,28.8v-66.1c0-8.8,7.2-16,16-16s16,7.2,16,16v102.9s-3,1.6-7.9,4.5c-2.5,1.5-5.3,2.2-8.1,2.2h0Z"/>
+    <path class="svc-google_kubernetes_engine__st1" d="M256,272c-5.6,0-11-2.9-14-8.2-4.3-7.7-1.6-17.5,6.1-21.8l91-51.2,7.9,4.4c2.1,1.1,4.2,2.8,6.1,6.1,4.3,7.7,1.6,17.5-6.1,21.8l-83.1,46.8c-2.5,1.4-5.2,2.1-7.8,2.1h0Z"/>
+    <path class="svc-google_kubernetes_engine__st4" d="M256,237.6l-75.3-42.3c-7.7-4.3-17.5-1.6-21.8,6.1-1.4,2.5-2.1,5.2-2.1,7.8v9.4l91.3,51.3c2.5,1.4,5.2,2.1,7.8,2.1h0v-34.4h0Z"/>
+  </g></symbol><symbol id="svc-cloud_interconnect" viewBox="0 0 24 24"><defs><style>.svc-cloud_interconnect__cls-1{fill:#4285f4;}.svc-cloud_interconnect__cls-1,.svc-cloud_interconnect__cls-2,.svc-cloud_interconnect__cls-3{fill-rule:evenodd;}.svc-cloud_interconnect__cls-2{fill:#aecbfa;}.svc-cloud_interconnect__cls-3{fill:#669df6;}</style></defs><g data-name="Product Icons"><g ><polygon id="svc-cloud_interconnect__Fill-3" class="svc-cloud_interconnect__cls-1" points="2 13 6 13 6 11 2 11 2 13"/><polygon id="svc-cloud_interconnect__Fill-6" class="svc-cloud_interconnect__cls-2" points="15 17 5 17 5 7 15 7 15 17"/><polygon id="svc-cloud_interconnect__Fill-1" class="svc-cloud_interconnect__cls-1" points="17.33 13 22 13 22 11 17.33 11 17.33 13"/><polygon class="svc-cloud_interconnect__cls-3" points="8 3 8 5 17 5 17 19 8 19 8 21 19 21 19 19 19 5 19 3 8 3"/><polygon id="svc-cloud_interconnect__Fill-7" class="svc-cloud_interconnect__cls-3" points="15 17 10 17 10 7 15 7 15 17"/></g></g></symbol><symbol id="svc-cloud_logging" viewBox="0 0 24 24"><defs><style>.svc-cloud_logging__cls-1{fill:#4285f4;}.svc-cloud_logging__cls-2{fill:none;}.svc-cloud_logging__cls-3{fill:#669df6;}.svc-cloud_logging__cls-4{fill:#aecbfa;}</style></defs><g data-name="Product Icons"><rect class="svc-cloud_logging__cls-1" x="6" y="11" width="4" height="2"/><rect class="svc-cloud_logging__cls-1" x="4" y="18" width="6" height="2"/><g data-name="colored-32/logs"><rect class="svc-cloud_logging__cls-2" width="24" height="24"/><g ><polygon id="svc-cloud_logging__Fill-3" class="svc-cloud_logging__cls-1" points="4 18 6 18 6 6 4 6 4 18"/><polygon id="svc-cloud_logging__Fill-4" class="svc-cloud_logging__cls-3" points="9 7 22 7 22 3 9 3 9 7"/><polygon id="svc-cloud_logging__Fill-4-2" data-name="Fill-4" class="svc-cloud_logging__cls-3" points="9 14 22 14 22 10 9 10 9 14"/><polygon id="svc-cloud_logging__Fill-4-3" data-name="Fill-4" class="svc-cloud_logging__cls-3" points="9 21 22 21 22 17 9 17 9 21"/><polygon id="svc-cloud_logging__Fill-7" class="svc-cloud_logging__cls-4" points="2 8 8 8 8 2 2 2 2 8"/></g></g></g></symbol><symbol id="svc-bigquery" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-bigquery__st0 {
+        fill: none;
+      }
+
+      .svc-bigquery__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-bigquery__st2 {
+        fill: #34a853;
+      }
+
+      .svc-bigquery__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-bigquery__st4 {
+        fill: #ea4335;
+      }
+    </style>
+  </defs>
+  <g id="svc-bigquery__bounding_box">
+    <rect class="svc-bigquery__st0" width="512" height="512"/>
+  </g>
+  <g id="svc-bigquery__art">
+    <path class="svc-bigquery__st2" d="M311.9,418.9c-8.8,0-16-7.2-16-16v-145.8c0-8.8,7.2-16,16-16s16,7.2,16,16v145.8c0,8.8-7.2,16-16,16h0Z"/>
+    <path class="svc-bigquery__st2" d="M147.6,418.9c-8.8,0-16-7.2-16-16v-200.5c0-8.8,7.2-16,16-16s16,7.2,16,16v200.5c0,8.8-7.2,16-16,16Z"/>
+    <path class="svc-bigquery__st2" d="M229.8,437.4c-8.8,0-16-7.2-16-16V147.6c0-8.8,7.2-16,16-16s16,7.2,16,16v273.7c0,8.8-7.2,16-16,16h0Z"/>
+    <path class="svc-bigquery__st3" d="M229.8,437.4c-114.5,0-207.6-93.1-207.6-207.6h32c0,96.8,78.8,175.6,175.6,175.6s175.6-78.8,175.6-175.6h32c0,114.5-93.1,207.6-207.6,207.6h0Z"/>
+    <path class="svc-bigquery__st4" d="M437.4,229.8h-32c0-96.8-78.8-175.6-175.6-175.6S54.1,132.9,54.1,229.8H22.1c0-114.5,93.2-207.7,207.7-207.7s207.6,93.1,207.6,207.6h0Z"/>
+    <path class="svc-bigquery__st1" d="M487.4,464.8l-100-100c32.3-37.6,49.9-85,49.9-135.1s-21.6-107.6-60.8-146.8l-22.6,22.6c33.2,33.2,51.4,77.3,51.4,124.2s-18.3,90.9-51.5,124.1h0c-5,5-7.5,7-11.8,10.8l122.8,122.8c3.1,3.1,7.2,4.7,11.3,4.7h0c4.1,0,8.2-1.6,11.3-4.7,6.2-6.2,6.2-16.4,0-22.6h0Z"/>
+  </g></symbol><symbol id="svc-vertexai" viewBox="0 0 512 512"><g id="svc-vertexai__bounding_box">
+    <rect width="512" height="512" fill="none"/>
+  </g>
+  <g id="svc-vertexai__art">
+    <path d="M128,244.99c-8.84,0-16-7.16-16-16v-95.97c0-8.84,7.16-16,16-16s16,7.16,16,16v95.97c0,8.84-7.16,16-16,16Z" fill="#ea4335"/>
+    <path d="M256,458c-2.98,0-5.97-.83-8.59-2.5l-186-122c-7.46-4.74-9.65-14.63-4.91-22.09,4.75-7.46,14.64-9.65,22.09-4.91l177.41,116.53,177.41-116.53c7.45-4.74,17.34-2.55,22.09,4.91,4.74,7.46,2.55,17.34-4.91,22.09l-186,122c-2.62,1.67-5.61,2.5-8.59,2.5Z" fill="#fbbc04"/>
+    <path d="M256,388.03c-8.84,0-16-7.16-16-16v-73.06c0-8.84,7.16-16,16-16s16,7.16,16,16v73.06c0,8.84-7.16,16-16,16Z" fill="#34a853"/>
+    <circle cx="128" cy="70" r="16" fill="#ea4335"/>
+    <circle cx="128" cy="292" r="16" fill="#ea4335"/>
+    <path d="M384.23,308.01c-8.82,0-15.98-7.14-16-15.97l-.23-94.01c-.02-8.84,7.13-16.02,15.97-16.03h.04c8.82,0,15.98,7.14,16,15.97l.23,94.01c.02,8.84-7.13,16.02-15.97,16.03h-.04Z" fill="#4285f4"/>
+    <circle cx="384" cy="70" r="16" fill="#4285f4"/>
+    <circle cx="384" cy="134" r="16" fill="#4285f4"/>
+    <path d="M320,220.36c-8.84,0-16-7.16-16-16v-103.02c0-8.84,7.16-16,16-16s16,7.16,16,16v103.02c0,8.84-7.16,16-16,16Z" fill="#fbbc04"/>
+    <circle cx="256" cy="171" r="16" fill="#34a853"/>
+    <circle cx="256" cy="235" r="16" fill="#34a853"/>
+    <circle cx="320" cy="265" r="16" fill="#fbbc04"/>
+    <circle cx="320" cy="329" r="16" fill="#fbbc04"/>
+    <path d="M192,217.36c-8.84,0-16-7.16-16-16v-100.02c0-8.84,7.16-16,16-16s16,7.16,16,16v100.02c0,8.84-7.16,16-16,16Z" fill="#fbbc04"/>
+    <circle cx="192" cy="265" r="16" fill="#fbbc04"/>
+    <circle cx="192" cy="329" r="16" fill="#fbbc04"/>
+  </g></symbol></defs>
+<rect class="bg" width="520" height="856"/>
+<text class="title" x="40" y="46">Google Cloud</text>
+<text class="subtitle" x="40" y="70">AI gateway, orchestrator, Gemini and analytics</text>
+<g class="group" data-id="gcp-proj" data-label="ai-platform-hub">
+<rect x="68" y="116" width="384" height="700" fill="none" stroke="#4285F4" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<use href="#grp-Project" x="68" y="116" width="32" height="32"/>
+<text class="glabel" x="108" y="137">ai-platform-hub</text>
+</g>
+<g class="edge" data-from="apigee" data-to="armor" data-step="3" data-label="" data-tip="Apigee AI gateway → Model Armor">
+<path d="M160 276 L160 336" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<g class="badge"><title>3. Apigee AI gateway → Model Armor</title><circle cx="160" cy="300" r="11"/><circle class="hit" cx="160" cy="300" r="16"/><text x="160" y="304.5" text-anchor="middle">3</text></g>
+</g>
+<g class="edge" data-from="armor" data-to="gke" data-step="4" data-label="safe prompt" data-tip="Model Armor → Agent orchestrator (safe prompt)">
+<path d="M160 448 L160 508" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="178" y="482" text-anchor="start">safe prompt</text>
+<g class="badge"><title>4. Model Armor → Agent orchestrator (safe prompt)</title><circle cx="160" cy="472" r="11"/><circle class="hit" cx="160" cy="472" r="16"/><text x="160" y="476.5" text-anchor="middle">4</text></g>
+</g>
+<g class="edge" data-from="gke" data-to="gemini" data-step="5" data-label="route" data-tip="Agent orchestrator → Gemini (route)">
+<path d="M192 540 L363 540 L363 594" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="277.5" y="532" text-anchor="middle">route</text>
+<g class="badge"><title>5. Agent orchestrator → Gemini (route)</title><circle cx="216" cy="540" r="11"/><circle class="hit" cx="216" cy="540" r="16"/><text x="216" y="544.5" text-anchor="middle">5</text></g>
+</g>
+<g class="node" data-id="apigee" data-label="Apigee AI gateway" data-service="Apigee API Platform" data-category="integration"><title>Apigee AI gateway (Apigee API Platform)</title>
+<use href="#svc-apigee_api_platform" x="128" y="164" width="64" height="64"/>
+<text class="nlabel" x="160" y="245" text-anchor="middle">Apigee AI gateway</text>
+<text class="nsub" x="160" y="259" text-anchor="middle">quotas, routing policy</text>
+</g>
+<g class="node" data-id="armor" data-label="Model Armor" data-service="Data Loss Prevention API" data-category="security"><title>Model Armor (Data Loss Prevention API)</title>
+<use href="#svc-data_loss_prevention_api" x="128" y="336" width="64" height="64"/>
+<text class="nlabel" x="160" y="417" text-anchor="middle">Model Armor</text>
+<text class="nsub" x="160" y="431" text-anchor="middle">prompt screening</text>
+</g>
+<g class="node" data-id="gke" data-label="Agent orchestrator" data-service="Google Kubernetes Engine" data-category="containers"><title>Agent orchestrator (Google Kubernetes Engine)</title>
+<use href="#svc-google_kubernetes_engine" x="128" y="508" width="64" height="64"/>
+<text class="nlabel" x="160" y="589" text-anchor="middle">Agent orchestrator</text>
+<text class="nsub" x="160" y="603" text-anchor="middle">GKE, primary</text>
+</g>
+<g class="node" data-id="ic" data-label="Cloud Interconnect" data-service="Cloud Interconnect" data-category="networking"><title>Cloud Interconnect (Cloud Interconnect)</title>
+<use href="#svc-cloud_interconnect" x="128" y="680" width="64" height="64"/>
+<text class="nlabel" x="160" y="761" text-anchor="middle">Cloud Interconnect</text>
+<text class="nsub" x="160" y="775" text-anchor="middle">private backbone</text>
+</g>
+<g class="node" data-id="log" data-label="Cloud Logging" data-service="Cloud Logging" data-category="operations"><title>Cloud Logging (Cloud Logging)</title>
+<use href="#svc-cloud_logging" x="331" y="250" width="64" height="64"/>
+<text class="nlabel" x="363" y="331" text-anchor="middle">Cloud Logging</text>
+<text class="nsub" x="363" y="345" text-anchor="middle">OpenTelemetry sink</text>
+</g>
+<g class="node" data-id="bq" data-label="BigQuery" data-service="BigQuery" data-category="analytics"><title>BigQuery (BigQuery)</title>
+<use href="#svc-bigquery" x="331" y="422" width="64" height="64"/>
+<text class="nlabel" x="363" y="503" text-anchor="middle">BigQuery</text>
+<text class="nsub" x="363" y="517" text-anchor="middle">analytics, embeddings</text>
+</g>
+<g class="node" data-id="gemini" data-label="Gemini" data-service="Vertex AI" data-category="ai-ml"><title>Gemini (Vertex AI)</title>
+<use href="#svc-vertexai" x="331" y="594" width="64" height="64"/>
+<text class="nlabel" x="363" y="675" text-anchor="middle">Gemini</text>
+<text class="nsub" x="363" y="689" text-anchor="middle">Vertex AI</text>
+</g>
+</svg>

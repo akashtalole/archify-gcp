@@ -258,7 +258,7 @@ test("finalize stops at the first failing gate and lists every error", async (t)
   assert.ok(r.stages[0].detail.errors.some((e) => /bigquerry/.test(e)) && r.stages[0].detail.errors.some((e) => /zz/.test(e)));
 });
 
-for (const f of ["three-tier.json", "serverless-api.json", "genai-rag.json", "product-catalog-search.json", "agent-tool-call.sequence.json", "clinical-notes.dataflow.json", "multi-agent-adk-cloud-run/architecture.json", "multi-agent-adk-cloud-run/order-question.sequence.json", "multi-agent-adk-cloud-run/agent-delivery.dataflow.json", "multi-cloud-ai-platform/architecture.json"]) {
+for (const f of ["three-tier.json", "serverless-api.json", "genai-rag.json", "product-catalog-search.json", "agent-tool-call.sequence.json", "clinical-notes.dataflow.json", "multi-agent-adk-cloud-run/architecture.json", "multi-agent-adk-cloud-run/order-question.sequence.json", "multi-agent-adk-cloud-run/agent-delivery.dataflow.json"]) {
   test(`example ${f} passes finalize`, async (t) => {
     if (!iconsAvailable()) return t.skip("icons not fetched");
     const { finalize } = await import("../src/finalize.mjs");
@@ -521,4 +521,14 @@ test("the page offers a draw.io download backed by the same export", async (t) =
   const m = /<script type="application\/json" id="drawio-data">([\s\S]*?)<\/script>/.exec(html);
   const { toDrawio } = await import("../src/drawio/export.mjs");
   assert.equal(JSON.parse(m[1].replace(/\\u003c/g, "<")), toDrawio(d));
+});
+
+test("multi-cloud example composes three tool-rendered panels with cross-cloud links", () => {
+  const dir = path.join(ROOT, "examples", "multi-cloud-ai-platform", "out");
+  if (!fs.existsSync(path.join(dir, "architecture.svg"))) return;
+  const svg = fs.readFileSync(path.join(dir, "architecture.svg"), "utf8");
+  for (const c of ["azure", "gcp", "aws"]) assert.match(svg, new RegExp(`class="panel panel-${c}"`));
+  assert.equal((svg.match(/class="xedge"/g) || []).length, 9);
+  const receipt = JSON.parse(fs.readFileSync(path.join(dir, "architecture.receipt.json"), "utf8"));
+  assert.deepEqual(receipt.panels.map((p) => p.renderedBy), ["archify-azure", "archify-gcp", "archify-aws"]);
 });

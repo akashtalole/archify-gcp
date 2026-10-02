@@ -50,7 +50,7 @@ export function buildCatalog(iconsDir, release = "Google Cloud icons") {
   const services = [], byKey = new Map(), general = [];
   for (const f of walk(iconsDir).filter((f) => f.endsWith(".svg")).sort()) {
     const key = path.basename(f, ".svg");
-    if (rel(f).startsWith("general/")) { general.push({ key, id: key, name: key.split("-").map((w) => (w === "aws" ? "AWS" : w[0].toUpperCase() + w.slice(1))).join(" "), file: rel(f) }); continue; }
+    if (rel(f).startsWith("general/")) { general.push({ key, id: key, name: key.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "), file: rel(f) }); continue; }
     const isCat = rel(f).startsWith("categories/");
     const entry = isCat ? { key, id: key.replace(/_/g, "-"), name: `${CATEGORY_NAMES[key] || key.replace(/^category_/, "").replace(/_/g, " ")} (category)`, category: "categories", file: rel(f) } : { key, id: slug(key), name: humanName(key), category: categoryOf(key), file: rel(f) };
     byKey.set(key, entry);

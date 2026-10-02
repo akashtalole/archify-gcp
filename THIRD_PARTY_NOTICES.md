@@ -12,9 +12,7 @@ use them to depict Google Cloud architecture, do not alter them, and do not impl
 Google terms before publishing diagrams widely.
 
 ## General icons
-`data/general-icons/aws-*.svg` and `azure-*.svg` are unmodified product icons from the AWS Architecture Icons and Microsoft Azure Architecture Icons sets, included so that multi-cloud diagrams (see `examples/multi-cloud-ai-platform/`) can show all three clouds; they remain under AWS's and Microsoft's icon terms (use in architecture diagrams, no implied endorsement).
-
-`data/general-icons/` (the other files: users, mobile, browser, internet, server, file, device, cloud, SaaS) are original drawings made for this project and are covered by this repository's MIT licence.
+`data/general-icons/` (users, mobile, browser, internet, server, file, device, cloud, SaaS) are original drawings made for this project and are covered by this repository's MIT licence.
 
 ## Cloud Billing Catalog API
 Cost estimates use list prices from the Cloud Billing Catalog API (<https://cloud.google.com/billing/docs/how-to/get-pricing-information-api>), fetched with your own API key
