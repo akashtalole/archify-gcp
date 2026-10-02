@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="az theme-light" viewBox="0 0 840 824" width="840" height="824" role="img" aria-label="Imported sequence">
+<title>Imported sequence</title>
+<style>.az{--bg:#ffffff;--fg:#000000;--muted:#545b64;--line:#232F3E;--halo:#ffffff;--badge:#000000;--badgeFg:#ffffff}
+.az.theme-dark{--bg:#161E2D;--fg:#ffffff;--muted:#aab4c3;--line:#d5dbdb;--halo:#161E2D;--badge:#ffffff;--badgeFg:#000000}
+.az .bg{fill:var(--bg)}
+.az text{font-family:Arial,Helvetica,sans-serif;fill:var(--fg)}
+.az .title{font-size:22px;font-weight:700}
+.az .subtitle{font-size:13px;fill:var(--muted)}
+.az .glabel,.az .nlabel,.az .elabel{font-size:12px}
+.az .nsub{font-size:10.5px;fill:var(--muted)}
+.az .elabel{paint-order:stroke;stroke:var(--halo);stroke-width:4px;stroke-linejoin:round}
+.az .eline{stroke:var(--line)}
+.az .arw{fill:none;stroke:var(--line);stroke-width:1.6}
+.az .badge circle{fill:var(--badge)}.az .badge circle.hit{fill:transparent}.az .badge{cursor:help}.az .badge:hover circle:not(.hit){stroke:#ff9900;stroke-width:3}
+.az .badge text{fill:var(--badgeFg);font-weight:700;font-size:12px}
+.az .only-dark{display:none}.az.theme-dark .only-dark{display:inline}.az.theme-dark .only-light{display:none}
+.az.theme-dark .grect[data-fill-dark="none"]{fill:none}
+.az .dim{opacity:.18}.az .hl .eline{stroke-width:3}
+.az .edge,.az .node{transition:opacity .12s}
+.az .life{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 4;opacity:.7}
+.az .asyncdot{fill:var(--line)}
+.az .note rect{fill:none;stroke:var(--muted);stroke-width:1.25}.az .note text{font-size:11.5px}
+.az .frag rect{stroke:var(--muted);stroke-width:1.25}.az .fragtab{fill:var(--bg);stroke:var(--muted);stroke-width:1.25}
+.az .fraglabel{font-size:11px;font-weight:700}.az .fragelse{stroke:var(--muted);stroke-dasharray:6 4}</style>
+<defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="arw" d="M1.5 1.5 L8.5 5 L1.5 8.5"/></marker><symbol id="gen-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.4" fill="#4285F4"/><path d="M2.5 19.5c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6z" fill="#4285F4"/><circle cx="17" cy="9" r="2.8" fill="#8AB4F8"/><path d="M16 13.8c3 .1 5.5 2 5.5 5.7H17c0-2-.4-3.8-1-5.7z" fill="#8AB4F8"/></symbol><symbol id="svc-cloud_api_gateway" viewBox="0 0 24 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(2.000000, 2.000000)" fill="#4285F4">
+            <path d="M10.346494,3.74811293e-13 C11.0558919,3.74811293e-13 11.6561001,0.393257293 12.1463703,1.05722297 C12.545754,1.59810241 12.8906844,2.34424015 13.1766575,3.25989455 C13.7389373,5.0602526 14.0566038,7.46502511 14.0566038,10.0235849 C14.0566038,12.5821447 13.7389373,14.9869172 13.1766575,16.7872753 C12.8906844,17.7029297 12.545754,18.4490674 12.1463703,18.9899468 C11.6561001,19.6539125 11.0558919,20.0471698 10.346494,20.0471698 C8.72332981,20.0471698 7.71939051,18.6289665 7.18391951,16.2085035 C7.16763434,16.1348905 7.16352632,16.061587 7.1703186,15.9903838 L8.80030207,15.9906287 C9.02021233,16.9694558 9.29621728,17.9312563 9.60329039,18.2496177 C9.80793547,18.4617857 10.0156954,18.5377358 10.346494,18.5377358 C10.3525053,18.5377358 10.3600292,18.5365147 10.3722666,18.5325354 C10.3950863,18.5251152 10.4240204,18.5109595 10.4588816,18.4881184 C10.5594824,18.4222046 10.6765815,18.3055866 10.8002002,18.1381716 C11.0884945,17.7477389 11.3684471,17.1421582 11.6102121,16.3680533 C12.12669,14.7143481 12.4260072,12.4484812 12.4260072,10.0235849 C12.4260072,7.5986886 12.12669,5.33282174 11.6102121,3.67911654 C11.3684471,2.90501164 11.0884945,2.29943089 10.8002002,1.90899817 C10.6765815,1.74158318 10.5594824,1.62496519 10.4588816,1.55905144 C10.4240204,1.53621032 10.3950863,1.52205463 10.3722666,1.51463437 C10.3600292,1.51065511 10.3525053,1.50943396 10.346494,1.50943396 C10.0809615,1.50943396 9.84647729,1.634002 9.59030056,1.97294969 C9.26394433,2.40475194 8.97946101,3.11005339 8.75982164,4.10291376 L7.09890062,4.10249714 C7.36411395,2.76995886 7.74433512,1.78229785 8.25423786,1.10764503 C8.80249145,0.382250163 9.52203091,3.74811293e-13 10.346494,3.74811293e-13 Z M10.5660377,12.5 L10.5660377,14.009434 L2.64150943,14.009434 C2.22469075,14.009434 1.88679245,13.6715357 1.88679245,13.254717 C1.88679245,12.8378983 2.22469075,12.5 2.64150943,12.5 L10.5660377,12.5 Z M19.245283,10.8962669 C19.6621017,10.8962669 20,11.2341652 20,11.6509839 C20,12.0678025 19.6621017,12.4057008 19.245283,12.4057008 L15.5018248,12.4066389 C15.5638331,11.915011 15.6081639,11.4104043 15.6339123,10.8966965 L19.245283,10.8962669 Z M10.5660377,9.29245283 L10.5660377,10.8018868 L0.754716981,10.8018868 C0.337898302,10.8018868 -1.89337682e-14,10.4639885 -1.86517468e-14,10.0471698 C-1.87027924e-14,9.63035113 0.337898302,9.29245283 0.754716981,9.29245283 L10.5660377,9.29245283 Z M15.5506141,7.68763695 L19.245283,7.68871971 C19.6621017,7.68871971 20,8.02661801 20,8.44343669 C20,8.82552048 19.7160716,9.14128923 19.3476936,9.19126399 L19.245283,9.19815367 L15.6508837,9.19777015 C15.6355715,8.68528869 15.601857,8.18066214 15.5506141,7.68763695 Z M10.5660377,6.08490566 L10.5660377,7.59433962 L2.64150943,7.59433962 C2.22469075,7.59433962 1.88679245,7.25644132 1.88679245,6.83962264 C1.88679245,6.45753885 2.17072089,6.1417701 2.53909881,6.09179534 L2.64150943,6.08490566 L10.5660377,6.08490566 Z" ></path>
+        </g>
+    </g></symbol><symbol id="svc-cloud_run" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-cloud_run__st0 {
+        fill: none;
+      }
+
+      .svc-cloud_run__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-cloud_run__st2 {
+        fill: #34a853;
+      }
+
+      .svc-cloud_run__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-cloud_run__st4 {
+        fill: #ea4335;
+      }
+    </style>
+  </defs>
+  <g id="svc-cloud_run__bounding_box">
+    <rect class="svc-cloud_run__st0" width="512" height="512"/>
+  </g>
+  <g id="svc-cloud_run__art">
+    <path class="svc-cloud_run__st3" d="M144.4,272c-6.4,0-12.4-3.8-14.9-10.1L55.4,75.9c-3.3-8.2.7-17.5,8.9-20.8,8.2-3.3,17.5.7,20.8,8.9l74.2,186c3.3,8.2-.7,17.5-8.9,20.8-1.9.8-3.9,1.1-5.9,1.1h-.1Z"/>
+    <g id="svc-cloud_run__b">
+      <path class="svc-cloud_run__st4" d="M256,272c-6.4,0-12.4-3.8-14.9-10.1l-74.1-186c-2.6-6.6-.6-14.1,5-18.5s13.4-4.5,19.2-.4l260.1,186c7.2,5.1,8.9,15.1,3.7,22.3s-15.1,8.9-22.3,3.7L216.9,114.7l54,135.3c3.3,8.2-.7,17.5-8.9,20.8-1.9.8-4,1.1-5.9,1.1h-.1Z"/>
+    </g>
+    <path class="svc-cloud_run__st2" d="M127.2,256l-72,180c-3.3,8.2.7,17.5,8.9,20.8,3.1,1.2,4,1.1,5.9,1.1,6.3,0,12.4-3.8,14.9-10.1l74.4-186c.8-2,1.1-4,1.1-5.9h-33.2Z"/>
+    <path class="svc-cloud_run__st1" d="M414.5,256l-197.7,141.2,54.1-135.3c.8-2,1.1-4,1.1-5.9h-33.2l-72,180c-2.6,6.6-.6,14.1,5,18.5,2.9,2.3,6.4,3.4,9.9,3.4s6.5-1,9.3-3l260.4-186c4.4-3.1,6.7-8,6.7-13h-43.6Z"/>
+  </g></symbol><symbol id="svc-firestore" viewBox="0 0 24 24"><defs><style>.svc-firestore__cls-1{fill:#669df6;}.svc-firestore__cls-2{fill:#aecbfa;}.svc-firestore__cls-3{fill:#4285f4;}</style></defs><g data-name="Product Icons"><g data-name="colored-32/firestore"><g ><path class="svc-firestore__cls-1" d="M21,13,12,9v4l9,4Zm0-7L12,2V6l9,4Z"/><polygon id="svc-firestore__Rectangle-7" class="svc-firestore__cls-2" points="3 6 12 2 12 6 3 10 3 6"/><polygon id="svc-firestore__Rectangle-7-2" data-name="Rectangle-7" class="svc-firestore__cls-2" points="3 13 12 9 12 13 3 17 3 13"/><polygon id="svc-firestore__Rectangle-7-3" data-name="Rectangle-7" class="svc-firestore__cls-3" points="12 18 15.37 16.5 19.88 18.5 12 22 12 18"/></g></g></g></symbol></defs>
+<rect class="bg" width="840" height="824"/>
+<text class="title" x="40" y="46">Imported sequence</text>
+<text class="subtitle" x="40" y="70">Imported from Mermaid; verify icon choices</text>
+<line class="life" x1="135" y1="228" x2="135" y2="774"/>
+<line class="life" x1="325" y1="228" x2="325" y2="774"/>
+<line class="life" x1="515" y1="228" x2="515" y2="774"/>
+<line class="life" x1="705" y1="228" x2="705" y2="774"/>
+<g class="frag"><rect x="233" y="482" width="374" height="162" fill="none"/><path class="fragtab" d="M233 482 h154 v18 l-8 8 h-146 z"/><text class="fraglabel" x="239" y="496">alt [payment approved]</text>
+<line class="fragelse" x1="233" y1="570" x2="607" y2="570"/><text class="fraglabel" x="239" y="584">[declined]</text>
+</g>
+<g class="edge" data-from="U" data-to="A" data-step="1" data-label="POST /orders" data-tip="Customer → API Gateway (POST /orders)">
+<path class="eline" fill="none" stroke-width="2" d="M135 291 H325" marker-end="url(#arw)"/>
+<text class="elabel" x="230" y="283" text-anchor="middle">POST /orders</text>
+<g class="badge"><title>1. Customer → API Gateway (POST /orders)</title><circle cx="135" cy="291" r="11"/><circle class="hit" cx="135" cy="291" r="16"/><text x="135" y="295.5" text-anchor="middle">1</text></g>
+</g>
+<g class="edge" data-from="A" data-to="F" data-step="2" data-label="invoke" data-tip="API Gateway → Orders Cloud Run service (invoke)">
+<path class="eline" fill="none" stroke-width="2" d="M325 345 H515" marker-end="url(#arw)"/>
+<text class="elabel" x="420" y="337" text-anchor="middle">invoke</text>
+<g class="badge"><title>2. API Gateway → Orders Cloud Run service (invoke)</title><circle cx="325" cy="345" r="11"/><circle class="hit" cx="325" cy="345" r="16"/><text x="325" y="349.5" text-anchor="middle">2</text></g>
+</g>
+<g class="edge" data-from="F" data-to="D" data-step="3" data-label="write order" data-tip="Orders Cloud Run service → Firestore (write order)">
+<path class="eline" fill="none" stroke-width="2" d="M515 399 H705" marker-end="url(#arw)"/>
+<text class="elabel" x="610" y="391" text-anchor="middle">write order</text>
+<g class="badge"><title>3. Orders Cloud Run service → Firestore (write order)</title><circle cx="515" cy="399" r="11"/><circle class="hit" cx="515" cy="399" r="16"/><text x="515" y="403.5" text-anchor="middle">3</text></g>
+</g>
+<g class="edge" data-from="D" data-to="F" data-step="4" data-label="ok">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M705 453 H515" marker-end="url(#arw)"/>
+<text class="elabel" x="610" y="445" text-anchor="middle">ok</text>
+</g>
+<g class="edge" data-from="F" data-to="A" data-step="4" data-label="OrderConfirmed event" data-tip="Orders Cloud Run service → API Gateway (OrderConfirmed event)">
+<path class="eline" fill="none" stroke-width="2" d="M515 536 H325" marker-end="url(#arw)"/>
+<circle class="asyncdot" cx="515" cy="536" r="3.5"/>
+<text class="elabel" x="420" y="514" text-anchor="middle">OrderConfirmed</text>
+<text class="elabel" x="420" y="528" text-anchor="middle">event</text>
+<g class="badge"><title>4. Orders Cloud Run service → API Gateway (OrderConfirmed event)</title><circle cx="515" cy="536" r="11"/><circle class="hit" cx="515" cy="536" r="16"/><text x="515" y="540.5" text-anchor="middle">4</text></g>
+</g>
+<g class="edge" data-from="F" data-to="A" data-step="5" data-label="402">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M515 619 H325" marker-end="url(#arw)"/>
+<text class="elabel" x="420" y="611" text-anchor="middle">402</text>
+</g>
+<g class="edge" data-from="F" data-to="F" data-step="5" data-label="validate" data-tip="Orders Cloud Run service → Orders Cloud Run service (validate)">
+<path class="eline" fill="none" stroke-width="2" d="M515 661 h40 v24 h-40" marker-end="url(#arw)"/>
+<text class="elabel" x="565" y="677">validate</text>
+<g class="badge"><title>5. Orders Cloud Run service → Orders Cloud Run service (validate)</title><circle cx="537" cy="661" r="11"/><circle class="hit" cx="537" cy="661" r="16"/><text x="537" y="665.5" text-anchor="middle">5</text></g>
+</g>
+<g class="edge" data-from="A" data-to="U" data-step="6" data-label="201 Created">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M325 727 H135" marker-end="url(#arw)"/>
+<text class="elabel" x="230" y="719" text-anchor="middle">201 Created</text>
+</g>
+<g class="node" data-id="U" data-label="Customer" data-service="Users" data-category="General"><title>Customer (Users)</title><use href="#gen-users" x="103" y="116" width="64" height="64"/>
+<text class="nlabel" x="135" y="197" text-anchor="middle">Customer</text>
+</g>
+<g class="node" data-id="A" data-label="API Gateway" data-service="Cloud API Gateway" data-category="networking"><title>API Gateway (Cloud API Gateway)</title><use href="#svc-cloud_api_gateway" x="293" y="116" width="64" height="64"/>
+<text class="nlabel" x="325" y="197" text-anchor="middle">API Gateway</text>
+</g>
+<g class="node" data-id="F" data-label="Orders Cloud Run service" data-service="Cloud Run" data-category="serverless"><title>Orders Cloud Run service (Cloud Run)</title><use href="#svc-cloud_run" x="483" y="116" width="64" height="64"/>
+<text class="nlabel" x="515" y="197" text-anchor="middle">Orders Cloud Run</text>
+<text class="nlabel" x="515" y="211" text-anchor="middle">service</text>
+</g>
+<g class="node" data-id="D" data-label="Firestore" data-service="Firestore" data-category="databases"><title>Firestore (Firestore)</title><use href="#svc-firestore" x="673" y="116" width="64" height="64"/>
+<text class="nlabel" x="705" y="197" text-anchor="middle">Firestore</text>
+</g>
+</svg>

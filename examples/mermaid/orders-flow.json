@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "Imported diagram",
+    "subtitle": "Imported from Mermaid; verify icon choices",
+    "output": "examples/mermaid/orders-flow.html"
+  },
+  "root": {
+    "layout": "row",
+    "gap": 70,
+    "children": [
+      {
+        "id": "layer0_0",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "U",
+            "label": "Customer Browser",
+            "icon": "gen:users"
+          }
+        ]
+      },
+      {
+        "id": "layer0_1",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "LB",
+            "label": "Cloud Load Balancing",
+            "icon": "cloud-load-balancing"
+          }
+        ]
+      },
+      {
+        "id": "layer0_2",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "API",
+            "label": "API Gateway",
+            "icon": "cloud-api-gateway"
+          }
+        ]
+      },
+      {
+        "id": "layer0_3",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "Google_Cloud",
+            "kind": "gcp-cloud",
+            "label": "Google Cloud",
+            "children": [
+              {
+                "id": "layer1_0",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 56,
+                "children": [
+                  {
+                    "id": "F",
+                    "label": "Orders Cloud Run service",
+                    "icon": "cloud-run"
+                  }
+                ]
+              },
+              {
+                "id": "layer1_1",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 56,
+                "children": [
+                  {
+                    "id": "D",
+                    "label": "Orders Firestore",
+                    "icon": "firestore"
+                  },
+                  {
+                    "id": "Q",
+                    "label": "Pub/Sub Topic",
+                    "icon": "pubsub"
+                  }
+                ]
+              }
+            ],
+            "layout": "row",
+            "gap": 56
+          }
+        ]
+      },
+      {
+        "id": "layer0_4",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "P",
+            "label": "Payment Gateway",
+            "icon": "gen:cloud"
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "U",
+      "to": "LB",
+      "label": "HTTPS"
+    },
+    {
+      "from": "LB",
+      "to": "API"
+    },
+    {
+      "from": "API",
+      "to": "F"
+    },
+    {
+      "from": "F",
+      "to": "D",
+      "style": "dashed"
+    },
+    {
+      "from": "F",
+      "to": "Q"
+    },
+    {
+      "from": "F",
+      "to": "P"
+    }
+  ]
+}

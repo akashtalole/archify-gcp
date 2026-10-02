@@ -1,0 +1,263 @@
+{
+  "meta": {
+    "title": "Enterprise product catalog search on Google Cloud",
+    "subtitle": "Hybrid keyword + vector search with Vertex AI, a Cloud Run search API, and a Pub/Sub + Dataflow pipeline that keeps the index fresh",
+    "output": "examples/out/product-catalog-search.html",
+    "lens": [
+      "framework",
+      "generative-ai"
+    ],
+    "cost": {
+      "region": "us-central1",
+      "note": "Illustrative: 3M searches/month, 5M catalog items. Vertex AI embedding and search charges are not modelled."
+    }
+  },
+  "root": {
+    "layout": "row",
+    "gap": 80,
+    "children": [
+      {
+        "id": "people",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "shoppers",
+            "icon": "users",
+            "label": "Shoppers",
+            "sublabel": "web and app"
+          },
+          {
+            "id": "merch",
+            "icon": "users",
+            "label": "Merchandisers",
+            "sublabel": "synonyms, boosts"
+          }
+        ]
+      },
+      {
+        "id": "cloud",
+        "kind": "gcp-cloud",
+        "layout": "row",
+        "gap": 70,
+        "children": [
+          {
+            "id": "edge",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "armor",
+                "icon": "cloud-armor",
+                "label": "Cloud Armor"
+              },
+              {
+                "id": "lb",
+                "icon": "cloud-load-balancing",
+                "label": "Load Balancer",
+                "sublabel": "global external"
+              }
+            ]
+          },
+          {
+            "id": "project",
+            "kind": "project",
+            "layout": "row",
+            "gap": 70,
+            "children": [
+              {
+                "id": "region",
+                "kind": "region",
+                "layout": "row",
+                "gap": 80,
+                "children": [
+                  {
+                    "id": "api",
+                    "icon": "cloud-run",
+                    "label": "Search API",
+                    "sublabel": "Cloud Run",
+                    "usage": {
+                      "requestsPerMonth": 3000000,
+                      "avgDurationMs": 180,
+                      "vcpu": 1,
+                      "memoryGib": 1
+                    }
+                  },
+                  {
+                    "id": "retr",
+                    "kind": "custom",
+                    "layout": "column",
+                    "gap": 48,
+                    "children": [
+                      {
+                        "id": "vs",
+                        "icon": "vertexai",
+                        "label": "Vector and keyword search",
+                        "sublabel": "Vertex AI Search / Vector Search"
+                      },
+                      {
+                        "id": "emb",
+                        "icon": "vertexai",
+                        "label": "Embeddings",
+                        "sublabel": "text embedding model"
+                      }
+                    ],
+                    "icon": "vertexai",
+                    "label": "Retrieval and ranking"
+                  },
+                  {
+                    "id": "pipe",
+                    "kind": "stack",
+                    "layout": "column",
+                    "gap": 52,
+                    "children": [
+                      {
+                        "id": "topic",
+                        "icon": "pubsub",
+                        "label": "Pub/Sub",
+                        "sublabel": "catalog change events",
+                        "usage": {
+                          "tibPublishedPerMonth": 0.2
+                        }
+                      },
+                      {
+                        "id": "df",
+                        "icon": "dataflow",
+                        "label": "Dataflow",
+                        "sublabel": "enrich and embed"
+                      },
+                      {
+                        "id": "bq",
+                        "icon": "bigquery",
+                        "label": "BigQuery",
+                        "sublabel": "catalog and clickstream",
+                        "usage": {
+                          "tibScannedPerMonth": 4,
+                          "activeStorageGb": 3000
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "label": "Region us-central1"
+              },
+              {
+                "id": "src",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 56,
+                "children": [
+                  {
+                    "id": "pim",
+                    "icon": "server-farm",
+                    "label": "PIM / ERP",
+                    "sublabel": "product master"
+                  },
+                  {
+                    "id": "gcs",
+                    "icon": "cloud-storage",
+                    "label": "Cloud Storage",
+                    "sublabel": "images and feeds",
+                    "usage": {
+                      "storageGb": 2000
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ops",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 56,
+                "children": [
+                  {
+                    "id": "looker",
+                    "icon": "looker",
+                    "label": "Looker",
+                    "sublabel": "search analytics"
+                  },
+                  {
+                    "id": "mon",
+                    "icon": "cloud-monitoring",
+                    "label": "Cloud Monitoring"
+                  }
+                ]
+              }
+            ],
+            "label": "Project: catalog-prod"
+          }
+        ],
+        "label": "Google Cloud"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "shoppers",
+      "to": "armor",
+      "step": 1,
+      "label": "search",
+      "desc": "A shopper query reaches the global load balancer through Cloud Armor"
+    },
+    {
+      "from": "armor",
+      "to": "lb",
+      "step": 2
+    },
+    {
+      "from": "lb",
+      "to": "api",
+      "step": 3
+    },
+    {
+      "from": "api",
+      "to": "emb",
+      "step": 4,
+      "label": "embed query"
+    },
+    {
+      "from": "emb",
+      "to": "vs",
+      "step": 5,
+      "label": "hybrid query",
+      "desc": "The query embedding and the keywords are sent to the search index together and results are blended"
+    },
+    {
+      "from": "pim",
+      "to": "topic",
+      "step": 6,
+      "label": "changes"
+    },
+    {
+      "from": "topic",
+      "to": "df",
+      "step": 7
+    },
+    {
+      "from": "df",
+      "to": "vs",
+      "step": 8,
+      "label": "upsert"
+    },
+    {
+      "from": "df",
+      "to": "bq",
+      "style": "dashed",
+      "label": "archive"
+    },
+    {
+      "from": "merch",
+      "to": "looker",
+      "style": "dashed",
+      "label": "tune"
+    },
+    {
+      "from": "looker",
+      "to": "bq",
+      "style": "dashed",
+      "label": "query"
+    }
+  ]
+}

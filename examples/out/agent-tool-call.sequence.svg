@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="az theme-light" viewBox="0 0 1410 1134" width="1410" height="1134" role="img" aria-label="Agent tool call with safety screening and approval">
+<title>Agent tool call with safety screening and approval</title>
+<style>.az{--bg:#ffffff;--fg:#000000;--muted:#545b64;--line:#232F3E;--halo:#ffffff;--badge:#000000;--badgeFg:#ffffff}
+.az.theme-dark{--bg:#161E2D;--fg:#ffffff;--muted:#aab4c3;--line:#d5dbdb;--halo:#161E2D;--badge:#ffffff;--badgeFg:#000000}
+.az .bg{fill:var(--bg)}
+.az text{font-family:Arial,Helvetica,sans-serif;fill:var(--fg)}
+.az .title{font-size:22px;font-weight:700}
+.az .subtitle{font-size:13px;fill:var(--muted)}
+.az .glabel,.az .nlabel,.az .elabel{font-size:12px}
+.az .nsub{font-size:10.5px;fill:var(--muted)}
+.az .elabel{paint-order:stroke;stroke:var(--halo);stroke-width:4px;stroke-linejoin:round}
+.az .eline{stroke:var(--line)}
+.az .arw{fill:none;stroke:var(--line);stroke-width:1.6}
+.az .badge circle{fill:var(--badge)}.az .badge circle.hit{fill:transparent}.az .badge{cursor:help}.az .badge:hover circle:not(.hit){stroke:#ff9900;stroke-width:3}
+.az .badge text{fill:var(--badgeFg);font-weight:700;font-size:12px}
+.az .only-dark{display:none}.az.theme-dark .only-dark{display:inline}.az.theme-dark .only-light{display:none}
+.az.theme-dark .grect[data-fill-dark="none"]{fill:none}
+.az .dim{opacity:.18}.az .hl .eline{stroke-width:3}
+.az .edge,.az .node{transition:opacity .12s}
+.az .life{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 4;opacity:.7}
+.az .asyncdot{fill:var(--line)}
+.az .note rect{fill:none;stroke:var(--muted);stroke-width:1.25}.az .note text{font-size:11.5px}
+.az .frag rect{stroke:var(--muted);stroke-width:1.25}.az .fragtab{fill:var(--bg);stroke:var(--muted);stroke-width:1.25}
+.az .fraglabel{font-size:11px;font-weight:700}.az .fragelse{stroke:var(--muted);stroke-dasharray:6 4}</style>
+<defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="arw" d="M1.5 1.5 L8.5 5 L1.5 8.5"/></marker><symbol id="gen-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.4" fill="#4285F4"/><path d="M2.5 19.5c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6z" fill="#4285F4"/><circle cx="17" cy="9" r="2.8" fill="#8AB4F8"/><path d="M16 13.8c3 .1 5.5 2 5.5 5.7H17c0-2-.4-3.8-1-5.7z" fill="#8AB4F8"/></symbol><symbol id="svc-apigee_api_platform" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-apigee_api_platform__st0 {
+        fill: none;
+      }
+
+      .svc-apigee_api_platform__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-apigee_api_platform__st2 {
+        fill: #34a853;
+      }
+
+      .svc-apigee_api_platform__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-apigee_api_platform__st4 {
+        fill: #ea4335;
+      }
+    </style>
+  </defs>
+  <rect id="svc-apigee_api_platform__bounding_box" class="svc-apigee_api_platform__st0" width="512" height="512"/>
+  <g id="svc-apigee_api_platform__art">
+    <path class="svc-apigee_api_platform__st3" d="M349,458c-29.1,0-56.5-11.3-77.1-31.9L85.9,240.1c-20.6-20.6-31.9-48-31.9-77.1s11.3-56.5,31.9-77.1c20.6-20.6,48-31.9,77.1-31.9s56.5,11.3,77.1,31.9l186,186c20.6,20.6,31.9,48,31.9,77.1s-11.3,56.5-31.9,77.1c-20.6,20.6-48,31.9-77.1,31.9h0ZM163,86c-19.7,0-39.4,7.5-54.4,22.5-30,30-30,78.9,0,108.9l186,186c30,30,78.9,30,108.9,0,30-30,30-78.9,0-108.9L217.4,108.6c-15-15-34.7-22.5-54.4-22.5h0Z"/>
+    <path class="svc-apigee_api_platform__st1" d="M163,458c-29.1,0-56.5-11.3-77.1-31.9-20.6-20.6-31.9-48-31.9-77.1s11.3-56.5,31.9-77.1l186-186c20.6-20.6,48-31.9,77.1-31.9s56.5,11.3,77.1,31.9c20.6,20.6,31.9,48,31.9,77.1s-11.3,56.5-31.9,77.1l-186,186c-20.6,20.6-48,31.9-77.1,31.9h0ZM349,86c-19.7,0-39.4,7.5-54.5,22.5l-186,186c-30,30-30,78.9,0,108.9,30,30,78.9,30,108.9,0l186-186c30-30,30-78.9,0-108.9-15-15-34.7-22.5-54.5-22.5h0Z"/>
+    <path class="svc-apigee_api_platform__st4" d="M310.5,201.6l-93-93c-30-30-78.9-30-108.9,0l-22.6-22.6c42.5-42.5,111.6-42.5,154.1,0l93,93-22.6,22.6h0Z"/>
+    <path class="svc-apigee_api_platform__st4" d="M201.6,201.6l-22.6-22.6,93-93c42.5-42.5,111.6-42.5,154.1,0l-22.6,22.6c-30-30-78.9-30-108.9,0l-93,93h0Z"/>
+    <path class="svc-apigee_api_platform__st2" d="M163,458c-27.9,0-55.8-10.6-77.1-31.9l22.6-22.6c30,30,78.9,30,108.9,0l93-93,22.6,22.6-93,93c-21.2,21.2-49.2,31.9-77.1,31.9h0Z"/>
+    <path class="svc-apigee_api_platform__st2" d="M349,458c-27.9,0-55.8-10.6-77.1-31.9l-93-93,22.6-22.6,93,93c30,30,78.9,30,108.9,0l22.6,22.6c-21.2,21.2-49.2,31.9-77.1,31.9h0Z"/>
+    <path class="svc-apigee_api_platform__st1" d="M426.1,426.1l-22.6-22.6c30-30,30-78.9,0-108.9l-93-93,22.6-22.6,93,93c42.5,42.5,42.5,111.6,0,154.1h0Z"/>
+    <path class="svc-apigee_api_platform__st1" d="M256,365c-29.1,0-56.5-11.3-77.1-31.9h0c-42.5-42.5-42.5-111.6,0-154.1s48-31.9,77.1-31.9,56.5,11.3,77.1,31.9c20.6,20.6,31.9,48,31.9,77.1s-11.3,56.5-31.9,77.1c-20.6,20.6-48,31.9-77.1,31.9h0ZM256,179c-20.6,0-39.9,8-54.4,22.6-30,30-30,78.9,0,108.9h0c14.5,14.5,33.9,22.5,54.4,22.5s39.9-8,54.5-22.5,22.5-33.9,22.5-54.4-8-39.9-22.5-54.4-33.9-22.6-54.5-22.6h0Z"/>
+    <path class="svc-apigee_api_platform__st4" d="M310.5,201.6c-14.5-14.5-33.9-22.6-54.5-22.6s-39.9,8-54.4,22.6l-22.6-22.6c20.6-20.6,48-31.9,77.1-31.9s56.5,11.3,77.1,31.9l-22.6,22.6h0Z"/>
+    <path class="svc-apigee_api_platform__st2" d="M256,365c-29.1,0-56.5-11.3-77.1-31.9l22.6-22.6c14.5,14.5,33.9,22.5,54.5,22.5s39.9-8,54.5-22.5l22.6,22.6c-20.6,20.6-48,31.9-77.1,31.9h0Z"/>
+    <path class="svc-apigee_api_platform__st3" d="M85.9,426.1c-42.5-42.5-42.5-111.6,0-154.1l93-93,22.6,22.6-93,93c-30,30-30,78.9,0,108.9l-22.6,22.6h0Z"/>
+    <path class="svc-apigee_api_platform__st3" d="M178.9,333.1c-42.5-42.5-42.5-111.6,0-154.1l22.6,22.6c-30,30-30,78.9,0,108.9l-22.6,22.6Z"/>
+    <path class="svc-apigee_api_platform__st3" d="M178.9,333.1l-93-93c-42.5-42.5-42.5-111.6,0-154.1l22.6,22.6c-30,30-30,78.9,0,108.9l93,93-22.6,22.6h0Z"/>
+  </g></symbol><symbol id="svc-vertexai" viewBox="0 0 512 512"><g id="svc-vertexai__bounding_box">
+    <rect width="512" height="512" fill="none"/>
+  </g>
+  <g id="svc-vertexai__art">
+    <path d="M128,244.99c-8.84,0-16-7.16-16-16v-95.97c0-8.84,7.16-16,16-16s16,7.16,16,16v95.97c0,8.84-7.16,16-16,16Z" fill="#ea4335"/>
+    <path d="M256,458c-2.98,0-5.97-.83-8.59-2.5l-186-122c-7.46-4.74-9.65-14.63-4.91-22.09,4.75-7.46,14.64-9.65,22.09-4.91l177.41,116.53,177.41-116.53c7.45-4.74,17.34-2.55,22.09,4.91,4.74,7.46,2.55,17.34-4.91,22.09l-186,122c-2.62,1.67-5.61,2.5-8.59,2.5Z" fill="#fbbc04"/>
+    <path d="M256,388.03c-8.84,0-16-7.16-16-16v-73.06c0-8.84,7.16-16,16-16s16,7.16,16,16v73.06c0,8.84-7.16,16-16,16Z" fill="#34a853"/>
+    <circle cx="128" cy="70" r="16" fill="#ea4335"/>
+    <circle cx="128" cy="292" r="16" fill="#ea4335"/>
+    <path d="M384.23,308.01c-8.82,0-15.98-7.14-16-15.97l-.23-94.01c-.02-8.84,7.13-16.02,15.97-16.03h.04c8.82,0,15.98,7.14,16,15.97l.23,94.01c.02,8.84-7.13,16.02-15.97,16.03h-.04Z" fill="#4285f4"/>
+    <circle cx="384" cy="70" r="16" fill="#4285f4"/>
+    <circle cx="384" cy="134" r="16" fill="#4285f4"/>
+    <path d="M320,220.36c-8.84,0-16-7.16-16-16v-103.02c0-8.84,7.16-16,16-16s16,7.16,16,16v103.02c0,8.84-7.16,16-16,16Z" fill="#fbbc04"/>
+    <circle cx="256" cy="171" r="16" fill="#34a853"/>
+    <circle cx="256" cy="235" r="16" fill="#34a853"/>
+    <circle cx="320" cy="265" r="16" fill="#fbbc04"/>
+    <circle cx="320" cy="329" r="16" fill="#fbbc04"/>
+    <path d="M192,217.36c-8.84,0-16-7.16-16-16v-100.02c0-8.84,7.16-16,16-16s16,7.16,16,16v100.02c0,8.84-7.16,16-16,16Z" fill="#fbbc04"/>
+    <circle cx="192" cy="265" r="16" fill="#fbbc04"/>
+    <circle cx="192" cy="329" r="16" fill="#fbbc04"/>
+  </g></symbol><symbol id="svc-data_loss_prevention_api" viewBox="0 0 24 24"><defs><style>.svc-data_loss_prevention_api__cls-1{fill:#4285f4;}.svc-data_loss_prevention_api__cls-2{fill:#669df6;}.svc-data_loss_prevention_api__cls-3{fill:#aecbfa;}</style></defs><g data-name="Product Icons"><path class="svc-data_loss_prevention_api__cls-1" d="M14.86,5.44A5.48,5.48,0,0,0,7.8,6.5a5.31,5.31,0,0,0-1.34,3.6,5.49,5.49,0,0,0,2.41,4.53l-.17.28-.56.16c-.89,1.56-1.22,2-2.06,3.48l1.48.85c.85-1.5,1.17-1.94,2.05-3.48l-.16-.61.14-.26a5.49,5.49,0,0,0,5.27-9.61Zm-1.92,8.3A3.79,3.79,0,1,1,15.6,9.09h0A3.8,3.8,0,0,1,12.94,13.74Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M2.05,8.78l.13-1.07H3.36v.35H2.52l0,.45a.68.68,0,0,1,.79.11.78.78,0,0,1,.17.53.77.77,0,0,1-.09.36.53.53,0,0,1-.24.25.65.65,0,0,1-.38.09.73.73,0,0,1-.36-.08.66.66,0,0,1-.26-.21A.63.63,0,0,1,2,9.24h.42a.27.27,0,0,0,.09.2.25.25,0,0,0,.2.07.23.23,0,0,0,.22-.1A.43.43,0,0,0,3,9.12a.37.37,0,0,0-.09-.27.33.33,0,0,0-.25-.1.41.41,0,0,0-.24.08l0,0Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M5.45,9.82H5V8.21l-.51.15V8l.88-.31h0Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M3,12.66H2.59V11.05l-.5.15v-.34L3,10.55H3Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M5.86,11.79a1.13,1.13,0,0,1-.18.67.74.74,0,0,1-1,0l0,0a1,1,0,0,1-.19-.65v-.39a1.06,1.06,0,0,1,.18-.67.73.73,0,0,1,1,0l0,0a1.08,1.08,0,0,1,.19.65Zm-.42-.43A.83.83,0,0,0,5.37,11a.25.25,0,0,0-.23-.12.24.24,0,0,0-.22.11.75.75,0,0,0-.07.36v.51a.85.85,0,0,0,.07.39.23.23,0,0,0,.23.12.23.23,0,0,0,.22-.12.77.77,0,0,0,.07-.37Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M19.13,9.74h-.41V8.12l-.51.16V7.94l.88-.32h0Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M20.62,8.7l.13-1.07h1.18V8h-.84L21,8.43a.65.65,0,0,1,.31-.08.63.63,0,0,1,.48.19.74.74,0,0,1,.17.52.81.81,0,0,1-.09.37.6.6,0,0,1-.25.25.79.79,0,0,1-.38.09.85.85,0,0,1-.35-.08.62.62,0,0,1-.26-.22.58.58,0,0,1-.1-.32H21a.35.35,0,0,0,.1.21.29.29,0,0,0,.2.07.26.26,0,0,0,.22-.1A.44.44,0,0,0,21.58,9a.41.41,0,0,0-.09-.28.34.34,0,0,0-.25-.09.34.34,0,0,0-.24.07l0,0Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M19.54,11.79a1.13,1.13,0,0,1-.18.67.74.74,0,0,1-1,0l0,0a1,1,0,0,1-.19-.65v-.39a1.06,1.06,0,0,1,.18-.67.73.73,0,0,1,1,0l0,0a1.08,1.08,0,0,1,.19.65Zm-.42-.43a.83.83,0,0,0-.07-.38.25.25,0,0,0-.23-.12.24.24,0,0,0-.22.11.75.75,0,0,0-.07.36v.51a.85.85,0,0,0,.07.39.23.23,0,0,0,.23.12.23.23,0,0,0,.22-.12.9.9,0,0,0,.07-.37Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M20.62,11.62l.13-1.07h1.18v.35h-.84l-.05.45a.65.65,0,0,1,.31-.08.63.63,0,0,1,.48.19A.78.78,0,0,1,22,12a.77.77,0,0,1-.09.36.51.51,0,0,1-.25.25.69.69,0,0,1-.38.09.72.72,0,0,1-.35-.08.59.59,0,0,1-.26-.21.63.63,0,0,1-.1-.32H21a.32.32,0,0,0,.1.2.25.25,0,0,0,.2.07.23.23,0,0,0,.22-.1.43.43,0,0,0,.08-.29.37.37,0,0,0-.09-.27.31.31,0,0,0-.25-.1.35.35,0,0,0-.24.08l0,0Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M9.73,12.11c0-.32,0-.63,0-.94a.86.86,0,0,1,.35-.62,2.43,2.43,0,0,1,.83-.43,2.87,2.87,0,0,1,2.42.28,1.05,1.05,0,0,1,.27.2.9.9,0,0,1,.3.75c0,.25,0,.5,0,.76Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M11.81,9.5a1.08,1.08,0,1,1,1.08-1.07h0A1.09,1.09,0,0,1,11.81,9.5Z"/></g></symbol><symbol id="svc-cloud_run" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-cloud_run__st0 {
+        fill: none;
+      }
+
+      .svc-cloud_run__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-cloud_run__st2 {
+        fill: #34a853;
+      }
+
+      .svc-cloud_run__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-cloud_run__st4 {
+        fill: #ea4335;
+      }
+    </style>
+  </defs>
+  <g id="svc-cloud_run__bounding_box">
+    <rect class="svc-cloud_run__st0" width="512" height="512"/>
+  </g>
+  <g id="svc-cloud_run__art">
+    <path class="svc-cloud_run__st3" d="M144.4,272c-6.4,0-12.4-3.8-14.9-10.1L55.4,75.9c-3.3-8.2.7-17.5,8.9-20.8,8.2-3.3,17.5.7,20.8,8.9l74.2,186c3.3,8.2-.7,17.5-8.9,20.8-1.9.8-3.9,1.1-5.9,1.1h-.1Z"/>
+    <g id="svc-cloud_run__b">
+      <path class="svc-cloud_run__st4" d="M256,272c-6.4,0-12.4-3.8-14.9-10.1l-74.1-186c-2.6-6.6-.6-14.1,5-18.5s13.4-4.5,19.2-.4l260.1,186c7.2,5.1,8.9,15.1,3.7,22.3s-15.1,8.9-22.3,3.7L216.9,114.7l54,135.3c3.3,8.2-.7,17.5-8.9,20.8-1.9.8-4,1.1-5.9,1.1h-.1Z"/>
+    </g>
+    <path class="svc-cloud_run__st2" d="M127.2,256l-72,180c-3.3,8.2.7,17.5,8.9,20.8,3.1,1.2,4,1.1,5.9,1.1,6.3,0,12.4-3.8,14.9-10.1l74.4-186c.8-2,1.1-4,1.1-5.9h-33.2Z"/>
+    <path class="svc-cloud_run__st1" d="M414.5,256l-197.7,141.2,54.1-135.3c.8-2,1.1-4,1.1-5.9h-33.2l-72,180c-2.6,6.6-.6,14.1,5,18.5,2.9,2.3,6.4,3.4,9.9,3.4s6.5-1,9.3-3l260.4-186c4.4-3.1,6.7-8,6.7-13h-43.6Z"/>
+  </g></symbol><symbol id="svc-cloud_logging" viewBox="0 0 24 24"><defs><style>.svc-cloud_logging__cls-1{fill:#4285f4;}.svc-cloud_logging__cls-2{fill:none;}.svc-cloud_logging__cls-3{fill:#669df6;}.svc-cloud_logging__cls-4{fill:#aecbfa;}</style></defs><g data-name="Product Icons"><rect class="svc-cloud_logging__cls-1" x="6" y="11" width="4" height="2"/><rect class="svc-cloud_logging__cls-1" x="4" y="18" width="6" height="2"/><g data-name="colored-32/logs"><rect class="svc-cloud_logging__cls-2" width="24" height="24"/><g ><polygon id="svc-cloud_logging__Fill-3" class="svc-cloud_logging__cls-1" points="4 18 6 18 6 6 4 6 4 18"/><polygon id="svc-cloud_logging__Fill-4" class="svc-cloud_logging__cls-3" points="9 7 22 7 22 3 9 3 9 7"/><polygon id="svc-cloud_logging__Fill-4-2" data-name="Fill-4" class="svc-cloud_logging__cls-3" points="9 14 22 14 22 10 9 10 9 14"/><polygon id="svc-cloud_logging__Fill-4-3" data-name="Fill-4" class="svc-cloud_logging__cls-3" points="9 21 22 21 22 17 9 17 9 21"/><polygon id="svc-cloud_logging__Fill-7" class="svc-cloud_logging__cls-4" points="2 8 8 8 8 2 2 2 2 8"/></g></g></g></symbol></defs>
+<rect class="bg" width="1410" height="1134"/>
+<text class="title" x="40" y="46">Agent tool call with safety screening and approval</text>
+<text class="subtitle" x="40" y="70">A user question reaches a Vertex AI agent; the model proposes a tool call; Model Armor screens it; a high-impact call waits for approval</text>
+<g class="group"><rect x="238" y="116" width="1124" height="978" fill="none" stroke="#3C4043" stroke-width="1.25"/>
+<text class="glabel" x="248" y="136">Google Cloud</text>
+</g>
+<line class="life" x1="135" y1="276" x2="135" y2="1084"/>
+<line class="life" x1="325" y1="276" x2="325" y2="1084"/>
+<line class="life" x1="515" y1="276" x2="515" y2="1084"/>
+<line class="life" x1="705" y1="276" x2="705" y2="1084"/>
+<line class="life" x1="895" y1="276" x2="895" y2="1084"/>
+<line class="life" x1="1085" y1="276" x2="1085" y2="1084"/>
+<line class="life" x1="1275" y1="276" x2="1275" y2="1084"/>
+<g class="frag"><rect x="423" y="638" width="754" height="262" fill="none"/><path class="fragtab" d="M423 638 h124 v18 l-8 8 h-116 z"/><text class="fraglabel" x="429" y="652">opt [tool needed]</text>
+</g>
+<g class="edge" data-from="user" data-to="gw" data-step="1" data-label="ask a question" data-tip="The request carries an Identity Platform token.">
+<path class="eline" fill="none" stroke-width="2" d="M135 339 H325" marker-end="url(#arw)"/>
+<text class="elabel" x="230" y="331" text-anchor="middle">ask a question</text>
+<g class="badge"><title>1. The request carries an Identity Platform token.</title><circle cx="135" cy="339" r="11"/><circle class="hit" cx="135" cy="339" r="16"/><text x="135" y="343.5" text-anchor="middle">1</text></g>
+</g>
+<g class="edge" data-from="gw" data-to="agent" data-step="2" data-label="validated request" data-tip="Apigee → Vertex AI agent (validated request)">
+<path class="eline" fill="none" stroke-width="2" d="M325 393 H515" marker-end="url(#arw)"/>
+<text class="elabel" x="420" y="385" text-anchor="middle">validated request</text>
+<g class="badge"><title>2. Apigee → Vertex AI agent (validated request)</title><circle cx="325" cy="393" r="11"/><circle class="hit" cx="325" cy="393" r="16"/><text x="325" y="397.5" text-anchor="middle">2</text></g>
+</g>
+<g class="edge" data-from="agent" data-to="armor" data-step="3" data-label="screen prompt" data-tip="Vertex AI agent → Model Armor (screen prompt)">
+<path class="eline" fill="none" stroke-width="2" d="M515 447 H705" marker-end="url(#arw)"/>
+<text class="elabel" x="610" y="439" text-anchor="middle">screen prompt</text>
+<g class="badge"><title>3. Vertex AI agent → Model Armor (screen prompt)</title><circle cx="515" cy="447" r="11"/><circle class="hit" cx="515" cy="447" r="16"/><text x="515" y="451.5" text-anchor="middle">3</text></g>
+</g>
+<g class="edge" data-from="armor" data-to="agent" data-step="4" data-label="allowed">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M705 501 H515" marker-end="url(#arw)"/>
+<text class="elabel" x="610" y="493" text-anchor="middle">allowed</text>
+</g>
+<g class="edge" data-from="agent" data-to="fm" data-step="4" data-label="reason + choose tool" data-tip="Vertex AI agent → Gemini (reason + choose tool)">
+<path class="eline" fill="none" stroke-width="2" d="M515 555 H895" marker-end="url(#arw)"/>
+<text class="elabel" x="705" y="547" text-anchor="middle">reason + choose tool</text>
+<g class="badge"><title>4. Vertex AI agent → Gemini (reason + choose tool)</title><circle cx="515" cy="555" r="11"/><circle class="hit" cx="515" cy="555" r="16"/><text x="515" y="559.5" text-anchor="middle">4</text></g>
+</g>
+<g class="edge" data-from="fm" data-to="agent" data-step="5" data-label="tool call proposal">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M895 609 H515" marker-end="url(#arw)"/>
+<text class="elabel" x="705" y="601" text-anchor="middle">tool call proposal</text>
+</g>
+<g class="edge" data-from="agent" data-to="armor" data-step="5" data-label="screen tool arguments" data-tip="Vertex AI agent → Model Armor (screen tool arguments)">
+<path class="eline" fill="none" stroke-width="2" d="M515 692 H705" marker-end="url(#arw)"/>
+<text class="elabel" x="610" y="670" text-anchor="middle">screen tool</text>
+<text class="elabel" x="610" y="684" text-anchor="middle">arguments</text>
+<g class="badge"><title>5. Vertex AI agent → Model Armor (screen tool arguments)</title><circle cx="515" cy="692" r="11"/><circle class="hit" cx="515" cy="692" r="16"/><text x="515" y="696.5" text-anchor="middle">5</text></g>
+</g>
+<g class="note"><rect x="475" y="732" width="650" height="56"/><text x="800" y="750" text-anchor="middle">High-impact calls wait for human</text><text x="800" y="765" text-anchor="middle">approval before they run.</text></g>
+<g class="edge" data-from="agent" data-to="tool" data-step="6" data-label="invoke tool (service account)" data-tip="Vertex AI agent → Tool service (invoke tool (service account))">
+<path class="eline" fill="none" stroke-width="2" d="M515 821 H1085" marker-end="url(#arw)"/>
+<text class="elabel" x="800" y="813" text-anchor="middle">invoke tool (service account)</text>
+<g class="badge"><title>6. Vertex AI agent → Tool service (invoke tool (service account))</title><circle cx="515" cy="821" r="11"/><circle class="hit" cx="515" cy="821" r="16"/><text x="515" y="825.5" text-anchor="middle">6</text></g>
+</g>
+<g class="edge" data-from="tool" data-to="agent" data-step="7" data-label="result">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M1085 875 H515" marker-end="url(#arw)"/>
+<text class="elabel" x="800" y="867" text-anchor="middle">result</text>
+</g>
+<g class="edge" data-from="agent" data-to="mon" data-step="7" data-label="trace + token usage" data-tip="Vertex AI agent → Cloud Logging (trace + token usage)">
+<path class="eline" fill="none" stroke-width="2" d="M515 929 H1275" marker-end="url(#arw)"/>
+<circle class="asyncdot" cx="515" cy="929" r="3.5"/>
+<text class="elabel" x="895" y="921" text-anchor="middle">trace + token usage</text>
+<g class="badge"><title>7. Vertex AI agent → Cloud Logging (trace + token usage)</title><circle cx="515" cy="929" r="11"/><circle class="hit" cx="515" cy="929" r="16"/><text x="515" y="933.5" text-anchor="middle">7</text></g>
+</g>
+<g class="edge" data-from="agent" data-to="gw" data-step="8" data-label="answer">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M515 983 H325" marker-end="url(#arw)"/>
+<text class="elabel" x="420" y="975" text-anchor="middle">answer</text>
+</g>
+<g class="edge" data-from="gw" data-to="user" data-step="8" data-label="response">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M325 1037 H135" marker-end="url(#arw)"/>
+<text class="elabel" x="230" y="1029" text-anchor="middle">response</text>
+</g>
+<g class="node" data-id="user" data-label="User" data-service="Users" data-category="General"><title>User (Users)</title><use href="#gen-users" x="103" y="164" width="64" height="64"/>
+<text class="nlabel" x="135" y="245" text-anchor="middle">User</text>
+</g>
+<g class="node" data-id="gw" data-label="Apigee" data-service="Apigee API Platform" data-category="integration"><title>Apigee (Apigee API Platform)</title><use href="#svc-apigee_api_platform" x="293" y="164" width="64" height="64"/>
+<text class="nlabel" x="325" y="245" text-anchor="middle">Apigee</text>
+<text class="nsub" x="325" y="259" text-anchor="middle">auth, quotas</text>
+</g>
+<g class="node" data-id="agent" data-label="Vertex AI agent" data-service="Vertex AI" data-category="ai-ml"><title>Vertex AI agent (Vertex AI)</title><use href="#svc-vertexai" x="483" y="164" width="64" height="64"/>
+<text class="nlabel" x="515" y="245" text-anchor="middle">Vertex AI agent</text>
+<text class="nsub" x="515" y="259" text-anchor="middle">Agent Engine</text>
+</g>
+<g class="node" data-id="armor" data-label="Model Armor" data-service="Data Loss Prevention API" data-category="security"><title>Model Armor (Data Loss Prevention API)</title><use href="#svc-data_loss_prevention_api" x="673" y="164" width="64" height="64"/>
+<text class="nlabel" x="705" y="245" text-anchor="middle">Model Armor</text>
+</g>
+<g class="node" data-id="fm" data-label="Gemini" data-service="Vertex AI" data-category="ai-ml"><title>Gemini (Vertex AI)</title><use href="#svc-vertexai" x="863" y="164" width="64" height="64"/>
+<text class="nlabel" x="895" y="245" text-anchor="middle">Gemini</text>
+</g>
+<g class="node" data-id="tool" data-label="Tool service" data-service="Cloud Run" data-category="serverless"><title>Tool service (Cloud Run)</title><use href="#svc-cloud_run" x="1053" y="164" width="64" height="64"/>
+<text class="nlabel" x="1085" y="245" text-anchor="middle">Tool service</text>
+<text class="nsub" x="1085" y="259" text-anchor="middle">update record</text>
+</g>
+<g class="node" data-id="mon" data-label="Cloud Logging" data-service="Cloud Logging" data-category="operations"><title>Cloud Logging (Cloud Logging)</title><use href="#svc-cloud_logging" x="1243" y="164" width="64" height="64"/>
+<text class="nlabel" x="1275" y="245" text-anchor="middle">Cloud Logging</text>
+</g>
+</svg>

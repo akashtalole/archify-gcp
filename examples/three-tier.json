@@ -1,0 +1,287 @@
+{
+  "meta": {
+    "title": "Highly available three-tier web application",
+    "subtitle": "Cloud Armor + global external Application Load Balancer \u2192 regional managed instance groups across two zones \u2192 Cloud SQL (HA) with Memorystore",
+    "output": "examples/out/three-tier.html",
+    "lens": [
+      "framework"
+    ],
+    "cost": {
+      "region": "us-central1",
+      "note": "Illustrative: 4 e2-standard-4 VMs, Cloud SQL PostgreSQL HA (4 vCPU, 16 GB, 200 GB), 500 GB storage, 2 TiB egress."
+    }
+  },
+  "root": {
+    "layout": "row",
+    "gap": 80,
+    "children": [
+      {
+        "id": "clients",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "users",
+            "icon": "users",
+            "label": "Users",
+            "sublabel": "browser and mobile"
+          },
+          {
+            "id": "cdnn",
+            "icon": "cloud-cdn",
+            "label": "Cloud CDN",
+            "sublabel": "static assets"
+          }
+        ]
+      },
+      {
+        "id": "cloud",
+        "kind": "gcp-cloud",
+        "layout": "row",
+        "gap": 70,
+        "children": [
+          {
+            "id": "edge",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "armor",
+                "icon": "cloud-armor",
+                "label": "Cloud Armor",
+                "sublabel": "WAF, rate limiting"
+              },
+              {
+                "id": "lb",
+                "icon": "cloud-load-balancing",
+                "label": "Application Load Balancer",
+                "sublabel": "global external, TLS, URL map"
+              }
+            ]
+          },
+          {
+            "id": "project",
+            "kind": "project",
+            "layout": "row",
+            "gap": 60,
+            "children": [
+              {
+                "id": "region",
+                "kind": "region",
+                "layout": "row",
+                "gap": 60,
+                "children": [
+                  {
+                    "id": "vpc",
+                    "kind": "vpc",
+                    "layout": "row",
+                    "gap": 60,
+                    "children": [
+                      {
+                        "id": "zones",
+                        "kind": "stack",
+                        "layout": "row",
+                        "gap": 50,
+                        "children": [
+                          {
+                            "id": "za",
+                            "kind": "zone",
+                            "layout": "column",
+                            "gap": 50,
+                            "children": [
+                              {
+                                "id": "web_a",
+                                "icon": "compute-engine",
+                                "label": "Web tier VMs",
+                                "sublabel": "managed instance group, zone a",
+                                "usage": {
+                                  "machineType": "e2-standard-4",
+                                  "count": 2
+                                }
+                              },
+                              {
+                                "id": "app_a",
+                                "icon": "compute-engine",
+                                "label": "App tier VMs",
+                                "sublabel": "zone a",
+                                "usage": {
+                                  "machineType": "e2-standard-4",
+                                  "count": 2
+                                }
+                              }
+                            ],
+                            "label": "Zone a"
+                          },
+                          {
+                            "id": "zb",
+                            "kind": "zone",
+                            "layout": "column",
+                            "gap": 50,
+                            "children": [
+                              {
+                                "id": "web_b",
+                                "icon": "compute-engine",
+                                "label": "Web tier VMs",
+                                "sublabel": "managed instance group, zone b",
+                                "usage": {
+                                  "machineType": "e2-standard-4",
+                                  "count": 2
+                                }
+                              },
+                              {
+                                "id": "app_b",
+                                "icon": "compute-engine",
+                                "label": "App tier VMs",
+                                "sublabel": "zone b",
+                                "usage": {
+                                  "machineType": "e2-standard-4",
+                                  "count": 2
+                                }
+                              }
+                            ],
+                            "label": "Zone b"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "data",
+                        "kind": "stack",
+                        "layout": "column",
+                        "gap": 56,
+                        "children": [
+                          {
+                            "id": "sql",
+                            "icon": "cloud-sql",
+                            "label": "Cloud SQL for PostgreSQL",
+                            "sublabel": "high availability (regional)",
+                            "usage": {
+                              "engine": "PostgreSQL",
+                              "vcpu": 4,
+                              "memoryGb": 16,
+                              "highAvailability": true,
+                              "storageGb": 200
+                            }
+                          },
+                          {
+                            "id": "redis",
+                            "icon": "memorystore",
+                            "label": "Memorystore",
+                            "sublabel": "session cache"
+                          }
+                        ]
+                      }
+                    ],
+                    "label": "VPC network"
+                  }
+                ],
+                "label": "Region us-central1"
+              }
+            ],
+            "label": "Project: shop-prod"
+          },
+          {
+            "id": "ops",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "kms",
+                "icon": "key-management-service",
+                "label": "Cloud KMS",
+                "sublabel": "CMEK keys"
+              },
+              {
+                "id": "mon",
+                "icon": "cloud-monitoring",
+                "label": "Cloud Monitoring",
+                "sublabel": "SLOs and alerts"
+              },
+              {
+                "id": "log",
+                "icon": "cloud-logging",
+                "label": "Cloud Logging",
+                "sublabel": "audit and app logs",
+                "usage": {
+                  "ingestGibPerMonth": 200
+                }
+              }
+            ]
+          }
+        ],
+        "label": "Google Cloud"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "users",
+      "to": "armor",
+      "step": 1,
+      "label": "HTTPS",
+      "desc": "Requests reach the global anycast IP of the load balancer and are screened by Cloud Armor"
+    },
+    {
+      "from": "armor",
+      "to": "lb",
+      "step": 2
+    },
+    {
+      "from": "lb",
+      "to": "web_a",
+      "step": 3,
+      "label": "balance"
+    },
+    {
+      "from": "lb",
+      "to": "web_b",
+      "step": 3
+    },
+    {
+      "from": "web_a",
+      "to": "app_a",
+      "step": 4
+    },
+    {
+      "from": "web_b",
+      "to": "app_b",
+      "step": 4
+    },
+    {
+      "from": "app_a",
+      "to": "sql",
+      "step": 5,
+      "label": "SQL"
+    },
+    {
+      "from": "app_b",
+      "to": "sql",
+      "step": 5
+    },
+    {
+      "from": "app_a",
+      "to": "redis",
+      "style": "dashed",
+      "label": "cache"
+    },
+    {
+      "from": "sql",
+      "to": "kms",
+      "style": "dashed",
+      "label": "CMEK"
+    },
+    {
+      "from": "app_b",
+      "to": "log",
+      "style": "dashed",
+      "label": "logs"
+    },
+    {
+      "from": "log",
+      "to": "mon",
+      "style": "dashed"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "title": "Serverless API with asynchronous processing",
+    "subtitle": "Identity Platform \u2192 API Gateway \u2192 Cloud Run \u2192 Firestore, with Pub/Sub feeding background Cloud Run functions and BigQuery",
+    "output": "examples/out/serverless-api.html",
+    "cost": {
+      "region": "us-central1",
+      "note": "Illustrative: 20M requests/month at 120 ms and 512 MiB; 2 TiB of Pub/Sub throughput."
+    }
+  },
+  "root": {
+    "layout": "row",
+    "gap": 80,
+    "children": [
+      {
+        "id": "clients",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "app",
+            "icon": "mobile",
+            "label": "Mobile app"
+          },
+          {
+            "id": "idp",
+            "icon": "identity-platform",
+            "label": "Identity Platform",
+            "sublabel": "sign-in, JWT"
+          }
+        ]
+      },
+      {
+        "id": "cloud",
+        "kind": "gcp-cloud",
+        "layout": "row",
+        "gap": 70,
+        "children": [
+          {
+            "id": "gw",
+            "icon": "cloud-api-gateway",
+            "label": "API Gateway",
+            "sublabel": "JWT validation, quotas"
+          },
+          {
+            "id": "project",
+            "kind": "project",
+            "layout": "row",
+            "gap": 80,
+            "children": [
+              {
+                "id": "api",
+                "icon": "cloud-run",
+                "label": "Orders API",
+                "sublabel": "Cloud Run service",
+                "usage": {
+                  "requestsPerMonth": 20000000,
+                  "avgDurationMs": 120,
+                  "vcpu": 1,
+                  "memoryGib": 0.5
+                }
+              },
+              {
+                "id": "data",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 56,
+                "children": [
+                  {
+                    "id": "fs",
+                    "icon": "firestore",
+                    "label": "Firestore",
+                    "sublabel": "orders"
+                  },
+                  {
+                    "id": "topic",
+                    "icon": "pubsub",
+                    "label": "Pub/Sub",
+                    "sublabel": "order events",
+                    "usage": {
+                      "tibPublishedPerMonth": 2
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "async",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 56,
+                "children": [
+                  {
+                    "id": "worker",
+                    "icon": "cloud-functions",
+                    "label": "Order processor",
+                    "sublabel": "Cloud Run function",
+                    "usage": {
+                      "invocationsPerMonth": 5000000,
+                      "avgDurationMs": 300,
+                      "memoryMb": 512
+                    }
+                  },
+                  {
+                    "id": "bq",
+                    "icon": "bigquery",
+                    "label": "BigQuery",
+                    "sublabel": "analytics",
+                    "usage": {
+                      "tibScannedPerMonth": 3,
+                      "activeStorageGb": 2000
+                    }
+                  }
+                ]
+              }
+            ],
+            "label": "Project: orders-prod"
+          }
+        ],
+        "label": "Google Cloud"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "app",
+      "to": "gw",
+      "step": 1,
+      "label": "HTTPS"
+    },
+    {
+      "from": "app",
+      "to": "idp",
+      "style": "dashed",
+      "label": "sign in"
+    },
+    {
+      "from": "gw",
+      "to": "api",
+      "step": 2
+    },
+    {
+      "from": "api",
+      "to": "fs",
+      "step": 3,
+      "label": "read/write"
+    },
+    {
+      "from": "api",
+      "to": "topic",
+      "step": 4,
+      "label": "publish"
+    },
+    {
+      "from": "topic",
+      "to": "worker",
+      "step": 5,
+      "label": "push"
+    },
+    {
+      "from": "worker",
+      "to": "bq",
+      "step": 6,
+      "label": "stream insert"
+    }
+  ]
+}

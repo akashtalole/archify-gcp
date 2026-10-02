@@ -1,0 +1,349 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="az theme-light" viewBox="0 0 1549 748" width="1549" height="748" role="img" aria-label="RAG chat assistant on Vertex AI">
+<title>RAG chat assistant on Vertex AI</title>
+<style>.az{--bg:#ffffff;--fg:#000000;--muted:#545b64;--line:#232F3E;--halo:#ffffff;--badge:#000000;--badgeFg:#ffffff}
+.az.theme-dark{--bg:#161E2D;--fg:#ffffff;--muted:#aab4c3;--line:#d5dbdb;--halo:#161E2D;--badge:#ffffff;--badgeFg:#000000}
+.az .bg{fill:var(--bg)}
+.az text{font-family:Arial,Helvetica,sans-serif;fill:var(--fg)}
+.az .title{font-size:22px;font-weight:700}
+.az .subtitle{font-size:13px;fill:var(--muted)}
+.az .glabel,.az .nlabel,.az .elabel{font-size:12px}
+.az .nsub{font-size:10.5px;fill:var(--muted)}
+.az .elabel{paint-order:stroke;stroke:var(--halo);stroke-width:4px;stroke-linejoin:round}
+.az .eline{stroke:var(--line)}
+.az .arw{fill:none;stroke:var(--line);stroke-width:1.6}
+.az .badge circle{fill:var(--badge)}.az .badge circle.hit{fill:transparent}.az .badge{cursor:help}.az .badge:hover circle:not(.hit){stroke:#ff9900;stroke-width:3}
+.az .badge text{fill:var(--badgeFg);font-weight:700;font-size:12px}
+.az .only-dark{display:none}.az.theme-dark .only-dark{display:inline}.az.theme-dark .only-light{display:none}
+.az.theme-dark .grect[data-fill-dark="none"]{fill:none}
+.az .dim{opacity:.18}.az .hl .eline{stroke-width:3}
+.az .edge,.az .node{transition:opacity .12s}</style>
+<defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="arw" d="M1.5 1.5 L8.5 5 L1.5 8.5"/></marker><symbol id="grp-Project" viewBox="0 0 24 24"><g >
+	<rect y="0" fill="none" width="24" height="24"/>
+	<polygon fill-rule="evenodd" fill="#85A4E6" points="0.8,5.9 3.7,0.8 9.5,0.8 12.4,5.9 9.5,10.9 3.7,10.9 	"/>
+	<polygon fill-rule="evenodd" fill="#5C85DE" points="11.4,7.7 8.5,2.6 9.5,0.7 12.4,5.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000019646383529055310330000009913415011964925323_" fill-rule="evenodd" fill="#3367D6" points="
+		2.7,9.3 8.5,9.3 10.5,5.9 11.4,7.7 9.5,10.9 3.7,11 	"/>
+	<polygon fill-rule="evenodd" fill="#85A4E6" points="11.2,11.9 14.2,6.8 20,6.8 22.9,11.9 20,16.9 14.2,16.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000133527958483064390410000012377415375428947900_" fill-rule="evenodd" fill="#5C85DE" points="
+		21.9,13.7 19,8.6 20,6.7 22.9,11.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000176019471624316745960000001248137580190207128_" fill-rule="evenodd" fill="#3367D6" points="
+		13.2,15.3 19,15.3 21,11.9 21.9,13.7 20,16.9 14.2,17 	"/>
+	<polygon fill-rule="evenodd" fill="#85A4E6" points="0.8,17.9 3.7,12.8 9.5,12.8 12.4,17.9 9.5,22.9 3.7,22.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000096041779745201399360000017167964797373102485_" fill-rule="evenodd" fill="#5C85DE" points="
+		11.4,19.7 8.5,14.6 9.5,12.7 12.4,17.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000049204188488742950820000010444321201512143025_" fill-rule="evenodd" fill="#3367D6" points="
+		2.7,21.3 8.5,21.3 10.5,17.9 11.4,19.7 9.5,22.9 3.7,23 	"/>
+</g></symbol><symbol id="svc-vertexai" viewBox="0 0 512 512"><g id="svc-vertexai__bounding_box">
+    <rect width="512" height="512" fill="none"/>
+  </g>
+  <g id="svc-vertexai__art">
+    <path d="M128,244.99c-8.84,0-16-7.16-16-16v-95.97c0-8.84,7.16-16,16-16s16,7.16,16,16v95.97c0,8.84-7.16,16-16,16Z" fill="#ea4335"/>
+    <path d="M256,458c-2.98,0-5.97-.83-8.59-2.5l-186-122c-7.46-4.74-9.65-14.63-4.91-22.09,4.75-7.46,14.64-9.65,22.09-4.91l177.41,116.53,177.41-116.53c7.45-4.74,17.34-2.55,22.09,4.91,4.74,7.46,2.55,17.34-4.91,22.09l-186,122c-2.62,1.67-5.61,2.5-8.59,2.5Z" fill="#fbbc04"/>
+    <path d="M256,388.03c-8.84,0-16-7.16-16-16v-73.06c0-8.84,7.16-16,16-16s16,7.16,16,16v73.06c0,8.84-7.16,16-16,16Z" fill="#34a853"/>
+    <circle cx="128" cy="70" r="16" fill="#ea4335"/>
+    <circle cx="128" cy="292" r="16" fill="#ea4335"/>
+    <path d="M384.23,308.01c-8.82,0-15.98-7.14-16-15.97l-.23-94.01c-.02-8.84,7.13-16.02,15.97-16.03h.04c8.82,0,15.98,7.14,16,15.97l.23,94.01c.02,8.84-7.13,16.02-15.97,16.03h-.04Z" fill="#4285f4"/>
+    <circle cx="384" cy="70" r="16" fill="#4285f4"/>
+    <circle cx="384" cy="134" r="16" fill="#4285f4"/>
+    <path d="M320,220.36c-8.84,0-16-7.16-16-16v-103.02c0-8.84,7.16-16,16-16s16,7.16,16,16v103.02c0,8.84-7.16,16-16,16Z" fill="#fbbc04"/>
+    <circle cx="256" cy="171" r="16" fill="#34a853"/>
+    <circle cx="256" cy="235" r="16" fill="#34a853"/>
+    <circle cx="320" cy="265" r="16" fill="#fbbc04"/>
+    <circle cx="320" cy="329" r="16" fill="#fbbc04"/>
+    <path d="M192,217.36c-8.84,0-16-7.16-16-16v-100.02c0-8.84,7.16-16,16-16s16,7.16,16,16v100.02c0,8.84-7.16,16-16,16Z" fill="#fbbc04"/>
+    <circle cx="192" cy="265" r="16" fill="#fbbc04"/>
+    <circle cx="192" cy="329" r="16" fill="#fbbc04"/>
+  </g></symbol><symbol id="gen-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.4" fill="#4285F4"/><path d="M2.5 19.5c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6z" fill="#4285F4"/><circle cx="17" cy="9" r="2.8" fill="#8AB4F8"/><path d="M16 13.8c3 .1 5.5 2 5.5 5.7H17c0-2-.4-3.8-1-5.7z" fill="#8AB4F8"/></symbol><symbol id="svc-identity_platform" viewBox="0 0 24 24"><defs><style>.svc-identity_platform__cls-1{fill:#669df6;}.svc-identity_platform__cls-1,.svc-identity_platform__cls-2{fill-rule:evenodd;}.svc-identity_platform__cls-2{fill:#4285f4;}</style></defs><g data-name="Product Icons"><g ><path class="svc-identity_platform__cls-1" d="M3.33,7,12,2l8.66,5v9.72L17.33,14H6.67L3.33,16.67ZM16,8.67a4,4,0,1,0-4,4A4,4,0,0,0,16,8.67Zm-1.33,0A2.67,2.67,0,1,1,12,6,2.67,2.67,0,0,1,14.67,8.67Z"/><path class="svc-identity_platform__cls-2" d="M12,12.67a4,4,0,0,0,0-8V2l8.66,5v9.72L17.33,14H12Zm2.67-4A2.67,2.67,0,0,1,12,11.31V6A2.67,2.67,0,0,1,14.67,8.66Z"/><polygon class="svc-identity_platform__cls-1" points="4 18 12 22 20 18 16.67 15.33 7.33 15.33 4 18"/><polygon class="svc-identity_platform__cls-2" points="12 22 20 18 16.67 15.33 12 15.33 12 22"/></g></g></symbol><symbol id="svc-apigee_api_platform" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-apigee_api_platform__st0 {
+        fill: none;
+      }
+
+      .svc-apigee_api_platform__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-apigee_api_platform__st2 {
+        fill: #34a853;
+      }
+
+      .svc-apigee_api_platform__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-apigee_api_platform__st4 {
+        fill: #ea4335;
+      }
+    </style>
+  </defs>
+  <rect id="svc-apigee_api_platform__bounding_box" class="svc-apigee_api_platform__st0" width="512" height="512"/>
+  <g id="svc-apigee_api_platform__art">
+    <path class="svc-apigee_api_platform__st3" d="M349,458c-29.1,0-56.5-11.3-77.1-31.9L85.9,240.1c-20.6-20.6-31.9-48-31.9-77.1s11.3-56.5,31.9-77.1c20.6-20.6,48-31.9,77.1-31.9s56.5,11.3,77.1,31.9l186,186c20.6,20.6,31.9,48,31.9,77.1s-11.3,56.5-31.9,77.1c-20.6,20.6-48,31.9-77.1,31.9h0ZM163,86c-19.7,0-39.4,7.5-54.4,22.5-30,30-30,78.9,0,108.9l186,186c30,30,78.9,30,108.9,0,30-30,30-78.9,0-108.9L217.4,108.6c-15-15-34.7-22.5-54.4-22.5h0Z"/>
+    <path class="svc-apigee_api_platform__st1" d="M163,458c-29.1,0-56.5-11.3-77.1-31.9-20.6-20.6-31.9-48-31.9-77.1s11.3-56.5,31.9-77.1l186-186c20.6-20.6,48-31.9,77.1-31.9s56.5,11.3,77.1,31.9c20.6,20.6,31.9,48,31.9,77.1s-11.3,56.5-31.9,77.1l-186,186c-20.6,20.6-48,31.9-77.1,31.9h0ZM349,86c-19.7,0-39.4,7.5-54.5,22.5l-186,186c-30,30-30,78.9,0,108.9,30,30,78.9,30,108.9,0l186-186c30-30,30-78.9,0-108.9-15-15-34.7-22.5-54.5-22.5h0Z"/>
+    <path class="svc-apigee_api_platform__st4" d="M310.5,201.6l-93-93c-30-30-78.9-30-108.9,0l-22.6-22.6c42.5-42.5,111.6-42.5,154.1,0l93,93-22.6,22.6h0Z"/>
+    <path class="svc-apigee_api_platform__st4" d="M201.6,201.6l-22.6-22.6,93-93c42.5-42.5,111.6-42.5,154.1,0l-22.6,22.6c-30-30-78.9-30-108.9,0l-93,93h0Z"/>
+    <path class="svc-apigee_api_platform__st2" d="M163,458c-27.9,0-55.8-10.6-77.1-31.9l22.6-22.6c30,30,78.9,30,108.9,0l93-93,22.6,22.6-93,93c-21.2,21.2-49.2,31.9-77.1,31.9h0Z"/>
+    <path class="svc-apigee_api_platform__st2" d="M349,458c-27.9,0-55.8-10.6-77.1-31.9l-93-93,22.6-22.6,93,93c30,30,78.9,30,108.9,0l22.6,22.6c-21.2,21.2-49.2,31.9-77.1,31.9h0Z"/>
+    <path class="svc-apigee_api_platform__st1" d="M426.1,426.1l-22.6-22.6c30-30,30-78.9,0-108.9l-93-93,22.6-22.6,93,93c42.5,42.5,42.5,111.6,0,154.1h0Z"/>
+    <path class="svc-apigee_api_platform__st1" d="M256,365c-29.1,0-56.5-11.3-77.1-31.9h0c-42.5-42.5-42.5-111.6,0-154.1s48-31.9,77.1-31.9,56.5,11.3,77.1,31.9c20.6,20.6,31.9,48,31.9,77.1s-11.3,56.5-31.9,77.1c-20.6,20.6-48,31.9-77.1,31.9h0ZM256,179c-20.6,0-39.9,8-54.4,22.6-30,30-30,78.9,0,108.9h0c14.5,14.5,33.9,22.5,54.4,22.5s39.9-8,54.5-22.5,22.5-33.9,22.5-54.4-8-39.9-22.5-54.4-33.9-22.6-54.5-22.6h0Z"/>
+    <path class="svc-apigee_api_platform__st4" d="M310.5,201.6c-14.5-14.5-33.9-22.6-54.5-22.6s-39.9,8-54.4,22.6l-22.6-22.6c20.6-20.6,48-31.9,77.1-31.9s56.5,11.3,77.1,31.9l-22.6,22.6h0Z"/>
+    <path class="svc-apigee_api_platform__st2" d="M256,365c-29.1,0-56.5-11.3-77.1-31.9l22.6-22.6c14.5,14.5,33.9,22.5,54.5,22.5s39.9-8,54.5-22.5l22.6,22.6c-20.6,20.6-48,31.9-77.1,31.9h0Z"/>
+    <path class="svc-apigee_api_platform__st3" d="M85.9,426.1c-42.5-42.5-42.5-111.6,0-154.1l93-93,22.6,22.6-93,93c-30,30-30,78.9,0,108.9l-22.6,22.6h0Z"/>
+    <path class="svc-apigee_api_platform__st3" d="M178.9,333.1c-42.5-42.5-42.5-111.6,0-154.1l22.6,22.6c-30,30-30,78.9,0,108.9l-22.6,22.6Z"/>
+    <path class="svc-apigee_api_platform__st3" d="M178.9,333.1l-93-93c-42.5-42.5-42.5-111.6,0-154.1l22.6,22.6c-30,30-30,78.9,0,108.9l93,93-22.6,22.6h0Z"/>
+  </g></symbol><symbol id="svc-cloud_run" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-cloud_run__st0 {
+        fill: none;
+      }
+
+      .svc-cloud_run__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-cloud_run__st2 {
+        fill: #34a853;
+      }
+
+      .svc-cloud_run__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-cloud_run__st4 {
+        fill: #ea4335;
+      }
+    </style>
+  </defs>
+  <g id="svc-cloud_run__bounding_box">
+    <rect class="svc-cloud_run__st0" width="512" height="512"/>
+  </g>
+  <g id="svc-cloud_run__art">
+    <path class="svc-cloud_run__st3" d="M144.4,272c-6.4,0-12.4-3.8-14.9-10.1L55.4,75.9c-3.3-8.2.7-17.5,8.9-20.8,8.2-3.3,17.5.7,20.8,8.9l74.2,186c3.3,8.2-.7,17.5-8.9,20.8-1.9.8-3.9,1.1-5.9,1.1h-.1Z"/>
+    <g id="svc-cloud_run__b">
+      <path class="svc-cloud_run__st4" d="M256,272c-6.4,0-12.4-3.8-14.9-10.1l-74.1-186c-2.6-6.6-.6-14.1,5-18.5s13.4-4.5,19.2-.4l260.1,186c7.2,5.1,8.9,15.1,3.7,22.3s-15.1,8.9-22.3,3.7L216.9,114.7l54,135.3c3.3,8.2-.7,17.5-8.9,20.8-1.9.8-4,1.1-5.9,1.1h-.1Z"/>
+    </g>
+    <path class="svc-cloud_run__st2" d="M127.2,256l-72,180c-3.3,8.2.7,17.5,8.9,20.8,3.1,1.2,4,1.1,5.9,1.1,6.3,0,12.4-3.8,14.9-10.1l74.4-186c.8-2,1.1-4,1.1-5.9h-33.2Z"/>
+    <path class="svc-cloud_run__st1" d="M414.5,256l-197.7,141.2,54.1-135.3c.8-2,1.1-4,1.1-5.9h-33.2l-72,180c-2.6,6.6-.6,14.1,5,18.5,2.9,2.3,6.4,3.4,9.9,3.4s6.5-1,9.3-3l260.4-186c4.4-3.1,6.7-8,6.7-13h-43.6Z"/>
+  </g></symbol><symbol id="svc-data_loss_prevention_api" viewBox="0 0 24 24"><defs><style>.svc-data_loss_prevention_api__cls-1{fill:#4285f4;}.svc-data_loss_prevention_api__cls-2{fill:#669df6;}.svc-data_loss_prevention_api__cls-3{fill:#aecbfa;}</style></defs><g data-name="Product Icons"><path class="svc-data_loss_prevention_api__cls-1" d="M14.86,5.44A5.48,5.48,0,0,0,7.8,6.5a5.31,5.31,0,0,0-1.34,3.6,5.49,5.49,0,0,0,2.41,4.53l-.17.28-.56.16c-.89,1.56-1.22,2-2.06,3.48l1.48.85c.85-1.5,1.17-1.94,2.05-3.48l-.16-.61.14-.26a5.49,5.49,0,0,0,5.27-9.61Zm-1.92,8.3A3.79,3.79,0,1,1,15.6,9.09h0A3.8,3.8,0,0,1,12.94,13.74Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M2.05,8.78l.13-1.07H3.36v.35H2.52l0,.45a.68.68,0,0,1,.79.11.78.78,0,0,1,.17.53.77.77,0,0,1-.09.36.53.53,0,0,1-.24.25.65.65,0,0,1-.38.09.73.73,0,0,1-.36-.08.66.66,0,0,1-.26-.21A.63.63,0,0,1,2,9.24h.42a.27.27,0,0,0,.09.2.25.25,0,0,0,.2.07.23.23,0,0,0,.22-.1A.43.43,0,0,0,3,9.12a.37.37,0,0,0-.09-.27.33.33,0,0,0-.25-.1.41.41,0,0,0-.24.08l0,0Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M5.45,9.82H5V8.21l-.51.15V8l.88-.31h0Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M3,12.66H2.59V11.05l-.5.15v-.34L3,10.55H3Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M5.86,11.79a1.13,1.13,0,0,1-.18.67.74.74,0,0,1-1,0l0,0a1,1,0,0,1-.19-.65v-.39a1.06,1.06,0,0,1,.18-.67.73.73,0,0,1,1,0l0,0a1.08,1.08,0,0,1,.19.65Zm-.42-.43A.83.83,0,0,0,5.37,11a.25.25,0,0,0-.23-.12.24.24,0,0,0-.22.11.75.75,0,0,0-.07.36v.51a.85.85,0,0,0,.07.39.23.23,0,0,0,.23.12.23.23,0,0,0,.22-.12.77.77,0,0,0,.07-.37Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M19.13,9.74h-.41V8.12l-.51.16V7.94l.88-.32h0Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M20.62,8.7l.13-1.07h1.18V8h-.84L21,8.43a.65.65,0,0,1,.31-.08.63.63,0,0,1,.48.19.74.74,0,0,1,.17.52.81.81,0,0,1-.09.37.6.6,0,0,1-.25.25.79.79,0,0,1-.38.09.85.85,0,0,1-.35-.08.62.62,0,0,1-.26-.22.58.58,0,0,1-.1-.32H21a.35.35,0,0,0,.1.21.29.29,0,0,0,.2.07.26.26,0,0,0,.22-.1A.44.44,0,0,0,21.58,9a.41.41,0,0,0-.09-.28.34.34,0,0,0-.25-.09.34.34,0,0,0-.24.07l0,0Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M19.54,11.79a1.13,1.13,0,0,1-.18.67.74.74,0,0,1-1,0l0,0a1,1,0,0,1-.19-.65v-.39a1.06,1.06,0,0,1,.18-.67.73.73,0,0,1,1,0l0,0a1.08,1.08,0,0,1,.19.65Zm-.42-.43a.83.83,0,0,0-.07-.38.25.25,0,0,0-.23-.12.24.24,0,0,0-.22.11.75.75,0,0,0-.07.36v.51a.85.85,0,0,0,.07.39.23.23,0,0,0,.23.12.23.23,0,0,0,.22-.12.9.9,0,0,0,.07-.37Z"/><path class="svc-data_loss_prevention_api__cls-3" d="M20.62,11.62l.13-1.07h1.18v.35h-.84l-.05.45a.65.65,0,0,1,.31-.08.63.63,0,0,1,.48.19A.78.78,0,0,1,22,12a.77.77,0,0,1-.09.36.51.51,0,0,1-.25.25.69.69,0,0,1-.38.09.72.72,0,0,1-.35-.08.59.59,0,0,1-.26-.21.63.63,0,0,1-.1-.32H21a.32.32,0,0,0,.1.2.25.25,0,0,0,.2.07.23.23,0,0,0,.22-.1.43.43,0,0,0,.08-.29.37.37,0,0,0-.09-.27.31.31,0,0,0-.25-.1.35.35,0,0,0-.24.08l0,0Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M9.73,12.11c0-.32,0-.63,0-.94a.86.86,0,0,1,.35-.62,2.43,2.43,0,0,1,.83-.43,2.87,2.87,0,0,1,2.42.28,1.05,1.05,0,0,1,.27.2.9.9,0,0,1,.3.75c0,.25,0,.5,0,.76Z"/><path class="svc-data_loss_prevention_api__cls-2" d="M11.81,9.5a1.08,1.08,0,1,1,1.08-1.07h0A1.09,1.09,0,0,1,11.81,9.5Z"/></g></symbol><symbol id="svc-alloydb" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-alloydb__st0 {
+        fill: none;
+      }
+
+      .svc-alloydb__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-alloydb__st2 {
+        fill: #34a853;
+      }
+
+      .svc-alloydb__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-alloydb__st4 {
+        fill: #ea4335;
+      }
+
+      .svc-alloydb__st5 {
+        fill: #4384f4;
+      }
+    </style>
+  </defs>
+  <rect id="svc-alloydb__bounding_box" class="svc-alloydb__st0" width="512" height="512"/>
+  <g id="svc-alloydb__art">
+    <path class="svc-alloydb__st3" d="M256,272c-2.5,0-5-.6-7.3-1.8L62.4,174.1c-5.4-2.8-8.7-8.4-8.7-14.4s3.6-11.6,9-14.2L249,55.3c4.4-2.1,9.5-2.1,13.9,0l186.2,90.1c5.5,2.6,9,8.1,9,14.2s-3.3,11.6-8.7,14.4l-186.2,96.2c-2.3,1.2-4.8,1.8-7.3,1.8h0ZM105.5,160.3l150.5,77.7,150.5-77.7-150.5-72.8-150.5,72.8Z"/>
+    <path class="svc-alloydb__st1" d="M458.2,256.6h0v-96.6c0-8.8-7.1-16-16-16s-16,7.1-16,16v86.9l-170,87.8-170-87.8-8.7-4.5c-7.8-4.1-17.5-1-21.5,6.9-1.2,2.3-1.8,4.9-1.8,7.3,0,5.8,3.2,11.4,8.7,14.2l23.3,12,162.7,84c.5.3,1.1.5,1.6.7,1.9.7,3.8,1.1,5.7,1.1h0c2.5,0,5-.6,7.3-1.8l27.5-14.2,135.2-69.8v159.2c0,8.8,7.1,16,16,16s16-7.1,16-16v-185.3h0q0-.1,0-.1Z"/>
+    <path class="svc-alloydb__st2" d="M256.2,334.7l-170-87.8-.4-86.9c0-8.8-7.2-16-16-16s-16,7.1-16,16v96.6h0v185.5c0,8.8,7.2,16,16,16s16-7.1,16-16l.4-159.2,162.7,84c.5.3,1.1.5,1.6.7,1.9.7,3.8,1.1,5.7,1.1h0c2.5,0,5-.6,7.3-1.8l27.5-14.2-34.8-18h0Z"/>
+    <polygon class="svc-alloydb__st5" points="256 194.5 192 161.8 256 131.5 320 161.8 256 194.5"/>
+    <path class="svc-alloydb__st4" d="M256,272c-5.8,0-11.4-3.2-14.2-8.7-4.1-7.9-1-17.5,6.9-21.6l157.8-81.5-187.2-90.6c4.7-2.3,20.7-10,29.1-14.1,5.2-2.6,9.7-2.6,14.6-.3l186.2,90.1c5.5,2.6,9,8.1,9,14.2s-3.3,11.6-8.7,14.4l-186.2,96.2c-2.4,1.2-4.9,1.8-7.3,1.8h0Z"/>
+    <path class="svc-alloydb__st0" d="M105.5,160.3l150.5,77.7,150.5-77.7-150.5-72.8-150.5,72.8Z"/>
+    <path class="svc-alloydb__st3" d="M263.3,270.2c-2.3,1.2-4.8,1.8-7.3,1.8s-5-.6-7.3-1.8L62.4,174.1c-5.4-2.8-8.7-8.4-8.7-14.4s3.6-11.6,9-14.2l13.2-6.4,29.5,21.3,185.3,95.7"/>
+  </g></symbol><symbol id="svc-cloud_storage" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-cloud_storage__st0 {
+        fill: none;
+      }
+
+      .svc-cloud_storage__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-cloud_storage__st2 {
+        fill: #34a853;
+      }
+
+      .svc-cloud_storage__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-cloud_storage__st4 {
+        fill: #ea4335;
+      }
+    </style>
+  </defs>
+  <g id="svc-cloud_storage__bounding_box">
+    <rect class="svc-cloud_storage__st0" width="512" height="512"/>
+  </g>
+  <g id="svc-cloud_storage__art">
+    <path class="svc-cloud_storage__st2" d="M442,277.9H70c-8.8,0-16,7.2-16,16v148.1c0,8.8,7.2,16,16,16h107.2c1.5.5,3.1.7,4.8.7s3.3-.3,4.8-.7h255.2c8.8,0,16-7.2,16-16v-148.1c0-8.8-7.2-16-16-16ZM86,309.9h80v116.1h-80v-116.1ZM426,425.9h-228v-116.1h228v116.1Z"/>
+    <path class="svc-cloud_storage__st3" d="M442,54H70c-8.8,0-16,7.2-16,16v148.8c0,8.8,7.2,16,16,16h372c8.8,0,16-7.2,16-16V70c0-8.8-7.2-16-16-16ZM86,86h80v116.8h-80v-116.8ZM426,202.8h-228v-116.8h228v116.8Z"/>
+    <path class="svc-cloud_storage__st4" d="M442,234.8h-16V86H54v-16c0-8.8,7.2-16,16-16h372c8.8,0,16,7.2,16,16v148.8c0,8.8-7.2,16-16,16Z"/>
+    <path class="svc-cloud_storage__st1" d="M442,457.9h-16v-148.1H54v-16c0-8.8,7.2-16,16-16h372c8.8,0,16,7.2,16,16v148.1c0,8.8-7.2,16-16,16Z"/>
+    <circle class="svc-cloud_storage__st4" cx="349" cy="144.4" r="37"/>
+    <circle class="svc-cloud_storage__st1" cx="349" cy="367.9" r="37"/>
+  </g></symbol><symbol id="svc-cloud_logging" viewBox="0 0 24 24"><defs><style>.svc-cloud_logging__cls-1{fill:#4285f4;}.svc-cloud_logging__cls-2{fill:none;}.svc-cloud_logging__cls-3{fill:#669df6;}.svc-cloud_logging__cls-4{fill:#aecbfa;}</style></defs><g data-name="Product Icons"><rect class="svc-cloud_logging__cls-1" x="6" y="11" width="4" height="2"/><rect class="svc-cloud_logging__cls-1" x="4" y="18" width="6" height="2"/><g data-name="colored-32/logs"><rect class="svc-cloud_logging__cls-2" width="24" height="24"/><g ><polygon id="svc-cloud_logging__Fill-3" class="svc-cloud_logging__cls-1" points="4 18 6 18 6 6 4 6 4 18"/><polygon id="svc-cloud_logging__Fill-4" class="svc-cloud_logging__cls-3" points="9 7 22 7 22 3 9 3 9 7"/><polygon id="svc-cloud_logging__Fill-4-2" data-name="Fill-4" class="svc-cloud_logging__cls-3" points="9 14 22 14 22 10 9 10 9 14"/><polygon id="svc-cloud_logging__Fill-4-3" data-name="Fill-4" class="svc-cloud_logging__cls-3" points="9 21 22 21 22 17 9 17 9 21"/><polygon id="svc-cloud_logging__Fill-7" class="svc-cloud_logging__cls-4" points="2 8 8 8 8 2 2 2 2 8"/></g></g></g></symbol><symbol id="svc-bigquery" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-bigquery__st0 {
+        fill: none;
+      }
+
+      .svc-bigquery__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-bigquery__st2 {
+        fill: #34a853;
+      }
+
+      .svc-bigquery__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-bigquery__st4 {
+        fill: #ea4335;
+      }
+    </style>
+  </defs>
+  <g id="svc-bigquery__bounding_box">
+    <rect class="svc-bigquery__st0" width="512" height="512"/>
+  </g>
+  <g id="svc-bigquery__art">
+    <path class="svc-bigquery__st2" d="M311.9,418.9c-8.8,0-16-7.2-16-16v-145.8c0-8.8,7.2-16,16-16s16,7.2,16,16v145.8c0,8.8-7.2,16-16,16h0Z"/>
+    <path class="svc-bigquery__st2" d="M147.6,418.9c-8.8,0-16-7.2-16-16v-200.5c0-8.8,7.2-16,16-16s16,7.2,16,16v200.5c0,8.8-7.2,16-16,16Z"/>
+    <path class="svc-bigquery__st2" d="M229.8,437.4c-8.8,0-16-7.2-16-16V147.6c0-8.8,7.2-16,16-16s16,7.2,16,16v273.7c0,8.8-7.2,16-16,16h0Z"/>
+    <path class="svc-bigquery__st3" d="M229.8,437.4c-114.5,0-207.6-93.1-207.6-207.6h32c0,96.8,78.8,175.6,175.6,175.6s175.6-78.8,175.6-175.6h32c0,114.5-93.1,207.6-207.6,207.6h0Z"/>
+    <path class="svc-bigquery__st4" d="M437.4,229.8h-32c0-96.8-78.8-175.6-175.6-175.6S54.1,132.9,54.1,229.8H22.1c0-114.5,93.2-207.7,207.7-207.7s207.6,93.1,207.6,207.6h0Z"/>
+    <path class="svc-bigquery__st1" d="M487.4,464.8l-100-100c32.3-37.6,49.9-85,49.9-135.1s-21.6-107.6-60.8-146.8l-22.6,22.6c33.2,33.2,51.4,77.3,51.4,124.2s-18.3,90.9-51.5,124.1h0c-5,5-7.5,7-11.8,10.8l122.8,122.8c3.1,3.1,7.2,4.7,11.3,4.7h0c4.1,0,8.2-1.6,11.3-4.7,6.2-6.2,6.2-16.4,0-22.6h0Z"/>
+  </g></symbol><symbol id="svc-cloud_monitoring" viewBox="0 0 24 24"><defs><style>.svc-cloud_monitoring__cls-1{fill:#669df6;}.svc-cloud_monitoring__cls-2{fill:#4285f4;}</style></defs><g data-name="Product Icons"><rect class="svc-cloud_monitoring__cls-1" x="10.83" y="15.84" width="2.33" height="2.64"/><path class="svc-cloud_monitoring__cls-2" d="M18.48,13.87a.56.56,0,0,1-.4-.17L14,9.47l-2.74,2.89a.57.57,0,0,1-.76.05L8.42,10.73l-2.2,2.92a.56.56,0,0,1-.45.22H2v1.71a.75.75,0,0,0,.74.75H21.26a.75.75,0,0,0,.74-.75V13.87Z"/><path class="svc-cloud_monitoring__cls-1" d="M5.5,12.76,7.88,9.6a.55.55,0,0,1,.37-.22.63.63,0,0,1,.42.12l2.12,1.72,2.8-2.94a.54.54,0,0,1,.4-.17h0a.54.54,0,0,1,.4.17l4.33,4.48H22V6a.74.74,0,0,0-.74-.74H2.74A.74.74,0,0,0,2,6v6.81Z"/><rect class="svc-cloud_monitoring__cls-2" x="8.67" y="18.18" width="6.67" height="0.61" rx="0.3"/></g></symbol></defs>
+<rect class="bg" width="1549" height="748"/>
+<text class="title" x="40" y="46">RAG chat assistant on Vertex AI</text>
+<text class="subtitle" x="40" y="70">Authenticated API → orchestrator on Cloud Run → Model Armor-screened Gemini call grounded by AlloyDB vector search, with request-response logging</text>
+<g class="group" data-id="cloud" data-label="Google Cloud">
+<rect x="237" y="116" width="1272" height="592" fill="none" stroke="#3C4043" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<text class="glabel" x="247" y="136">Google Cloud</text>
+</g>
+<g class="group" data-id="project" data-label="Project: assistant-prod">
+<rect x="479" y="164" width="1006" height="520" fill="none" stroke="#4285F4" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<use href="#grp-Project" x="479" y="164" width="32" height="32"/>
+<text class="glabel" x="519" y="185">Project: assistant-prod</text>
+</g>
+<g class="group" data-id="region" data-label="Region us-central1">
+<rect x="503" y="212" width="752" height="416" fill="none" stroke="#4285F4" stroke-width="1.25" stroke-dasharray="2 3" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<text class="glabel" x="513" y="232">Region us-central1</text>
+</g>
+<g class="group" data-id="ai" data-label="Vertex AI">
+<rect x="703" y="260" width="254" height="344" fill="none" stroke="#4285F4" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<use href="#svc-vertexai" x="703" y="260" width="32" height="32"/>
+<text class="glabel" x="743" y="281">Vertex AI</text>
+</g>
+<g class="edge" data-from="apigee" data-to="orch" data-step="2" data-label="" data-tip="Apigee → Orchestrator">
+<path d="M367 420 L543 420" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<g class="badge"><title>2. Apigee → Orchestrator</title><circle cx="391" cy="420" r="11"/><circle class="hit" cx="391" cy="420" r="16"/><text x="391" y="424.5" text-anchor="middle">2</text></g>
+</g>
+<g class="edge" data-from="armor" data-to="gemini" data-step="4" data-label="safe prompt" data-tip="Model Armor → Gemini on Vertex AI (safe prompt)">
+<path d="M830 420 L830 468" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="848" y="448" text-anchor="start">safe prompt</text>
+<g class="badge"><title>4. Model Armor → Gemini on Vertex AI (safe prompt)</title><circle cx="830" cy="444" r="11"/><circle class="hit" cx="830" cy="444" r="16"/><text x="830" y="448.5" text-anchor="middle">4</text></g>
+</g>
+<g class="edge" data-from="users" data-to="idp" data-step="" data-label="sign in">
+<path d="M98.5 416 L98.5 472" fill="none" class="eline" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arw)"/>
+<text class="elabel" x="116.5" y="448" text-anchor="start">sign in</text>
+</g>
+<g class="edge" data-from="gcs" data-to="alloy" data-step="" data-label="embeddings">
+<path d="M1134 472 L1134 416" fill="none" class="eline" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arw)"/>
+<text class="elabel" x="1152" y="448" text-anchor="start">embeddings</text>
+</g>
+<g class="edge" data-from="log" data-to="bq" data-step="" data-label="sink">
+<path d="M1393 340 L1393 388" fill="none" class="eline" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arw)"/>
+<text class="elabel" x="1411" y="368" text-anchor="start">sink</text>
+</g>
+<g class="edge" data-from="log" data-to="mon" data-step="" data-label="">
+<path d="M1361 260 L1315 260 L1315 580 L1361 580" fill="none" class="eline" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arw)"/>
+</g>
+<g class="edge" data-from="users" data-to="apigee" data-step="1" data-label="HTTPS" data-tip="Users → Apigee (HTTPS)">
+<path d="M130.5 336 L335 336 L335 388" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="232.75" y="328" text-anchor="middle">HTTPS</text>
+<g class="badge"><title>1. Users → Apigee (HTTPS)</title><circle cx="154.5" cy="336" r="11"/><circle class="hit" cx="154.5" cy="336" r="16"/><text x="154.5" y="340.5" text-anchor="middle">1</text></g>
+</g>
+<g class="edge" data-from="orch" data-to="armor" data-step="3" data-label="screen" data-tip="Orchestrator → Model Armor (screen)">
+<path d="M575 388 L575 340 L798 340" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="653.05" y="332" text-anchor="middle">screen</text>
+<g class="badge"><title>3. Orchestrator → Model Armor (screen)</title><circle cx="575" cy="344" r="11"/><circle class="hit" cx="575" cy="344" r="16"/><text x="575" y="348.5" text-anchor="middle">3</text></g>
+</g>
+<g class="edge" data-from="orch" data-to="alloy" data-step="5" data-label="vector search" data-tip="Orchestrator → AlloyDB (vector search)">
+<path d="M607 420 L629 420 L629 622 L1080 622 L1080 336 L1102 336" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="854.5" y="614" text-anchor="middle">vector search</text>
+<g class="badge"><title>5. Orchestrator → AlloyDB (vector search)</title><circle cx="629" cy="420" r="11"/><circle class="hit" cx="629" cy="420" r="16"/><text x="629" y="424.5" text-anchor="middle">5</text></g>
+</g>
+<g class="edge" data-from="orch" data-to="log" data-step="" data-label="logging">
+<path d="M575 388 L575 366 L685 366 L685 206 L1393 206 L1393 228" fill="none" class="eline" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arw)"/>
+<text class="elabel" x="1039" y="198" text-anchor="middle">logging</text>
+</g>
+<g class="node" data-id="users" data-label="Users" data-service="Users" data-category="General"><title>Users (Users)</title>
+<use href="#gen-users" x="66.5" y="304" width="64" height="64"/>
+<text class="nlabel" x="98.5" y="385" text-anchor="middle">Users</text>
+</g>
+<g class="node" data-id="idp" data-label="Identity Platform" data-service="Identity Platform" data-category="security"><title>Identity Platform (Identity Platform)</title>
+<use href="#svc-identity_platform" x="66.5" y="472" width="64" height="64"/>
+<text class="nlabel" x="98.5" y="553" text-anchor="middle">Identity Platform</text>
+<text class="nsub" x="98.5" y="567" text-anchor="middle">sign-in, JWT</text>
+</g>
+<g class="node" data-id="apigee" data-label="Apigee" data-service="Apigee API Platform" data-category="integration"><title>Apigee (Apigee API Platform)</title>
+<use href="#svc-apigee_api_platform" x="303" y="388" width="64" height="64"/>
+<text class="nlabel" x="335" y="469" text-anchor="middle">Apigee</text>
+<text class="nsub" x="335" y="483" text-anchor="middle">auth, quotas, AI gateway</text>
+</g>
+<g class="node" data-id="orch" data-label="Orchestrator" data-service="Cloud Run" data-category="serverless"><title>Orchestrator (Cloud Run)</title>
+<use href="#svc-cloud_run" x="543" y="388" width="64" height="64"/>
+<text class="nlabel" x="575" y="469" text-anchor="middle">Orchestrator</text>
+<text class="nsub" x="575" y="483" text-anchor="middle">Cloud Run</text>
+</g>
+<g class="node" data-id="armor" data-label="Model Armor" data-service="Data Loss Prevention API" data-category="security"><title>Model Armor (Data Loss Prevention API)</title>
+<use href="#svc-data_loss_prevention_api" x="798" y="308" width="64" height="64"/>
+<text class="nlabel" x="830" y="389" text-anchor="middle">Model Armor</text>
+<text class="nsub" x="830" y="403" text-anchor="middle">prompt and response screening, DLP</text>
+</g>
+<g class="node" data-id="gemini" data-label="Gemini on Vertex AI" data-service="Vertex AI" data-category="ai-ml"><title>Gemini on Vertex AI (Vertex AI)</title>
+<use href="#svc-vertexai" x="798" y="468" width="64" height="64"/>
+<text class="nlabel" x="830" y="549" text-anchor="middle">Gemini on Vertex</text>
+<text class="nlabel" x="830" y="563" text-anchor="middle">AI</text>
+<text class="nsub" x="830" y="577" text-anchor="middle">generation</text>
+</g>
+<g class="node" data-id="alloy" data-label="AlloyDB" data-service="AlloyDB" data-category="databases"><title>AlloyDB (AlloyDB)</title>
+<use href="#svc-alloydb" x="1102" y="304" width="64" height="64"/>
+<text class="nlabel" x="1134" y="385" text-anchor="middle">AlloyDB</text>
+<text class="nsub" x="1134" y="399" text-anchor="middle">pgvector index, policy documents</text>
+</g>
+<g class="node" data-id="gcs" data-label="Cloud Storage" data-service="Cloud Storage" data-category="storage"><title>Cloud Storage (Cloud Storage)</title>
+<use href="#svc-cloud_storage" x="1102" y="472" width="64" height="64"/>
+<text class="nlabel" x="1134" y="553" text-anchor="middle">Cloud Storage</text>
+<text class="nsub" x="1134" y="567" text-anchor="middle">source documents</text>
+</g>
+<g class="node" data-id="log" data-label="Cloud Logging" data-service="Cloud Logging" data-category="operations"><title>Cloud Logging (Cloud Logging)</title>
+<use href="#svc-cloud_logging" x="1361" y="228" width="64" height="64"/>
+<text class="nlabel" x="1393" y="309" text-anchor="middle">Cloud Logging</text>
+<text class="nsub" x="1393" y="323" text-anchor="middle">request-response logs</text>
+</g>
+<g class="node" data-id="bq" data-label="BigQuery" data-service="BigQuery" data-category="analytics"><title>BigQuery (BigQuery)</title>
+<use href="#svc-bigquery" x="1361" y="388" width="64" height="64"/>
+<text class="nlabel" x="1393" y="469" text-anchor="middle">BigQuery</text>
+<text class="nsub" x="1393" y="483" text-anchor="middle">prompt log analysis</text>
+</g>
+<g class="node" data-id="mon" data-label="Cloud Monitoring" data-service="Cloud Monitoring" data-category="operations"><title>Cloud Monitoring (Cloud Monitoring)</title>
+<use href="#svc-cloud_monitoring" x="1361" y="548" width="64" height="64"/>
+<text class="nlabel" x="1393" y="629" text-anchor="middle">Cloud Monitoring</text>
+<text class="nsub" x="1393" y="643" text-anchor="middle">latency, errors, quota</text>
+</g>
+</svg>

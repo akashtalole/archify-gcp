@@ -1,0 +1,106 @@
+{
+  "ok": true,
+  "tool": "archify-gcp",
+  "version": "0.1.0",
+  "iconRelease": "Google Cloud icons (legacy product set + core products set)",
+  "input": {
+    "path": "examples/clinical-notes.dataflow.json",
+    "sha256": "c5f4ba86b4f0d86c00e7f4d1724d368175ef0e6f96fb6ab838923878275e903c"
+  },
+  "stages": [
+    {
+      "name": "validate",
+      "status": "pass",
+      "detail": {
+        "type": "dataflow",
+        "nodes": 8,
+        "groups": 5,
+        "edges": 7
+      }
+    },
+    {
+      "name": "analyze",
+      "status": "pass",
+      "detail": {
+        "cost": false,
+        "review": true
+      }
+    },
+    {
+      "name": "render",
+      "status": "pass",
+      "detail": {}
+    },
+    {
+      "name": "check",
+      "status": "pass",
+      "detail": {
+        "warnings": 0,
+        "standalone": true
+      }
+    },
+    {
+      "name": "browser-check",
+      "status": "pass",
+      "detail": {
+        "viewport": "1440x900",
+        "minFontPx": 10.5,
+        "overflowX": 0,
+        "consoleErrors": 0,
+        "viewerNodes": 8,
+        "viewerEdges": 7
+      }
+    },
+    {
+      "name": "export-png",
+      "status": "pass",
+      "detail": {}
+    }
+  ],
+  "outputs": {
+    "html": {
+      "path": "examples/out/clinical-notes.dataflow.html",
+      "sha256": "5327dc2409cdb6a2ad78283918ab60e2dd6d2a780c99a382462c1b8abb51efbb",
+      "bytes": 192549
+    },
+    "svg": {
+      "path": "examples/out/clinical-notes.dataflow.svg",
+      "sha256": "6bb944fa847b2f9d895725a5087423355ee86066f4f80a3de4ea9021464d2a93"
+    },
+    "drawio": {
+      "path": "examples/out/clinical-notes.dataflow.drawio",
+      "sha256": "d3d1355ddde6db41711b3cd28297b716b2dc718abb2f48afc9e3b53b7102c624"
+    },
+    "png": {
+      "path": "examples/out/clinical-notes.dataflow.png",
+      "sha256": "57bb2492459cc0a200e174ffe48ae9d04ca8287b450a7af999bcaf8d87b58ca8"
+    }
+  },
+  "summary": {
+    "type": "dataflow",
+    "nodes": 8,
+    "groups": 5,
+    "edges": 7,
+    "size": {
+      "width": 976,
+      "height": 732
+    }
+  },
+  "review": {
+    "advisory": true,
+    "mode": "full",
+    "lens": "general",
+    "findings": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 1,
+      "Low": 0
+    },
+    "evidenced": 9,
+    "bps": 174,
+    "ids": [
+      "F-001"
+    ]
+  },
+  "visualReview": "not-performed"
+}

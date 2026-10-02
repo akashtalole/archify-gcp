@@ -1,0 +1,8 @@
+flowchart LR
+    U([Customer Browser]) -->|HTTPS| LB[Cloud Load Balancing] --> API[API Gateway]
+    subgraph Google Cloud
+      API --> F[Orders Cloud Run service]
+      F -.-> D[(Orders Firestore)]
+      F --> Q[Pub/Sub Topic]
+    end
+    F --> P[Payment Gateway]

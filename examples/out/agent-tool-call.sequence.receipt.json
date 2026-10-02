@@ -1,0 +1,106 @@
+{
+  "ok": true,
+  "tool": "archify-gcp",
+  "version": "0.1.0",
+  "iconRelease": "Google Cloud icons (legacy product set + core products set)",
+  "input": {
+    "path": "examples/agent-tool-call.sequence.json",
+    "sha256": "f242a91bc174633075554b9ba4acd76d9c28ba9088b3c2587a807155c394ceb3"
+  },
+  "stages": [
+    {
+      "name": "validate",
+      "status": "pass",
+      "detail": {
+        "type": "sequence",
+        "nodes": 7,
+        "groups": 1,
+        "edges": 12
+      }
+    },
+    {
+      "name": "analyze",
+      "status": "pass",
+      "detail": {
+        "cost": false,
+        "review": true
+      }
+    },
+    {
+      "name": "render",
+      "status": "pass",
+      "detail": {}
+    },
+    {
+      "name": "check",
+      "status": "pass",
+      "detail": {
+        "warnings": 0,
+        "standalone": true
+      }
+    },
+    {
+      "name": "browser-check",
+      "status": "pass",
+      "detail": {
+        "viewport": "1440x900",
+        "minFontPx": 10.5,
+        "overflowX": 0,
+        "consoleErrors": 0,
+        "viewerNodes": 7,
+        "viewerEdges": 12
+      }
+    },
+    {
+      "name": "export-png",
+      "status": "pass",
+      "detail": {}
+    }
+  ],
+  "outputs": {
+    "html": {
+      "path": "examples/out/agent-tool-call.sequence.html",
+      "sha256": "893a1247eb9ceca33967a81c7848b009853fecad73cc959a3098cb92cdcd596f",
+      "bytes": 197868
+    },
+    "svg": {
+      "path": "examples/out/agent-tool-call.sequence.svg",
+      "sha256": "a08bd764071a8338d85d156427d762d4c57a80ce6722b77167ab8c99b6867a60"
+    },
+    "drawio": {
+      "path": "examples/out/agent-tool-call.sequence.drawio",
+      "sha256": "eb82337fbe2dd9af701859275aeef687bcac191fa37e97a2c8a9164e7e883518"
+    },
+    "png": {
+      "path": "examples/out/agent-tool-call.sequence.png",
+      "sha256": "469da61761db6c93ae61cb51638b1e69b1c883ef5efd180f68a246edd6edd5c1"
+    }
+  },
+  "summary": {
+    "type": "sequence",
+    "nodes": 7,
+    "groups": 1,
+    "edges": 12,
+    "size": {
+      "width": 1410,
+      "height": 1134
+    }
+  },
+  "review": {
+    "advisory": true,
+    "mode": "full",
+    "lens": "generative-ai",
+    "findings": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 1,
+      "Low": 0
+    },
+    "evidenced": 11,
+    "bps": 174,
+    "ids": [
+      "F-001"
+    ]
+  },
+  "visualReview": "not-performed"
+}

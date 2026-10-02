@@ -1,0 +1,141 @@
+{
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "Clinical notes pipeline",
+    "subtitle": "Notes land in Cloud Storage, are de-identified, analysed for health entities, indexed in BigQuery and served through an API",
+    "output": "examples/out/clinical-notes.dataflow.html",
+    "cost": {
+      "region": "us-central1",
+      "note": "Illustrative: 300,000 text records/month."
+    }
+  },
+  "stages": [
+    {
+      "id": "src",
+      "label": "Sources",
+      "external": true,
+      "items": [
+        {
+          "id": "ehr",
+          "icon": "server-farm",
+          "label": "EHR system",
+          "sublabel": "HL7 / FHIR export"
+        }
+      ]
+    },
+    {
+      "id": "ingest",
+      "label": "Ingest",
+      "items": [
+        {
+          "id": "hc",
+          "icon": "cloud-healthcare-api",
+          "label": "Cloud Healthcare API",
+          "sublabel": "FHIR / HL7v2 stores"
+        },
+        {
+          "id": "raw",
+          "icon": "cloud-storage",
+          "label": "Cloud Storage",
+          "sublabel": "raw notes",
+          "usage": {
+            "storageGb": 500
+          }
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "label": "Process",
+      "items": [
+        {
+          "id": "dlp",
+          "icon": "data-loss-prevention-api",
+          "label": "Sensitive Data Protection",
+          "sublabel": "de-identify"
+        },
+        {
+          "id": "nlp",
+          "icon": "healthcare-nlp-api",
+          "label": "Healthcare Natural Language API",
+          "sublabel": "entity extraction"
+        },
+        {
+          "id": "df",
+          "icon": "dataflow",
+          "label": "Dataflow",
+          "sublabel": "batch pipeline"
+        }
+      ]
+    },
+    {
+      "id": "store",
+      "label": "Store and serve",
+      "items": [
+        {
+          "id": "bq",
+          "icon": "bigquery",
+          "label": "BigQuery",
+          "sublabel": "curated notes",
+          "usage": {
+            "tibScannedPerMonth": 2,
+            "activeStorageGb": 800
+          }
+        },
+        {
+          "id": "api",
+          "icon": "cloud-run",
+          "label": "Notes API",
+          "sublabel": "Cloud Run",
+          "usage": {
+            "requestsPerMonth": 1000000,
+            "avgDurationMs": 150
+          }
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "ehr",
+      "to": "hc",
+      "step": 1,
+      "label": "HL7 / FHIR"
+    },
+    {
+      "from": "hc",
+      "to": "raw",
+      "step": 2,
+      "label": "export"
+    },
+    {
+      "from": "raw",
+      "to": "dlp",
+      "step": 3,
+      "label": "inspect"
+    },
+    {
+      "from": "dlp",
+      "to": "nlp",
+      "step": 4,
+      "label": "de-identified"
+    },
+    {
+      "from": "nlp",
+      "to": "df",
+      "step": 5
+    },
+    {
+      "from": "df",
+      "to": "bq",
+      "step": 6,
+      "label": "load"
+    },
+    {
+      "from": "bq",
+      "to": "api",
+      "step": 7,
+      "label": "query"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "ok": true,
+  "tool": "archify-gcp",
+  "version": "0.1.0",
+  "iconRelease": "Google Cloud icons (legacy product set + core products set)",
+  "input": {
+    "path": "examples/three-tier.json",
+    "sha256": "7aac08c7b306840fa2619dabb120cd0e285232e752590cda2b9ecd45129596cf"
+  },
+  "stages": [
+    {
+      "name": "validate",
+      "status": "pass",
+      "detail": {
+        "type": "architecture",
+        "nodes": 13,
+        "groups": 6,
+        "edges": 12
+      }
+    },
+    {
+      "name": "analyze",
+      "status": "pass",
+      "detail": {
+        "cost": false,
+        "review": true
+      }
+    },
+    {
+      "name": "render",
+      "status": "pass",
+      "detail": {}
+    },
+    {
+      "name": "check",
+      "status": "pass",
+      "detail": {
+        "warnings": 3,
+        "standalone": true
+      }
+    },
+    {
+      "name": "browser-check",
+      "status": "pass",
+      "detail": {
+        "viewport": "1440x900",
+        "minFontPx": 10.5,
+        "overflowX": 0,
+        "consoleErrors": 0,
+        "viewerNodes": 13,
+        "viewerEdges": 12
+      }
+    },
+    {
+      "name": "export-png",
+      "status": "pass",
+      "detail": {}
+    }
+  ],
+  "outputs": {
+    "html": {
+      "path": "examples/out/three-tier.html",
+      "sha256": "1dd4dda07644ae75ed8a337c1cf4eeaf6f1b5d6059bdace35cb71d50332246dd",
+      "bytes": 225188
+    },
+    "svg": {
+      "path": "examples/out/three-tier.svg",
+      "sha256": "b8bab3a090837c09e85d5a00fffb6ad7deeb21034d01c6c6d3ed634aa6f630ba"
+    },
+    "drawio": {
+      "path": "examples/out/three-tier.drawio",
+      "sha256": "63dc59d6350f41eacace64d0af7db3e2a8bdf51d9f3104c54f67de4f60f61dda"
+    },
+    "png": {
+      "path": "examples/out/three-tier.png",
+      "sha256": "3f03031b6e54e5b08a7d8d09c7129a2324aabe3ad5532b95f8ee90a921df5ce5"
+    }
+  },
+  "summary": {
+    "type": "architecture",
+    "nodes": 13,
+    "groups": 6,
+    "edges": 12,
+    "size": {
+      "width": 1636,
+      "height": 790
+    }
+  },
+  "review": {
+    "advisory": true,
+    "mode": "full",
+    "lens": "general",
+    "findings": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 0,
+      "Low": 0
+    },
+    "evidenced": 13,
+    "bps": 174,
+    "ids": []
+  },
+  "visualReview": "not-performed"
+}
