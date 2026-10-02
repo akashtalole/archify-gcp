@@ -5,7 +5,7 @@
   "iconRelease": "Google Cloud icons (legacy product set + core products set)",
   "input": {
     "path": "examples/agent-tool-call.sequence.json",
-    "sha256": "f242a91bc174633075554b9ba4acd76d9c28ba9088b3c2587a807155c394ceb3"
+    "sha256": "b2d0b42bfac0ee3939158b97001980ca89985924ec2feb02d265e6041b4d43d0"
   },
   "stages": [
     {
@@ -60,20 +60,20 @@
   "outputs": {
     "html": {
       "path": "examples/out/agent-tool-call.sequence.html",
-      "sha256": "893a1247eb9ceca33967a81c7848b009853fecad73cc959a3098cb92cdcd596f",
-      "bytes": 197868
+      "sha256": "9ac23abd3414ac8bb1124e8b6103b373ca40b56d7324573f0e90ae0dbae12da2",
+      "bytes": 202943
     },
     "svg": {
       "path": "examples/out/agent-tool-call.sequence.svg",
-      "sha256": "a08bd764071a8338d85d156427d762d4c57a80ce6722b77167ab8c99b6867a60"
+      "sha256": "c55fd2c565b16e33ad2c8bceae530821b32be3932c8bb213be0ebe13b5835627"
     },
     "drawio": {
       "path": "examples/out/agent-tool-call.sequence.drawio",
-      "sha256": "eb82337fbe2dd9af701859275aeef687bcac191fa37e97a2c8a9164e7e883518"
+      "sha256": "a077e8c6a7a8840c4ae053a5904cd9c378eec1ea0b2db123390738ffb955cbd0"
     },
     "png": {
       "path": "examples/out/agent-tool-call.sequence.png",
-      "sha256": "469da61761db6c93ae61cb51638b1e69b1c883ef5efd180f68a246edd6edd5c1"
+      "sha256": "e50546e239c9924444b659608167d476f1bc2140589b55f9df345adc169b112c"
     }
   },
   "summary": {

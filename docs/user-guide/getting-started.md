@@ -15,7 +15,7 @@ npm run icons:fetch          # official Google Cloud icon package → assets/gcp
 node bin/archify-gcp.mjs doctor
 ```
 
-`doctor` prints the Node version, whether icons were found, and the catalog size (223 products, 10 general icons, 6 group icons).
+`doctor` prints the Node version, whether icons were found, and the catalog size (249 icons: 223 products and 26 categories; plus 10 general icons, 6 group icons).
 
 !!! tip "Use it as a command"
     `npm link` (or `npx`) exposes `archify-gcp`; the rest of this guide writes `archify-gcp …` for `node bin/archify-gcp.mjs …`.

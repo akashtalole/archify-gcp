@@ -36,7 +36,7 @@ the first `prices:fetch` shows which services need a pattern adjustment (a non-m
 *"Use archify-gcp to diagram a multi-zone GKE app behind Cloud Load Balancing with Cloud SQL, and review it against the Well-Architected pillars."*
 
 ## What you get
-* **Official icons** — 223 Google Cloud product icons (the current-brand core set replaces the legacy icon where Google publishes one) plus 10 original general icons; `icons search`, aliases (`gke`, `bq`, `gcs`, `kms`, `iap`, `vertex-ai`…).
+* **Official icons** — 223 Google Cloud product icons (the current-brand core set replaces the legacy icon where Google publishes one), the 26 product **category** icons (Compute, Agents, Observability… as `category-*`) and 10 original general icons; `icons search`, aliases (`gke`, `bq`, `gcs`, `kms`, `iap`, `vertex-ai`…).
 * **Google Cloud groups** — Google Cloud, organization, folder, project, region, zone, VPC network, subnet, VPC Service Controls perimeter, firewall rules, on-premises, custom product groups; numbered callouts (hover for the description); light and dark themes.
 * **Layout + routing** — nest groups, list children; rows align icon centre lines; the router avoids nodes and group headers, prefers straight lines, and warns (exit code 2 with `--strict`) when it can't find a clean route.
 * **Three diagram types** — `architecture`, `sequence` (lifelines, boundaries, fragments), `dataflow` (stage columns).
@@ -75,7 +75,7 @@ User guide and developer guide (MkDocs): <https://akashtalole.github.io/archify-
 
 ## Notes and limits
 * **Icons are not committed.** Google distributes them under its own terms; `icons:fetch` pulls them from Google. Rendered diagrams embed the icons they use. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-* Google's icon set has no separate icon for some newer products (Gemini, Agent Engine, Model Armor, Vertex AI Search…): the closest official icon is used and the product name goes in the label.
+* Google's icon set has no separate icon for some newer products (Gemini, Model Armor, Vertex AI Search…): the closest official icon is used and the product name goes in the label. Agent products (Agent Engine, Agent Builder, Gemini Enterprise) use the official **Agents** category icon (`category-agents`).
 * Google publishes no group-style deck: group colours and corner icons are a house style that follows Architecture Center conventions.
 * The Well-Architected ids (`REL-3.1`…) are derived from the page order of Google's framework (which has no official numbering); the snapshot is frozen and `wa corpus --refresh` re-derives it.
 * Not a drop-in for Archify's pipeline: this is an independent Google Cloud renderer. `finalize` is the equivalent gate here.

@@ -5,8 +5,8 @@ import { resolveIcon, searchIcons } from "./catalog.mjs";
 // [pattern, icon id]; first match wins, so list specific before generic.
 const KEYWORDS = [
   [/\b(vertex ai|vertexai|gemini|palm|genai|gen ?ai|llm|foundation model|gpt|openai|embeddings?|model garden)\b/, "vertexai"],
-  [/\b(agent builder|agent engine|adk|conversational agent|dialogflow)\b/, "dialogflow-cx"],
-  [/\b(agents?|agent runtime|agent platform)\b/, "vertexai"],
+  [/\b(dialogflow|conversational agent)\b/, "dialogflow-cx"],
+  [/\b(agent builder|agent engine|adk|agents?|agent runtime|agent platform|gemini enterprise)\b/, "category-agents"],
   [/\b(model armor|content safety|guardrails?|content filter)\b/, "data-loss-prevention-api"],
   [/\b(api gateway|apigee|api management|apim|rest api|http api)\b/, "apigee-api-platform"],
   [/\b(load balancer|load balancing|lb|alb|nlb|elb|front door)\b/, "cloud-load-balancing"],

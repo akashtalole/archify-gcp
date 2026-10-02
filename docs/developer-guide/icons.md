@@ -5,6 +5,8 @@ The official **Google Cloud icons** are **not committed**. `scripts/fetch-icons.
 * `google-cloud-legacy-icons.zip` — about 216 product icons, one folder per product (`<name>/<name>.svg`, 24 px, with global CSS classes);
 * `core-products-icons.zip` — the current-brand colour icons (512 px) for core products (Compute Engine, GKE, Cloud Run, Cloud Storage, Cloud SQL, Spanner, BigQuery, Vertex AI, Looker, Apigee, Anthos, Security Command Center, AlloyDB, Hyperdisk, Distributed Cloud, Mandiant, Threat Intelligence, Security Operations, AI Hypercomputer).
 
+* `category-icons.zip` — the 26 product **category** icons (Compute, Containers, Agents, Observability, Security and Identity, …), extracted to `assets/gcp-icons/categories/` and added to the catalog as `category-<name>` (category `categories`, names like "Agents (category)"). They stand in where Google has no product icon (aliases `agents`, `agent-engine`, `agent-builder`, `gemini-enterprise` → `category-agents`) and make good `custom` group icons for category-scoped boundaries. `--no-categories` skips them.
+
 A core icon **replaces** the legacy icon of the same product (`CORE_TO_LEGACY` in `catalog-build.mjs`); products only in the core set are added. Everything is extracted to `assets/gcp-icons/products/<key>.svg` (git-ignored; override with `ARCHIFY_GCP_ICONS`), the original general icons from `data/general-icons/` are copied to `assets/gcp-icons/general/`, and `data/catalog.json` is rebuilt through `src/catalog-build.mjs`. A small zero-dependency ZIP reader (`src/zip.mjs`) does the extraction.
 
 ## Catalog (`data/catalog.json`)
@@ -16,7 +18,7 @@ A core icon **replaces** the legacy icon of the same product (`CORE_TO_LEGACY` i
   "general": [ { "key": "users", "id": "users", "name": "Users", "file": "general/users.svg" } ] }
 ```
 
-Currently 223 products, 10 general icons and 6 group icons. Ids are slugs of the file key with a leading `google_` removed (`google_kubernetes_engine` → `kubernetes-engine`); display names come from `humanName` (acronym and override tables in `catalog-build.mjs`); categories from the regex rules in `CATEGORY_RULES` (first match wins). `GROUP_ICON_KEYS` maps group kinds to icons (Project, VPC, Subnet, Firewall, Perimeter, Organization). Google has no separate icon for some products (Gemini, Agent Engine, Model Armor…): examples use the closest official icon and name the product in the label.
+Currently 223 products, 26 category icons, 10 general icons and 6 group icons. Ids are slugs of the file key with a leading `google_` removed (`google_kubernetes_engine` → `kubernetes-engine`); display names come from `humanName` (acronym and override tables in `catalog-build.mjs`); categories from the regex rules in `CATEGORY_RULES` (first match wins). `GROUP_ICON_KEYS` maps group kinds to icons (Project, VPC, Subnet, Firewall, Perimeter, Organization). Google has no separate icon for some products (Gemini, Agent Engine, Model Armor…): examples use the closest official icon and name the product in the label.
 
 `data/aliases.json` maps friendly names (`gke`, `bq`, `gcs`, `kms`, `iap`, `vertex-ai`, `gemini`…) to product ids; a separate map exists for general icons.
 

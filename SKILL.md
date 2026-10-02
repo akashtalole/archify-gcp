@@ -35,7 +35,7 @@ Unsure? `node bin/archify-gcp.mjs guide "<scenario>" --json`. Existing assets: a
    safety controls (Model Armor, safety filters), retrieval/grounding data, logging, agent tools. If the user pastes an architecture description, a Terraform repo or a
    Mermaid flowchart, read it for topology and re-author as a spec (do not mechanically convert styling).
 2. **Pick icons.** `node bin/archify-gcp.mjs icons search "<term>" --json`. Use product ids/aliases (`gke`, `bq`, `cloud-run`); never invent ids. Use exact official names in
-   `label` (full name first, short form after). Google has no separate icons for some newer products (for example Gemini or Agent Engine): use the closest official icon (`vertexai`) and name the product in the label.
+   `label` (full name first, short form after). Google has no separate icons for some newer products: use the closest official icon (`vertexai` for Gemini and models; the **Agents** category icon `category-agents` for Agent Engine, Agent Builder and Gemini Enterprise) and name the product in the label.
 3. **Read** [references/spec.md](references/spec.md) once, and the closest example in `examples/`. Start from `node bin/archify-gcp.mjs init <template>`.
 4. **Author the spec** (see *Authoring rules*). Put it in `.archify-gcp/<slug>-<timestamp>/spec.json`, with `meta.output` beside it.
 5. **Finalize** (the one command): `node bin/archify-gcp.mjs finalize <spec.json> --json`. It validates, renders, runs strict artifact checks and a real-browser check, exports the PNG

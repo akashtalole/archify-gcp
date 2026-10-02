@@ -26,7 +26,7 @@ The source is `https://cloudbilling.googleapis.com/v1/services/{id}/skus` (list 
 
 ## Icons
 
-`scripts/fetch-icons.mjs` downloads `google-cloud-legacy-icons.zip` and `core-products-icons.zip` from `services.google.com/fh/files/misc/`. If the links move, pass local zips: `node scripts/fetch-icons.mjs legacy.zip core.zip`, or set `ARCHIFY_GCP_ICON_URL` / `ARCHIFY_GCP_CORE_ICON_URL`. Check the catalog count and run the tests.
+`scripts/fetch-icons.mjs` downloads `google-cloud-legacy-icons.zip`, `core-products-icons.zip` and `category-icons.zip` from `services.google.com/fh/files/misc/`. If the links move, pass local zips: `node scripts/fetch-icons.mjs legacy.zip core.zip`, or set `ARCHIFY_GCP_ICON_URL` / `ARCHIFY_GCP_CORE_ICON_URL`. Check the catalog count and run the tests.
 
 ## Well-Architected corpus
 

@@ -31,6 +31,12 @@ test("icon aliases resolve to catalog entries", () => {
   assert.ok(searchIcons("spanner").some((h) => h.id === "cloud-spanner"));
 });
 
+test("product category icons are in the catalog and give agents an icon", () => {
+  assert.equal(catalog.services.filter((s) => s.category === "categories").length, 26);
+  for (const a of ["agents", "agent-engine", "gemini-enterprise", "observability"]) assert.ok(resolveIcon(a), a);
+  assert.equal(resolveIcon("agent-engine").entry.id, "category-agents");
+});
+
 test("label wrapping never breaks a word", () => {
   assert.deepEqual(wrapLabel("Application Load Balancer Frontend"), ["Application Load", "Balancer Frontend"]);
   assert.deepEqual(wrapLabel("Cloud Run"), ["Cloud Run"]);
