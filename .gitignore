@@ -1,0 +1,14 @@
+node_modules/
+assets/gcp-icons/
+.cache/
+.archify-gcp/
+*.png
+!examples/out/*.png
+
+.cache/
+!examples/**/out/*.png
+!docs/assets/*.png
+!examples/iac/*.png
+!examples/mermaid/*.png
+docs/live/
+site/

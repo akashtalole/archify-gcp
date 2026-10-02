@@ -1,0 +1,1678 @@
+{
+ "generatedFrom": "Google Cloud icons (legacy product set + core products set)",
+ "categories": {
+  "ai-ml": "#4285F4",
+  "analytics": "#4285F4",
+  "compute": "#4285F4",
+  "containers": "#4285F4",
+  "databases": "#4285F4",
+  "devops": "#4285F4",
+  "healthcare": "#4285F4",
+  "integration": "#4285F4",
+  "management": "#4285F4",
+  "networking": "#4285F4",
+  "operations": "#4285F4",
+  "other": "#4285F4",
+  "security": "#4285F4",
+  "serverless": "#4285F4",
+  "storage": "#4285F4"
+ },
+ "services": [
+  {
+   "key": "advanced_agent_modeling",
+   "id": "advanced-agent-modeling",
+   "name": "Advanced Agent Modeling",
+   "category": "ai-ml",
+   "file": "products/advanced_agent_modeling.svg"
+  },
+  {
+   "key": "agent_assist",
+   "id": "agent-assist",
+   "name": "Agent Assist",
+   "category": "ai-ml",
+   "file": "products/agent_assist.svg"
+  },
+  {
+   "key": "ai_hub",
+   "id": "ai-hub",
+   "name": "AI Hub",
+   "category": "ai-ml",
+   "file": "products/ai_hub.svg"
+  },
+  {
+   "key": "ai_hypercomputer",
+   "id": "ai-hypercomputer",
+   "name": "AI Hypercomputer",
+   "category": "ai-ml",
+   "file": "products/ai_hypercomputer.svg"
+  },
+  {
+   "key": "ai_platform",
+   "id": "ai-platform",
+   "name": "AI Platform",
+   "category": "ai-ml",
+   "file": "products/ai_platform.svg"
+  },
+  {
+   "key": "ai_platform_unified",
+   "id": "ai-platform-unified",
+   "name": "AI Platform Unified",
+   "category": "ai-ml",
+   "file": "products/ai_platform_unified.svg"
+  },
+  {
+   "key": "automl",
+   "id": "automl",
+   "name": "AutoML",
+   "category": "ai-ml",
+   "file": "products/automl.svg"
+  },
+  {
+   "key": "automl_natural_language",
+   "id": "automl-natural-language",
+   "name": "AutoML Natural Language",
+   "category": "ai-ml",
+   "file": "products/automl_natural_language.svg"
+  },
+  {
+   "key": "automl_tables",
+   "id": "automl-tables",
+   "name": "AutoML Tables",
+   "category": "ai-ml",
+   "file": "products/automl_tables.svg"
+  },
+  {
+   "key": "automl_translation",
+   "id": "automl-translation",
+   "name": "AutoML Translation",
+   "category": "ai-ml",
+   "file": "products/automl_translation.svg"
+  },
+  {
+   "key": "automl_video_intelligence",
+   "id": "automl-video-intelligence",
+   "name": "AutoML Video Intelligence",
+   "category": "ai-ml",
+   "file": "products/automl_video_intelligence.svg"
+  },
+  {
+   "key": "automl_vision",
+   "id": "automl-vision",
+   "name": "AutoML Vision",
+   "category": "ai-ml",
+   "file": "products/automl_vision.svg"
+  },
+  {
+   "key": "cloud_inference_api",
+   "id": "cloud-inference-api",
+   "name": "Cloud Inference API",
+   "category": "ai-ml",
+   "file": "products/cloud_inference_api.svg"
+  },
+  {
+   "key": "cloud_jobs_api",
+   "id": "cloud-jobs-api",
+   "name": "Cloud Jobs API",
+   "category": "ai-ml",
+   "file": "products/cloud_jobs_api.svg"
+  },
+  {
+   "key": "cloud_natural_language_api",
+   "id": "cloud-natural-language-api",
+   "name": "Cloud Natural Language API",
+   "category": "ai-ml",
+   "file": "products/cloud_natural_language_api.svg"
+  },
+  {
+   "key": "cloud_optimization_ai",
+   "id": "cloud-optimization-ai",
+   "name": "Cloud Optimization AI",
+   "category": "ai-ml",
+   "file": "products/cloud_optimization_ai.svg"
+  },
+  {
+   "key": "cloud_optimization_ai_-_fleet_routing_api",
+   "id": "cloud-optimization-ai-fleet-routing-api",
+   "name": "Cloud Optimization AI - Fleet Routing API",
+   "category": "ai-ml",
+   "file": "products/cloud_optimization_ai_-_fleet_routing_api.svg"
+  },
+  {
+   "key": "cloud_translation_api",
+   "id": "cloud-translation-api",
+   "name": "Cloud Translation API",
+   "category": "ai-ml",
+   "file": "products/cloud_translation_api.svg"
+  },
+  {
+   "key": "cloud_vision_api",
+   "id": "cloud-vision-api",
+   "name": "Cloud Vision API",
+   "category": "ai-ml",
+   "file": "products/cloud_vision_api.svg"
+  },
+  {
+   "key": "contact_center_ai",
+   "id": "contact-center-ai",
+   "name": "Contact Center AI",
+   "category": "ai-ml",
+   "file": "products/contact_center_ai.svg"
+  },
+  {
+   "key": "data_labeling",
+   "id": "data-labeling",
+   "name": "Data Labeling",
+   "category": "ai-ml",
+   "file": "products/data_labeling.svg"
+  },
+  {
+   "key": "dialogflow",
+   "id": "dialogflow",
+   "name": "Dialogflow",
+   "category": "ai-ml",
+   "file": "products/dialogflow.svg"
+  },
+  {
+   "key": "dialogflow_cx",
+   "id": "dialogflow-cx",
+   "name": "Dialogflow Cx",
+   "category": "ai-ml",
+   "file": "products/dialogflow_cx.svg"
+  },
+  {
+   "key": "dialogflow_insights",
+   "id": "dialogflow-insights",
+   "name": "Dialogflow Insights",
+   "category": "ai-ml",
+   "file": "products/dialogflow_insights.svg"
+  },
+  {
+   "key": "document_ai",
+   "id": "document-ai",
+   "name": "Document AI",
+   "category": "ai-ml",
+   "file": "products/document_ai.svg"
+  },
+  {
+   "key": "healthcare_nlp_api",
+   "id": "healthcare-nlp-api",
+   "name": "Healthcare NLP API",
+   "category": "ai-ml",
+   "file": "products/healthcare_nlp_api.svg"
+  },
+  {
+   "key": "media_translation_api",
+   "id": "media-translation-api",
+   "name": "Media Translation API",
+   "category": "ai-ml",
+   "file": "products/media_translation_api.svg"
+  },
+  {
+   "key": "quantum_engine",
+   "id": "quantum-engine",
+   "name": "Quantum Engine",
+   "category": "ai-ml",
+   "file": "products/quantum_engine.svg"
+  },
+  {
+   "key": "recommendations_ai",
+   "id": "recommendations-ai",
+   "name": "Recommendations AI",
+   "category": "ai-ml",
+   "file": "products/recommendations_ai.svg"
+  },
+  {
+   "key": "retail_api",
+   "id": "retail-api",
+   "name": "Retail API",
+   "category": "ai-ml",
+   "file": "products/retail_api.svg"
+  },
+  {
+   "key": "speech-to-text",
+   "id": "speech-to-text",
+   "name": "Speech-to-Text",
+   "category": "ai-ml",
+   "file": "products/speech-to-text.svg"
+  },
+  {
+   "key": "text-to-speech",
+   "id": "text-to-speech",
+   "name": "Text-to-Speech",
+   "category": "ai-ml",
+   "file": "products/text-to-speech.svg"
+  },
+  {
+   "key": "vertexai",
+   "id": "vertexai",
+   "name": "Vertex AI",
+   "category": "ai-ml",
+   "file": "products/vertexai.svg"
+  },
+  {
+   "key": "video_intelligence_api",
+   "id": "video-intelligence-api",
+   "name": "Video Intelligence API",
+   "category": "ai-ml",
+   "file": "products/video_intelligence_api.svg"
+  },
+  {
+   "key": "visual_inspection",
+   "id": "visual-inspection",
+   "name": "Visual Inspection",
+   "category": "ai-ml",
+   "file": "products/visual_inspection.svg"
+  },
+  {
+   "key": "analytics_hub",
+   "id": "analytics-hub",
+   "name": "Analytics Hub",
+   "category": "analytics",
+   "file": "products/analytics_hub.svg"
+  },
+  {
+   "key": "bigquery",
+   "id": "bigquery",
+   "name": "BigQuery",
+   "category": "analytics",
+   "file": "products/bigquery.svg"
+  },
+  {
+   "key": "cloud_composer",
+   "id": "cloud-composer",
+   "name": "Cloud Composer",
+   "category": "analytics",
+   "file": "products/cloud_composer.svg"
+  },
+  {
+   "key": "cloud_data_fusion",
+   "id": "cloud-data-fusion",
+   "name": "Cloud Data Fusion",
+   "category": "analytics",
+   "file": "products/cloud_data_fusion.svg"
+  },
+  {
+   "key": "data_catalog",
+   "id": "data-catalog",
+   "name": "Data Catalog",
+   "category": "analytics",
+   "file": "products/data_catalog.svg"
+  },
+  {
+   "key": "data_layers",
+   "id": "data-layers",
+   "name": "Data Layers",
+   "category": "analytics",
+   "file": "products/data_layers.svg"
+  },
+  {
+   "key": "data_qna",
+   "id": "data-qna",
+   "name": "Data Q&A",
+   "category": "analytics",
+   "file": "products/data_qna.svg"
+  },
+  {
+   "key": "data_studio",
+   "id": "data-studio",
+   "name": "Data Studio",
+   "category": "analytics",
+   "file": "products/data_studio.svg"
+  },
+  {
+   "key": "dataflow",
+   "id": "dataflow",
+   "name": "Dataflow",
+   "category": "analytics",
+   "file": "products/dataflow.svg"
+  },
+  {
+   "key": "datalab",
+   "id": "datalab",
+   "name": "Datalab",
+   "category": "analytics",
+   "file": "products/datalab.svg"
+  },
+  {
+   "key": "dataplex",
+   "id": "dataplex",
+   "name": "Dataplex",
+   "category": "analytics",
+   "file": "products/dataplex.svg"
+  },
+  {
+   "key": "datapol",
+   "id": "datapol",
+   "name": "Datapol",
+   "category": "analytics",
+   "file": "products/datapol.svg"
+  },
+  {
+   "key": "dataprep",
+   "id": "dataprep",
+   "name": "Dataprep",
+   "category": "analytics",
+   "file": "products/dataprep.svg"
+  },
+  {
+   "key": "dataproc",
+   "id": "dataproc",
+   "name": "Dataproc",
+   "category": "analytics",
+   "file": "products/dataproc.svg"
+  },
+  {
+   "key": "dataproc_metastore",
+   "id": "dataproc-metastore",
+   "name": "Dataproc Metastore",
+   "category": "analytics",
+   "file": "products/dataproc_metastore.svg"
+  },
+  {
+   "key": "datashare",
+   "id": "datashare",
+   "name": "Datashare",
+   "category": "analytics",
+   "file": "products/datashare.svg"
+  },
+  {
+   "key": "genomics",
+   "id": "genomics",
+   "name": "Genomics",
+   "category": "analytics",
+   "file": "products/genomics.svg"
+  },
+  {
+   "key": "looker",
+   "id": "looker",
+   "name": "Looker",
+   "category": "analytics",
+   "file": "products/looker.svg"
+  },
+  {
+   "key": "pubsub",
+   "id": "pubsub",
+   "name": "Pub/Sub",
+   "category": "analytics",
+   "file": "products/pubsub.svg"
+  },
+  {
+   "key": "stream_suite",
+   "id": "stream-suite",
+   "name": "Stream Suite",
+   "category": "analytics",
+   "file": "products/stream_suite.svg"
+  },
+  {
+   "key": "bare_metal_solutions",
+   "id": "bare-metal-solutions",
+   "name": "Bare Metal Solutions",
+   "category": "compute",
+   "file": "products/bare_metal_solutions.svg"
+  },
+  {
+   "key": "batch",
+   "id": "batch",
+   "name": "Batch",
+   "category": "compute",
+   "file": "products/batch.svg"
+  },
+  {
+   "key": "cloud_gpu",
+   "id": "cloud-gpu",
+   "name": "Cloud GPU",
+   "category": "compute",
+   "file": "products/cloud_gpu.svg"
+  },
+  {
+   "key": "cloud_shell",
+   "id": "cloud-shell",
+   "name": "Cloud Shell",
+   "category": "compute",
+   "file": "products/cloud_shell.svg"
+  },
+  {
+   "key": "cloud_tpu",
+   "id": "cloud-tpu",
+   "name": "Cloud TPU",
+   "category": "compute",
+   "file": "products/cloud_tpu.svg"
+  },
+  {
+   "key": "compute_engine",
+   "id": "compute-engine",
+   "name": "Compute Engine",
+   "category": "compute",
+   "file": "products/compute_engine.svg"
+  },
+  {
+   "key": "container_optimized_os",
+   "id": "container-optimized-os",
+   "name": "Container Optimized OS",
+   "category": "compute",
+   "file": "products/container_optimized_os.svg"
+  },
+  {
+   "key": "gce_systems_management",
+   "id": "gce-systems-management",
+   "name": "Gce Systems Management",
+   "category": "compute",
+   "file": "products/gce_systems_management.svg"
+  },
+  {
+   "key": "hyperdisk",
+   "id": "hyperdisk",
+   "name": "Hyperdisk",
+   "category": "compute",
+   "file": "products/hyperdisk.svg"
+  },
+  {
+   "key": "local_ssd",
+   "id": "local-ssd",
+   "name": "Local SSD",
+   "category": "compute",
+   "file": "products/local_ssd.svg"
+  },
+  {
+   "key": "migrate_for_compute_engine",
+   "id": "migrate-for-compute-engine",
+   "name": "Migrate For Compute Engine",
+   "category": "compute",
+   "file": "products/migrate_for_compute_engine.svg"
+  },
+  {
+   "key": "os_configuration_management",
+   "id": "os-configuration-management",
+   "name": "OS Configuration Management",
+   "category": "compute",
+   "file": "products/os_configuration_management.svg"
+  },
+  {
+   "key": "os_inventory_management",
+   "id": "os-inventory-management",
+   "name": "OS Inventory Management",
+   "category": "compute",
+   "file": "products/os_inventory_management.svg"
+  },
+  {
+   "key": "os_patch_management",
+   "id": "os-patch-management",
+   "name": "OS Patch Management",
+   "category": "compute",
+   "file": "products/os_patch_management.svg"
+  },
+  {
+   "key": "persistent_disk",
+   "id": "persistent-disk",
+   "name": "Persistent Disk",
+   "category": "compute",
+   "file": "products/persistent_disk.svg"
+  },
+  {
+   "key": "tensorflow_enterprise",
+   "id": "tensorflow-enterprise",
+   "name": "TensorFlow Enterprise",
+   "category": "compute",
+   "file": "products/tensorflow_enterprise.svg"
+  },
+  {
+   "key": "vmware_engine",
+   "id": "vmware-engine",
+   "name": "Vmware Engine",
+   "category": "compute",
+   "file": "products/vmware_engine.svg"
+  },
+  {
+   "key": "anthos",
+   "id": "anthos",
+   "name": "Anthos",
+   "category": "containers",
+   "file": "products/anthos.svg"
+  },
+  {
+   "key": "anthos_config_management",
+   "id": "anthos-config-management",
+   "name": "Anthos Config Management",
+   "category": "containers",
+   "file": "products/anthos_config_management.svg"
+  },
+  {
+   "key": "anthos_service_mesh",
+   "id": "anthos-service-mesh",
+   "name": "Anthos Service Mesh",
+   "category": "containers",
+   "file": "products/anthos_service_mesh.svg"
+  },
+  {
+   "key": "artifact_registry",
+   "id": "artifact-registry",
+   "name": "Artifact Registry",
+   "category": "containers",
+   "file": "products/artifact_registry.svg"
+  },
+  {
+   "key": "cloud_run_for_anthos",
+   "id": "cloud-run-for-anthos",
+   "name": "Cloud Run For Anthos",
+   "category": "containers",
+   "file": "products/cloud_run_for_anthos.svg"
+  },
+  {
+   "key": "container_registry",
+   "id": "container-registry",
+   "name": "Container Registry",
+   "category": "containers",
+   "file": "products/container_registry.svg"
+  },
+  {
+   "key": "gke_on-prem",
+   "id": "gke-on-prem",
+   "name": "GKE On-Prem",
+   "category": "containers",
+   "file": "products/gke_on-prem.svg"
+  },
+  {
+   "key": "google_kubernetes_engine",
+   "id": "kubernetes-engine",
+   "name": "Google Kubernetes Engine",
+   "category": "containers",
+   "file": "products/google_kubernetes_engine.svg"
+  },
+  {
+   "key": "kuberun",
+   "id": "kuberun",
+   "name": "KubeRun",
+   "category": "containers",
+   "file": "products/kuberun.svg"
+  },
+  {
+   "key": "migrate_for_anthos",
+   "id": "migrate-for-anthos",
+   "name": "Migrate For Anthos",
+   "category": "containers",
+   "file": "products/migrate_for_anthos.svg"
+  },
+  {
+   "key": "alloydb",
+   "id": "alloydb",
+   "name": "AlloyDB",
+   "category": "databases",
+   "file": "products/alloydb.svg"
+  },
+  {
+   "key": "bigtable",
+   "id": "bigtable",
+   "name": "Bigtable",
+   "category": "databases",
+   "file": "products/bigtable.svg"
+  },
+  {
+   "key": "cloud_spanner",
+   "id": "cloud-spanner",
+   "name": "Cloud Spanner",
+   "category": "databases",
+   "file": "products/cloud_spanner.svg"
+  },
+  {
+   "key": "cloud_sql",
+   "id": "cloud-sql",
+   "name": "Cloud SQL",
+   "category": "databases",
+   "file": "products/cloud_sql.svg"
+  },
+  {
+   "key": "database_migration_service",
+   "id": "database-migration-service",
+   "name": "Database Migration Service",
+   "category": "databases",
+   "file": "products/database_migration_service.svg"
+  },
+  {
+   "key": "datastore",
+   "id": "datastore",
+   "name": "Datastore",
+   "category": "databases",
+   "file": "products/datastore.svg"
+  },
+  {
+   "key": "datastream",
+   "id": "datastream",
+   "name": "Datastream",
+   "category": "databases",
+   "file": "products/datastream.svg"
+  },
+  {
+   "key": "firestore",
+   "id": "firestore",
+   "name": "Firestore",
+   "category": "databases",
+   "file": "products/firestore.svg"
+  },
+  {
+   "key": "memorystore",
+   "id": "memorystore",
+   "name": "Memorystore",
+   "category": "databases",
+   "file": "products/memorystore.svg"
+  },
+  {
+   "key": "cloud_build",
+   "id": "cloud-build",
+   "name": "Cloud Build",
+   "category": "devops",
+   "file": "products/cloud_build.svg"
+  },
+  {
+   "key": "cloud_code",
+   "id": "cloud-code",
+   "name": "Cloud Code",
+   "category": "devops",
+   "file": "products/cloud_code.svg"
+  },
+  {
+   "key": "cloud_deploy",
+   "id": "cloud-deploy",
+   "name": "Cloud Deploy",
+   "category": "devops",
+   "file": "products/cloud_deploy.svg"
+  },
+  {
+   "key": "cloud_deployment_manager",
+   "id": "cloud-deployment-manager",
+   "name": "Cloud Deployment Manager",
+   "category": "devops",
+   "file": "products/cloud_deployment_manager.svg"
+  },
+  {
+   "key": "cloud_test_lab",
+   "id": "cloud-test-lab",
+   "name": "Cloud Test Lab",
+   "category": "devops",
+   "file": "products/cloud_test_lab.svg"
+  },
+  {
+   "key": "configuration_management",
+   "id": "configuration-management",
+   "name": "Configuration Management",
+   "category": "devops",
+   "file": "products/configuration_management.svg"
+  },
+  {
+   "key": "tools_for_powershell",
+   "id": "tools-for-powershell",
+   "name": "Tools For PowerShell",
+   "category": "devops",
+   "file": "products/tools_for_powershell.svg"
+  },
+  {
+   "key": "cloud_healthcare_api",
+   "id": "cloud-healthcare-api",
+   "name": "Cloud Healthcare API",
+   "category": "healthcare",
+   "file": "products/cloud_healthcare_api.svg"
+  },
+  {
+   "key": "cloud_healthcare_marketplace",
+   "id": "cloud-healthcare-marketplace",
+   "name": "Cloud Healthcare Marketplace",
+   "category": "healthcare",
+   "file": "products/cloud_healthcare_marketplace.svg"
+  },
+  {
+   "key": "api_analytics",
+   "id": "api-analytics",
+   "name": "API Analytics",
+   "category": "integration",
+   "file": "products/api_analytics.svg"
+  },
+  {
+   "key": "api_monetization",
+   "id": "api-monetization",
+   "name": "API Monetization",
+   "category": "integration",
+   "file": "products/api_monetization.svg"
+  },
+  {
+   "key": "apigee_api_platform",
+   "id": "apigee-api-platform",
+   "name": "Apigee API Platform",
+   "category": "integration",
+   "file": "products/apigee_api_platform.svg"
+  },
+  {
+   "key": "apigee_sense",
+   "id": "apigee-sense",
+   "name": "Apigee Sense",
+   "category": "integration",
+   "file": "products/apigee_sense.svg"
+  },
+  {
+   "key": "connectors",
+   "id": "connectors",
+   "name": "Connectors",
+   "category": "integration",
+   "file": "products/connectors.svg"
+  },
+  {
+   "key": "developer_portal",
+   "id": "developer-portal",
+   "name": "Developer Portal",
+   "category": "integration",
+   "file": "products/developer_portal.svg"
+  },
+  {
+   "key": "producer_portal",
+   "id": "producer-portal",
+   "name": "Producer Portal",
+   "category": "integration",
+   "file": "products/producer_portal.svg"
+  },
+  {
+   "key": "administration",
+   "id": "administration",
+   "name": "Administration",
+   "category": "management",
+   "file": "products/administration.svg"
+  },
+  {
+   "key": "advanced_solutions_lab",
+   "id": "advanced-solutions-lab",
+   "name": "Advanced Solutions Lab",
+   "category": "management",
+   "file": "products/advanced_solutions_lab.svg"
+  },
+  {
+   "key": "billing",
+   "id": "billing",
+   "name": "Billing",
+   "category": "management",
+   "file": "products/billing.svg"
+  },
+  {
+   "key": "catalog",
+   "id": "catalog",
+   "name": "Catalog",
+   "category": "management",
+   "file": "products/catalog.svg"
+  },
+  {
+   "key": "cloud_generic",
+   "id": "cloud-generic",
+   "name": "Cloud Generic",
+   "category": "management",
+   "file": "products/cloud_generic.svg"
+  },
+  {
+   "key": "early_access_center",
+   "id": "early-access-center",
+   "name": "Early Access Center",
+   "category": "management",
+   "file": "products/early_access_center.svg"
+  },
+  {
+   "key": "financial_services_marketplace",
+   "id": "financial-services-marketplace",
+   "name": "Financial Services Marketplace",
+   "category": "management",
+   "file": "products/financial_services_marketplace.svg"
+  },
+  {
+   "key": "fleet_engine",
+   "id": "fleet-engine",
+   "name": "Fleet Engine",
+   "category": "management",
+   "file": "products/fleet_engine.svg"
+  },
+  {
+   "key": "free_trial",
+   "id": "free-trial",
+   "name": "Free Trial",
+   "category": "management",
+   "file": "products/free_trial.svg"
+  },
+  {
+   "key": "game_servers",
+   "id": "game-servers",
+   "name": "Game Servers",
+   "category": "management",
+   "file": "products/game_servers.svg"
+  },
+  {
+   "key": "google_cloud_marketplace",
+   "id": "cloud-marketplace",
+   "name": "Google Cloud Marketplace",
+   "category": "management",
+   "file": "products/google_cloud_marketplace.svg"
+  },
+  {
+   "key": "google_maps_platform",
+   "id": "maps-platform",
+   "name": "Google Maps Platform",
+   "category": "management",
+   "file": "products/google_maps_platform.svg"
+  },
+  {
+   "key": "home",
+   "id": "home",
+   "name": "Home",
+   "category": "management",
+   "file": "products/home.svg"
+  },
+  {
+   "key": "iot_core",
+   "id": "iot-core",
+   "name": "IoT Core",
+   "category": "management",
+   "file": "products/iot_core.svg"
+  },
+  {
+   "key": "iot_edge",
+   "id": "iot-edge",
+   "name": "IoT Edge",
+   "category": "management",
+   "file": "products/iot_edge.svg"
+  },
+  {
+   "key": "launcher",
+   "id": "launcher",
+   "name": "Launcher",
+   "category": "management",
+   "file": "products/launcher.svg"
+  },
+  {
+   "key": "my_cloud",
+   "id": "my-cloud",
+   "name": "My Cloud",
+   "category": "management",
+   "file": "products/my_cloud.svg"
+  },
+  {
+   "key": "onboarding",
+   "id": "onboarding",
+   "name": "Onboarding",
+   "category": "management",
+   "file": "products/onboarding.svg"
+  },
+  {
+   "key": "project",
+   "id": "project",
+   "name": "Project",
+   "category": "management",
+   "file": "products/project.svg"
+  },
+  {
+   "key": "quotas",
+   "id": "quotas",
+   "name": "Quotas",
+   "category": "management",
+   "file": "products/quotas.svg"
+  },
+  {
+   "key": "real-world_insights",
+   "id": "real-world-insights",
+   "name": "Real-World Insights",
+   "category": "management",
+   "file": "products/real-world_insights.svg"
+  },
+  {
+   "key": "release_notes",
+   "id": "release-notes",
+   "name": "Release Notes",
+   "category": "management",
+   "file": "products/release_notes.svg"
+  },
+  {
+   "key": "support",
+   "id": "support",
+   "name": "Support",
+   "category": "management",
+   "file": "products/support.svg"
+  },
+  {
+   "key": "user_preferences",
+   "id": "user-preferences",
+   "name": "User Preferences",
+   "category": "management",
+   "file": "products/user_preferences.svg"
+  },
+  {
+   "key": "certificate_manager",
+   "id": "certificate-manager",
+   "name": "Certificate Manager",
+   "category": "networking",
+   "file": "products/certificate_manager.svg"
+  },
+  {
+   "key": "cloud_api_gateway",
+   "id": "cloud-api-gateway",
+   "name": "Cloud API Gateway",
+   "category": "networking",
+   "file": "products/cloud_api_gateway.svg"
+  },
+  {
+   "key": "cloud_apis",
+   "id": "cloud-apis",
+   "name": "Cloud APIs",
+   "category": "networking",
+   "file": "products/cloud_apis.svg"
+  },
+  {
+   "key": "cloud_armor",
+   "id": "cloud-armor",
+   "name": "Cloud Armor",
+   "category": "networking",
+   "file": "products/cloud_armor.svg"
+  },
+  {
+   "key": "cloud_cdn",
+   "id": "cloud-cdn",
+   "name": "Cloud CDN",
+   "category": "networking",
+   "file": "products/cloud_cdn.svg"
+  },
+  {
+   "key": "cloud_dns",
+   "id": "cloud-dns",
+   "name": "Cloud DNS",
+   "category": "networking",
+   "file": "products/cloud_dns.svg"
+  },
+  {
+   "key": "cloud_domains",
+   "id": "cloud-domains",
+   "name": "Cloud Domains",
+   "category": "networking",
+   "file": "products/cloud_domains.svg"
+  },
+  {
+   "key": "cloud_endpoints",
+   "id": "cloud-endpoints",
+   "name": "Cloud Endpoints",
+   "category": "networking",
+   "file": "products/cloud_endpoints.svg"
+  },
+  {
+   "key": "cloud_external_ip_addresses",
+   "id": "cloud-external-ip-addresses",
+   "name": "Cloud External IP Addresses",
+   "category": "networking",
+   "file": "products/cloud_external_ip_addresses.svg"
+  },
+  {
+   "key": "cloud_firewall_rules",
+   "id": "cloud-firewall-rules",
+   "name": "Cloud Firewall Rules",
+   "category": "networking",
+   "file": "products/cloud_firewall_rules.svg"
+  },
+  {
+   "key": "cloud_ids",
+   "id": "cloud-ids",
+   "name": "Cloud IDS",
+   "category": "networking",
+   "file": "products/cloud_ids.svg"
+  },
+  {
+   "key": "cloud_interconnect",
+   "id": "cloud-interconnect",
+   "name": "Cloud Interconnect",
+   "category": "networking",
+   "file": "products/cloud_interconnect.svg"
+  },
+  {
+   "key": "cloud_load_balancing",
+   "id": "cloud-load-balancing",
+   "name": "Cloud Load Balancing",
+   "category": "networking",
+   "file": "products/cloud_load_balancing.svg"
+  },
+  {
+   "key": "cloud_media_edge",
+   "id": "cloud-media-edge",
+   "name": "Cloud Media Edge",
+   "category": "networking",
+   "file": "products/cloud_media_edge.svg"
+  },
+  {
+   "key": "cloud_nat",
+   "id": "cloud-nat",
+   "name": "Cloud NAT",
+   "category": "networking",
+   "file": "products/cloud_nat.svg"
+  },
+  {
+   "key": "cloud_network",
+   "id": "cloud-network",
+   "name": "Cloud Network",
+   "category": "networking",
+   "file": "products/cloud_network.svg"
+  },
+  {
+   "key": "cloud_router",
+   "id": "cloud-router",
+   "name": "Cloud Router",
+   "category": "networking",
+   "file": "products/cloud_router.svg"
+  },
+  {
+   "key": "cloud_routes",
+   "id": "cloud-routes",
+   "name": "Cloud Routes",
+   "category": "networking",
+   "file": "products/cloud_routes.svg"
+  },
+  {
+   "key": "cloud_vpn",
+   "id": "cloud-vpn",
+   "name": "Cloud VPN",
+   "category": "networking",
+   "file": "products/cloud_vpn.svg"
+  },
+  {
+   "key": "connectivity_test",
+   "id": "connectivity-test",
+   "name": "Connectivity Test",
+   "category": "networking",
+   "file": "products/connectivity_test.svg"
+  },
+  {
+   "key": "network_connectivity_center",
+   "id": "network-connectivity-center",
+   "name": "Network Connectivity Center",
+   "category": "networking",
+   "file": "products/network_connectivity_center.svg"
+  },
+  {
+   "key": "network_intelligence_center",
+   "id": "network-intelligence-center",
+   "name": "Network Intelligence Center",
+   "category": "networking",
+   "file": "products/network_intelligence_center.svg"
+  },
+  {
+   "key": "network_security",
+   "id": "network-security",
+   "name": "Network Security",
+   "category": "networking",
+   "file": "products/network_security.svg"
+  },
+  {
+   "key": "network_tiers",
+   "id": "network-tiers",
+   "name": "Network Tiers",
+   "category": "networking",
+   "file": "products/network_tiers.svg"
+  },
+  {
+   "key": "network_topology",
+   "id": "network-topology",
+   "name": "Network Topology",
+   "category": "networking",
+   "file": "products/network_topology.svg"
+  },
+  {
+   "key": "partner_interconnect",
+   "id": "partner-interconnect",
+   "name": "Partner Interconnect",
+   "category": "networking",
+   "file": "products/partner_interconnect.svg"
+  },
+  {
+   "key": "partner_portal",
+   "id": "partner-portal",
+   "name": "Partner Portal",
+   "category": "networking",
+   "file": "products/partner_portal.svg"
+  },
+  {
+   "key": "premium_network_tier",
+   "id": "premium-network-tier",
+   "name": "Premium Network Tier",
+   "category": "networking",
+   "file": "products/premium_network_tier.svg"
+  },
+  {
+   "key": "private_connectivity",
+   "id": "private-connectivity",
+   "name": "Private Connectivity",
+   "category": "networking",
+   "file": "products/private_connectivity.svg"
+  },
+  {
+   "key": "private_service_connect",
+   "id": "private-service-connect",
+   "name": "Private Service Connect",
+   "category": "networking",
+   "file": "products/private_service_connect.svg"
+  },
+  {
+   "key": "service_discovery",
+   "id": "service-discovery",
+   "name": "Service Discovery",
+   "category": "networking",
+   "file": "products/service_discovery.svg"
+  },
+  {
+   "key": "standard_network_tier",
+   "id": "standard-network-tier",
+   "name": "Standard Network Tier",
+   "category": "networking",
+   "file": "products/standard_network_tier.svg"
+  },
+  {
+   "key": "traffic_director",
+   "id": "traffic-director",
+   "name": "Traffic Director",
+   "category": "networking",
+   "file": "products/traffic_director.svg"
+  },
+  {
+   "key": "virtual_private_cloud",
+   "id": "virtual-private-cloud",
+   "name": "Virtual Private Cloud",
+   "category": "networking",
+   "file": "products/virtual_private_cloud.svg"
+  },
+  {
+   "key": "asset_inventory",
+   "id": "asset-inventory",
+   "name": "Asset Inventory",
+   "category": "operations",
+   "file": "products/asset_inventory.svg"
+  },
+  {
+   "key": "cloud_asset_inventory",
+   "id": "cloud-asset-inventory",
+   "name": "Cloud Asset Inventory",
+   "category": "operations",
+   "file": "products/cloud_asset_inventory.svg"
+  },
+  {
+   "key": "cloud_logging",
+   "id": "cloud-logging",
+   "name": "Cloud Logging",
+   "category": "operations",
+   "file": "products/cloud_logging.svg"
+  },
+  {
+   "key": "cloud_monitoring",
+   "id": "cloud-monitoring",
+   "name": "Cloud Monitoring",
+   "category": "operations",
+   "file": "products/cloud_monitoring.svg"
+  },
+  {
+   "key": "cloud_ops",
+   "id": "cloud-ops",
+   "name": "Cloud Operations",
+   "category": "operations",
+   "file": "products/cloud_ops.svg"
+  },
+  {
+   "key": "debugger",
+   "id": "debugger",
+   "name": "Debugger",
+   "category": "operations",
+   "file": "products/debugger.svg"
+  },
+  {
+   "key": "error_reporting",
+   "id": "error-reporting",
+   "name": "Error Reporting",
+   "category": "operations",
+   "file": "products/error_reporting.svg"
+  },
+  {
+   "key": "performance_dashboard",
+   "id": "performance-dashboard",
+   "name": "Performance Dashboard",
+   "category": "operations",
+   "file": "products/performance_dashboard.svg"
+  },
+  {
+   "key": "profiler",
+   "id": "profiler",
+   "name": "Profiler",
+   "category": "operations",
+   "file": "products/profiler.svg"
+  },
+  {
+   "key": "stackdriver",
+   "id": "stackdriver",
+   "name": "Stackdriver",
+   "category": "operations",
+   "file": "products/stackdriver.svg"
+  },
+  {
+   "key": "trace",
+   "id": "trace",
+   "name": "Trace",
+   "category": "operations",
+   "file": "products/trace.svg"
+  },
+  {
+   "key": "api",
+   "id": "api",
+   "name": "API",
+   "category": "other",
+   "file": "products/api.svg"
+  },
+  {
+   "key": "cloud_for_marketing",
+   "id": "cloud-for-marketing",
+   "name": "Cloud For Marketing",
+   "category": "other",
+   "file": "products/cloud_for_marketing.svg"
+  },
+  {
+   "key": "distributed_cloud",
+   "id": "distributed-cloud",
+   "name": "Distributed Cloud",
+   "category": "other",
+   "file": "products/distributed_cloud.svg"
+  },
+  {
+   "key": "managed_service_for_microsoft_active_directory",
+   "id": "managed-service-for-microsoft-active-directory",
+   "name": "Managed Service For Microsoft Active Directory",
+   "category": "other",
+   "file": "products/managed_service_for_microsoft_active_directory.svg"
+  },
+  {
+   "key": "runtime_config",
+   "id": "runtime-config",
+   "name": "Runtime Config",
+   "category": "other",
+   "file": "products/runtime_config.svg"
+  },
+  {
+   "key": "access_context_manager",
+   "id": "access-context-manager",
+   "name": "Access Context Manager",
+   "category": "security",
+   "file": "products/access_context_manager.svg"
+  },
+  {
+   "key": "assured_workloads",
+   "id": "assured-workloads",
+   "name": "Assured Workloads",
+   "category": "security",
+   "file": "products/assured_workloads.svg"
+  },
+  {
+   "key": "beyondcorp",
+   "id": "beyondcorp",
+   "name": "Beyondcorp",
+   "category": "security",
+   "file": "products/beyondcorp.svg"
+  },
+  {
+   "key": "binary_authorization",
+   "id": "binary-authorization",
+   "name": "Binary Authorization",
+   "category": "security",
+   "file": "products/binary_authorization.svg"
+  },
+  {
+   "key": "certificate_authority_service",
+   "id": "certificate-authority-service",
+   "name": "Certificate Authority Service",
+   "category": "security",
+   "file": "products/certificate_authority_service.svg"
+  },
+  {
+   "key": "cloud_audit_logs",
+   "id": "cloud-audit-logs",
+   "name": "Cloud Audit Logs",
+   "category": "security",
+   "file": "products/cloud_audit_logs.svg"
+  },
+  {
+   "key": "cloud_ekm",
+   "id": "cloud-ekm",
+   "name": "Cloud EKM",
+   "category": "security",
+   "file": "products/cloud_ekm.svg"
+  },
+  {
+   "key": "cloud_hsm",
+   "id": "cloud-hsm",
+   "name": "Cloud HSM",
+   "category": "security",
+   "file": "products/cloud_hsm.svg"
+  },
+  {
+   "key": "key_management_service",
+   "id": "key-management-service",
+   "name": "Cloud Key Management Service",
+   "category": "security",
+   "file": "products/key_management_service.svg"
+  },
+  {
+   "key": "cloud_security_scanner",
+   "id": "cloud-security-scanner",
+   "name": "Cloud Security Scanner",
+   "category": "security",
+   "file": "products/cloud_security_scanner.svg"
+  },
+  {
+   "key": "data_loss_prevention_api",
+   "id": "data-loss-prevention-api",
+   "name": "Data Loss Prevention API",
+   "category": "security",
+   "file": "products/data_loss_prevention_api.svg"
+  },
+  {
+   "key": "identity_and_access_management",
+   "id": "identity-and-access-management",
+   "name": "Identity and Access Management",
+   "category": "security",
+   "file": "products/identity_and_access_management.svg"
+  },
+  {
+   "key": "identity_platform",
+   "id": "identity-platform",
+   "name": "Identity Platform",
+   "category": "security",
+   "file": "products/identity_platform.svg"
+  },
+  {
+   "key": "identity-aware_proxy",
+   "id": "identity-aware-proxy",
+   "name": "Identity-Aware Proxy",
+   "category": "security",
+   "file": "products/identity-aware_proxy.svg"
+  },
+  {
+   "key": "key_access_justifications",
+   "id": "key-access-justifications",
+   "name": "Key Access Justifications",
+   "category": "security",
+   "file": "products/key_access_justifications.svg"
+  },
+  {
+   "key": "mandiant",
+   "id": "mandiant",
+   "name": "Mandiant",
+   "category": "security",
+   "file": "products/mandiant.svg"
+  },
+  {
+   "key": "permissions",
+   "id": "permissions",
+   "name": "Permissions",
+   "category": "security",
+   "file": "products/permissions.svg"
+  },
+  {
+   "key": "phishing_protection",
+   "id": "phishing-protection",
+   "name": "Phishing Protection",
+   "category": "security",
+   "file": "products/phishing_protection.svg"
+  },
+  {
+   "key": "policy_analyzer",
+   "id": "policy-analyzer",
+   "name": "Policy Analyzer",
+   "category": "security",
+   "file": "products/policy_analyzer.svg"
+  },
+  {
+   "key": "risk_manager",
+   "id": "risk-manager",
+   "name": "Risk Manager",
+   "category": "security",
+   "file": "products/risk_manager.svg"
+  },
+  {
+   "key": "secret_manager",
+   "id": "secret-manager",
+   "name": "Secret Manager",
+   "category": "security",
+   "file": "products/secret_manager.svg"
+  },
+  {
+   "key": "security",
+   "id": "security",
+   "name": "Security",
+   "category": "security",
+   "file": "products/security.svg"
+  },
+  {
+   "key": "security_command_center",
+   "id": "security-command-center",
+   "name": "Security Command Center",
+   "category": "security",
+   "file": "products/security_command_center.svg"
+  },
+  {
+   "key": "security_health_advisor",
+   "id": "security-health-advisor",
+   "name": "Security Health Advisor",
+   "category": "security",
+   "file": "products/security_health_advisor.svg"
+  },
+  {
+   "key": "security_key_enforcement",
+   "id": "security-key-enforcement",
+   "name": "Security Key Enforcement",
+   "category": "security",
+   "file": "products/security_key_enforcement.svg"
+  },
+  {
+   "key": "security_operations",
+   "id": "security-operations",
+   "name": "Security Operations",
+   "category": "security",
+   "file": "products/security_operations.svg"
+  },
+  {
+   "key": "threat_intelligence",
+   "id": "threat-intelligence",
+   "name": "Threat Intelligence",
+   "category": "security",
+   "file": "products/threat_intelligence.svg"
+  },
+  {
+   "key": "web_risk",
+   "id": "web-risk",
+   "name": "Web Risk",
+   "category": "security",
+   "file": "products/web_risk.svg"
+  },
+  {
+   "key": "web_security_scanner",
+   "id": "web-security-scanner",
+   "name": "Web Security Scanner",
+   "category": "security",
+   "file": "products/web_security_scanner.svg"
+  },
+  {
+   "key": "workload_identity_pool",
+   "id": "workload-identity-pool",
+   "name": "Workload Identity Pool",
+   "category": "security",
+   "file": "products/workload_identity_pool.svg"
+  },
+  {
+   "key": "app_engine",
+   "id": "app-engine",
+   "name": "App Engine",
+   "category": "serverless",
+   "file": "products/app_engine.svg"
+  },
+  {
+   "key": "cloud_functions",
+   "id": "cloud-functions",
+   "name": "Cloud Functions",
+   "category": "serverless",
+   "file": "products/cloud_functions.svg"
+  },
+  {
+   "key": "cloud_run",
+   "id": "cloud-run",
+   "name": "Cloud Run",
+   "category": "serverless",
+   "file": "products/cloud_run.svg"
+  },
+  {
+   "key": "cloud_scheduler",
+   "id": "cloud-scheduler",
+   "name": "Cloud Scheduler",
+   "category": "serverless",
+   "file": "products/cloud_scheduler.svg"
+  },
+  {
+   "key": "cloud_tasks",
+   "id": "cloud-tasks",
+   "name": "Cloud Tasks",
+   "category": "serverless",
+   "file": "products/cloud_tasks.svg"
+  },
+  {
+   "key": "eventarc",
+   "id": "eventarc",
+   "name": "Eventarc",
+   "category": "serverless",
+   "file": "products/eventarc.svg"
+  },
+  {
+   "key": "workflows",
+   "id": "workflows",
+   "name": "Workflows",
+   "category": "serverless",
+   "file": "products/workflows.svg"
+  },
+  {
+   "key": "cloud_storage",
+   "id": "cloud-storage",
+   "name": "Cloud Storage",
+   "category": "storage",
+   "file": "products/cloud_storage.svg"
+  },
+  {
+   "key": "data_transfer",
+   "id": "data-transfer",
+   "name": "Data Transfer",
+   "category": "storage",
+   "file": "products/data_transfer.svg"
+  },
+  {
+   "key": "filestore",
+   "id": "filestore",
+   "name": "Filestore",
+   "category": "storage",
+   "file": "products/filestore.svg"
+  },
+  {
+   "key": "transfer",
+   "id": "transfer",
+   "name": "Transfer",
+   "category": "storage",
+   "file": "products/transfer.svg"
+  },
+  {
+   "key": "transfer_appliance",
+   "id": "transfer-appliance",
+   "name": "Transfer Appliance",
+   "category": "storage",
+   "file": "products/transfer_appliance.svg"
+  }
+ ],
+ "resources": [],
+ "groups": [
+  {
+   "key": "Project",
+   "dark": false,
+   "file": "products/project.svg"
+  },
+  {
+   "key": "VPC",
+   "dark": false,
+   "file": "products/virtual_private_cloud.svg"
+  },
+  {
+   "key": "Subnet",
+   "dark": false,
+   "file": "products/cloud_network.svg"
+  },
+  {
+   "key": "Firewall",
+   "dark": false,
+   "file": "products/cloud_firewall_rules.svg"
+  },
+  {
+   "key": "Perimeter",
+   "dark": false,
+   "file": "products/access_context_manager.svg"
+  },
+  {
+   "key": "Organization",
+   "dark": false,
+   "file": "products/administration.svg"
+  }
+ ],
+ "general": [
+  {
+   "key": "browser",
+   "id": "browser",
+   "name": "Browser",
+   "file": "general/browser.svg"
+  },
+  {
+   "key": "cloud",
+   "id": "cloud",
+   "name": "Cloud",
+   "file": "general/cloud.svg"
+  },
+  {
+   "key": "file",
+   "id": "file",
+   "name": "File",
+   "file": "general/file.svg"
+  },
+  {
+   "key": "internet",
+   "id": "internet",
+   "name": "Internet",
+   "file": "general/internet.svg"
+  },
+  {
+   "key": "iot-device",
+   "id": "iot-device",
+   "name": "Iot Device",
+   "file": "general/iot-device.svg"
+  },
+  {
+   "key": "mobile",
+   "id": "mobile",
+   "name": "Mobile",
+   "file": "general/mobile.svg"
+  },
+  {
+   "key": "saas",
+   "id": "saas",
+   "name": "Saas",
+   "file": "general/saas.svg"
+  },
+  {
+   "key": "server-farm",
+   "id": "server-farm",
+   "name": "Server Farm",
+   "file": "general/server-farm.svg"
+  },
+  {
+   "key": "user",
+   "id": "user",
+   "name": "User",
+   "file": "general/user.svg"
+  },
+  {
+   "key": "users",
+   "id": "users",
+   "name": "Users",
+   "file": "general/users.svg"
+  }
+ ]
+}

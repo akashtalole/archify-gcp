@@ -1,0 +1,262 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="az theme-light" viewBox="0 0 1636 790" width="1636" height="790" role="img" aria-label="Highly available three-tier web application">
+<title>Highly available three-tier web application</title>
+<style>.az{--bg:#ffffff;--fg:#000000;--muted:#545b64;--line:#232F3E;--halo:#ffffff;--badge:#000000;--badgeFg:#ffffff}
+.az.theme-dark{--bg:#161E2D;--fg:#ffffff;--muted:#aab4c3;--line:#d5dbdb;--halo:#161E2D;--badge:#ffffff;--badgeFg:#000000}
+.az .bg{fill:var(--bg)}
+.az text{font-family:Arial,Helvetica,sans-serif;fill:var(--fg)}
+.az .title{font-size:22px;font-weight:700}
+.az .subtitle{font-size:13px;fill:var(--muted)}
+.az .glabel,.az .nlabel,.az .elabel{font-size:12px}
+.az .nsub{font-size:10.5px;fill:var(--muted)}
+.az .elabel{paint-order:stroke;stroke:var(--halo);stroke-width:4px;stroke-linejoin:round}
+.az .eline{stroke:var(--line)}
+.az .arw{fill:none;stroke:var(--line);stroke-width:1.6}
+.az .badge circle{fill:var(--badge)}.az .badge circle.hit{fill:transparent}.az .badge{cursor:help}.az .badge:hover circle:not(.hit){stroke:#ff9900;stroke-width:3}
+.az .badge text{fill:var(--badgeFg);font-weight:700;font-size:12px}
+.az .only-dark{display:none}.az.theme-dark .only-dark{display:inline}.az.theme-dark .only-light{display:none}
+.az.theme-dark .grect[data-fill-dark="none"]{fill:none}
+.az .dim{opacity:.18}.az .hl .eline{stroke-width:3}
+.az .edge,.az .node{transition:opacity .12s}</style>
+<defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="arw" d="M1.5 1.5 L8.5 5 L1.5 8.5"/></marker><symbol id="grp-Project" viewBox="0 0 24 24"><g >
+	<rect y="0" fill="none" width="24" height="24"/>
+	<polygon fill-rule="evenodd" fill="#85A4E6" points="0.8,5.9 3.7,0.8 9.5,0.8 12.4,5.9 9.5,10.9 3.7,10.9 	"/>
+	<polygon fill-rule="evenodd" fill="#5C85DE" points="11.4,7.7 8.5,2.6 9.5,0.7 12.4,5.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000019646383529055310330000009913415011964925323_" fill-rule="evenodd" fill="#3367D6" points="
+		2.7,9.3 8.5,9.3 10.5,5.9 11.4,7.7 9.5,10.9 3.7,11 	"/>
+	<polygon fill-rule="evenodd" fill="#85A4E6" points="11.2,11.9 14.2,6.8 20,6.8 22.9,11.9 20,16.9 14.2,16.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000133527958483064390410000012377415375428947900_" fill-rule="evenodd" fill="#5C85DE" points="
+		21.9,13.7 19,8.6 20,6.7 22.9,11.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000176019471624316745960000001248137580190207128_" fill-rule="evenodd" fill="#3367D6" points="
+		13.2,15.3 19,15.3 21,11.9 21.9,13.7 20,16.9 14.2,17 	"/>
+	<polygon fill-rule="evenodd" fill="#85A4E6" points="0.8,17.9 3.7,12.8 9.5,12.8 12.4,17.9 9.5,22.9 3.7,22.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000096041779745201399360000017167964797373102485_" fill-rule="evenodd" fill="#5C85DE" points="
+		11.4,19.7 8.5,14.6 9.5,12.7 12.4,17.9 	"/>
+	<polygon id="grp-Project__Shape-Copy_00000049204188488742950820000010444321201512143025_" fill-rule="evenodd" fill="#3367D6" points="
+		2.7,21.3 8.5,21.3 10.5,17.9 11.4,19.7 9.5,22.9 3.7,23 	"/>
+</g></symbol><symbol id="grp-VPC" viewBox="0 0 24 24"><defs><style>.grp-VPC__cls-1{fill:#aecbfa;}.grp-VPC__cls-2{fill:#669df6;}.grp-VPC__cls-3{fill:#4285f4;}</style></defs><g data-name="Product Icons"><rect class="grp-VPC__cls-1" x="16" y="2" width="6" height="6"/><rect class="grp-VPC__cls-2" x="19" y="2" width="3" height="6"/><rect class="grp-VPC__cls-1" x="16" y="16" width="6" height="6"/><rect class="grp-VPC__cls-2" x="19" y="16" width="3" height="6"/><rect class="grp-VPC__cls-1" x="2" y="2" width="6" height="6"/><rect class="grp-VPC__cls-2" x="5" y="2" width="3" height="6"/><rect class="grp-VPC__cls-1" x="2" y="16" width="6" height="6"/><rect class="grp-VPC__cls-2" x="5" y="16" width="3" height="6"/><rect class="grp-VPC__cls-2" x="8" y="4" width="8" height="2"/><rect class="grp-VPC__cls-2" x="8" y="18" width="8" height="2"/><rect class="grp-VPC__cls-2" x="18" y="8" width="2" height="8"/><rect class="grp-VPC__cls-2" x="4" y="8" width="2" height="8"/><rect class="grp-VPC__cls-3" x="4" y="8" width="2" height="2"/><rect class="grp-VPC__cls-3" x="18" y="8" width="2" height="2"/><rect class="grp-VPC__cls-3" x="8" y="4" width="2" height="2"/><rect class="grp-VPC__cls-3" x="8" y="18" width="2" height="2"/></g></symbol><symbol id="gen-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.4" fill="#4285F4"/><path d="M2.5 19.5c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6z" fill="#4285F4"/><circle cx="17" cy="9" r="2.8" fill="#8AB4F8"/><path d="M16 13.8c3 .1 5.5 2 5.5 5.7H17c0-2-.4-3.8-1-5.7z" fill="#8AB4F8"/></symbol><symbol id="svc-cloud_cdn" viewBox="0 0 24 24"><defs><style>.svc-cloud_cdn__cls-1{fill:none;}.svc-cloud_cdn__cls-2{fill:#669df6;}.svc-cloud_cdn__cls-2,.svc-cloud_cdn__cls-3,.svc-cloud_cdn__cls-4{fill-rule:evenodd;}.svc-cloud_cdn__cls-3{fill:#aecbfa;}.svc-cloud_cdn__cls-4{fill:#4285f4;}</style></defs><g data-name="Product Icons"><rect class="svc-cloud_cdn__cls-1" x="2" y="2" width="20" height="20"/><g ><polygon id="svc-cloud_cdn__Fill-1" class="svc-cloud_cdn__cls-2" points="12 2 12 4.41 15.13 7.63 15.13 5.21 12 2"/><polygon id="svc-cloud_cdn__Fill-1-Copy-2" class="svc-cloud_cdn__cls-2" points="19.5 12 16.38 15.13 18.88 15.13 22 12 19.5 12"/><polygon id="svc-cloud_cdn__Fill-1-Copy-3" class="svc-cloud_cdn__cls-2" points="4.5 12 7.63 15.13 5.13 15.13 2 12 4.5 12"/><polygon id="svc-cloud_cdn__Fill-1-Copy" class="svc-cloud_cdn__cls-2" points="12 22 12 19.59 15.13 16.38 15.13 18.79 12 22"/><polygon id="svc-cloud_cdn__Fill-2" class="svc-cloud_cdn__cls-3" points="12 2 8.88 5.21 8.88 7.63 12 4.41 12 2"/><polygon id="svc-cloud_cdn__Fill-2-Copy-2" class="svc-cloud_cdn__cls-3" points="18.88 8.88 16.38 8.88 19.5 12 22 12 18.88 8.88"/><polygon id="svc-cloud_cdn__Fill-2-Copy-3" class="svc-cloud_cdn__cls-3" points="5.13 8.88 7.63 8.88 4.5 12 2 12 5.13 8.88"/><polygon id="svc-cloud_cdn__Fill-2-Copy" class="svc-cloud_cdn__cls-3" points="12 22 8.88 18.79 8.88 16.38 12 19.59 12 22"/><polygon id="svc-cloud_cdn__Fill-9" class="svc-cloud_cdn__cls-3" points="15.13 15.13 8.88 15.13 8.88 8.88 15.13 8.88 15.13 15.13"/><polygon id="svc-cloud_cdn__Fill-10" class="svc-cloud_cdn__cls-2" points="15.13 8.88 15.13 15.13 8.88 15.13 15.13 8.88"/><polygon class="svc-cloud_cdn__cls-4" points="15.13 8.88 15.13 15.13 12 12 15.13 8.88"/></g></g></symbol><symbol id="svc-cloud_armor" viewBox="0 0 24 24"><defs><style>.svc-cloud_armor__cls-1{fill:#aecbfa;}.svc-cloud_armor__cls-2{fill:#669df6;}</style></defs><g data-name="Product Icons"><polygon class="svc-cloud_armor__cls-1" points="9.76 20.6 8.72 19.55 14.17 14.07 15.21 15.12 9.76 20.6"/><polygon class="svc-cloud_armor__cls-1" points="7.03 18.32 5.99 17.27 13.34 9.88 14.38 10.93 7.03 18.32"/><polygon class="svc-cloud_armor__cls-1" points="5.34 14.98 4.3 13.93 9.18 9.03 10.22 10.08 5.34 14.98"/><path class="svc-cloud_armor__cls-2" d="M12,3.61l6.78,3v4.55A9.71,9.71,0,0,1,12,20.48a9.7,9.7,0,0,1-6.78-9.31V6.63l6.78-3M12,2,3.75,5.68v5.49A11.17,11.17,0,0,0,11.85,22L12,22l.15,0a11.17,11.17,0,0,0,8.1-10.78V5.68L12,2Z"/><circle class="svc-cloud_armor__cls-2" cx="14.69" cy="14.62" r="1.42"/><circle class="svc-cloud_armor__cls-2" cx="13.85" cy="10.45" r="1.42"/><circle class="svc-cloud_armor__cls-2" cx="9.69" cy="9.6" r="1.42"/></g></symbol><symbol id="svc-cloud_load_balancing" viewBox="0 0 24 24"><defs><style>.svc-cloud_load_balancing__cls-1{fill:none;}.svc-cloud_load_balancing__cls-2{fill:#669df6;}.svc-cloud_load_balancing__cls-3{fill:#4285f4;}.svc-cloud_load_balancing__cls-4{fill:#aecbfa;}</style></defs><g data-name="Product Icons"><g data-name="colored-32/load-balancing"><rect class="svc-cloud_load_balancing__cls-1" width="24" height="24"/><g ><rect class="svc-cloud_load_balancing__cls-2" x="18" y="12" width="2" height="4"/><rect class="svc-cloud_load_balancing__cls-2" x="11" y="12" width="2" height="4"/><rect class="svc-cloud_load_balancing__cls-2" x="4" y="12" width="2" height="4"/><polygon id="svc-cloud_load_balancing__Fill-2" class="svc-cloud_load_balancing__cls-3" points="13 11 11 11 11 7 13 7 13 11"/><rect class="svc-cloud_load_balancing__cls-2" x="4" y="11" width="16" height="2"/><rect class="svc-cloud_load_balancing__cls-4" x="6" y="2" width="12" height="5"/><rect class="svc-cloud_load_balancing__cls-2" x="12" y="2" width="6" height="5"/><rect class="svc-cloud_load_balancing__cls-4" x="16" y="16" width="6" height="6"/><rect class="svc-cloud_load_balancing__cls-4" x="2" y="16" width="6" height="6"/><rect class="svc-cloud_load_balancing__cls-2" x="5" y="16" width="3" height="6"/><rect class="svc-cloud_load_balancing__cls-4" x="9" y="16" width="6" height="6"/><rect class="svc-cloud_load_balancing__cls-2" x="12" y="16" width="3" height="6"/><rect class="svc-cloud_load_balancing__cls-2" x="19" y="16" width="3" height="6"/></g></g></g></symbol><symbol id="svc-compute_engine" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-compute_engine__st0 {
+        fill: none;
+      }
+
+      .svc-compute_engine__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-compute_engine__st2 {
+        fill: #34a853;
+      }
+
+      .svc-compute_engine__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-compute_engine__st4 {
+        fill: #ea4335;
+      }
+    </style>
+  </defs>
+  <g id="svc-compute_engine__bounding_box">
+    <rect class="svc-compute_engine__st0" width="512" height="512"/>
+  </g>
+  <g id="svc-compute_engine__art">
+    <path class="svc-compute_engine__st1" d="M380.7,396.7h-249.3c-8.8,0-16-7.2-16-16v-249.3c0-8.8,7.2-16,16-16h249.3c8.8,0,16,7.2,16,16v249.3c0,8.8-7.2,16-16,16ZM147.3,364.7h217.3v-217.3h-217.3v217.3Z"/>
+    <path class="svc-compute_engine__st3" d="M147.3,364.7h-32v-233.3c0-8.8,7.2-16,16-16h146.1v32h-130.1v217.3h0Z"/>
+    <path class="svc-compute_engine__st1" d="M443,364.7h-62.3c-8.8,0-16-7.2-16-16s7.2-16,16-16h62.3c8.8,0,16,7.2,16,16s-7.2,16-16,16Z"/>
+    <path class="svc-compute_engine__st4" d="M443,272h-62.3c-8.8,0-16-7.2-16-16s7.2-16,16-16h62.3c8.8,0,16,7.2,16,16s-7.2,16-16,16Z"/>
+    <path class="svc-compute_engine__st4" d="M443,178.5h-62.3c-8.8,0-16-7.2-16-16s7.2-16,16-16h62.3c8.8,0,16,7.2,16,16s-7.2,16-16,16Z"/>
+    <path class="svc-compute_engine__st4" d="M349.5,147.3c-8.8,0-16-7.2-16-16v-62.3c0-8.8,7.2-16,16-16s16,7.2,16,16v62.3c0,8.8-7.2,16-16,16Z"/>
+    <path class="svc-compute_engine__st4" d="M256,147.3c-8.8,0-16-7.2-16-16v-62.3c0-8.8,7.2-16,16-16s16,7.2,16,16v62.3c0,8.8-7.2,16-16,16Z"/>
+    <path class="svc-compute_engine__st3" d="M162.5,147.3c-8.8,0-16-7.2-16-16v-62.3c0-8.8,7.2-16,16-16s16,7.2,16,16v62.3c0,8.8-7.2,16-16,16Z"/>
+    <path class="svc-compute_engine__st2" d="M315,331h-118c-8.8,0-16-7.2-16-16v-118c0-8.8,7.2-16,16-16h118c8.8,0,16,7.2,16,16v118c0,8.8-7.2,16-16,16ZM213,299h86v-86h-86v86Z"/>
+    <path class="svc-compute_engine__st4" d="M396.7,332.7h-32v-185.3h-124.6v-32h140.6c8.8,0,16,7.2,16,16v201.3Z"/>
+    <path class="svc-compute_engine__st1" d="M162.5,459c-8.8,0-16-7.2-16-16v-62.3c0-8.8,7.2-16,16-16s16,7.2,16,16v62.3c0,8.8-7.2,16-16,16Z"/>
+    <path class="svc-compute_engine__st1" d="M256,459c-8.8,0-16-7.2-16-16v-62.3c0-8.8,7.2-16,16-16s16,7.2,16,16v62.3c0,8.8-7.2,16-16,16Z"/>
+    <path class="svc-compute_engine__st1" d="M349.5,459c-8.8,0-16-7.2-16-16v-62.3c0-8.8,7.2-16,16-16s16,7.2,16,16v62.3c0,8.8-7.2,16-16,16Z"/>
+    <path class="svc-compute_engine__st3" d="M131.3,178.5h-62.3c-8.8,0-16-7.2-16-16s7.2-16,16-16h62.3c8.8,0,16,7.2,16,16s-7.2,16-16,16Z"/>
+    <path class="svc-compute_engine__st3" d="M131.3,272h-62.3c-8.8,0-16-7.2-16-16s7.2-16,16-16h62.3c8.8,0,16,7.2,16,16s-7.2,16-16,16Z"/>
+    <path class="svc-compute_engine__st3" d="M131.3,364.7h-62.3c-8.8,0-16-7.2-16-16s7.2-16,16-16h62.3c8.8,0,16,7.2,16,16s-7.2,16-16,16Z"/>
+  </g></symbol><symbol id="svc-cloud_sql" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-cloud_sql__st0 {
+        fill: none;
+      }
+
+      .svc-cloud_sql__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-cloud_sql__st2 {
+        fill: #34a853;
+      }
+
+      .svc-cloud_sql__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-cloud_sql__st4 {
+        fill: #ea4335;
+      }
+    </style>
+  </defs>
+  <g id="svc-cloud_sql__bounding_box">
+    <rect class="svc-cloud_sql__st0" width="512" height="512"/>
+  </g>
+  <g id="svc-cloud_sql__art">
+    <path class="svc-cloud_sql__st3" d="M447.5,123.7l-186-68.7c-3.6-1.3-7.5-1.3-11.1,0l-40.7,15-145.2,53.5c-6.3,2.3-10.5,8.3-10.5,15s4.2,12.7,10.5,15l145.1,53.4s0,0,0,0l40.8,15c1.8.6,3.7,1,5.5,1s3.7-.3,5.5-1l185.9-68.2c6.3-2.3,10.5-8.3,10.5-15,0-6.7-4.2-12.7-10.5-15h0ZM256,189.9l-139.6-51.4,139.6-51.4,139.7,51.6-139.6,51.2Z"/>
+    <path class="svc-cloud_sql__st2" d="M447.5,388.8l-185.9,68.2c-1.8.6-3.6,1-5.5,1s-3.7-.3-5.5-1l-40.8-15h0l-145.1-53.4c-8.3-3-12.5-12.2-9.5-20.5,3-8.3,12.2-12.5,20.5-9.5l180.4,66.4,180.4-66.2c8.3-3,17.5,1.2,20.5,9.5,3,8.3-1.2,17.5-9.5,20.5h0Z"/>
+    <path class="svc-cloud_sql__st2" d="M447.5,310.4l-185.9,68.2c-1.8.6-3.6,1-5.5,1s-3.7-.3-5.5-1l-40.8-15h0l-145.1-53.4c-8.3-3-12.5-12.2-9.5-20.5,3-8.3,12.2-12.5,20.5-9.5l180.4,66.4,180.4-66.2c8.3-3,17.5,1.2,20.5,9.5,3,8.3-1.2,17.5-9.5,20.5h0Z"/>
+    <path class="svc-cloud_sql__st2" d="M447.5,232.1l-185.9,68.2c-1.8.7-3.6,1-5.5,1s-3.7-.3-5.5-1l-40.8-15h0l-145.1-53.4c-8.3-3.1-12.5-12.2-9.5-20.5,3-8.3,12.2-12.5,20.5-9.5l180.4,66.4,180.4-66.2c8.3-3,17.5,1.2,20.5,9.5,3,8.3-1.2,17.5-9.5,20.5h0Z"/>
+    <path class="svc-cloud_sql__st4" d="M458,138.7c0,6.7-4.2,12.7-10.5,15l-186,68.2c-1.8.7-3.6,1-5.5,1s-3.7-.3-5.5-1l-40.8-15h0s46.4-17,46.4-17l139.6-51.2-139.7-51.6-46.2-17.1,40.7-15c3.6-1.3,7.5-1.3,11.1,0l186,68.7c6.3,2.3,10.5,8.3,10.5,15h0Z"/>
+    <path class="svc-cloud_sql__st1" d="M447.5,388.8l-185.9,68.2c-1.8.6-3.6,1-5.5,1s-3.7-.3-5.5-1l-40.8-15,46.4-17,180.4-66.2c8.3-3,17.5,1.2,20.5,9.5,3,8.3-1.2,17.5-9.5,20.5h0Z"/>
+    <path class="svc-cloud_sql__st1" d="M447.5,310.4l-185.9,68.2c-1.8.6-3.6,1-5.5,1s-3.7-.3-5.5-1l-40.8-15h0l46.4-17,180.4-66.2c8.3-3,17.5,1.2,20.5,9.5,3,8.3-1.2,17.5-9.5,20.5Z"/>
+    <path class="svc-cloud_sql__st1" d="M447.5,232.1l-185.9,68.2c-1.8.7-3.6,1-5.5,1s-3.7-.3-5.5-1l-40.8-15h0l46.4-17,180.4-66.2c8.3-3,17.5,1.2,20.5,9.5,3,8.3-1.2,17.5-9.5,20.5h0Z"/>
+    <path class="svc-cloud_sql__st3" d="M302.4,206.9l-186-68.5-51.8-15c-6.3,2.3-10.5,8.3-10.5,15s4.2,12.7,10.5,15l145.1,53.4s0,0,0,0l40.8,15c1.8.6,3.7,1,5.5,1s3.7-.3,5.5-1l40.9-15h0Z"/>
+  </g></symbol><symbol id="svc-memorystore" viewBox="0 0 24 24"><defs><style>.svc-memorystore__cls-1,.svc-memorystore__cls-4{fill:#669df6;}.svc-memorystore__cls-2{fill:#4285f4;}.svc-memorystore__cls-2,.svc-memorystore__cls-3,.svc-memorystore__cls-4{fill-rule:evenodd;}.svc-memorystore__cls-3{fill:#aecbfa;}</style></defs><g data-name="Product Icons"><g ><rect class="svc-memorystore__cls-1" x="2" y="3.94" width="3.33" height="2.58"/><rect class="svc-memorystore__cls-1" x="2" y="8.45" width="3.33" height="2.58"/><rect class="svc-memorystore__cls-1" x="2" y="12.97" width="3.33" height="2.58"/><rect class="svc-memorystore__cls-1" x="2" y="17.48" width="3.33" height="2.58"/><rect class="svc-memorystore__cls-1" x="18.67" y="3.94" width="3.33" height="2.58"/><rect class="svc-memorystore__cls-1" x="18.67" y="8.45" width="3.33" height="2.58"/><rect class="svc-memorystore__cls-1" x="18.67" y="12.97" width="3.33" height="2.58"/><rect class="svc-memorystore__cls-1" x="18.67" y="17.48" width="3.33" height="2.58"/><polygon class="svc-memorystore__cls-2" points="21.33 6.52 18.67 6.52 18.67 3.94 21.33 6.52"/><polygon class="svc-memorystore__cls-2" points="21.33 11.03 18.67 11.03 18.67 8.45 21.33 11.03"/><polygon class="svc-memorystore__cls-2" points="21.33 15.55 18.67 15.55 18.67 12.97 21.33 15.55"/><polygon class="svc-memorystore__cls-2" points="21.33 20.07 18.67 20.07 18.67 17.48 21.33 20.07"/><path class="svc-memorystore__cls-3" d="M5.33,22H18.67V2H5.33Zm6-9H8l4.67-7.74V11H16l-4.67,7.74Z"/><polygon class="svc-memorystore__cls-4" points="11.33 22 11.33 18.77 16 11.03 12.67 11.03 12.67 2 18.67 2 18.67 22 11.33 22"/></g></g></symbol><symbol id="svc-key_management_service" viewBox="0 0 24 24"><defs><style>.svc-key_management_service__cls-1{fill:#669df6;}.svc-key_management_service__cls-1,.svc-key_management_service__cls-2{fill-rule:evenodd;}.svc-key_management_service__cls-2{fill:#4285f4;}</style></defs><g data-name="Product Icons"><path class="svc-key_management_service__cls-1" d="M11.32,17.06H10v1.4h1.37v.63h1.43V12.18a3.47,3.47,0,0,0,2.67-3.34,3.42,3.42,0,1,0-4.1,3.36v2.12H9.26v1.4h2.06ZM12,2l8.21,3.42v5.63c0,5.06-3.5,9.8-8.21,11-4.71-1.15-8.21-5.89-8.21-10.95V5.42Zm0,5a1.88,1.88,0,0,1,.72,3.62A1.88,1.88,0,1,1,12,7Z"/><path class="svc-key_management_service__cls-2" d="M12,19.09h.75V12.18a3.47,3.47,0,0,0,2.67-3.34A3.42,3.42,0,0,0,12,5.42V2l8.21,3.42v5.63c0,5.06-3.5,9.8-8.21,11V19.09ZM12,7a1.88,1.88,0,0,1,.72,3.62,1.09,1.09,0,0,1-.72.15Z"/></g></symbol><symbol id="svc-cloud_monitoring" viewBox="0 0 24 24"><defs><style>.svc-cloud_monitoring__cls-1{fill:#669df6;}.svc-cloud_monitoring__cls-2{fill:#4285f4;}</style></defs><g data-name="Product Icons"><rect class="svc-cloud_monitoring__cls-1" x="10.83" y="15.84" width="2.33" height="2.64"/><path class="svc-cloud_monitoring__cls-2" d="M18.48,13.87a.56.56,0,0,1-.4-.17L14,9.47l-2.74,2.89a.57.57,0,0,1-.76.05L8.42,10.73l-2.2,2.92a.56.56,0,0,1-.45.22H2v1.71a.75.75,0,0,0,.74.75H21.26a.75.75,0,0,0,.74-.75V13.87Z"/><path class="svc-cloud_monitoring__cls-1" d="M5.5,12.76,7.88,9.6a.55.55,0,0,1,.37-.22.63.63,0,0,1,.42.12l2.12,1.72,2.8-2.94a.54.54,0,0,1,.4-.17h0a.54.54,0,0,1,.4.17l4.33,4.48H22V6a.74.74,0,0,0-.74-.74H2.74A.74.74,0,0,0,2,6v6.81Z"/><rect class="svc-cloud_monitoring__cls-2" x="8.67" y="18.18" width="6.67" height="0.61" rx="0.3"/></g></symbol><symbol id="svc-cloud_logging" viewBox="0 0 24 24"><defs><style>.svc-cloud_logging__cls-1{fill:#4285f4;}.svc-cloud_logging__cls-2{fill:none;}.svc-cloud_logging__cls-3{fill:#669df6;}.svc-cloud_logging__cls-4{fill:#aecbfa;}</style></defs><g data-name="Product Icons"><rect class="svc-cloud_logging__cls-1" x="6" y="11" width="4" height="2"/><rect class="svc-cloud_logging__cls-1" x="4" y="18" width="6" height="2"/><g data-name="colored-32/logs"><rect class="svc-cloud_logging__cls-2" width="24" height="24"/><g ><polygon id="svc-cloud_logging__Fill-3" class="svc-cloud_logging__cls-1" points="4 18 6 18 6 6 4 6 4 18"/><polygon id="svc-cloud_logging__Fill-4" class="svc-cloud_logging__cls-3" points="9 7 22 7 22 3 9 3 9 7"/><polygon id="svc-cloud_logging__Fill-4-2" data-name="Fill-4" class="svc-cloud_logging__cls-3" points="9 14 22 14 22 10 9 10 9 14"/><polygon id="svc-cloud_logging__Fill-4-3" data-name="Fill-4" class="svc-cloud_logging__cls-3" points="9 21 22 21 22 17 9 17 9 21"/><polygon id="svc-cloud_logging__Fill-7" class="svc-cloud_logging__cls-4" points="2 8 8 8 8 2 2 2 2 8"/></g></g></g></symbol></defs>
+<rect class="bg" width="1636" height="790"/>
+<text class="title" x="40" y="46">Highly available three-tier web application</text>
+<text class="subtitle" x="40" y="70">Cloud Armor + global external Application Load Balancer → regional managed instance groups across two zones → Cloud SQL (HA) with Memorystore</text>
+<g class="group" data-id="cloud" data-label="Google Cloud">
+<rect x="233" y="116" width="1363" height="634" fill="none" stroke="#3C4043" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<text class="glabel" x="243" y="136">Google Cloud</text>
+</g>
+<g class="group" data-id="project" data-label="Project: shop-prod">
+<rect x="504" y="164" width="885" height="562" fill="none" stroke="#4285F4" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<use href="#grp-Project" x="504" y="164" width="32" height="32"/>
+<text class="glabel" x="544" y="185">Project: shop-prod</text>
+</g>
+<g class="group" data-id="region" data-label="Region us-central1">
+<rect x="528" y="212" width="837" height="490" fill="none" stroke="#4285F4" stroke-width="1.25" stroke-dasharray="2 3" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<text class="glabel" x="538" y="232">Region us-central1</text>
+</g>
+<g class="group" data-id="vpc" data-label="VPC network">
+<rect x="552" y="260" width="789" height="418" fill="none" stroke="#34A853" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<use href="#grp-VPC" x="552" y="260" width="32" height="32"/>
+<text class="glabel" x="592" y="281">VPC network</text>
+</g>
+<g class="group" data-id="za" data-label="Zone a">
+<rect x="576" y="308" width="230" height="346" fill="none" stroke="#669DF6" stroke-width="1.25" stroke-dasharray="6 4" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<text class="glabel" x="586" y="328">Zone a</text>
+</g>
+<g class="group" data-id="zb" data-label="Zone b">
+<rect x="856" y="308" width="230" height="346" fill="none" stroke="#669DF6" stroke-width="1.25" stroke-dasharray="6 4" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<text class="glabel" x="866" y="328">Zone b</text>
+</g>
+<g class="edge" data-from="users" data-to="armor" data-step="1" data-label="HTTPS" data-tip="Requests reach the global anycast IP of the load balancer and are screened by Cloud Armor">
+<path d="M128.5 385 L313.5 385" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="221" y="377" text-anchor="middle">HTTPS</text>
+<g class="badge"><title>1. Requests reach the global anycast IP of the load balancer and are screened by Cloud Armor</title><circle cx="152.5" cy="385" r="11"/><circle class="hit" cx="152.5" cy="385" r="16"/><text x="152.5" y="389.5" text-anchor="middle">1</text></g>
+</g>
+<g class="edge" data-from="armor" data-to="lb" data-step="2" data-label="" data-tip="Cloud Armor → Application Load Balancer">
+<path d="M345.5 465 L345.5 521" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<g class="badge"><title>2. Cloud Armor → Application Load Balancer</title><circle cx="345.5" cy="489" r="11"/><circle class="hit" cx="345.5" cy="489" r="16"/><text x="345.5" y="493.5" text-anchor="middle">2</text></g>
+</g>
+<g class="edge" data-from="web_a" data-to="app_a" data-step="4" data-label="" data-tip="Web tier VMs → App tier VMs">
+<path d="M691 468 L691 518" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<g class="badge"><title>4. Web tier VMs → App tier VMs</title><circle cx="691" cy="474" r="11"/><circle class="hit" cx="691" cy="474" r="16"/><text x="691" y="478.5" text-anchor="middle">4</text></g>
+</g>
+<g class="edge" data-from="web_b" data-to="app_b" data-step="4" data-label="" data-tip="Web tier VMs → App tier VMs">
+<path d="M971 468 L971 518" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<g class="badge"><title>4. Web tier VMs → App tier VMs</title><circle cx="971" cy="492" r="11"/><circle class="hit" cx="971" cy="492" r="16"/><text x="971" y="496.5" text-anchor="middle">4</text></g>
+</g>
+<g class="edge" data-from="log" data-to="mon" data-step="" data-label="">
+<path d="M1515.5 605 L1515.5 549" fill="none" class="eline" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arw)"/>
+</g>
+<g class="edge" data-from="lb" data-to="web_a" data-step="3" data-label="balance" data-tip="Application Load Balancer → Web tier VMs (balance)">
+<path d="M377.5 553 L518.25 553 L518.25 388 L659 388" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="536.25" y="474.5" text-anchor="start">balance</text>
+<g class="badge"><title>3. Application Load Balancer → Web tier VMs (balance)</title><circle cx="421.5" cy="553" r="11"/><circle class="hit" cx="421.5" cy="553" r="16"/><text x="421.5" y="557.5" text-anchor="middle">3</text></g>
+</g>
+<g class="edge" data-from="lb" data-to="web_b" data-step="3" data-label="" data-tip="Application Load Balancer → Web tier VMs">
+<path d="M377.5 553 L399.5 553 L399.5 672 L917 672 L917 388 L939 388" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<g class="badge"><title>3. Application Load Balancer → Web tier VMs</title><circle cx="917" cy="388" r="11"/><circle class="hit" cx="917" cy="388" r="16"/><text x="917" y="392.5" text-anchor="middle">3</text></g>
+</g>
+<g class="edge" data-from="app_a" data-to="sql" data-step="5" data-label="SQL" data-tip="App tier VMs → Cloud SQL for PostgreSQL (SQL)">
+<path d="M691 518 L691 496 L838 496 L838 331 L1231.5 331 L1231.5 353" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="1034.75" y="323" text-anchor="middle">SQL</text>
+<g class="badge"><title>5. App tier VMs → Cloud SQL for PostgreSQL (SQL)</title><circle cx="691" cy="496" r="11"/><circle class="hit" cx="691" cy="496" r="16"/><text x="691" y="500.5" text-anchor="middle">5</text></g>
+</g>
+<g class="edge" data-from="app_b" data-to="sql" data-step="5" data-label="" data-tip="App tier VMs → Cloud SQL for PostgreSQL">
+<path d="M1003 550 L1101.25 550 L1101.25 385 L1199.5 385" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<g class="badge"><title>5. App tier VMs → Cloud SQL for PostgreSQL</title><circle cx="1027" cy="550" r="11"/><circle class="hit" cx="1027" cy="550" r="16"/><text x="1027" y="554.5" text-anchor="middle">5</text></g>
+</g>
+<g class="edge" data-from="app_a" data-to="redis" data-step="" data-label="cache">
+<path d="M723 550 L745 550 L745 672 L1177.5 672 L1177.5 553 L1199.5 553" fill="none" class="eline" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arw)"/>
+<text class="elabel" x="961.25" y="664" text-anchor="middle">cache</text>
+</g>
+<g class="edge" data-from="sql" data-to="kms" data-step="" data-label="CMEK">
+<path d="M1231.5 353 L1231.5 301 L1483.5 301" fill="none" class="eline" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arw)"/>
+<text class="elabel" x="1357.5" y="293" text-anchor="middle">CMEK</text>
+</g>
+<g class="edge" data-from="app_b" data-to="log" data-step="" data-label="logs">
+<path d="M971 630 L971 637 L1483.5 637" fill="none" class="eline" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arw)"/>
+<text class="elabel" x="1150.375" y="629" text-anchor="middle">logs</text>
+</g>
+<g class="node" data-id="users" data-label="Users" data-service="Users" data-category="General"><title>Users (Users)</title>
+<use href="#gen-users" x="64.5" y="353" width="64" height="64"/>
+<text class="nlabel" x="96.5" y="434" text-anchor="middle">Users</text>
+<text class="nsub" x="96.5" y="448" text-anchor="middle">browser and mobile</text>
+</g>
+<g class="node" data-id="cdnn" data-label="Cloud CDN" data-service="Cloud CDN" data-category="networking"><title>Cloud CDN (Cloud CDN)</title>
+<use href="#svc-cloud_cdn" x="64.5" y="521" width="64" height="64"/>
+<text class="nlabel" x="96.5" y="602" text-anchor="middle">Cloud CDN</text>
+<text class="nsub" x="96.5" y="616" text-anchor="middle">static assets</text>
+</g>
+<g class="node" data-id="armor" data-label="Cloud Armor" data-service="Cloud Armor" data-category="networking"><title>Cloud Armor (Cloud Armor)</title>
+<use href="#svc-cloud_armor" x="313.5" y="353" width="64" height="64"/>
+<text class="nlabel" x="345.5" y="434" text-anchor="middle">Cloud Armor</text>
+<text class="nsub" x="345.5" y="448" text-anchor="middle">WAF, rate limiting</text>
+</g>
+<g class="node" data-id="lb" data-label="Application Load Balancer" data-service="Cloud Load Balancing" data-category="networking"><title>Application Load Balancer (Cloud Load Balancing)</title>
+<use href="#svc-cloud_load_balancing" x="313.5" y="521" width="64" height="64"/>
+<text class="nlabel" x="345.5" y="602" text-anchor="middle">Application Load</text>
+<text class="nlabel" x="345.5" y="616" text-anchor="middle">Balancer</text>
+<text class="nsub" x="345.5" y="630" text-anchor="middle">global external, TLS, URL map</text>
+</g>
+<g class="node" data-id="web_a" data-label="Web tier VMs" data-service="Compute Engine" data-category="compute"><title>Web tier VMs (Compute Engine)</title>
+<use href="#svc-compute_engine" x="659" y="356" width="64" height="64"/>
+<text class="nlabel" x="691" y="437" text-anchor="middle">Web tier VMs</text>
+<text class="nsub" x="691" y="451" text-anchor="middle">managed instance group, zone a</text>
+</g>
+<g class="node" data-id="app_a" data-label="App tier VMs" data-service="Compute Engine" data-category="compute"><title>App tier VMs (Compute Engine)</title>
+<use href="#svc-compute_engine" x="659" y="518" width="64" height="64"/>
+<text class="nlabel" x="691" y="599" text-anchor="middle">App tier VMs</text>
+<text class="nsub" x="691" y="613" text-anchor="middle">zone a</text>
+</g>
+<g class="node" data-id="web_b" data-label="Web tier VMs" data-service="Compute Engine" data-category="compute"><title>Web tier VMs (Compute Engine)</title>
+<use href="#svc-compute_engine" x="939" y="356" width="64" height="64"/>
+<text class="nlabel" x="971" y="437" text-anchor="middle">Web tier VMs</text>
+<text class="nsub" x="971" y="451" text-anchor="middle">managed instance group, zone b</text>
+</g>
+<g class="node" data-id="app_b" data-label="App tier VMs" data-service="Compute Engine" data-category="compute"><title>App tier VMs (Compute Engine)</title>
+<use href="#svc-compute_engine" x="939" y="518" width="64" height="64"/>
+<text class="nlabel" x="971" y="599" text-anchor="middle">App tier VMs</text>
+<text class="nsub" x="971" y="613" text-anchor="middle">zone b</text>
+</g>
+<g class="node" data-id="sql" data-label="Cloud SQL for PostgreSQL" data-service="Cloud SQL" data-category="databases"><title>Cloud SQL for PostgreSQL (Cloud SQL)</title>
+<use href="#svc-cloud_sql" x="1199.5" y="353" width="64" height="64"/>
+<text class="nlabel" x="1231.5" y="434" text-anchor="middle">Cloud SQL for</text>
+<text class="nlabel" x="1231.5" y="448" text-anchor="middle">PostgreSQL</text>
+<text class="nsub" x="1231.5" y="462" text-anchor="middle">high availability (regional)</text>
+</g>
+<g class="node" data-id="redis" data-label="Memorystore" data-service="Memorystore" data-category="databases"><title>Memorystore (Memorystore)</title>
+<use href="#svc-memorystore" x="1199.5" y="521" width="64" height="64"/>
+<text class="nlabel" x="1231.5" y="602" text-anchor="middle">Memorystore</text>
+<text class="nsub" x="1231.5" y="616" text-anchor="middle">session cache</text>
+</g>
+<g class="node" data-id="kms" data-label="Cloud KMS" data-service="Cloud Key Management Service" data-category="security"><title>Cloud KMS (Cloud Key Management Service)</title>
+<use href="#svc-key_management_service" x="1483.5" y="269" width="64" height="64"/>
+<text class="nlabel" x="1515.5" y="350" text-anchor="middle">Cloud KMS</text>
+<text class="nsub" x="1515.5" y="364" text-anchor="middle">CMEK keys</text>
+</g>
+<g class="node" data-id="mon" data-label="Cloud Monitoring" data-service="Cloud Monitoring" data-category="operations"><title>Cloud Monitoring (Cloud Monitoring)</title>
+<use href="#svc-cloud_monitoring" x="1483.5" y="437" width="64" height="64"/>
+<text class="nlabel" x="1515.5" y="518" text-anchor="middle">Cloud Monitoring</text>
+<text class="nsub" x="1515.5" y="532" text-anchor="middle">SLOs and alerts</text>
+</g>
+<g class="node" data-id="log" data-label="Cloud Logging" data-service="Cloud Logging" data-category="operations"><title>Cloud Logging (Cloud Logging)</title>
+<use href="#svc-cloud_logging" x="1483.5" y="605" width="64" height="64"/>
+<text class="nlabel" x="1515.5" y="686" text-anchor="middle">Cloud Logging</text>
+<text class="nsub" x="1515.5" y="700" text-anchor="middle">audit and app logs</text>
+</g>
+</svg>

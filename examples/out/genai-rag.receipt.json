@@ -1,0 +1,107 @@
+{
+  "ok": true,
+  "tool": "archify-gcp",
+  "version": "0.1.0",
+  "iconRelease": "Google Cloud icons (legacy product set + core products set)",
+  "input": {
+    "path": "examples/genai-rag.json",
+    "sha256": "3d0dcf5f71f11b4a9f6b86a7032bde19a4c2d07e86e75153560e78bd83ceec48"
+  },
+  "stages": [
+    {
+      "name": "validate",
+      "status": "pass",
+      "detail": {
+        "type": "architecture",
+        "nodes": 11,
+        "groups": 4,
+        "edges": 10
+      }
+    },
+    {
+      "name": "analyze",
+      "status": "pass",
+      "detail": {
+        "cost": false,
+        "review": true
+      }
+    },
+    {
+      "name": "render",
+      "status": "pass",
+      "detail": {}
+    },
+    {
+      "name": "check",
+      "status": "pass",
+      "detail": {
+        "warnings": 0,
+        "standalone": true
+      }
+    },
+    {
+      "name": "browser-check",
+      "status": "pass",
+      "detail": {
+        "viewport": "1440x900",
+        "minFontPx": 10.5,
+        "overflowX": 0,
+        "consoleErrors": 0,
+        "viewerNodes": 11,
+        "viewerEdges": 10
+      }
+    },
+    {
+      "name": "export-png",
+      "status": "pass",
+      "detail": {}
+    }
+  ],
+  "outputs": {
+    "html": {
+      "path": "examples/out/genai-rag.html",
+      "sha256": "d540258851427e15157b303ea3e839aed32de80ad05e3c93cf1db52d435228a4",
+      "bytes": 221868
+    },
+    "svg": {
+      "path": "examples/out/genai-rag.svg",
+      "sha256": "6ef794d7321cb0b99462bfd901be3cff50ef560405c6752651158e1b7e750992"
+    },
+    "drawio": {
+      "path": "examples/out/genai-rag.drawio",
+      "sha256": "6565a39f8090cbba45985248963c34acd1df54363ec6361c2ca9c3a7daebbb76"
+    },
+    "png": {
+      "path": "examples/out/genai-rag.png",
+      "sha256": "e9780ef04d541631fe3d77b486fd64e8c7990ad6d9f654e2da51fbea37f4c367"
+    }
+  },
+  "summary": {
+    "type": "architecture",
+    "nodes": 11,
+    "groups": 4,
+    "edges": 10,
+    "size": {
+      "width": 1549,
+      "height": 748
+    }
+  },
+  "review": {
+    "advisory": true,
+    "mode": "full",
+    "lens": "generative-ai",
+    "findings": {
+      "Critical": 0,
+      "High": 1,
+      "Medium": 1,
+      "Low": 0
+    },
+    "evidenced": 13,
+    "bps": 174,
+    "ids": [
+      "F-001",
+      "F-002"
+    ]
+  },
+  "visualReview": "not-performed"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "archify-gcp",
+  "version": "0.1.0",
+  "description": "Generate Google Cloud architecture diagrams (standalone HTML/SVG/PNG/draw.io) from typed JSON using the official Google Cloud icons, with Cloud Billing cost estimates and a Google Cloud Well-Architected Framework review. Companion to tt-a1i/archify, archify-aws and archify-azure.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "archify-gcp": "bin/archify-gcp.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "icons:fetch": "node scripts/fetch-icons.mjs",
+    "prices:fetch": "node scripts/fetch-prices.mjs",
+    "wa:corpus": "node scripts/build-wa-corpus.mjs",
+    "examples": "node scripts/build-examples.mjs",
+    "schemas": "node scripts/build-schemas.mjs",
+    "test": "node --test test/*.test.mjs"
+  }
+}

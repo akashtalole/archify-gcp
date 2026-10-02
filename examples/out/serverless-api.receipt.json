@@ -1,0 +1,107 @@
+{
+  "ok": true,
+  "tool": "archify-gcp",
+  "version": "0.1.0",
+  "iconRelease": "Google Cloud icons (legacy product set + core products set)",
+  "input": {
+    "path": "examples/serverless-api.json",
+    "sha256": "5fa4270c3e40a777a2ad4c849ec044e5cec06115cc7fffa57de262891be48040"
+  },
+  "stages": [
+    {
+      "name": "validate",
+      "status": "pass",
+      "detail": {
+        "type": "architecture",
+        "nodes": 8,
+        "groups": 2,
+        "edges": 7
+      }
+    },
+    {
+      "name": "analyze",
+      "status": "pass",
+      "detail": {
+        "cost": false,
+        "review": true
+      }
+    },
+    {
+      "name": "render",
+      "status": "pass",
+      "detail": {}
+    },
+    {
+      "name": "check",
+      "status": "pass",
+      "detail": {
+        "warnings": 0,
+        "standalone": true
+      }
+    },
+    {
+      "name": "browser-check",
+      "status": "pass",
+      "detail": {
+        "viewport": "1440x900",
+        "minFontPx": 10.5,
+        "overflowX": 0,
+        "consoleErrors": 0,
+        "viewerNodes": 8,
+        "viewerEdges": 7
+      }
+    },
+    {
+      "name": "export-png",
+      "status": "pass",
+      "detail": {}
+    }
+  ],
+  "outputs": {
+    "html": {
+      "path": "examples/out/serverless-api.html",
+      "sha256": "a11a90a70d2b85e65279241e9cceb1dc1f05461d59156db694958f036f91ead0",
+      "bytes": 193162
+    },
+    "svg": {
+      "path": "examples/out/serverless-api.svg",
+      "sha256": "96b603008221621393432ea130822da8822f91cbf5a6cdb2d4394a61e08a8f16"
+    },
+    "drawio": {
+      "path": "examples/out/serverless-api.drawio",
+      "sha256": "5cd9831654b15c10d7eec33d283309e9576870e7a7ffe73884396e6ae80b7e6c"
+    },
+    "png": {
+      "path": "examples/out/serverless-api.png",
+      "sha256": "2bf73a9d756561f1547de81a47fda4ac10effbaf8514c823d7b7dc9b7885f28b"
+    }
+  },
+  "summary": {
+    "type": "architecture",
+    "nodes": 8,
+    "groups": 2,
+    "edges": 7,
+    "size": {
+      "width": 1055,
+      "height": 580
+    }
+  },
+  "review": {
+    "advisory": true,
+    "mode": "full",
+    "lens": "general",
+    "findings": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 2,
+      "Low": 0
+    },
+    "evidenced": 12,
+    "bps": 174,
+    "ids": [
+      "F-001",
+      "F-002"
+    ]
+  },
+  "visualReview": "not-performed"
+}

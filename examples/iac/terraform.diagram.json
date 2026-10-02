@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "terraform — architecture from terraform",
+    "subtitle": "7 resources, 4 relationships inferred from references; verify against the deployed system",
+    "output": "examples/iac/terraform.diagram.html"
+  },
+  "root": {
+    "layout": "row",
+    "gap": 70,
+    "children": [
+      {
+        "id": "cloud",
+        "kind": "gcp-cloud",
+        "layout": "row",
+        "gap": 64,
+        "children": [
+          {
+            "id": "layer0_0",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "edge",
+                "icon": "cloud-armor",
+                "label": "Edge",
+                "sublabel": "compute security policy"
+              },
+              {
+                "id": "lb",
+                "icon": "cloud-load-balancing",
+                "label": "Lb",
+                "sublabel": "compute global forwarding rule"
+              },
+              {
+                "id": "orders",
+                "icon": "pubsub",
+                "label": "Orders",
+                "sublabel": "pubsub topic"
+              },
+              {
+                "id": "firestore_database_orders",
+                "icon": "firestore",
+                "label": "Orders",
+                "sublabel": "firestore database"
+              },
+              {
+                "id": "analytics",
+                "icon": "bigquery",
+                "label": "Analytics",
+                "sublabel": "bigquery dataset"
+              }
+            ]
+          },
+          {
+            "id": "layer0_1",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "vpc",
+                "kind": "vpc",
+                "label": "VPC network",
+                "children": [
+                  {
+                    "id": "api",
+                    "icon": "cloud-run",
+                    "label": "Api",
+                    "sublabel": "cloud run v2 service"
+                  }
+                ],
+                "layout": "row",
+                "gap": 56
+              },
+              {
+                "id": "processor",
+                "icon": "cloud-functions",
+                "label": "Processor",
+                "sublabel": "cloudfunctions2 function"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "lb",
+      "to": "api"
+    },
+    {
+      "from": "firestore_database_orders",
+      "to": "api"
+    },
+    {
+      "from": "analytics",
+      "to": "processor"
+    },
+    {
+      "from": "orders",
+      "to": "processor",
+      "label": "subscribes"
+    }
+  ]
+}

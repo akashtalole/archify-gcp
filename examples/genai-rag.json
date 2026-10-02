@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "RAG chat assistant on Vertex AI",
+    "subtitle": "Authenticated API \u2192 orchestrator on Cloud Run \u2192 Model Armor-screened Gemini call grounded by AlloyDB vector search, with request-response logging",
+    "output": "examples/out/genai-rag.html",
+    "lens": [
+      "framework",
+      "generative-ai"
+    ],
+    "cost": {
+      "region": "us-central1",
+      "note": "Illustrative: 200,000 questions/month. Model token prices are not modelled (supply usage.monthlyUsd from the Vertex AI pricing page)."
+    }
+  },
+  "root": {
+    "layout": "row",
+    "gap": 80,
+    "children": [
+      {
+        "id": "clients",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "users",
+            "icon": "users",
+            "label": "Users"
+          },
+          {
+            "id": "idp",
+            "icon": "identity-platform",
+            "label": "Identity Platform",
+            "sublabel": "sign-in, JWT"
+          }
+        ]
+      },
+      {
+        "id": "cloud",
+        "kind": "gcp-cloud",
+        "layout": "row",
+        "gap": 70,
+        "children": [
+          {
+            "id": "front",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "apigee",
+                "icon": "apigee-api-platform",
+                "label": "Apigee",
+                "sublabel": "auth, quotas, AI gateway"
+              }
+            ]
+          },
+          {
+            "id": "project",
+            "kind": "project",
+            "layout": "row",
+            "gap": 70,
+            "children": [
+              {
+                "id": "region",
+                "kind": "region",
+                "layout": "row",
+                "gap": 80,
+                "children": [
+                  {
+                    "id": "orch",
+                    "icon": "cloud-run",
+                    "label": "Orchestrator",
+                    "sublabel": "Cloud Run",
+                    "usage": {
+                      "requestsPerMonth": 200000,
+                      "avgDurationMs": 2500,
+                      "vcpu": 1,
+                      "memoryGib": 1
+                    }
+                  },
+                  {
+                    "id": "ai",
+                    "kind": "custom",
+                    "layout": "column",
+                    "gap": 48,
+                    "children": [
+                      {
+                        "id": "armor",
+                        "icon": "data-loss-prevention-api",
+                        "label": "Model Armor",
+                        "sublabel": "prompt and response screening, DLP"
+                      },
+                      {
+                        "id": "gemini",
+                        "icon": "vertexai",
+                        "label": "Gemini on Vertex AI",
+                        "sublabel": "generation",
+                        "usage": {
+                          "monthlyUsd": 900,
+                          "note": "Illustrative: ~150M input and 15M output tokens at Gemini Flash list prices; confirm on the Vertex AI pricing page."
+                        }
+                      }
+                    ],
+                    "icon": "vertexai",
+                    "label": "Vertex AI"
+                  },
+                  {
+                    "id": "data",
+                    "kind": "stack",
+                    "layout": "column",
+                    "gap": 56,
+                    "children": [
+                      {
+                        "id": "alloy",
+                        "icon": "alloydb",
+                        "label": "AlloyDB",
+                        "sublabel": "pgvector index, policy documents",
+                        "usage": {}
+                      },
+                      {
+                        "id": "gcs",
+                        "icon": "cloud-storage",
+                        "label": "Cloud Storage",
+                        "sublabel": "source documents",
+                        "usage": {
+                          "storageGb": 500
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "label": "Region us-central1"
+              },
+              {
+                "id": "obs",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 48,
+                "children": [
+                  {
+                    "id": "log",
+                    "icon": "cloud-logging",
+                    "label": "Cloud Logging",
+                    "sublabel": "request-response logs",
+                    "usage": {
+                      "ingestGibPerMonth": 120
+                    }
+                  },
+                  {
+                    "id": "bq",
+                    "icon": "bigquery",
+                    "label": "BigQuery",
+                    "sublabel": "prompt log analysis",
+                    "usage": {
+                      "tibScannedPerMonth": 1,
+                      "activeStorageGb": 300
+                    }
+                  },
+                  {
+                    "id": "mon",
+                    "icon": "cloud-monitoring",
+                    "label": "Cloud Monitoring",
+                    "sublabel": "latency, errors, quota"
+                  }
+                ]
+              }
+            ],
+            "label": "Project: assistant-prod"
+          }
+        ],
+        "label": "Google Cloud"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "users",
+      "to": "apigee",
+      "step": 1,
+      "label": "HTTPS"
+    },
+    {
+      "from": "users",
+      "to": "idp",
+      "style": "dashed",
+      "label": "sign in"
+    },
+    {
+      "from": "apigee",
+      "to": "orch",
+      "step": 2
+    },
+    {
+      "from": "orch",
+      "to": "armor",
+      "step": 3,
+      "label": "screen"
+    },
+    {
+      "from": "armor",
+      "to": "gemini",
+      "step": 4,
+      "label": "safe prompt"
+    },
+    {
+      "from": "orch",
+      "to": "alloy",
+      "step": 5,
+      "label": "vector search"
+    },
+    {
+      "from": "gcs",
+      "to": "alloy",
+      "style": "dashed",
+      "label": "embeddings"
+    },
+    {
+      "from": "orch",
+      "to": "log",
+      "style": "dashed",
+      "label": "logging"
+    },
+    {
+      "from": "log",
+      "to": "bq",
+      "style": "dashed",
+      "label": "sink"
+    },
+    {
+      "from": "log",
+      "to": "mon",
+      "style": "dashed"
+    }
+  ]
+}

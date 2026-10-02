@@ -1,0 +1,1712 @@
+{
+ "schema_version": "archify-gcp.wa-corpus.v1",
+ "lens": "framework",
+ "name": "Google Cloud Well-Architected Framework",
+ "pillars": [
+  {
+   "id": "operational-excellence",
+   "name": "Operational excellence",
+   "prefix": "OE",
+   "url": "https://cloud.google.com/architecture/framework/operational-excellence"
+  },
+  {
+   "id": "security",
+   "name": "Security, privacy, and compliance",
+   "prefix": "SEC",
+   "url": "https://cloud.google.com/architecture/framework/security"
+  },
+  {
+   "id": "reliability",
+   "name": "Reliability",
+   "prefix": "REL",
+   "url": "https://cloud.google.com/architecture/framework/reliability"
+  },
+  {
+   "id": "cost-optimization",
+   "name": "Cost optimization",
+   "prefix": "COST",
+   "url": "https://cloud.google.com/architecture/framework/cost-optimization"
+  },
+  {
+   "id": "performance-optimization",
+   "name": "Performance optimization",
+   "prefix": "PERF",
+   "url": "https://cloud.google.com/architecture/framework/performance-optimization"
+  },
+  {
+   "id": "sustainability",
+   "name": "Sustainability",
+   "prefix": "SUS",
+   "url": "https://cloud.google.com/architecture/framework/sustainability"
+  }
+ ],
+ "questions": [
+  {
+   "question_id": "OE-1",
+   "question_title": "Ensure operational readiness and performance using CloudOps",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence",
+   "question_url": "https://cloud.google.com/architecture/framework/operational-excellence#ensure_operational_readiness_and_performance_using_cloudops"
+  },
+  {
+   "question_id": "OE-2",
+   "question_title": "Manage incidents and problems",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence",
+   "question_url": "https://cloud.google.com/architecture/framework/operational-excellence#manage_incidents_and_problems"
+  },
+  {
+   "question_id": "OE-3",
+   "question_title": "Manage and optimize cloud resources",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence",
+   "question_url": "https://cloud.google.com/architecture/framework/operational-excellence#manage_and_optimize_cloud_resources"
+  },
+  {
+   "question_id": "OE-4",
+   "question_title": "Automate and manage change",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence",
+   "question_url": "https://cloud.google.com/architecture/framework/operational-excellence#automate_and_manage_change"
+  },
+  {
+   "question_id": "OE-5",
+   "question_title": "Continuously improve and innovate",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence",
+   "question_url": "https://cloud.google.com/architecture/framework/operational-excellence#continuously_improve_and_innovate"
+  },
+  {
+   "question_id": "SEC-1",
+   "question_title": "Implement security by design",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance",
+   "question_url": "https://cloud.google.com/architecture/framework/security#implement_security_by_design"
+  },
+  {
+   "question_id": "SEC-2",
+   "question_title": "Implement zero trust",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance",
+   "question_url": "https://cloud.google.com/architecture/framework/security#implement_zero_trust"
+  },
+  {
+   "question_id": "SEC-3",
+   "question_title": "Implement shift-left security",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance",
+   "question_url": "https://cloud.google.com/architecture/framework/security#implement_shift-left_security"
+  },
+  {
+   "question_id": "SEC-4",
+   "question_title": "Implement preemptive cyber defense",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance",
+   "question_url": "https://cloud.google.com/architecture/framework/security#implement_preemptive_cyber_defense"
+  },
+  {
+   "question_id": "SEC-5",
+   "question_title": "Use AI securely and responsibly",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance",
+   "question_url": "https://cloud.google.com/architecture/framework/security#use_ai_securely_and_responsibly"
+  },
+  {
+   "question_id": "SEC-6",
+   "question_title": "Use AI for security",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance",
+   "question_url": "https://cloud.google.com/architecture/framework/security#use_ai_for_security"
+  },
+  {
+   "question_id": "SEC-7",
+   "question_title": "Meet regulatory, compliance, and privacy needs",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance",
+   "question_url": "https://cloud.google.com/architecture/framework/security#meet_regulatory_compliance_and_privacy_needs"
+  },
+  {
+   "question_id": "REL-1",
+   "question_title": "Define reliability based on user-experience goals",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability",
+   "question_url": "https://cloud.google.com/architecture/framework/reliability#define_reliability_based_on_user-experience_goals"
+  },
+  {
+   "question_id": "REL-2",
+   "question_title": "Set realistic targets for reliability",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability",
+   "question_url": "https://cloud.google.com/architecture/framework/reliability#set_realistic_targets_for_reliability"
+  },
+  {
+   "question_id": "REL-3",
+   "question_title": "Build highly available systems through resource redundancy",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability",
+   "question_url": "https://cloud.google.com/architecture/framework/reliability#build_highly_available_systems_through_resource_redundancy"
+  },
+  {
+   "question_id": "REL-4",
+   "question_title": "Take advantage of horizontal scalability",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability",
+   "question_url": "https://cloud.google.com/architecture/framework/reliability#take_advantage_of_horizontal_scalability"
+  },
+  {
+   "question_id": "REL-5",
+   "question_title": "Detect potential failures by using observability",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability",
+   "question_url": "https://cloud.google.com/architecture/framework/reliability#detect_potential_failures_by_using_observability"
+  },
+  {
+   "question_id": "REL-6",
+   "question_title": "Design for graceful degradation",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability",
+   "question_url": "https://cloud.google.com/architecture/framework/reliability#design_for_graceful_degradation"
+  },
+  {
+   "question_id": "REL-7",
+   "question_title": "Perform testing for recovery from failures",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability",
+   "question_url": "https://cloud.google.com/architecture/framework/reliability#perform_testing_for_recovery_from_failures"
+  },
+  {
+   "question_id": "REL-8",
+   "question_title": "Perform testing for recovery from data loss",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability",
+   "question_url": "https://cloud.google.com/architecture/framework/reliability#perform_testing_for_recovery_from_data_loss"
+  },
+  {
+   "question_id": "REL-9",
+   "question_title": "Conduct thorough postmortems",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability",
+   "question_url": "https://cloud.google.com/architecture/framework/reliability#conduct_thorough_postmortems"
+  },
+  {
+   "question_id": "COST-1",
+   "question_title": "Align cloud spending with business value",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization",
+   "question_url": "https://cloud.google.com/architecture/framework/cost-optimization#align_cloud_spending_with_business_value"
+  },
+  {
+   "question_id": "COST-2",
+   "question_title": "Foster a culture of cost awareness",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization",
+   "question_url": "https://cloud.google.com/architecture/framework/cost-optimization#foster_a_culture_of_cost_awareness"
+  },
+  {
+   "question_id": "COST-3",
+   "question_title": "Optimize resource usage",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization",
+   "question_url": "https://cloud.google.com/architecture/framework/cost-optimization#optimize_resource_usage"
+  },
+  {
+   "question_id": "COST-4",
+   "question_title": "Optimize continuously",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization",
+   "question_url": "https://cloud.google.com/architecture/framework/cost-optimization#optimize_continuously"
+  },
+  {
+   "question_id": "PERF-1",
+   "question_title": "Plan resource allocation",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization",
+   "question_url": "https://cloud.google.com/architecture/framework/performance-optimization#plan_resource_allocation"
+  },
+  {
+   "question_id": "PERF-2",
+   "question_title": "Take advantage of elasticity",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization",
+   "question_url": "https://cloud.google.com/architecture/framework/performance-optimization#take_advantage_of_elasticity"
+  },
+  {
+   "question_id": "PERF-3",
+   "question_title": "Promote modular design",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization",
+   "question_url": "https://cloud.google.com/architecture/framework/performance-optimization#promote_modular_design"
+  },
+  {
+   "question_id": "PERF-4",
+   "question_title": "Continuously monitor and improve performance",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization",
+   "question_url": "https://cloud.google.com/architecture/framework/performance-optimization#continuously_monitor_and_improve_performance"
+  },
+  {
+   "question_id": "SUS-1",
+   "question_title": "Use regions that consume low-carbon energy",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability",
+   "question_url": "https://cloud.google.com/architecture/framework/sustainability#use_regions_that_consume_low-carbon_energy"
+  },
+  {
+   "question_id": "SUS-2",
+   "question_title": "Optimize AI and ML workloads for energy efficiency",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability",
+   "question_url": "https://cloud.google.com/architecture/framework/sustainability#optimize_ai_and_ml_workloads_for_energy_efficiency"
+  },
+  {
+   "question_id": "SUS-3",
+   "question_title": "Optimize resource usage for sustainability",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability",
+   "question_url": "https://cloud.google.com/architecture/framework/sustainability#optimize_resource_usage_for_sustainability"
+  },
+  {
+   "question_id": "SUS-4",
+   "question_title": "Develop energy-efficient software",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability",
+   "question_url": "https://cloud.google.com/architecture/framework/sustainability#develop_energy-efficient_software"
+  },
+  {
+   "question_id": "SUS-5",
+   "question_title": "Optimize data and storage for sustainability",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability",
+   "question_url": "https://cloud.google.com/architecture/framework/sustainability#optimize_data_and_storage_for_sustainability"
+  },
+  {
+   "question_id": "SUS-6",
+   "question_title": "Continuously measure and improve sustainability",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability",
+   "question_url": "https://cloud.google.com/architecture/framework/sustainability#continuously_measure_and_improve_sustainability"
+  },
+  {
+   "question_id": "SUS-7",
+   "question_title": "Promote a culture of sustainability",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability",
+   "question_url": "https://cloud.google.com/architecture/framework/sustainability#promote_a_culture_of_sustainability"
+  }
+ ],
+ "bps": [
+  {
+   "bp_id": "OE-1.1",
+   "bp_title": "Define SLOs and SLAs",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#define_slos_and_slas",
+   "question_id": "OE-1",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-1.2",
+   "bp_title": "Implement comprehensive observability",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#implement_comprehensive_observability",
+   "question_id": "OE-1",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-1.3",
+   "bp_title": "Implement performance and load testing",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#implement_performance_and_load_testing",
+   "question_id": "OE-1",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-1.4",
+   "bp_title": "Plan and manage capacity",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#plan_and_manage_capacity",
+   "question_id": "OE-1",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-1.5",
+   "bp_title": "Continuously monitor and optimize",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#continuously_monitor_and_optimize",
+   "question_id": "OE-1",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-2.1",
+   "bp_title": "Establish clear incident response procedures",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#establish_clear_incident_response_procedures",
+   "question_id": "OE-2",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-2.2",
+   "bp_title": "Centralize incident management",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#centralize_incident_management",
+   "question_id": "OE-2",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-2.3",
+   "bp_title": "Conduct thorough post-incident reviews",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#conduct_thorough_post-incident_reviews",
+   "question_id": "OE-2",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-2.4",
+   "bp_title": "Maintain a knowledge base",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#maintain_a_knowledge_base",
+   "question_id": "OE-2",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-2.5",
+   "bp_title": "Automate incident response",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#automate_incident_response",
+   "question_id": "OE-2",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-3.1",
+   "bp_title": "Right-size resources",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#right-size_resources",
+   "question_id": "OE-3",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-3.2",
+   "bp_title": "Use autoscaling",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#use_autoscaling",
+   "question_id": "OE-3",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-3.3",
+   "bp_title": "Leverage cost optimization strategies",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#leverage_cost_optimization_strategies",
+   "question_id": "OE-3",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-3.4",
+   "bp_title": "Track resource usage and costs",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#track_resource_usage_and_costs",
+   "question_id": "OE-3",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-3.5",
+   "bp_title": "Establish cost allocation and budgeting",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#establish_cost_allocation_and_budgeting",
+   "question_id": "OE-3",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-4.1",
+   "bp_title": "Adopt IaC",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#adopt_iac",
+   "question_id": "OE-4",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-4.2",
+   "bp_title": "Implement version control",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#implement_version_control",
+   "question_id": "OE-4",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-4.3",
+   "bp_title": "Build CI/CD pipelines",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#build_cicd_pipelines",
+   "question_id": "OE-4",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-4.4",
+   "bp_title": "Use configuration management tools",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#use_configuration_management_tools",
+   "question_id": "OE-4",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-4.5",
+   "bp_title": "Automate testing",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#automate_testing",
+   "question_id": "OE-4",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-5.1",
+   "bp_title": "Foster a culture of learning",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#foster_a_culture_of_learning",
+   "question_id": "OE-5",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-5.2",
+   "bp_title": "Conduct regular retrospectives",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#conduct_regular_retrospectives",
+   "question_id": "OE-5",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-5.3",
+   "bp_title": "Stay up-to-date with cloud technologies",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#stay_up-to-date_with_cloud_technologies",
+   "question_id": "OE-5",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-5.4",
+   "bp_title": "Actively seek and incorporate feedback",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#actively_seek_and_incorporate_feedback",
+   "question_id": "OE-5",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "OE-5.5",
+   "bp_title": "Measure and track progress",
+   "bp_url": "https://cloud.google.com/architecture/framework/operational-excellence#measure_and_track_progress",
+   "question_id": "OE-5",
+   "pillar_id": "operational-excellence",
+   "pillar_name": "Operational excellence"
+  },
+  {
+   "bp_id": "SEC-1.1",
+   "bp_title": "Choose system components that help to secure your workloads",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#choose-system-components",
+   "question_id": "SEC-1",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-1.2",
+   "bp_title": "Build a layered security approach",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#build_a_layered_security_approach",
+   "question_id": "SEC-1",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-1.3",
+   "bp_title": "Use hardened and attested infrastructure and services",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#use_hardened_and_attested_infrastructure_and_services",
+   "question_id": "SEC-1",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-1.4",
+   "bp_title": "Encrypt data at rest and in transit",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#encrypt_data_at_rest_and_in_transit",
+   "question_id": "SEC-1",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-2.1",
+   "bp_title": "Secure your network",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#secure_your_network",
+   "question_id": "SEC-2",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-2.2",
+   "bp_title": "Verify every access attempt explicitly",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#verify_every_access_attempt_explicitly",
+   "question_id": "SEC-2",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-2.3",
+   "bp_title": "Monitor and maintain your network",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#monitor_and_maintain_your_network",
+   "question_id": "SEC-2",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-3.1",
+   "bp_title": "Adopt preventive security controls",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#adopt_preventive_security_controls",
+   "question_id": "SEC-3",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-3.2",
+   "bp_title": "Automate provisioning and management of cloud resources",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#automate_provisioning_and_management_of_cloud_resources",
+   "question_id": "SEC-3",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-3.3",
+   "bp_title": "Automate secure application releases",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#automate_secure_application_releases",
+   "question_id": "SEC-3",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-3.4",
+   "bp_title": "Ensure that application deployments follow approved processes",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#ensure_that_application_deployments_follow_approved_processes",
+   "question_id": "SEC-3",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-3.5",
+   "bp_title": "Scan for known vulnerabilities before application deployment",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#scan_for_known_vulnerabilities_before_application_deployment",
+   "question_id": "SEC-3",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-3.6",
+   "bp_title": "Monitor your application code for known vulnerabilities",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#monitor_your_application_code_for_known_vulnerabilities",
+   "question_id": "SEC-3",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-4.1",
+   "bp_title": "Integrate the functions of cyber defense",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#integrate_the_functions_of_cyber_defense",
+   "question_id": "SEC-4",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-4.2",
+   "bp_title": "Use the Intelligence function in all aspects of cyber defense",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#use_intelligence_in_all_aspects_of_cyber_defense",
+   "question_id": "SEC-4",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-4.3",
+   "bp_title": "Understand and capitalize on your defender's advantage",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#understand_and_capitalize_on_your_defenders_advantage",
+   "question_id": "SEC-4",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-4.4",
+   "bp_title": "Validate and improve your defenses continuously",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#validate_and_improve_your_defenses_continuously",
+   "question_id": "SEC-4",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-4.5",
+   "bp_title": "Manage and coordinate cyber-defense efforts",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#manage_and_coordinate_cyber-defense_efforts",
+   "question_id": "SEC-4",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-5.1",
+   "bp_title": "Define clear goals and requirements for AI usage",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#define_clear_goals_and_requirements_for_ai_usage",
+   "question_id": "SEC-5",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-5.2",
+   "bp_title": "Keep data secure and prevent loss or mishandling",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#keep_data_secure_and_prevent_loss_or_mishandling",
+   "question_id": "SEC-5",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-5.3",
+   "bp_title": "Keep AI pipelines secure and robust against tampering",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#keep_ai_pipelines_secure_and_robust_against_tampering",
+   "question_id": "SEC-5",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-5.4",
+   "bp_title": "Deploy apps on secure systems using secure tools and artifacts",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#deploy_apps_on_secure_systems_using_secure_tools_and_artifacts",
+   "question_id": "SEC-5",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-5.5",
+   "bp_title": "Protect and monitor inputs",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#protect_and_monitor_inputs",
+   "question_id": "SEC-5",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-5.6",
+   "bp_title": "Use fairness indicators",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#use_fairness_indicators",
+   "question_id": "SEC-5",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-5.7",
+   "bp_title": "Use Vertex Explainable AI",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#use-vertex-xai-name",
+   "question_id": "SEC-5",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-5.8",
+   "bp_title": "Track data lineage",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#track_data_lineage",
+   "question_id": "SEC-5",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-5.9",
+   "bp_title": "Establish accountability",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#establish_accountability",
+   "question_id": "SEC-5",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-5.10",
+   "bp_title": "Implement differential privacy",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#implement_differential_privacy",
+   "question_id": "SEC-5",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-6.1",
+   "bp_title": "Enhance threat detection and response with AI",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#enhance_threat_detection_and_response_with_ai",
+   "question_id": "SEC-6",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-6.2",
+   "bp_title": "Simplify security for experts and non-experts",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#simplify_security_for_experts_and_non-experts",
+   "question_id": "SEC-6",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-6.3",
+   "bp_title": "Automate time-consuming security tasks with AI",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#automate_time-consuming_security_tasks_with_ai",
+   "question_id": "SEC-6",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-6.4",
+   "bp_title": "Incorporate AI into risk management and governance processes",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#incorporate_ai_into_risk_management_and_governance_processes",
+   "question_id": "SEC-6",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-6.5",
+   "bp_title": "Implement secure development practices for AI systems",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#implement_secure_development_practices_for_ai_systems",
+   "question_id": "SEC-6",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-7.1",
+   "bp_title": "Identify risks to your organization",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#identify_risks_to_your_organization",
+   "question_id": "SEC-7",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-7.2",
+   "bp_title": "Mitigate your risks",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#mitigate_your_risks",
+   "question_id": "SEC-7",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-7.3",
+   "bp_title": "Assess your compliance needs",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#assess_your_compliance_needs",
+   "question_id": "SEC-7",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-7.4",
+   "bp_title": "Automate implementation of compliance requirements",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#automate_implementation_of_compliance_requirements",
+   "question_id": "SEC-7",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-7.5",
+   "bp_title": "Monitor your compliance",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#monitor_your_compliance",
+   "question_id": "SEC-7",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-7.6",
+   "bp_title": "Manage your operational sovereignty",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#manage_your_operational_sovereignty",
+   "question_id": "SEC-7",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-7.7",
+   "bp_title": "Manage software sovereignty",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#manage_software_sovereignty",
+   "question_id": "SEC-7",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-7.8",
+   "bp_title": "Control data residency",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#control_data_residency",
+   "question_id": "SEC-7",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-7.9",
+   "bp_title": "Classify your confidential data",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#classify_your_confidential_data",
+   "question_id": "SEC-7",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "SEC-7.10",
+   "bp_title": "Lock down access to sensitive data",
+   "bp_url": "https://cloud.google.com/architecture/framework/security#lock_down_access_to_sensitive_data",
+   "question_id": "SEC-7",
+   "pillar_id": "security",
+   "pillar_name": "Security, privacy, and compliance"
+  },
+  {
+   "bp_id": "REL-1.1",
+   "bp_title": "Measure user experience",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#measure_user_experience",
+   "question_id": "REL-1",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-1.2",
+   "bp_title": "Analyze user journeys",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#analyze_user_journeys",
+   "question_id": "REL-1",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-2.1",
+   "bp_title": "Accept some failure and prioritize components",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#accept_some_failure_and_prioritize_components",
+   "question_id": "REL-2",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-2.2",
+   "bp_title": "Balance reliability and cost",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#balance_reliability_and_cost",
+   "question_id": "REL-2",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-3.1",
+   "bp_title": "Identify failure domains and replicate services",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#identify_failure_domains_and_replicate_services",
+   "question_id": "REL-3",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-3.2",
+   "bp_title": "Detect and address issues promptly",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#detect_and_address_issues_promptly",
+   "question_id": "REL-3",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-3.3",
+   "bp_title": "Test failover scenarios",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#test_failover_scenarios",
+   "question_id": "REL-3",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-4.1",
+   "bp_title": "Use managed services",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#use_managed_services",
+   "question_id": "REL-4",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-4.2",
+   "bp_title": "Promote modular design",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#promote_modular_design",
+   "question_id": "REL-4",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-4.3",
+   "bp_title": "Implement a stateless design",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#implement_a_stateless_design",
+   "question_id": "REL-4",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-5.1",
+   "bp_title": "Gain comprehensive insights",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#gain_comprehensive_insights",
+   "question_id": "REL-5",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-5.2",
+   "bp_title": "Perform proactive troubleshooting",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#perform_proactive_troubleshooting",
+   "question_id": "REL-5",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-5.3",
+   "bp_title": "Optimize resource utilization",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#optimize_resource_utilization",
+   "question_id": "REL-5",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-5.4",
+   "bp_title": "Prioritize alerts",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#prioritize_alerts",
+   "question_id": "REL-5",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-6.1",
+   "bp_title": "Implement throttling",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#implement_throttling",
+   "question_id": "REL-6",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-6.2",
+   "bp_title": "Drop excess requests early",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#drop_excess_requests_early",
+   "question_id": "REL-6",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-6.3",
+   "bp_title": "Handle partial errors and retries",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#handle_partial_errors_and_retries",
+   "question_id": "REL-6",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-6.4",
+   "bp_title": "Test overload scenarios",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#test_overload_scenarios",
+   "question_id": "REL-6",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-6.5",
+   "bp_title": "Monitor traffic spikes",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#monitor_traffic_spikes",
+   "question_id": "REL-6",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-7.1",
+   "bp_title": "Define the testing objectives and scope",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#define_the_testing_objectives_and_scope",
+   "question_id": "REL-7",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-7.2",
+   "bp_title": "Prepare the environment for testing",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#prepare_the_environment_for_testing",
+   "question_id": "REL-7",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-7.3",
+   "bp_title": "Simulate failure scenarios",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#simulate_failure_scenarios",
+   "question_id": "REL-7",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-7.4",
+   "bp_title": "Monitor system behavior",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#monitor_system_behavior",
+   "question_id": "REL-7",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-7.5",
+   "bp_title": "Verify recovery against your RTO and RPO",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#verify_recovery_against_your_rto_and_rpo",
+   "question_id": "REL-7",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-7.6",
+   "bp_title": "Document and analyze results",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#document_and_analyze_results",
+   "question_id": "REL-7",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-7.7",
+   "bp_title": "Iterate and improve",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#iterate_and_improve",
+   "question_id": "REL-7",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-8.1",
+   "bp_title": "Verify backup consistency and test restoration processes",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#verify_backup_consistency_and_test_restoration_processes",
+   "question_id": "REL-8",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-8.2",
+   "bp_title": "Schedule regular and frequent backups",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#schedule_regular_and_frequent_backups",
+   "question_id": "REL-8",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-8.3",
+   "bp_title": "Define and monitor RPO",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#define_and_monitor_rpo",
+   "question_id": "REL-8",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-8.4",
+   "bp_title": "Monitor backup health",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#monitor_backup_health",
+   "question_id": "REL-8",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-8.5",
+   "bp_title": "Plan for scenarios beyond backup",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#plan_for_scenarios_beyond_backup",
+   "question_id": "REL-8",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-9.1",
+   "bp_title": "Conduct blameless postmortems",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#conduct_blameless_postmortems",
+   "question_id": "REL-9",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-9.2",
+   "bp_title": "Make the postmortem report readable by all the intended audiences",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#make_the_postmortem_report_readable_by_all_the_intended_audiences",
+   "question_id": "REL-9",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-9.3",
+   "bp_title": "Avoid complex or over-engineered solutions",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#avoid_complex_or_over-engineered_solutions",
+   "question_id": "REL-9",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "REL-9.4",
+   "bp_title": "Share the postmortem as widely as possible",
+   "bp_url": "https://cloud.google.com/architecture/framework/reliability#share_the_postmortem_as_widely_as_possible",
+   "question_id": "REL-9",
+   "pillar_id": "reliability",
+   "pillar_name": "Reliability"
+  },
+  {
+   "bp_id": "COST-1.1",
+   "bp_title": "Prioritize managed services and serverless products",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#prioritize_managed_services_and_serverless_products",
+   "question_id": "COST-1",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-1.2",
+   "bp_title": "Balance cost efficiency with business agility",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#balance_cost_efficiency_with_business_agility",
+   "question_id": "COST-1",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-1.3",
+   "bp_title": "Enable self-service optimization",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#enable_self-service_optimization",
+   "question_id": "COST-1",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-1.4",
+   "bp_title": "Adopt and implement FinOps",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#adopt_and_implement_finops",
+   "question_id": "COST-1",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-1.5",
+   "bp_title": "Promote a value-driven and TCO-aware mindset",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#promote_a_value-driven_and_tco-aware_mindset",
+   "question_id": "COST-1",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-2.1",
+   "bp_title": "Provide organization-wide cost visibility",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#provide_organization-wide_cost_visibility",
+   "question_id": "COST-2",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-2.2",
+   "bp_title": "Understand how cloud resources are billed",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#understand_how_cloud_resources_are_billed",
+   "question_id": "COST-2",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-2.3",
+   "bp_title": "Understand resource-based cost optimization options",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#understand_resource-based_cost_optimization_options",
+   "question_id": "COST-2",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-2.4",
+   "bp_title": "Understand discount-based cost optimization options",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#understand_discount-based_cost_optimization_options",
+   "question_id": "COST-2",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-2.5",
+   "bp_title": "Incorporate cost estimates into architecture blueprints",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#incorporate_cost_estimates_into_architecture_blueprints",
+   "question_id": "COST-2",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-2.6",
+   "bp_title": "Use a consistent and standard set of labels for all your resources",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#use_a_consistent_and_standard_set_of_labels_for_all_your_resources",
+   "question_id": "COST-2",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-2.7",
+   "bp_title": "Share cost reports with team members",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#share_cost_reports_with_team_members",
+   "question_id": "COST-2",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-3.1",
+   "bp_title": "Choose environment-specific resources",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#choose_environment-specific_resources",
+   "question_id": "COST-3",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-3.2",
+   "bp_title": "Choose workload-specific resources",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#choose_workload-specific_resources",
+   "question_id": "COST-3",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-3.3",
+   "bp_title": "Select regions based on cost requirements",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#select_regions_based_on_cost_requirements",
+   "question_id": "COST-3",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-3.4",
+   "bp_title": "Use built-in cost optimization options",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#use_built-in_cost_optimization_options",
+   "question_id": "COST-3",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-3.5",
+   "bp_title": "Optimize resource sharing",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#optimize_resource_sharing",
+   "question_id": "COST-3",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-3.6",
+   "bp_title": "Develop and maintain reference architectures",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#develop_and_maintain_reference_architectures",
+   "question_id": "COST-3",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-3.7",
+   "bp_title": "Enforce cost discipline by using organization policies",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#enforce_cost_discipline_by_using_organization_policies",
+   "question_id": "COST-3",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-3.8",
+   "bp_title": "Estimate realistic budgets and set financial boundaries",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#estimate_realistic_budgets_and_set_financial_boundaries",
+   "question_id": "COST-3",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-4.1",
+   "bp_title": "Focus on business-relevant metrics",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#focus_on_business-relevant_metrics",
+   "question_id": "COST-4",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-4.2",
+   "bp_title": "Use observability for resource optimization",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#use_observability_for_resource_optimization",
+   "question_id": "COST-4",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-4.3",
+   "bp_title": "Balance troubleshooting needs with cost",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#balance_troubleshooting_needs_with_cost",
+   "question_id": "COST-4",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-4.4",
+   "bp_title": "Tailor data collection to roles and set role-specific retention policies",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#tailor_data_collection_to_roles_and_set_role-specific_retention_policies",
+   "question_id": "COST-4",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-4.5",
+   "bp_title": "Consider regulatory and compliance requirements",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#consider_regulatory_and_compliance_requirements",
+   "question_id": "COST-4",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "COST-4.6",
+   "bp_title": "Implement smart alerting",
+   "bp_url": "https://cloud.google.com/architecture/framework/cost-optimization#implement_smart_alerting",
+   "question_id": "COST-4",
+   "pillar_id": "cost-optimization",
+   "pillar_name": "Cost optimization"
+  },
+  {
+   "bp_id": "PERF-1.1",
+   "bp_title": "Configure and manage quotas",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#configure_and_manage_quotas",
+   "question_id": "PERF-1",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-1.2",
+   "bp_title": "Educate and promote awareness",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#educate_and_promote_awareness",
+   "question_id": "PERF-1",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-1.3",
+   "bp_title": "Monitor performance metrics",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#monitor_performance_metrics",
+   "question_id": "PERF-1",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-2.1",
+   "bp_title": "Plan for peak load periods",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#plan_for_peak_load_periods",
+   "question_id": "PERF-2",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-2.2",
+   "bp_title": "Use predictive scaling",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#use_predictive_scaling",
+   "question_id": "PERF-2",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-2.3",
+   "bp_title": "Implement serverless architectures",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#implement_serverless_architectures",
+   "question_id": "PERF-2",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-2.4",
+   "bp_title": "Use Autopilot mode for Kubernetes",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#use-autopilot-mode-for-kubernetes",
+   "question_id": "PERF-2",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-3.1",
+   "bp_title": "Design for loose coupling",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#design_for_loose_coupling",
+   "question_id": "PERF-3",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-3.2",
+   "bp_title": "Design for concurrency and parallelism",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#design_for_concurrency_and_parallelism",
+   "question_id": "PERF-3",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-3.3",
+   "bp_title": "Balance modularity for flexible resource allocation",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#balance_modularity_for_flexible_resource_allocation",
+   "question_id": "PERF-3",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-3.4",
+   "bp_title": "Use well-defined interfaces",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#use_well-defined_interfaces",
+   "question_id": "PERF-3",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-3.5",
+   "bp_title": "Use stateless models",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#use_stateless_models",
+   "question_id": "PERF-3",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-3.6",
+   "bp_title": "Choose complementary technologies",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#choose_complementary_technologies",
+   "question_id": "PERF-3",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-4.1",
+   "bp_title": "Define clear performance goals and metrics",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#define_clear_performance_goals_and_metrics",
+   "question_id": "PERF-4",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-4.2",
+   "bp_title": "Monitor performance",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#monitor_performance",
+   "question_id": "PERF-4",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "PERF-4.3",
+   "bp_title": "Incentivize continuous improvement",
+   "bp_url": "https://cloud.google.com/architecture/framework/performance-optimization#incentivize_continuous_improvement",
+   "question_id": "PERF-4",
+   "pillar_id": "performance-optimization",
+   "pillar_name": "Performance optimization"
+  },
+  {
+   "bp_id": "SUS-1.1",
+   "bp_title": "Understand the carbon intensity of cloud regions",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#understand-carbon",
+   "question_id": "SUS-1",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-1.2",
+   "bp_title": "Incorporate CFE in your location-selection strategy",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#incorporate-cfe",
+   "question_id": "SUS-1",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-1.3",
+   "bp_title": "Use time-of-day scheduling",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#use-time-of-day",
+   "question_id": "SUS-1",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-2.1",
+   "bp_title": "Architect for energy efficiency by using TPUs",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#architect_for_energy_efficiency_by_using_tpus",
+   "question_id": "SUS-2",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-2.2",
+   "bp_title": "Follow the 4Ms best practices for resource selection",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#resource-selection-best-practices",
+   "question_id": "SUS-2",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-2.3",
+   "bp_title": "Optimize AI models and algorithms for training and inference",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#optimize_ai_models_and_algorithms_for_training_and_inference",
+   "question_id": "SUS-2",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-2.4",
+   "bp_title": "Follow best practices for AI and ML operations",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#follow_best_practices_for_ai_and_ml_operations",
+   "question_id": "SUS-2",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-3.1",
+   "bp_title": "Implement automated and dynamic scaling",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#implement_automated_and_dynamic_scaling",
+   "question_id": "SUS-3",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-3.2",
+   "bp_title": "Use scheduling and batches",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#use_scheduling_and_batches",
+   "question_id": "SUS-3",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-3.3",
+   "bp_title": "Match VM machine families to workload requirements",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#match_vm_machine_families_to_workload_requirements",
+   "question_id": "SUS-3",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-3.4",
+   "bp_title": "Upgrade to the latest machine types",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#upgrade_to_the_latest_machine_types",
+   "question_id": "SUS-3",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-3.5",
+   "bp_title": "Deploy containerized applications",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#deploy_containerized_applications",
+   "question_id": "SUS-3",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-3.6",
+   "bp_title": "Configure carbon-aware scheduling",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#configure_carbon-aware_scheduling",
+   "question_id": "SUS-3",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-3.7",
+   "bp_title": "Architect energy-efficient disaster recovery",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#architect_energy-efficient_disaster_recovery",
+   "question_id": "SUS-3",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-4.1",
+   "bp_title": "Minimize computational work",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#minimal-computations",
+   "question_id": "SUS-4",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-4.2",
+   "bp_title": "Use efficient algorithms and data structures",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#efficient-algorithms",
+   "question_id": "SUS-4",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-4.3",
+   "bp_title": "Optimize compute and data operations",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#optimized-operations",
+   "question_id": "SUS-4",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-4.4",
+   "bp_title": "Implement frontend optimization",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#optimized-frontend",
+   "question_id": "SUS-4",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-5.1",
+   "bp_title": "Prioritize high-value data",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#prioritize_high-value_data",
+   "question_id": "SUS-5",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-5.2",
+   "bp_title": "Optimize storage lifecycle management",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#optimize_storage_lifecycle_management",
+   "question_id": "SUS-5",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-5.3",
+   "bp_title": "Optimize regionality and data movement",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#optimize_regionality_and_data_movement",
+   "question_id": "SUS-5",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-6.1",
+   "bp_title": "Phase 1: Establish a baseline",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#establish-baseline",
+   "question_id": "SUS-6",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-6.2",
+   "bp_title": "Phase 2: Identify carbon hotspots",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#identify-hotspots",
+   "question_id": "SUS-6",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-6.3",
+   "bp_title": "Phase 3: Implement targeted optimization",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#optimize",
+   "question_id": "SUS-6",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-6.4",
+   "bp_title": "Phase 4: Institutionalize your sustainability practices and reporting",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#institutionalize",
+   "question_id": "SUS-6",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-7.1",
+   "bp_title": "Provide business context and alignment with organizational goals",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#provide_business_context_and_alignment_with_organizational_goals",
+   "question_id": "SUS-7",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-7.2",
+   "bp_title": "Provide role-based sustainability training",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#provide_role-based_sustainability_training",
+   "question_id": "SUS-7",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-7.3",
+   "bp_title": "Advocate for sustainability and recognize success",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#advocate_for_sustainability_and_recognize_success",
+   "question_id": "SUS-7",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  },
+  {
+   "bp_id": "SUS-7.4",
+   "bp_title": "Incentivize sustainability efforts",
+   "bp_url": "https://cloud.google.com/architecture/framework/sustainability#incentivize_sustainability_efforts",
+   "question_id": "SUS-7",
+   "pillar_id": "sustainability",
+   "pillar_name": "Sustainability"
+  }
+ ],
+ "manifest": {
+  "valid": true,
+  "errors": [],
+  "counts": {
+   "pillars": 6,
+   "questions": 36,
+   "bps": 174,
+   "perPillar": {
+    "operational-excellence": 25,
+    "security": 43,
+    "reliability": 35,
+    "cost-optimization": 26,
+    "performance-optimization": 16,
+    "sustainability": 29
+   }
+  },
+  "provenance": {
+   "indexUrl": "https://cloud.google.com/architecture/framework/",
+   "retrievedAt": "2026-10-02T17:11:51.159Z"
+  }
+ }
+}

@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant U as Customer
+    participant A as API Gateway
+    participant F as Orders Cloud Run service
+    participant D as Firestore
+    U->>A: POST /orders
+    A->>F: invoke
+    F->>D: write order
+    D-->>F: ok
+    alt payment approved
+      F-)A: OrderConfirmed event
+    else declined
+      F-->>A: 402
+    end
+    F->>F: validate
+    A-->>U: 201 Created

@@ -1,0 +1,400 @@
+{
+ "schema_version": "archify-gcp.prices.v1",
+ "region": "us-central1",
+ "retrievedAt": "2026-10-01T00:00:00.000Z",
+ "_comment": "SYNTHETIC test fixture in Cloud Billing Catalog shape. Not real prices.",
+ "services": {
+  "Compute Engine": {
+   "serviceId": "TEST",
+   "publicationDate": "2026-10-01T00:00:00Z",
+   "rows": [
+    {
+     "sku": "T-001",
+     "d": "E2 Instance Core running in Americas",
+     "g": "CPU",
+     "f": "Compute",
+     "ut": "OnDemand",
+     "unit": "h",
+     "usd": "0.02",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-002",
+     "d": "E2 Instance Ram running in Americas",
+     "g": "RAM",
+     "f": "Compute",
+     "ut": "OnDemand",
+     "unit": "GiBy.h",
+     "usd": "0.003",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-003",
+     "d": "N2 Instance Core running in Americas",
+     "g": "CPU",
+     "f": "Compute",
+     "ut": "OnDemand",
+     "unit": "h",
+     "usd": "0.03",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-004",
+     "d": "N2 Instance Ram running in Americas",
+     "g": "RAM",
+     "f": "Compute",
+     "ut": "OnDemand",
+     "unit": "GiBy.h",
+     "usd": "0.004",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-005",
+     "d": "Balanced PD Capacity",
+     "g": "PDStandard",
+     "f": "Storage",
+     "ut": "OnDemand",
+     "unit": "GiBy.mo",
+     "usd": "0.1",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    }
+   ]
+  },
+  "Cloud Storage": {
+   "serviceId": "TEST",
+   "publicationDate": "2026-10-01T00:00:00Z",
+   "rows": [
+    {
+     "sku": "T-010",
+     "d": "Standard Storage Iowa",
+     "g": "RegionalStorage",
+     "f": "Storage",
+     "ut": "OnDemand",
+     "unit": "GiBy.mo",
+     "usd": "0.02",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-011",
+     "d": "Nearline Storage Iowa",
+     "g": "NearlineStorage",
+     "f": "Storage",
+     "ut": "OnDemand",
+     "unit": "GiBy.mo",
+     "usd": "0.01",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-012",
+     "d": "Standard Storage Class A Operations",
+     "g": "StandardOps",
+     "f": "Storage",
+     "ut": "OnDemand",
+     "unit": "count",
+     "usd": "0.000005",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-013",
+     "d": "Standard Storage Class B Operations",
+     "g": "StandardOps",
+     "f": "Storage",
+     "ut": "OnDemand",
+     "unit": "count",
+     "usd": "4e-7",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-014",
+     "d": "Nearline Storage Class A Operations",
+     "g": "NearlineOps",
+     "f": "Storage",
+     "ut": "OnDemand",
+     "unit": "count",
+     "usd": "0.00001",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-015",
+     "d": "Nearline Storage Class B Operations",
+     "g": "NearlineOps",
+     "f": "Storage",
+     "ut": "OnDemand",
+     "unit": "count",
+     "usd": "0.000001",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    }
+   ]
+  },
+  "BigQuery": {
+   "serviceId": "TEST",
+   "publicationDate": "2026-10-01T00:00:00Z",
+   "rows": [
+    {
+     "sku": "T-020",
+     "d": "Analysis",
+     "g": "Analysis",
+     "f": "ApplicationServices",
+     "ut": "OnDemand",
+     "unit": "TiBy",
+     "usd": "0",
+     "b": 0,
+     "e": 1,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-020",
+     "d": "Analysis",
+     "g": "Analysis",
+     "f": "ApplicationServices",
+     "ut": "OnDemand",
+     "unit": "TiBy",
+     "usd": "6",
+     "b": 1,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-021",
+     "d": "Active Logical Storage",
+     "g": "ActiveStorage",
+     "f": "Storage",
+     "ut": "OnDemand",
+     "unit": "GiBy.mo",
+     "usd": "0.02",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    }
+   ]
+  },
+  "Pub/Sub": {
+   "serviceId": "TEST",
+   "publicationDate": "2026-10-01T00:00:00Z",
+   "rows": [
+    {
+     "sku": "T-030",
+     "d": "Message Delivery Basic",
+     "g": "MessageDelivery",
+     "f": "ApplicationServices",
+     "ut": "OnDemand",
+     "unit": "TiBy",
+     "usd": "0",
+     "b": 0,
+     "e": 10,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-030",
+     "d": "Message Delivery Basic",
+     "g": "MessageDelivery",
+     "f": "ApplicationServices",
+     "ut": "OnDemand",
+     "unit": "TiBy",
+     "usd": "40",
+     "b": 10,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    }
+   ]
+  },
+  "Cloud Logging": {
+   "serviceId": "TEST",
+   "publicationDate": "2026-10-01T00:00:00Z",
+   "rows": [
+    {
+     "sku": "T-040",
+     "d": "Log Storage cost",
+     "g": "LogStorage",
+     "f": "Management",
+     "ut": "OnDemand",
+     "unit": "GiBy",
+     "usd": "0",
+     "b": 0,
+     "e": 50,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-040",
+     "d": "Log Storage cost",
+     "g": "LogStorage",
+     "f": "Management",
+     "ut": "OnDemand",
+     "unit": "GiBy",
+     "usd": "0.5",
+     "b": 50,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    }
+   ]
+  },
+  "Cloud SQL": {
+   "serviceId": "TEST",
+   "publicationDate": "2026-10-01T00:00:00Z",
+   "rows": [
+    {
+     "sku": "T-050",
+     "d": "Cloud SQL for PostgreSQL: Zonal - vCPU",
+     "g": "SQL",
+     "f": "ApplicationServices",
+     "ut": "OnDemand",
+     "unit": "h",
+     "usd": "0.04",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-051",
+     "d": "Cloud SQL for PostgreSQL: Zonal - RAM",
+     "g": "SQL",
+     "f": "ApplicationServices",
+     "ut": "OnDemand",
+     "unit": "GiBy.h",
+     "usd": "0.007",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-052",
+     "d": "Cloud SQL for PostgreSQL: Zonal - Standard storage",
+     "g": "SQL",
+     "f": "ApplicationServices",
+     "ut": "OnDemand",
+     "unit": "GiBy.mo",
+     "usd": "0.17",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-053",
+     "d": "Cloud SQL for PostgreSQL: Regional - vCPU",
+     "g": "SQL",
+     "f": "ApplicationServices",
+     "ut": "OnDemand",
+     "unit": "h",
+     "usd": "0.08",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-054",
+     "d": "Cloud SQL for PostgreSQL: Regional - RAM",
+     "g": "SQL",
+     "f": "ApplicationServices",
+     "ut": "OnDemand",
+     "unit": "GiBy.h",
+     "usd": "0.014",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    },
+    {
+     "sku": "T-055",
+     "d": "Cloud SQL for PostgreSQL: Regional - Standard storage",
+     "g": "SQL",
+     "f": "ApplicationServices",
+     "ut": "OnDemand",
+     "unit": "GiBy.mo",
+     "usd": "0.34",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    }
+   ]
+  },
+  "Kubernetes Engine": {
+   "serviceId": "TEST",
+   "publicationDate": "2026-10-01T00:00:00Z",
+   "rows": [
+    {
+     "sku": "T-060",
+     "d": "Regional Kubernetes Clusters cluster management fee",
+     "g": "ClusterFee",
+     "f": "Compute",
+     "ut": "OnDemand",
+     "unit": "h",
+     "usd": "0.1",
+     "b": 0,
+     "e": null,
+     "r": [
+      "us-central1"
+     ]
+    }
+   ]
+  }
+ }
+}

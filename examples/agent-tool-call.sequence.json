@@ -1,0 +1,158 @@
+{
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Agent tool call with safety screening and approval",
+    "subtitle": "A user question reaches a Vertex AI agent; the model proposes a tool call; Model Armor screens it; a high-impact call waits for approval",
+    "output": "examples/out/agent-tool-call.sequence.html",
+    "lens": [
+      "framework",
+      "generative-ai"
+    ]
+  },
+  "participants": [
+    {
+      "id": "user",
+      "icon": "users",
+      "label": "User"
+    },
+    {
+      "id": "gw",
+      "icon": "apigee-api-platform",
+      "label": "Apigee",
+      "sublabel": "auth, quotas"
+    },
+    {
+      "id": "agent",
+      "icon": "vertexai",
+      "label": "Vertex AI agent",
+      "sublabel": "Agent Engine"
+    },
+    {
+      "id": "armor",
+      "icon": "data-loss-prevention-api",
+      "label": "Model Armor"
+    },
+    {
+      "id": "fm",
+      "icon": "vertexai",
+      "label": "Gemini",
+      "usage": {
+        "monthlyUsd": 150,
+        "note": "Illustrative token spend"
+      }
+    },
+    {
+      "id": "tool",
+      "icon": "cloud-run",
+      "label": "Tool service",
+      "sublabel": "update record",
+      "usage": {
+        "requestsPerMonth": 200000,
+        "avgDurationMs": 120
+      }
+    },
+    {
+      "id": "mon",
+      "icon": "cloud-logging",
+      "label": "Cloud Logging"
+    }
+  ],
+  "groups": [
+    {
+      "kind": "gcp-cloud",
+      "label": "Google Cloud",
+      "members": [
+        "gw",
+        "agent",
+        "armor",
+        "fm",
+        "tool",
+        "mon"
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "from": "user",
+      "to": "gw",
+      "label": "ask a question",
+      "desc": "The request carries an Identity Platform token."
+    },
+    {
+      "from": "gw",
+      "to": "agent",
+      "label": "validated request"
+    },
+    {
+      "from": "agent",
+      "to": "armor",
+      "label": "screen prompt"
+    },
+    {
+      "from": "armor",
+      "to": "agent",
+      "kind": "return",
+      "label": "allowed"
+    },
+    {
+      "from": "agent",
+      "to": "fm",
+      "label": "reason + choose tool"
+    },
+    {
+      "from": "fm",
+      "to": "agent",
+      "kind": "return",
+      "label": "tool call proposal"
+    },
+    {
+      "from": "agent",
+      "to": "armor",
+      "label": "screen tool arguments"
+    },
+    {
+      "note": "High-impact calls wait for human approval before they run.",
+      "over": [
+        "agent",
+        "tool"
+      ]
+    },
+    {
+      "from": "agent",
+      "to": "tool",
+      "label": "invoke tool (service account)"
+    },
+    {
+      "from": "tool",
+      "to": "agent",
+      "kind": "return",
+      "label": "result"
+    },
+    {
+      "from": "agent",
+      "to": "mon",
+      "kind": "async",
+      "label": "trace + token usage"
+    },
+    {
+      "from": "agent",
+      "to": "gw",
+      "kind": "return",
+      "label": "answer"
+    },
+    {
+      "from": "gw",
+      "to": "user",
+      "kind": "return",
+      "label": "response"
+    }
+  ],
+  "fragments": [
+    {
+      "kind": "opt",
+      "label": "tool needed",
+      "from": 6,
+      "to": 9
+    }
+  ]
+}

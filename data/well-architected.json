@@ -1,0 +1,35 @@
+{
+ "framework": {
+  "pillars": {
+   "operational-excellence": {
+    "name": "Operational excellence",
+    "url": "https://cloud.google.com/architecture/framework/operational-excellence"
+   },
+   "security": {
+    "name": "Security, privacy, and compliance",
+    "url": "https://cloud.google.com/architecture/framework/security"
+   },
+   "reliability": {
+    "name": "Reliability",
+    "url": "https://cloud.google.com/architecture/framework/reliability"
+   },
+   "cost-optimization": {
+    "name": "Cost optimization",
+    "url": "https://cloud.google.com/architecture/framework/cost-optimization"
+   },
+   "performance-optimization": {
+    "name": "Performance optimization",
+    "url": "https://cloud.google.com/architecture/framework/performance-optimization"
+   },
+   "sustainability": {
+    "name": "Sustainability",
+    "url": "https://cloud.google.com/architecture/framework/sustainability"
+   }
+  }
+ },
+ "ai-workloads": {
+  "name": "Google Cloud Well-Architected Framework: AI and ML perspective",
+  "url": "https://cloud.google.com/architecture/framework/perspectives/ai-ml",
+  "designPrinciples": []
+ }
+}
