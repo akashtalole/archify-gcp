@@ -1,0 +1,168 @@
+{
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "From ADK source to running agent services",
+    "subtitle": "Each agent is built from its own directory, pushed to Artifact Registry and deployed as a separate Cloud Run service with its own service account",
+    "output": "examples/multi-agent-adk-cloud-run/out/agent-delivery.dataflow.html",
+    "boundary": false
+  },
+  "stages": [
+    {
+      "id": "dev_stage",
+      "label": "Develop",
+      "external": true,
+      "items": [
+        {
+          "id": "repo",
+          "icon": "file",
+          "label": "ADK agents repo",
+          "sublabel": "coordinator, inventory, shipping"
+        },
+        {
+          "id": "devui",
+          "icon": "browser",
+          "label": "adk web",
+          "sublabel": "local dev UI and evals"
+        }
+      ]
+    },
+    {
+      "id": "build_stage",
+      "label": "Build",
+      "items": [
+        {
+          "id": "build",
+          "icon": "cloud-build",
+          "label": "Cloud Build",
+          "sublabel": "adk deploy cloud_run"
+        },
+        {
+          "id": "ar",
+          "icon": "artifact-registry",
+          "label": "Artifact Registry",
+          "sublabel": "one image per agent"
+        }
+      ]
+    },
+    {
+      "id": "deploy_stage",
+      "label": "Deploy",
+      "items": [
+        {
+          "id": "deployp",
+          "icon": "cloud-deploy",
+          "label": "Cloud Deploy",
+          "sublabel": "promote dev to prod"
+        },
+        {
+          "id": "sa",
+          "icon": "identity-and-access-management",
+          "label": "IAM",
+          "sublabel": "one service account per agent, run.invoker"
+        }
+      ]
+    },
+    {
+      "id": "run_stage",
+      "label": "Run",
+      "items": [
+        {
+          "id": "c",
+          "icon": "cloud-run",
+          "label": "Coordinator service",
+          "sublabel": "Cloud Run"
+        },
+        {
+          "id": "i",
+          "icon": "cloud-run",
+          "label": "Inventory agent service",
+          "sublabel": "Cloud Run, A2A"
+        },
+        {
+          "id": "s",
+          "icon": "cloud-run",
+          "label": "Shipping agent service",
+          "sublabel": "Cloud Run, A2A"
+        }
+      ]
+    },
+    {
+      "id": "observe_stage",
+      "label": "Observe",
+      "items": [
+        {
+          "id": "tr",
+          "icon": "trace",
+          "label": "Cloud Trace",
+          "sublabel": "spans per agent turn"
+        },
+        {
+          "id": "lg",
+          "icon": "cloud-logging",
+          "label": "Cloud Logging",
+          "sublabel": "agent events"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "repo",
+      "to": "build",
+      "step": 1,
+      "label": "push"
+    },
+    {
+      "from": "devui",
+      "to": "repo",
+      "step": 2,
+      "label": "commit"
+    },
+    {
+      "from": "build",
+      "to": "ar",
+      "step": 3,
+      "label": "image"
+    },
+    {
+      "from": "ar",
+      "to": "deployp",
+      "step": 4,
+      "label": "release"
+    },
+    {
+      "from": "deployp",
+      "to": "c",
+      "step": 5,
+      "label": "roll out"
+    },
+    {
+      "from": "deployp",
+      "to": "i",
+      "step": 5
+    },
+    {
+      "from": "deployp",
+      "to": "s",
+      "step": 5
+    },
+    {
+      "from": "sa",
+      "to": "c",
+      "style": "dashed",
+      "label": "identity"
+    },
+    {
+      "from": "c",
+      "to": "tr",
+      "step": 6,
+      "label": "spans"
+    },
+    {
+      "from": "i",
+      "to": "lg",
+      "step": 6,
+      "label": "logs"
+    }
+  ]
+}

@@ -13,6 +13,7 @@ fs.mkdirSync(dest, { recursive: true });
 
 const sources = [
   ["examples/out", ""],
+  ["examples/multi-agent-adk-cloud-run/out", "adk-"],
   ["examples/iac", "iac-"], ["examples/mermaid", "mermaid-"],
 ];
 let n = 0;

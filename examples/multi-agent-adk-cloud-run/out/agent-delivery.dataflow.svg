@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="az theme-light" viewBox="0 0 1374 660" width="1374" height="660" role="img" aria-label="From ADK source to running agent services">
+<title>From ADK source to running agent services</title>
+<style>.az{--bg:#ffffff;--fg:#000000;--muted:#545b64;--line:#232F3E;--halo:#ffffff;--badge:#000000;--badgeFg:#ffffff}
+.az.theme-dark{--bg:#161E2D;--fg:#ffffff;--muted:#aab4c3;--line:#d5dbdb;--halo:#161E2D;--badge:#ffffff;--badgeFg:#000000}
+.az .bg{fill:var(--bg)}
+.az text{font-family:Arial,Helvetica,sans-serif;fill:var(--fg)}
+.az .title{font-size:22px;font-weight:700}
+.az .subtitle{font-size:13px;fill:var(--muted)}
+.az .glabel,.az .nlabel,.az .elabel{font-size:12px}
+.az .nsub{font-size:10.5px;fill:var(--muted)}
+.az .elabel{paint-order:stroke;stroke:var(--halo);stroke-width:4px;stroke-linejoin:round}
+.az .eline{stroke:var(--line)}
+.az .arw{fill:none;stroke:var(--line);stroke-width:1.6}
+.az .badge circle{fill:var(--badge)}.az .badge circle.hit{fill:transparent}.az .badge{cursor:help}.az .badge:hover circle:not(.hit){stroke:#ff9900;stroke-width:3}
+.az .badge text{fill:var(--badgeFg);font-weight:700;font-size:12px}
+.az .only-dark{display:none}.az.theme-dark .only-dark{display:inline}.az.theme-dark .only-light{display:none}
+.az.theme-dark .grect[data-fill-dark="none"]{fill:none}
+.az .dim{opacity:.18}.az .hl .eline{stroke-width:3}
+.az .edge,.az .node{transition:opacity .12s}</style>
+<defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="arw" d="M1.5 1.5 L8.5 5 L1.5 8.5"/></marker><symbol id="gen-file" viewBox="0 0 24 24"><path d="M6 2.5h8l5 5V20a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 20V4A1.5 1.5 0 0 1 6 2.5z" fill="#4285F4"/><path d="M14 2.5l5 5h-3.5A1.5 1.5 0 0 1 14 6z" fill="#AECBFA"/><path d="M8 12h8M8 15h8M8 18h5" stroke="#E8F0FE" stroke-width="1.2"/></symbol><symbol id="gen-browser" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2" fill="#4285F4"/><rect x="2.5" y="4" width="19" height="3.6" rx="1.6" fill="#1A73E8"/><circle cx="5.2" cy="5.8" r=".7" fill="#E8F0FE"/><circle cx="7.4" cy="5.8" r=".7" fill="#E8F0FE"/><rect x="4.5" y="9.5" width="15" height="8.5" rx=".8" fill="#E8F0FE"/></symbol><symbol id="svc-cloud_build" viewBox="0 0 24 24"><defs><style>.svc-cloud_build__cls-1{fill:#4285f4;}.svc-cloud_build__cls-2{fill:#669df6;}.svc-cloud_build__cls-3{fill:#aecbfa;}</style></defs><g data-name="Product Icons"><g ><g ><g ><polygon class="svc-cloud_build__cls-1" points="12.15 16.24 15.67 14.21 15.67 10.15 14.49 9.46 10.97 15.56 12.15 16.24"/><polygon class="svc-cloud_build__cls-2" points="8.63 10.15 8.63 14.21 9.81 14.89 13.34 8.8 12.15 8.11 8.63 10.15"/></g></g></g><polygon class="svc-cloud_build__cls-3" points="11.46 17.45 7.24 15.01 7.24 10.15 3.49 7.98 3.49 17.18 11.46 21.78 11.46 17.45"/><polygon class="svc-cloud_build__cls-3" points="7.93 8.95 12.15 6.51 16.37 8.95 20.13 6.78 12.15 2.17 4.17 6.78 7.93 8.95"/><polygon class="svc-cloud_build__cls-3" points="17.06 15.01 12.84 17.45 12.84 21.78 20.82 17.18 20.82 7.98 17.06 10.15 17.06 15.01"/></g></symbol><symbol id="svc-artifact_registry" viewBox="0 0 24 24"><g >
+	<rect y="0" fill="none" width="24" height="24"/>
+	<polygon fill-rule="evenodd" fill="#5C85DE" points="6,2.4 0.8,5.4 0.8,19.1 6,22.1 6,19.5 3,17.8 3,6.7 6,5 	"/>
+	<polygon fill-rule="evenodd" fill="#3367D6" points="0.8,8 0.8,16.5 3,17.8 3,6.7 	"/>
+	<polygon fill-rule="evenodd" fill="#3367D6" points="0.8,8 3,7.5 3,6.7 	"/>
+	<polygon fill-rule="evenodd" fill="#5C85DE" points="18,2.4 18,5 21,6.7 21,17.8 18,19.5 18,22.1 23.2,19.1 23.2,5.4 	"/>
+	<polygon fill-rule="evenodd" fill="#3367D6" points="21,17.8 23.2,16.5 23.2,8 21,6.7 	"/>
+	<polygon fill-rule="evenodd" fill="#3367D6" points="21,7.5 23.2,8 21,6.7 	"/>
+	<polygon fill-rule="evenodd" fill="#3367D6" points="21,17.1 21,17.8 23.2,16.5 	"/>
+	<g transform="translate(6.860000, 6.500000)">
+		<g transform="translate(4.540000, 0.000000)">
+			<polygon fill-rule="evenodd" fill="#5C85DE" points="0.6,-1 -2.4,0.6 0.6,2.2 3.6,0.6 			"/>
+			<polygon fill-rule="evenodd" fill="#3367D6" points="1,5.9 3.9,4.3 3.9,1.2 1,2.8 			"/>
+			<polygon fill-rule="evenodd" fill="#3367D6" points="0.3,2.8 -2.7,1.2 -2.7,4.3 0.3,5.9 			"/>
+		</g>
+		<g transform="translate(0.000000, 7.976190)">
+			<polygon fill-rule="evenodd" fill="#5C85DE" points="1.7,-3.1 -1.2,-1.5 1.7,0.1 4.5,-1.5 			"/>
+			<polygon fill-rule="evenodd" fill="#3367D6" points="1.9,3.8 4.8,2.2 4.8,-1 1.9,0.6 			"/>
+			<polygon fill-rule="evenodd" fill="#3367D6" points="1.4,0.6 -1.5,-1 -1.5,2.2 1.4,3.8 			"/>
+		</g>
+		<g transform="translate(9.360000, 7.976190)">
+			<polygon fill-rule="evenodd" fill="#5C85DE" points="-0.7,-3.1 -3.6,-1.5 -0.7,0.1 2.2,-1.5 			"/>
+			<polygon fill-rule="evenodd" fill="#3367D6" points="-0.4,3.8 2.5,2.2 2.5,-1 -0.4,0.6 			"/>
+			<polygon fill-rule="evenodd" fill="#3367D6" points="-1,0.6 -3.9,-1 -3.9,2.2 -1,3.8 			"/>
+		</g>
+	</g>
+</g></symbol><symbol id="svc-cloud_deploy" viewBox="0 0 24 24"><polygon points="20.39 18.24 20.39 8 11.52 2.89 11.52 7.55 16.37 10.32 16.35 15.91 20.39 18.24" style="fill:#4285f4"/>
+    <polygon points="14.79 19.86 14.79 11.23 7.33 6.92 7.33 10.94 11.34 13.23 11.32 17.85 14.79 19.86" style="fill:#669df6"/>
+    <polygon points="9.76 21.15 9.76 14.14 3.69 10.64 3.69 14 6.86 15.81 6.84 19.47 9.76 21.15" style="fill:#aecbfa"/></symbol><symbol id="svc-identity_and_access_management" viewBox="0 0 24 24"><defs><style>.svc-identity_and_access_management__cls-1{fill:#669df6;}.svc-identity_and_access_management__cls-1,.svc-identity_and_access_management__cls-2{fill-rule:evenodd;}.svc-identity_and_access_management__cls-2{fill:#4285f4;}</style></defs><g data-name="Product Icons"><g ><path class="svc-identity_and_access_management__cls-1" d="M12,2,3.79,5.42v5.63c0,5.06,3.5,9.8,8.21,11,4.71-1.15,8.21-5.89,8.21-10.95V5.42Zm0,3.79a2.63,2.63,0,1,1-1.86.77A2.63,2.63,0,0,1,12,5.79Zm4.11,11.15A8.64,8.64,0,0,1,12,19.87a8.64,8.64,0,0,1-4.11-2.93V14.69c0-1.67,2.74-2.52,4.11-2.52s4.11.85,4.11,2.52v2.25Z"/><path class="svc-identity_and_access_management__cls-2" d="M12,2V5.79a2.63,2.63,0,1,1,0,5.26v1.12c1.37,0,4.11.85,4.11,2.52v2.25A8.64,8.64,0,0,1,12,19.87V22c4.71-1.15,8.21-5.89,8.21-10.95V5.42Z"/></g></g></symbol><symbol id="svc-cloud_run" viewBox="0 0 512 512"><defs>
+    <style>
+      .svc-cloud_run__st0 {
+        fill: none;
+      }
+
+      .svc-cloud_run__st1 {
+        fill: #4285f4;
+      }
+
+      .svc-cloud_run__st2 {
+        fill: #34a853;
+      }
+
+      .svc-cloud_run__st3 {
+        fill: #fbbc04;
+      }
+
+      .svc-cloud_run__st4 {
+        fill: #ea4335;
+      }
+    </style>
+  </defs>
+  <g id="svc-cloud_run__bounding_box">
+    <rect class="svc-cloud_run__st0" width="512" height="512"/>
+  </g>
+  <g id="svc-cloud_run__art">
+    <path class="svc-cloud_run__st3" d="M144.4,272c-6.4,0-12.4-3.8-14.9-10.1L55.4,75.9c-3.3-8.2.7-17.5,8.9-20.8,8.2-3.3,17.5.7,20.8,8.9l74.2,186c3.3,8.2-.7,17.5-8.9,20.8-1.9.8-3.9,1.1-5.9,1.1h-.1Z"/>
+    <g id="svc-cloud_run__b">
+      <path class="svc-cloud_run__st4" d="M256,272c-6.4,0-12.4-3.8-14.9-10.1l-74.1-186c-2.6-6.6-.6-14.1,5-18.5s13.4-4.5,19.2-.4l260.1,186c7.2,5.1,8.9,15.1,3.7,22.3s-15.1,8.9-22.3,3.7L216.9,114.7l54,135.3c3.3,8.2-.7,17.5-8.9,20.8-1.9.8-4,1.1-5.9,1.1h-.1Z"/>
+    </g>
+    <path class="svc-cloud_run__st2" d="M127.2,256l-72,180c-3.3,8.2.7,17.5,8.9,20.8,3.1,1.2,4,1.1,5.9,1.1,6.3,0,12.4-3.8,14.9-10.1l74.4-186c.8-2,1.1-4,1.1-5.9h-33.2Z"/>
+    <path class="svc-cloud_run__st1" d="M414.5,256l-197.7,141.2,54.1-135.3c.8-2,1.1-4,1.1-5.9h-33.2l-72,180c-2.6,6.6-.6,14.1,5,18.5,2.9,2.3,6.4,3.4,9.9,3.4s6.5-1,9.3-3l260.4-186c4.4-3.1,6.7-8,6.7-13h-43.6Z"/>
+  </g></symbol><symbol id="svc-trace" viewBox="0 0 24 24"><defs><style>.svc-trace__cls-1{fill:none;}.svc-trace__cls-2{fill:#4285f4;}.svc-trace__cls-3{fill:#669df6;}</style></defs><g data-name="Product Icons"><g data-name="colored-32/traces"><rect class="svc-trace__cls-1" width="24" height="24"/><g ><polygon id="svc-trace__Fill-1" class="svc-trace__cls-2" points="12 14 22 14 22 10 12 10 12 14"/></g><g data-name="Shape"><polygon id="svc-trace__Fill-1-2" data-name="Fill-1" class="svc-trace__cls-2" points="12 22 22 22 22 18 12 18 12 22"/></g><g data-name="Shape"><polygon id="svc-trace__Fill-1-3" data-name="Fill-1" class="svc-trace__cls-3" points="8 22 12 22 12 18 8 18 8 22"/></g></g><rect class="svc-trace__cls-3" x="2" y="2" width="6" height="4"/><rect class="svc-trace__cls-3" x="2" y="10" width="10" height="4"/></g></symbol><symbol id="svc-cloud_logging" viewBox="0 0 24 24"><defs><style>.svc-cloud_logging__cls-1{fill:#4285f4;}.svc-cloud_logging__cls-2{fill:none;}.svc-cloud_logging__cls-3{fill:#669df6;}.svc-cloud_logging__cls-4{fill:#aecbfa;}</style></defs><g data-name="Product Icons"><rect class="svc-cloud_logging__cls-1" x="6" y="11" width="4" height="2"/><rect class="svc-cloud_logging__cls-1" x="4" y="18" width="6" height="2"/><g data-name="colored-32/logs"><rect class="svc-cloud_logging__cls-2" width="24" height="24"/><g ><polygon id="svc-cloud_logging__Fill-3" class="svc-cloud_logging__cls-1" points="4 18 6 18 6 6 4 6 4 18"/><polygon id="svc-cloud_logging__Fill-4" class="svc-cloud_logging__cls-3" points="9 7 22 7 22 3 9 3 9 7"/><polygon id="svc-cloud_logging__Fill-4-2" data-name="Fill-4" class="svc-cloud_logging__cls-3" points="9 14 22 14 22 10 9 10 9 14"/><polygon id="svc-cloud_logging__Fill-4-3" data-name="Fill-4" class="svc-cloud_logging__cls-3" points="9 21 22 21 22 17 9 17 9 21"/><polygon id="svc-cloud_logging__Fill-7" class="svc-cloud_logging__cls-4" points="2 8 8 8 8 2 2 2 2 8"/></g></g></g></symbol></defs>
+<rect class="bg" width="1374" height="660"/>
+<text class="title" x="40" y="46">From ADK source to running agent services</text>
+<text class="subtitle" x="40" y="70">Each agent is built from its own directory, pushed to Artifact Registry and deployed as a separate Cloud Run service with its own service account</text>
+<g class="group" data-id="dev_stage" data-label="Develop">
+<rect x="40" y="196" width="242" height="344" fill="none" stroke="#7A7574" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<text class="glabel" x="50" y="216">Develop</text>
+</g>
+<g class="group" data-id="build_stage" data-label="Build">
+<rect x="346" y="196" width="172" height="344" fill="none" stroke="#7A7574" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<text class="glabel" x="356" y="216">Build</text>
+</g>
+<g class="group" data-id="deploy_stage" data-label="Deploy">
+<rect x="582" y="196" width="300" height="344" fill="none" stroke="#7A7574" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<text class="glabel" x="592" y="216">Deploy</text>
+</g>
+<g class="group" data-id="run_stage" data-label="Run">
+<rect x="946" y="116" width="152" height="504" fill="none" stroke="#7A7574" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<text class="glabel" x="956" y="136">Run</text>
+</g>
+<g class="group" data-id="observe_stage" data-label="Observe">
+<rect x="1162" y="196" width="172" height="344" fill="none" stroke="#7A7574" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<text class="glabel" x="1172" y="216">Observe</text>
+</g>
+<g class="edge" data-from="repo" data-to="build" data-step="1" data-label="push" data-tip="ADK agents repo → Cloud Build (push)">
+<path d="M193 276 L400 276" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="296.5" y="268" text-anchor="middle">push</text>
+<g class="badge"><title>1. ADK agents repo → Cloud Build (push)</title><circle cx="217" cy="276" r="11"/><circle class="hit" cx="217" cy="276" r="16"/><text x="217" y="280.5" text-anchor="middle">1</text></g>
+</g>
+<g class="edge" data-from="devui" data-to="repo" data-step="2" data-label="commit" data-tip="adk web → ADK agents repo (commit)">
+<path d="M161 404 L161 356" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="179" y="384" text-anchor="start">commit</text>
+<g class="badge"><title>2. adk web → ADK agents repo (commit)</title><circle cx="161" cy="380" r="11"/><circle class="hit" cx="161" cy="380" r="16"/><text x="161" y="384.5" text-anchor="middle">2</text></g>
+</g>
+<g class="edge" data-from="build" data-to="ar" data-step="3" data-label="image" data-tip="Cloud Build → Artifact Registry (image)">
+<path d="M432 356 L432 404" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="450" y="384" text-anchor="start">image</text>
+<g class="badge"><title>3. Cloud Build → Artifact Registry (image)</title><circle cx="432" cy="380" r="11"/><circle class="hit" cx="432" cy="380" r="16"/><text x="432" y="384.5" text-anchor="middle">3</text></g>
+</g>
+<g class="edge" data-from="ar" data-to="deployp" data-step="4" data-label="release" data-tip="Artifact Registry → Cloud Deploy (release)">
+<path d="M464 436 L558 436 L558 276 L700 276" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="576" y="360" text-anchor="start">release</text>
+<g class="badge"><title>4. Artifact Registry → Cloud Deploy (release)</title><circle cx="488" cy="436" r="11"/><circle class="hit" cx="488" cy="436" r="16"/><text x="488" y="440.5" text-anchor="middle">4</text></g>
+</g>
+<g class="edge" data-from="deployp" data-to="c" data-step="5" data-label="roll out" data-tip="Cloud Deploy → Coordinator service (roll out)">
+<path d="M764 276 L901 276 L901 196 L990 196" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="832.5" y="268" text-anchor="middle">roll out</text>
+<g class="badge"><title>5. Cloud Deploy → Coordinator service (roll out)</title><circle cx="788" cy="276" r="11"/><circle class="hit" cx="788" cy="276" r="16"/><text x="788" y="280.5" text-anchor="middle">5</text></g>
+</g>
+<g class="edge" data-from="deployp" data-to="i" data-step="5" data-label="" data-tip="Cloud Deploy → Inventory agent service">
+<path d="M764 276 L829 276 L829 356 L990 356" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<g class="badge"><title>5. Cloud Deploy → Inventory agent service</title><circle cx="966" cy="356" r="11"/><circle class="hit" cx="966" cy="356" r="16"/><text x="966" y="360.5" text-anchor="middle">5</text></g>
+</g>
+<g class="edge" data-from="deployp" data-to="s" data-step="5" data-label="" data-tip="Cloud Deploy → Shipping agent service">
+<path d="M764 276 L901 276 L901 516 L990 516" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<g class="badge"><title>5. Cloud Deploy → Shipping agent service</title><circle cx="966" cy="516" r="11"/><circle class="hit" cx="966" cy="516" r="16"/><text x="966" y="520.5" text-anchor="middle">5</text></g>
+</g>
+<g class="edge" data-from="c" data-to="tr" data-step="6" data-label="spans" data-tip="Coordinator service → Cloud Trace (spans)">
+<path d="M1054 196 L1135 196 L1135 276 L1216 276" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="1106.65" y="188" text-anchor="middle">spans</text>
+<g class="badge"><title>6. Coordinator service → Cloud Trace (spans)</title><circle cx="1078" cy="196" r="11"/><circle class="hit" cx="1078" cy="196" r="16"/><text x="1078" y="200.5" text-anchor="middle">6</text></g>
+</g>
+<g class="edge" data-from="i" data-to="lg" data-step="6" data-label="logs" data-tip="Inventory agent service → Cloud Logging (logs)">
+<path d="M1054 356 L1135 356 L1135 436 L1216 436" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="1106.65" y="348" text-anchor="middle">logs</text>
+<g class="badge"><title>6. Inventory agent service → Cloud Logging (logs)</title><circle cx="1078" cy="356" r="11"/><circle class="hit" cx="1078" cy="356" r="16"/><text x="1078" y="360.5" text-anchor="middle">6</text></g>
+</g>
+<g class="edge" data-from="sa" data-to="c" data-step="" data-label="identity">
+<path d="M764 436 L925 436 L925 196 L990 196" fill="none" class="eline" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arw)"/>
+<text class="elabel" x="943" y="320" text-anchor="start">identity</text>
+</g>
+<g class="node" data-id="repo" data-label="ADK agents repo" data-service="File" data-category="General"><title>ADK agents repo (File)</title>
+<use href="#gen-file" x="129" y="244" width="64" height="64"/>
+<text class="nlabel" x="161" y="325" text-anchor="middle">ADK agents repo</text>
+<text class="nsub" x="161" y="339" text-anchor="middle">coordinator, inventory, shipping</text>
+</g>
+<g class="node" data-id="devui" data-label="adk web" data-service="Browser" data-category="General"><title>adk web (Browser)</title>
+<use href="#gen-browser" x="129" y="404" width="64" height="64"/>
+<text class="nlabel" x="161" y="485" text-anchor="middle">adk web</text>
+<text class="nsub" x="161" y="499" text-anchor="middle">local dev UI and evals</text>
+</g>
+<g class="node" data-id="build" data-label="Cloud Build" data-service="Cloud Build" data-category="devops"><title>Cloud Build (Cloud Build)</title>
+<use href="#svc-cloud_build" x="400" y="244" width="64" height="64"/>
+<text class="nlabel" x="432" y="325" text-anchor="middle">Cloud Build</text>
+<text class="nsub" x="432" y="339" text-anchor="middle">adk deploy cloud_run</text>
+</g>
+<g class="node" data-id="ar" data-label="Artifact Registry" data-service="Artifact Registry" data-category="containers"><title>Artifact Registry (Artifact Registry)</title>
+<use href="#svc-artifact_registry" x="400" y="404" width="64" height="64"/>
+<text class="nlabel" x="432" y="485" text-anchor="middle">Artifact Registry</text>
+<text class="nsub" x="432" y="499" text-anchor="middle">one image per agent</text>
+</g>
+<g class="node" data-id="deployp" data-label="Cloud Deploy" data-service="Cloud Deploy" data-category="devops"><title>Cloud Deploy (Cloud Deploy)</title>
+<use href="#svc-cloud_deploy" x="700" y="244" width="64" height="64"/>
+<text class="nlabel" x="732" y="325" text-anchor="middle">Cloud Deploy</text>
+<text class="nsub" x="732" y="339" text-anchor="middle">promote dev to prod</text>
+</g>
+<g class="node" data-id="sa" data-label="IAM" data-service="Identity and Access Management" data-category="security"><title>IAM (Identity and Access Management)</title>
+<use href="#svc-identity_and_access_management" x="700" y="404" width="64" height="64"/>
+<text class="nlabel" x="732" y="485" text-anchor="middle">IAM</text>
+<text class="nsub" x="732" y="499" text-anchor="middle">one service account per agent, run.invoker</text>
+</g>
+<g class="node" data-id="c" data-label="Coordinator service" data-service="Cloud Run" data-category="serverless"><title>Coordinator service (Cloud Run)</title>
+<use href="#svc-cloud_run" x="990" y="164" width="64" height="64"/>
+<text class="nlabel" x="1022" y="245" text-anchor="middle">Coordinator</text>
+<text class="nlabel" x="1022" y="259" text-anchor="middle">service</text>
+<text class="nsub" x="1022" y="273" text-anchor="middle">Cloud Run</text>
+</g>
+<g class="node" data-id="i" data-label="Inventory agent service" data-service="Cloud Run" data-category="serverless"><title>Inventory agent service (Cloud Run)</title>
+<use href="#svc-cloud_run" x="990" y="324" width="64" height="64"/>
+<text class="nlabel" x="1022" y="405" text-anchor="middle">Inventory agent</text>
+<text class="nlabel" x="1022" y="419" text-anchor="middle">service</text>
+<text class="nsub" x="1022" y="433" text-anchor="middle">Cloud Run, A2A</text>
+</g>
+<g class="node" data-id="s" data-label="Shipping agent service" data-service="Cloud Run" data-category="serverless"><title>Shipping agent service (Cloud Run)</title>
+<use href="#svc-cloud_run" x="990" y="484" width="64" height="64"/>
+<text class="nlabel" x="1022" y="565" text-anchor="middle">Shipping agent</text>
+<text class="nlabel" x="1022" y="579" text-anchor="middle">service</text>
+<text class="nsub" x="1022" y="593" text-anchor="middle">Cloud Run, A2A</text>
+</g>
+<g class="node" data-id="tr" data-label="Cloud Trace" data-service="Trace" data-category="operations"><title>Cloud Trace (Trace)</title>
+<use href="#svc-trace" x="1216" y="244" width="64" height="64"/>
+<text class="nlabel" x="1248" y="325" text-anchor="middle">Cloud Trace</text>
+<text class="nsub" x="1248" y="339" text-anchor="middle">spans per agent turn</text>
+</g>
+<g class="node" data-id="lg" data-label="Cloud Logging" data-service="Cloud Logging" data-category="operations"><title>Cloud Logging (Cloud Logging)</title>
+<use href="#svc-cloud_logging" x="1216" y="404" width="64" height="64"/>
+<text class="nlabel" x="1248" y="485" text-anchor="middle">Cloud Logging</text>
+<text class="nsub" x="1248" y="499" text-anchor="middle">agent events</text>
+</g>
+</svg>

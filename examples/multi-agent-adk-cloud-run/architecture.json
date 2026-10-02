@@ -1,0 +1,326 @@
+{
+  "meta": {
+    "title": "Multi-agent order operations assistant: Google ADK agents on Cloud Run",
+    "subtitle": "An ADK coordinator with local sub-agents calls remote ADK specialist agents over A2A; every agent is its own Cloud Run service with its own service account, Gemini on Vertex AI and tools via MCP Toolbox",
+    "output": "examples/multi-agent-adk-cloud-run/out/architecture.html",
+    "lens": [
+      "framework",
+      "generative-ai"
+    ],
+    "cost": {
+      "region": "us-central1",
+      "note": "Illustrative: 100,000 conversations/month, ~6 agent turns each. Gemini token charges are not modelled (supply usage.monthlyUsd from the Vertex AI pricing page)."
+    }
+  },
+  "root": {
+    "layout": "row",
+    "gap": 70,
+    "children": [
+      {
+        "id": "clients",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "users",
+            "icon": "users",
+            "label": "Operations staff",
+            "sublabel": "web UI"
+          },
+          {
+            "id": "idp",
+            "icon": "identity-aware-proxy",
+            "label": "Identity-Aware Proxy",
+            "sublabel": "sign-in, IAM"
+          }
+        ]
+      },
+      {
+        "id": "cloud",
+        "kind": "gcp-cloud",
+        "layout": "row",
+        "gap": 70,
+        "children": [
+          {
+            "id": "project",
+            "kind": "project",
+            "layout": "row",
+            "gap": 70,
+            "children": [
+              {
+                "id": "region",
+                "kind": "region",
+                "layout": "row",
+                "gap": 70,
+                "children": [
+                  {
+                    "id": "ui",
+                    "icon": "cloud-run",
+                    "label": "Chat UI",
+                    "sublabel": "Cloud Run, ADK API server client",
+                    "usage": {
+                      "requestsPerMonth": 600000,
+                      "avgDurationMs": 300,
+                      "vcpu": 1,
+                      "memoryGib": 0.5
+                    }
+                  },
+                  {
+                    "id": "coord",
+                    "kind": "custom",
+                    "layout": "column",
+                    "gap": 60,
+                    "children": [
+                      {
+                        "id": "root",
+                        "icon": "category-agents",
+                        "label": "Coordinator agent",
+                        "sublabel": "ADK root_agent, LlmAgent"
+                      },
+                      {
+                        "id": "local",
+                        "kind": "stack",
+                        "layout": "row",
+                        "gap": 40,
+                        "children": [
+                          {
+                            "id": "plan",
+                            "icon": "category-agents",
+                            "label": "Planner sub-agent",
+                            "sublabel": "local, in process"
+                          },
+                          {
+                            "id": "write",
+                            "icon": "category-agents",
+                            "label": "Summarizer sub-agent",
+                            "sublabel": "local, in process"
+                          }
+                        ]
+                      }
+                    ],
+                    "icon": "cloud-run",
+                    "label": "Coordinator service"
+                  },
+                  {
+                    "id": "ai",
+                    "kind": "stack",
+                    "layout": "column",
+                    "gap": 56,
+                    "children": [
+                      {
+                        "id": "armor",
+                        "icon": "data-loss-prevention-api",
+                        "label": "Model Armor",
+                        "sublabel": "prompt and response screening"
+                      },
+                      {
+                        "id": "gemini",
+                        "icon": "vertexai",
+                        "label": "Gemini on Vertex AI",
+                        "sublabel": "LLM calls, session and memory",
+                        "usage": {
+                          "monthlyUsd": 1200,
+                          "note": "Illustrative token spend; confirm on the Vertex AI pricing page."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "remote",
+                    "kind": "stack",
+                    "layout": "column",
+                    "gap": 48,
+                    "children": [
+                      {
+                        "id": "inv",
+                        "kind": "custom",
+                        "layout": "row",
+                        "gap": 40,
+                        "children": [
+                          {
+                            "id": "inva",
+                            "icon": "category-agents",
+                            "label": "Inventory agent",
+                            "sublabel": "A2A server"
+                          }
+                        ],
+                        "icon": "cloud-run",
+                        "label": "Inventory service"
+                      },
+                      {
+                        "id": "ship",
+                        "kind": "custom",
+                        "layout": "row",
+                        "gap": 40,
+                        "children": [
+                          {
+                            "id": "shipa",
+                            "icon": "category-agents",
+                            "label": "Shipping agent",
+                            "sublabel": "A2A server"
+                          }
+                        ],
+                        "icon": "cloud-run",
+                        "label": "Shipping service"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "tools",
+                    "kind": "stack",
+                    "layout": "column",
+                    "gap": 48,
+                    "children": [
+                      {
+                        "id": "gcs",
+                        "icon": "cloud-storage",
+                        "label": "Cloud Storage",
+                        "sublabel": "ADK artifacts"
+                      },
+                      {
+                        "id": "toolbox",
+                        "icon": "cloud-run",
+                        "label": "MCP Toolbox for Databases",
+                        "sublabel": "Cloud Run, tools.yaml"
+                      },
+                      {
+                        "id": "db",
+                        "icon": "alloydb",
+                        "label": "AlloyDB",
+                        "sublabel": "orders, inventory"
+                      }
+                    ]
+                  }
+                ],
+                "label": "Region us-central1"
+              },
+              {
+                "id": "ops",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 48,
+                "children": [
+                  {
+                    "id": "sm",
+                    "icon": "secret-manager",
+                    "label": "Secret Manager",
+                    "sublabel": "tool credentials",
+                    "usage": {}
+                  },
+                  {
+                    "id": "trace",
+                    "icon": "trace",
+                    "label": "Cloud Trace",
+                    "sublabel": "OpenTelemetry spans"
+                  },
+                  {
+                    "id": "log",
+                    "icon": "cloud-logging",
+                    "label": "Cloud Logging",
+                    "sublabel": "agent events",
+                    "usage": {
+                      "ingestGibPerMonth": 80
+                    }
+                  }
+                ]
+              }
+            ],
+            "label": "Project: ops-agents-prod"
+          }
+        ],
+        "label": "Google Cloud"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "users",
+      "to": "idp",
+      "style": "dashed",
+      "label": "sign in"
+    },
+    {
+      "from": "users",
+      "to": "ui",
+      "step": 1,
+      "label": "chat",
+      "desc": "An operator asks a question in the chat UI; Identity-Aware Proxy authenticates the user"
+    },
+    {
+      "from": "ui",
+      "to": "root",
+      "step": 2,
+      "label": "run (session)",
+      "desc": "The UI calls the coordinator's ADK API server with the user's session id; Cloud Run requires an ID token (roles/run.invoker)"
+    },
+    {
+      "from": "root",
+      "to": "plan",
+      "step": 3,
+      "label": "transfer",
+      "desc": "The coordinator delegates planning and summarising to local sub-agents running in the same process"
+    },
+    {
+      "from": "root",
+      "to": "armor",
+      "step": 4,
+      "label": "screen"
+    },
+    {
+      "from": "armor",
+      "to": "gemini",
+      "step": 5,
+      "label": "safe prompt",
+      "desc": "Prompts that pass Model Armor go to Gemini on Vertex AI; the agent chooses tools or sub-agents from the model's reply"
+    },
+    {
+      "from": "root",
+      "to": "inva",
+      "step": 6,
+      "label": "A2A",
+      "desc": "The coordinator calls the remote inventory agent over the A2A protocol (RemoteA2aAgent), authenticating with a Google ID token"
+    },
+    {
+      "from": "root",
+      "to": "shipa",
+      "step": 6,
+      "label": "A2A"
+    },
+    {
+      "from": "inva",
+      "to": "toolbox",
+      "step": 7,
+      "label": "MCP tool call",
+      "desc": "Specialist agents reach the database only through MCP Toolbox, which holds the connection and the allowed queries"
+    },
+    {
+      "from": "shipa",
+      "to": "toolbox",
+      "step": 7
+    },
+    {
+      "from": "toolbox",
+      "to": "db",
+      "step": 8,
+      "label": "SQL"
+    },
+    {
+      "from": "toolbox",
+      "to": "sm",
+      "style": "dashed",
+      "label": "secrets"
+    },
+    {
+      "from": "root",
+      "to": "write",
+      "step": 3
+    },
+    {
+      "from": "toolbox",
+      "to": "trace",
+      "style": "dashed",
+      "label": "spans"
+    }
+  ]
+}

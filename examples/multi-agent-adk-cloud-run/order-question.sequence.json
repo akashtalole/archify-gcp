@@ -1,0 +1,209 @@
+{
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "One order question across ADK agents: coordinator, A2A specialists and MCP Toolbox",
+    "subtitle": "The coordinator plans with Gemini, calls the remote inventory and shipping agents over A2A in parallel, and the specialists read the database only through MCP Toolbox",
+    "output": "examples/multi-agent-adk-cloud-run/out/order-question.sequence.html",
+    "lens": [
+      "framework",
+      "generative-ai"
+    ]
+  },
+  "participants": [
+    {
+      "id": "user",
+      "icon": "users",
+      "label": "Operator"
+    },
+    {
+      "id": "ui",
+      "icon": "cloud-run",
+      "label": "Chat UI",
+      "sublabel": "Cloud Run"
+    },
+    {
+      "id": "root",
+      "icon": "category-agents",
+      "label": "Coordinator agent",
+      "sublabel": "ADK root_agent"
+    },
+    {
+      "id": "armor",
+      "icon": "data-loss-prevention-api",
+      "label": "Model Armor"
+    },
+    {
+      "id": "gem",
+      "icon": "vertexai",
+      "label": "Gemini",
+      "sublabel": "Vertex AI"
+    },
+    {
+      "id": "inv",
+      "icon": "category-agents",
+      "label": "Inventory agent",
+      "sublabel": "A2A server"
+    },
+    {
+      "id": "ship",
+      "icon": "category-agents",
+      "label": "Shipping agent",
+      "sublabel": "A2A server"
+    },
+    {
+      "id": "tb",
+      "icon": "cloud-run",
+      "label": "MCP Toolbox",
+      "sublabel": "Cloud Run"
+    },
+    {
+      "id": "db",
+      "icon": "alloydb",
+      "label": "AlloyDB"
+    }
+  ],
+  "groups": [
+    {
+      "kind": "gcp-cloud",
+      "label": "Google Cloud",
+      "members": [
+        "ui",
+        "root",
+        "armor",
+        "gem",
+        "inv",
+        "ship",
+        "tb",
+        "db"
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "from": "user",
+      "to": "ui",
+      "label": "Where is order 4711, and can we ship it today?",
+      "desc": "The operator asks in the chat UI; Identity-Aware Proxy has already authenticated them."
+    },
+    {
+      "from": "ui",
+      "to": "root",
+      "label": "run (session id)",
+      "desc": "The UI calls the coordinator's ADK API server with an ID token for its Cloud Run service; the session service keeps the conversation state."
+    },
+    {
+      "from": "root",
+      "to": "armor",
+      "label": "screen prompt"
+    },
+    {
+      "from": "armor",
+      "to": "root",
+      "kind": "return",
+      "label": "allowed"
+    },
+    {
+      "from": "root",
+      "to": "gem",
+      "label": "plan: which agents?",
+      "desc": "The LlmAgent asks Gemini which sub-agents or tools answer the question."
+    },
+    {
+      "from": "gem",
+      "to": "root",
+      "kind": "return",
+      "label": "call inventory + shipping"
+    },
+    {
+      "from": "root",
+      "to": "root",
+      "kind": "self",
+      "label": "planner sub-agent (local)",
+      "desc": "Local sub-agents run in the coordinator's process; no network hop."
+    },
+    {
+      "note": "Remote agents are discovered through their A2A agent card and called with a Google ID token.",
+      "over": [
+        "root",
+        "ship"
+      ]
+    },
+    {
+      "from": "root",
+      "to": "inv",
+      "label": "A2A: stock for 4711",
+      "desc": "The coordinator calls the inventory agent through RemoteA2aAgent."
+    },
+    {
+      "from": "root",
+      "to": "ship",
+      "label": "A2A: carrier cutoff",
+      "desc": "Shipping is called in parallel with inventory."
+    },
+    {
+      "from": "inv",
+      "to": "tb",
+      "label": "MCP: stock_by_order"
+    },
+    {
+      "from": "tb",
+      "to": "db",
+      "label": "SQL"
+    },
+    {
+      "from": "db",
+      "to": "tb",
+      "kind": "return",
+      "label": "rows"
+    },
+    {
+      "from": "tb",
+      "to": "inv",
+      "kind": "return",
+      "label": "tool result"
+    },
+    {
+      "from": "inv",
+      "to": "root",
+      "kind": "return",
+      "label": "in stock, 2 units"
+    },
+    {
+      "from": "ship",
+      "to": "root",
+      "kind": "return",
+      "label": "cutoff 17:00"
+    },
+    {
+      "from": "root",
+      "to": "gem",
+      "label": "summarize answer"
+    },
+    {
+      "from": "gem",
+      "to": "root",
+      "kind": "return",
+      "label": "final text"
+    },
+    {
+      "from": "root",
+      "to": "ui",
+      "kind": "return",
+      "label": "answer + sources"
+    },
+    {
+      "from": "ui",
+      "to": "user",
+      "kind": "return",
+      "label": "Order 4711 can ship today"
+    }
+  ],
+  "fragments": [
+    {
+      "kind": "par",
+      "label": "specialists in parallel",
+      "from": 8,
+      "to": 14
+    }
+  ]
+}

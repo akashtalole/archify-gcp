@@ -1,0 +1,107 @@
+{
+  "ok": true,
+  "tool": "archify-gcp",
+  "version": "0.1.0",
+  "iconRelease": "Google Cloud icons (legacy product set + core products set)",
+  "input": {
+    "path": "examples/multi-agent-adk-cloud-run/architecture.json",
+    "sha256": "6d526d8b0769214c8176bb2bf43ee26b9912b1d7ccdc5d95b8935045ca316b2d"
+  },
+  "stages": [
+    {
+      "name": "validate",
+      "status": "pass",
+      "detail": {
+        "type": "architecture",
+        "nodes": 16,
+        "groups": 6,
+        "edges": 14
+      }
+    },
+    {
+      "name": "analyze",
+      "status": "pass",
+      "detail": {
+        "cost": false,
+        "review": true
+      }
+    },
+    {
+      "name": "render",
+      "status": "pass",
+      "detail": {}
+    },
+    {
+      "name": "check",
+      "status": "pass",
+      "detail": {
+        "warnings": 3,
+        "standalone": true
+      }
+    },
+    {
+      "name": "browser-check",
+      "status": "pass",
+      "detail": {
+        "viewport": "1440x900",
+        "minFontPx": 10.5,
+        "overflowX": 0,
+        "consoleErrors": 0,
+        "viewerNodes": 16,
+        "viewerEdges": 14
+      }
+    },
+    {
+      "name": "export-png",
+      "status": "pass",
+      "detail": {}
+    }
+  ],
+  "outputs": {
+    "html": {
+      "path": "examples/multi-agent-adk-cloud-run/out/architecture.html",
+      "sha256": "c7e9f870f43f091bd8756f758215897c5ee25a0ff242f7edfdbcf23c0785dacb",
+      "bytes": 267480
+    },
+    "svg": {
+      "path": "examples/multi-agent-adk-cloud-run/out/architecture.svg",
+      "sha256": "1396b4e1aeb3eaa0280bc09bd675ff34e71ea4c9033df818808bfa23f1b19486"
+    },
+    "drawio": {
+      "path": "examples/multi-agent-adk-cloud-run/out/architecture.drawio",
+      "sha256": "008975017a4241313b0fd01013b66f34049d4b16b51c5a180de316813af81557"
+    },
+    "png": {
+      "path": "examples/multi-agent-adk-cloud-run/out/architecture.png",
+      "sha256": "703aed598712120e9d9941f28f5eb34dcb0433d19d7d3a17bec67b53002d4b97"
+    }
+  },
+  "summary": {
+    "type": "architecture",
+    "nodes": 16,
+    "groups": 6,
+    "edges": 14,
+    "size": {
+      "width": 1862,
+      "height": 808
+    }
+  },
+  "review": {
+    "advisory": true,
+    "mode": "full",
+    "lens": "generative-ai",
+    "findings": {
+      "Critical": 0,
+      "High": 1,
+      "Medium": 1,
+      "Low": 0
+    },
+    "evidenced": 15,
+    "bps": 174,
+    "ids": [
+      "F-001",
+      "F-002"
+    ]
+  },
+  "visualReview": "not-performed"
+}

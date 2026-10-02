@@ -20,6 +20,16 @@ Each example is a spec in the repository's `examples/` folder, rendered to a liv
 | Agent tool call with safety screening and approval | sequence | [open](../live/agent-tool-call.sequence.html) |
 | Clinical notes pipeline | dataflow | [open](../live/clinical-notes.dataflow.html) |
 
+## Multi-agent system on Cloud Run
+
+Google ADK agents (coordinator, local sub-agents, remote A2A agents) on Cloud Run, source in `examples/multi-agent-adk-cloud-run/`.
+
+| Example | Type | Page |
+|---|---|---|
+| Order operations assistant | architecture | [open](../live/adk-architecture.html) |
+| Order question, end to end | sequence | [open](../live/adk-order-question.sequence.html) |
+| Agent delivery pipeline | dataflow | [open](../live/adk-agent-delivery.dataflow.html) |
+
 ## Imported
 
 | Example | Source | Page |
