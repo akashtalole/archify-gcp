@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "tool": "multi-cloud compose",
+  "panels": [
+    {
+      "cloud": "azure",
+      "renderedBy": "archify-azure",
+      "spec": "0c6e814e7dbcaf76fe71edba0d9b7f1caf1304e56c0b4534b505e50ab5640344",
+      "svg": "388859ee6b88e2cb0de636cef5b8bc11e11930ded246454887e9401bd5c2691a"
+    },
+    {
+      "cloud": "gcp",
+      "renderedBy": "archify-gcp",
+      "spec": "91d2e9cab07283231a3ac8e07249249b5f5c494ef624da6f226798172cc4f766",
+      "svg": "f646fcdf6e8a5de843688206024f5b4e8303786158d0d6a9233a4c4b5c3539b7"
+    },
+    {
+      "cloud": "aws",
+      "renderedBy": "archify-aws",
+      "spec": "5c5003fcd5d9ba539a40e858f1ddce9d1ce2d9dc62e4ebe792bcab869b712837",
+      "svg": "235562dc83cfcd091f4a3dba6d829f5715a951f31388c07aef12dff0513b9ac5"
+    }
+  ],
+  "crossCloudLinks": 9,
+  "size": {
+    "width": 2260,
+    "height": 1232
+  },
+  "visualReview": "not-performed"
+}

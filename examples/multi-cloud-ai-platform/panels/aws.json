@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "title": "Amazon Web Services",
+    "subtitle": "Bedrock models, regulated workloads and the data lake",
+    "output": "examples/multi-cloud-ai-platform/panels/out/aws.html"
+  },
+  "root": {
+    "kind": "aws-cloud",
+    "layout": "column",
+    "gap": 40,
+    "children": [
+      {
+        "id": "aws-region",
+        "kind": "region",
+        "label": "us-east-1",
+        "layout": "column",
+        "gap": 60,
+        "children": [
+          {
+            "id": "aw",
+            "kind": "stack",
+            "layout": "row",
+            "gap": 70,
+            "children": [
+              {
+                "id": "awl",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 60,
+                "children": [
+                  {
+                    "id": "kms",
+                    "icon": "key-management-service",
+                    "label": "KMS",
+                    "sublabel": "data lake keys"
+                  },
+                  {
+                    "id": "s3",
+                    "icon": "simple-storage-service",
+                    "label": "Data lake",
+                    "sublabel": "Amazon S3"
+                  },
+                  {
+                    "id": "eks",
+                    "icon": "elastic-kubernetes-service",
+                    "label": "Agent workers",
+                    "sublabel": "EKS, regulated workloads"
+                  },
+                  {
+                    "id": "dc",
+                    "icon": "direct-connect",
+                    "label": "Direct Connect",
+                    "sublabel": "private circuit"
+                  }
+                ]
+              },
+              {
+                "id": "awr",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 60,
+                "children": [
+                  {
+                    "id": "cw",
+                    "icon": "cloudwatch",
+                    "label": "CloudWatch",
+                    "sublabel": "runtime metrics"
+                  },
+                  {
+                    "id": "lf",
+                    "icon": "lake-formation",
+                    "label": "Data governance",
+                    "sublabel": "Lake Formation"
+                  },
+                  {
+                    "id": "bedrock",
+                    "icon": "bedrock",
+                    "label": "Claude and Nova",
+                    "sublabel": "Amazon Bedrock"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "eks",
+      "to": "bedrock",
+      "step": 5,
+      "label": "inference"
+    },
+    {
+      "from": "s3",
+      "to": "lf",
+      "style": "dashed",
+      "label": "governed"
+    }
+  ]
+}

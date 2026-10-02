@@ -522,3 +522,13 @@ test("the page offers a draw.io download backed by the same export", async (t) =
   const { toDrawio } = await import("../src/drawio/export.mjs");
   assert.equal(JSON.parse(m[1].replace(/\\u003c/g, "<")), toDrawio(d));
 });
+
+test("multi-cloud example composes three tool-rendered panels with cross-cloud links", () => {
+  const dir = path.join(ROOT, "examples", "multi-cloud-ai-platform", "out");
+  if (!fs.existsSync(path.join(dir, "architecture.svg"))) return;
+  const svg = fs.readFileSync(path.join(dir, "architecture.svg"), "utf8");
+  for (const c of ["azure", "gcp", "aws"]) assert.match(svg, new RegExp(`class="panel panel-${c}"`));
+  assert.equal((svg.match(/class="xedge"/g) || []).length, 9);
+  const receipt = JSON.parse(fs.readFileSync(path.join(dir, "architecture.receipt.json"), "utf8"));
+  assert.deepEqual(receipt.panels.map((p) => p.renderedBy), ["archify-azure", "archify-gcp", "archify-aws"]);
+});

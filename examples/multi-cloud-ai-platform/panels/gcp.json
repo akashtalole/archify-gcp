@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "Google Cloud",
+    "subtitle": "AI gateway, orchestrator, Gemini and analytics",
+    "output": "examples/multi-cloud-ai-platform/panels/out/gcp.html"
+  },
+  "root": {
+    "kind": "gcp-cloud",
+    "layout": "column",
+    "gap": 40,
+    "children": [
+      {
+        "id": "gcp-proj",
+        "kind": "project",
+        "label": "ai-platform-hub",
+        "layout": "column",
+        "gap": 60,
+        "children": [
+          {
+            "id": "gc",
+            "kind": "stack",
+            "layout": "row",
+            "gap": 70,
+            "children": [
+              {
+                "id": "gcl",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 60,
+                "children": [
+                  {
+                    "id": "apigee",
+                    "icon": "apigee-api-platform",
+                    "label": "Apigee AI gateway",
+                    "sublabel": "quotas, routing policy"
+                  },
+                  {
+                    "id": "armor",
+                    "icon": "data-loss-prevention-api",
+                    "label": "Model Armor",
+                    "sublabel": "prompt screening"
+                  },
+                  {
+                    "id": "gke",
+                    "icon": "kubernetes-engine",
+                    "label": "Agent orchestrator",
+                    "sublabel": "GKE, primary"
+                  },
+                  {
+                    "id": "ic",
+                    "icon": "cloud-interconnect",
+                    "label": "Cloud Interconnect",
+                    "sublabel": "private backbone"
+                  }
+                ]
+              },
+              {
+                "id": "gcr",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 60,
+                "children": [
+                  {
+                    "id": "log",
+                    "icon": "cloud-logging",
+                    "label": "Cloud Logging",
+                    "sublabel": "OpenTelemetry sink"
+                  },
+                  {
+                    "id": "bq",
+                    "icon": "bigquery",
+                    "label": "BigQuery",
+                    "sublabel": "analytics, embeddings"
+                  },
+                  {
+                    "id": "gemini",
+                    "icon": "vertexai",
+                    "label": "Gemini",
+                    "sublabel": "Vertex AI"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "apigee",
+      "to": "armor",
+      "step": 3
+    },
+    {
+      "from": "armor",
+      "to": "gke",
+      "step": 4,
+      "label": "safe prompt"
+    },
+    {
+      "from": "gke",
+      "to": "gemini",
+      "step": 5,
+      "label": "route"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "title": "Microsoft Azure",
+    "subtitle": "Identity, Azure OpenAI, AI Search and safety",
+    "output": "examples/multi-cloud-ai-platform/panels/out/azure.html"
+  },
+  "root": {
+    "kind": "azure-cloud",
+    "layout": "column",
+    "gap": 40,
+    "children": [
+      {
+        "id": "az-sub",
+        "kind": "subscription",
+        "label": "AI platform subscription",
+        "layout": "column",
+        "gap": 60,
+        "children": [
+          {
+            "id": "az",
+            "kind": "stack",
+            "layout": "row",
+            "gap": 70,
+            "children": [
+              {
+                "id": "azl",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 60,
+                "children": [
+                  {
+                    "id": "users",
+                    "icon": "users",
+                    "label": "Employees and apps",
+                    "sublabel": "chat, API, copilots"
+                  },
+                  {
+                    "id": "mon",
+                    "icon": "monitor",
+                    "label": "Azure Monitor",
+                    "sublabel": "runtime metrics"
+                  },
+                  {
+                    "id": "openai",
+                    "icon": "openai",
+                    "label": "GPT models",
+                    "sublabel": "Azure OpenAI"
+                  },
+                  {
+                    "id": "kv",
+                    "icon": "key-vaults",
+                    "label": "Key Vault",
+                    "sublabel": "secrets, keys"
+                  }
+                ]
+              },
+              {
+                "id": "azr",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 60,
+                "children": [
+                  {
+                    "id": "entra",
+                    "icon": "entra-id",
+                    "label": "Microsoft Entra ID",
+                    "sublabel": "single sign-on"
+                  },
+                  {
+                    "id": "safety",
+                    "icon": "content-safety",
+                    "label": "Azure AI Content Safety",
+                    "sublabel": "groundedness, jailbreak"
+                  },
+                  {
+                    "id": "aks",
+                    "icon": "kubernetes-services",
+                    "label": "Agent workers",
+                    "sublabel": "AKS, Microsoft 365 data"
+                  },
+                  {
+                    "id": "search",
+                    "icon": "cognitive-search",
+                    "label": "Vector index",
+                    "sublabel": "Azure AI Search"
+                  },
+                  {
+                    "id": "er",
+                    "icon": "expressroute-circuits",
+                    "label": "ExpressRoute",
+                    "sublabel": "private circuit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "users",
+      "to": "entra",
+      "step": 1,
+      "label": "sign in"
+    },
+    {
+      "from": "aks",
+      "to": "openai",
+      "step": 5,
+      "label": "inference"
+    }
+  ]
+}

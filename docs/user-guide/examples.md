@@ -30,6 +30,12 @@ Google ADK agents (coordinator, local sub-agents, remote A2A agents) on Cloud Ru
 | Order question, end to end | sequence | [open](../live/adk-order-question.sequence.html) |
 | Agent delivery pipeline | dataflow | [open](../live/adk-agent-delivery.dataflow.html) |
 
+## Multi-cloud
+
+| Example | Type | Page |
+|---|---|---|
+| Cloud-agnostic enterprise AI platform (AWS, Azure, Google Cloud icons together) | architecture | [open](../live/multicloud-architecture.html) |
+
 ## Imported
 
 | Example | Source | Page |
