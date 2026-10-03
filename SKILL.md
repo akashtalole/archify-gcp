@@ -12,9 +12,11 @@ metadata:
 Turns a description of a Google Cloud workload into a checked, explorable diagram. Same philosophy as Archify: write typed JSON,
 let the tool lay out, route and validate, and report only what was actually verified.
 
-## Setup (once)
+## Setup
+Installed with `npx skills add akashtalole/archify-gcp`; run every command below from the skill directory (`node bin/archify-gcp.mjs ...`).
+The official Google Cloud icons are downloaded automatically on the first `render`/`finalize` (network needed once). To fetch them yourself or check the install:
 ```bash
-npm run icons:fetch          # downloads the official Google Cloud icons into assets/gcp-icons/ (not committed)
+node bin/archify-gcp.mjs fetch-icons
 node bin/archify-gcp.mjs doctor
 ```
 No npm dependencies. PNG export additionally needs Chrome/Chromium (`CHROME_PATH`, or Playwright's browser).

@@ -16,7 +16,13 @@ Multi-agent ADK on Cloud Run: [architecture](examples/multi-agent-adk-cloud-run/
 
 Multi-cloud AI platform (AWS + Azure + Google Cloud icons): [architecture](examples/multi-cloud-ai-platform/out/architecture.png) ([details](examples/multi-cloud-ai-platform/README.md))
 
-## Quick start
+## Install as an agent skill
+```bash
+npx skills add akashtalole/archify-gcp
+```
+Installs the skill into your agent (Claude Code, Cursor, Codex and others; the CLI asks which). The official icons are downloaded automatically the first time you render (network needed once; set `ARCHIFY_NO_AUTOFETCH=1` to disable). The sibling skills install the same way: `akashtalole/archify-aws`, `akashtalole/archify-azure`, `akashtalole/archify-gcp`.
+
+## Quick start (from a clone)
 ```bash
 git clone https://github.com/akashtalole/archify-gcp && cd archify-gcp
 npm run icons:fetch                                  # official icons → assets/gcp-icons/ (git-ignored)
