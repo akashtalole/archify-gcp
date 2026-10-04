@@ -312,7 +312,7 @@
           },
           "external": {
             "type": "boolean",
-            "description": "Draw outside the Azure boundary (sources, consumers)."
+            "description": "Draw outside the Google Cloud boundary (sources, consumers)."
           },
           "gap": {
             "type": "number"
