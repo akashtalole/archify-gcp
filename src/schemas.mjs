@@ -44,7 +44,7 @@ export function buildSchemas() {
         fragments: { type: "array", items: { type: "object", required: ["kind", "from", "to"], additionalProperties: false, properties: { kind: { enum: ["loop", "alt", "opt", "par"] }, label: { type: "string" }, from: { type: "integer", minimum: 0 }, to: { type: "integer", minimum: 0 }, elseAt: { type: "integer", minimum: 0 }, elseLabel: { type: "string" } } } } } },
     dataflow: { ...base("dataflow", "archify-gcp dataflow diagram"), type: "object", required: ["diagram_type", "meta", "stages"], additionalProperties: false,
       properties: { $schema: { type: "string" }, diagram_type: { const: "dataflow" }, meta: { $ref: "#/$defs/meta" },
-        stages: { type: "array", minItems: 2, items: { type: "object", required: ["id", "label", "items"], additionalProperties: false, properties: { id, label: { type: "string" }, external: { type: "boolean", description: "Draw outside the Azure boundary (sources, consumers)." }, gap: { type: "number" }, items: { type: "array", minItems: 1, items: { $ref: "#/$defs/child" } } } } },
+        stages: { type: "array", minItems: 2, items: { type: "object", required: ["id", "label", "items"], additionalProperties: false, properties: { id, label: { type: "string" }, external: { type: "boolean", description: "Draw outside the Google Cloud boundary (sources, consumers)." }, gap: { type: "number" }, items: { type: "array", minItems: 1, items: { $ref: "#/$defs/child" } } } } },
         edges: { type: "array", items: { $ref: "#/$defs/edge" } } } },
   };
 }
@@ -70,7 +70,7 @@ export function guideScenario(text) {
   return {
     type, template, scores: score, diagrams,
     hints: [
-      type === "architecture" ? "Nest gcp-cloud › organization › folder › project › region › vpc › subnet (add zone groups for placement); one left-to-right main flow; number only the primary request path." : type === "sequence" ? "Participants left→right in call order; use return/async kinds; wrap an Azure boundary around contiguous participants." : "One stage per column (Sources → Ingest → Store → Process → Serve); mark external stages; number the main data path.",
+      type === "architecture" ? "Nest gcp-cloud › organization › folder › project › region › vpc › subnet (add zone groups for placement); one left-to-right main flow; number only the primary request path." : type === "sequence" ? "Participants left→right in call order; use return/async kinds; wrap a Google Cloud boundary around contiguous participants." : "One stage per column (Sources → Ingest → Store → Process → Serve); mark external stages; number the main data path.",
       ...(hitl ? ["Human-in-the-loop detected: draw the review queue / approval step as its own node (e.g. a Workflows callback step, a Pub/Sub queue plus a reviewer app) and show what happens on reject and on timeout."] : []),
       ...(diagrams.length > 1 ? [`Suggested diagrams: ${diagrams.map((d) => d.type).join(" + ")} — one diagram per question keeps each readable (6-20 nodes).`] : []),
       ...(genai ? ["Generative AI detected: draw Model Armor or safety filters, retrieval/grounding data, request-response logging and an API layer in front of the model (set meta.lens to include generative-ai)."] : []),
